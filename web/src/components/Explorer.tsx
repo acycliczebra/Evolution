@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { Brief, Filter, Taxon, View } from "../types";
 import { getLineage, getTaxon } from "../data";
 import { rangeText } from "../time";
@@ -95,25 +95,90 @@ export function Explorer({ id, T, win, filter, setFilter, view, setView }: Props
   );
 }
 
+/** Hover scrolling speed for the breadcrumb carets (px per frame), ramping up while hovered. */
+const CARET_SPEED = 4, CARET_MAX_SPEED = 18, CARET_ACCEL = 0.25;
+
 function Crumbs({ lineage }: { lineage: Taxon[] }) {
+  const nav = useRef<HTMLElement>(null);
+  const [edges, setEdges] = useState({ left: false, right: false });
+  const hover = useRef<{ dir: -1 | 1; frame: number } | null>(null);
+
+  const updateEdges = useCallback(() => {
+    const el = nav.current;
+    if (!el) return;
+    const left = el.scrollLeft > 1;
+    const right = el.scrollLeft + el.clientWidth < el.scrollWidth - 1;
+    setEdges(e => (e.left === left && e.right === right ? e : { left, right }));
+  }, []);
+
   // keep the current taxon in view when the lineage is long
-  const ref = useCallback((el: HTMLElement | null) => { if (el) el.scrollLeft = el.scrollWidth; }, [lineage]);
+  useLayoutEffect(() => {
+    const el = nav.current;
+    if (el) el.scrollLeft = el.scrollWidth;
+    updateEdges();
+  }, [lineage, updateEdges]);
+
+  useEffect(() => {
+    const el = nav.current!;
+    const ro = new ResizeObserver(updateEdges);
+    ro.observe(el);
+    return () => { ro.disconnect(); stopHover(); };
+  }, [updateEdges]);
+
+  const startHover = (dir: -1 | 1) => {
+    stopHover();
+    let speed = CARET_SPEED;
+    const step = () => {
+      const el = nav.current;
+      if (!el || !hover.current) return;
+      el.scrollLeft += dir * speed;
+      speed = Math.min(CARET_MAX_SPEED, speed + CARET_ACCEL);
+      // the caret unmounts (no mouseleave) once that end is reached, so stop here
+      const atEnd = dir < 0 ? el.scrollLeft <= 0 : el.scrollLeft + el.clientWidth >= el.scrollWidth - 1;
+      if (atEnd) { hover.current = null; return; }
+      hover.current.frame = requestAnimationFrame(step);
+    };
+    hover.current = { dir, frame: requestAnimationFrame(step) };
+  };
+  function stopHover() {
+    if (hover.current) cancelAnimationFrame(hover.current.frame);
+    hover.current = null;
+  }
+  const page = (dir: -1 | 1) => {
+    const el = nav.current;
+    if (el) el.scrollBy({ left: dir * el.clientWidth * 0.8, behavior: "smooth" });
+  };
+
   return (
-    <nav ref={ref} className="crumbs">
-      {lineage.map((a, i) => (
-        <span key={a.i} style={{ display: "contents" }}>
-          {i > 0 && <span className="sep">›</span>}
-          <TaxonLink
-            id={a.i}
-            title={a.r}
-            className={`crumb ${MAJOR_RANKS.has(a.r || "") ? "major" : "minor"}${isIncertae(a) ? " incertae" : ""}${i === lineage.length - 1 ? " cur" : ""}`}
-          >
-            {a.i !== 0 && CRUMB_RANKS.has(a.r || "") && <RankTag rank={a.r} />}
-            <span className="crumb-name">{a.i === 0 ? "🌳 Life" : <SciName n={a} />}</span>
-          </TaxonLink>
-        </span>
-      ))}
-    </nav>
+    <div className="crumbs-wrap">
+      {edges.left && (
+        <button className="crumb-caret left" aria-label="Scroll path left"
+          onMouseEnter={() => startHover(-1)} onMouseLeave={stopHover} onClick={() => page(-1)}>‹</button>
+      )}
+      {edges.right && (
+        <button className="crumb-caret right" aria-label="Scroll path right"
+          onMouseEnter={() => startHover(1)} onMouseLeave={stopHover} onClick={() => page(1)}>›</button>
+      )}
+      <nav
+        ref={nav}
+        className={`crumbs${edges.left ? " fade-left" : ""}${edges.right ? " fade-right" : ""}`}
+        onScroll={updateEdges}
+      >
+        {lineage.map((a, i) => (
+          <span key={a.i} style={{ display: "contents" }}>
+            {i > 0 && <span className="sep">›</span>}
+            <TaxonLink
+              id={a.i}
+              title={a.r}
+              className={`crumb ${MAJOR_RANKS.has(a.r || "") ? "major" : "minor"}${isIncertae(a) ? " incertae" : ""}${i === lineage.length - 1 ? " cur" : ""}`}
+            >
+              {a.i !== 0 && CRUMB_RANKS.has(a.r || "") && <RankTag rank={a.r} />}
+              <span className="crumb-name">{a.i === 0 ? "🌳 Life" : <SciName n={a} />}</span>
+            </TaxonLink>
+          </span>
+        ))}
+      </nav>
+    </div>
   );
 }
 
