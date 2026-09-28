@@ -50,6 +50,8 @@ MANUAL_ORDER = ["virus_group", "realm", "subrealm", "domain", "superregnum", "re
                 "species_subgroup", "species_complex", "species", "subspecies"]
 MAJOR_RANKS = {"domain", "kingdom", "phylum", "division", "class", "order", "family", "genus", "species"}
 SPECIES_RANKS = {"species", "ichnospecies", "oospecies"}
+LIVING_EVIDENCE_RANKS = {"genus", "subgenus", "species", "subspecies", "variety", "form", "section", "subsection",
+                         "series", "species group", "species complex"}
 
 UNIT_ALIASES = {"recent": 0, "present": 0, "today": 0, "holocene": (0.0117, 0), "modern": 0, "now": 0}
 
@@ -595,45 +597,57 @@ def main():
     reach = set(order)
     print(f"  reachable {len(reach)} / {len(nodes)}", flush=True)
 
+    # Speciesbox species carry no extinct flag of their own: Wikipedia shows them as extinct because
+    # their genus template says extinct=yes. Inherit the flag down into synthetic (article-only) nodes.
+    for k in reversed(order):
+        n = nodes[k]
+        if n.get("synthetic") and not n.get("tex") and nodes.get(n.get("pk"), {}).get("tex"):
+            n["tex"] = True
     for k in order:
         n = nodes[k]
         art = n.get("art", {})
         fa, fb = art.get("fa"), art.get("fb")
         st = art.get("st", "")
-        extinct_self = n.get("tex") or st in ("EX", "FOSSIL", "EW") or (fb is not None and fb > 0.05 and st not in ("DOM",) and not art.get("st"))
-        if n.get("tex") is False and fb is not None and fb > 0.05 and not st:
-            extinct_self = True
+        # Evidence of extinction: the template's extinct flag, an extinct status, or the taxon's own
+        # fossil range ending before the present.
+        alive_status = bool(st) and st not in ("EX", "EW", "FOSSIL", "PE")
+        extinct_self = bool(n.get("tex")) or st in ("EX", "FOSSIL", "EW") or (
+            fb is not None and fb > 0.05 and not alive_status)
         if k in ("Life", "__unplaced"):
             extinct_self = False
         kids = children.get(k, [])
+        # "Proven alive": a living status, or a living genus/species somewhere below. A higher taxon
+        # merely claiming "– Recent" (e.g. Batrachosauria "includes amniotes", which the tree doesn't
+        # place under it) is not enough to keep an ancestor whose own range ended long ago alive.
+        proven = alive_status or ("art" in n and n.get("rank") in LIVING_EVIDENCE_RANKS and not extinct_self)
         nsp = 1 if n.get("rank") in SPECIES_RANKS else 0
         total = 1
-        kfa, kfb = [], []
-        any_extant = False
         for c in kids:
             cn = nodes[c]
             nsp += cn["nsp"]
             total += cn["tot"]
-            if cn.get("fa") is not None:
-                kfa.append(cn["fa"]); kfb.append(cn["fb"])
-            if not cn["ex"]:
-                any_extant = True
+            proven = proven or cn["proven"]
+        if n.get("tex"):  # explicit extinct=yes on the taxonomy template (or inherited from it) wins
+            ex, proven = True, False
+        elif proven:
+            ex = False
+        elif extinct_self:
+            ex = True
+        else:
+            ex = bool(kids) and all(nodes[c]["ex"] for c in kids)
+        # ranges: for an extinct taxon only extinct members inform when it ended
+        rkids = [nodes[c] for c in kids if nodes[c].get("fa") is not None and (not ex or nodes[c]["ex"])]
+        kfa = [cn["fa"] for cn in rkids]
+        kfb = [cn["fb"] for cn in rkids]
         if fa is None and kfa:
             fa = max(kfa)
         elif fa is not None and kfa:
             fa = max(fa, max(kfa)) if max(kfa) < fa * 1.5 + 5 else fa
         if kfb:
             fb = min(kfb) if fb is None else min(fb, min(kfb))
-        if kids:
-            ex = not any_extant and (extinct_self or all(nodes[c]["ex"] for c in kids))
-            if n.get("tex"):
-                ex = True
-        else:
-            ex = bool(extinct_self)
-        if not ex and fb is None and fa is not None:
+        if not ex and fa is not None:
             fb = 0
-        if not ex and fb is not None and fb > 0.05 and not kids:
-            fb = 0
+        n["proven"] = proven and not ex
         n["fa"], n["fb"] = fa, fb
         n["ex"] = ex
         n["nsp"] = nsp
