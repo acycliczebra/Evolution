@@ -1,11 +1,30 @@
 import type { Brief } from "../types";
-import { isItalic } from "../taxa";
+import { glyphFor, isIncertae, isItalic, rankColor } from "../taxa";
 import { useApp } from "../context";
 import { Img } from "./Img";
-import { glyphFor } from "../taxa";
+
+/** Small rank indicator ("phylum", "genus", …); incertae sedis is flagged as a placement note, not a rank. */
+export function RankTag({ rank, big = false }: { rank?: string; big?: boolean }) {
+  if (!rank) return null;
+  if (rank === "incertae sedis") {
+    return <span className={`ranktag incertae${big ? " big" : ""}`} title="Incertae sedis: members whose placement within the parent group is uncertain">uncertain placement</span>;
+  }
+  const c = rankColor(rank);
+  return (
+    <span className={`ranktag${c ? " major" : ""}${big ? " big" : ""}`} style={c ? ({ "--rc": c } as React.CSSProperties) : undefined}>
+      {rank}
+    </span>
+  );
+}
+
+/** Display name; incertae sedis groups read "Incertae sedis" with their parent shown in the path. */
+export function displayName(n: Pick<Brief, "n" | "r">): string {
+  return isIncertae(n) ? "Incertae sedis" : n.n;
+}
 
 /** Scientific name, italicised for genus and below. */
 export function SciName({ n }: { n: Pick<Brief, "n" | "r"> }) {
+  if (isIncertae(n)) return <i className="incertae-name">{displayName(n)}</i>;
   return isItalic(n) ? <i>{n.n}</i> : <>{n.n}</>;
 }
 

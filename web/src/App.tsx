@@ -80,8 +80,23 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
   const jumpToTime = useCallback((at: number) => {
     const u = scale.at(at, "age") || scale.at(at, "period") || scale.at(at, "era") || scale.at(at, "eon");
     if (u) selectUnit(u.name, true, at);
-    document.querySelector(".timepanel")?.scrollIntoView({ behavior: "smooth" });
+    const panel = document.querySelector<HTMLElement>(".timepanel");
+    if (!panel) return;
+    panel.scrollTop = 0;
+    // Side-by-side layout: the panel is already on screen, so leave the page where it is.
+    // Stacked (narrow) layout: the panel sits below the explorer, so bring it into view.
+    if (panel.getBoundingClientRect().top > innerHeight) panel.scrollIntoView({ behavior: "smooth" });
   }, [scale, selectUnit]);
+
+  // Dragging the time cursor: follow it at the selected unit's level (period by default).
+  const scrubTo = useCallback((at: number) => {
+    setT(at);
+    setMilestone(null);
+    setUnit(cur => {
+      const level = cur ? scale.byName[cur].level : "period";
+      return (scale.at(at, level) ?? scale.deepestAt(at))?.name ?? cur;
+    });
+  }, [scale]);
 
   const home = () => {
     setUnit(null); setT(null); setMilestone(null); setDomain(FULL); go(0);
@@ -129,9 +144,9 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
             <span className="legend"><i className="dot life" />Life <i className="dot extinction" />Extinction <i className="dot earth" />Earth</span>
           </div>
         </div>
-        <Timeline milestones={time.milestones} domain={domain} setDomain={setDomain} unit={unit} T={T} msTitle={milestone?.title ?? null} />
+        <Timeline milestones={time.milestones} domain={domain} setDomain={setDomain} unit={unit} T={T} msTitle={milestone?.title ?? null} onScrub={scrubTo} />
         <div className="tl-hint muted">
-          Click a band to explore that time · scroll to zoom · drag to pan · pins are evolutionary milestones · scale is compressed for the Precambrian
+          Click a band to explore that time · drag the ▲ cursor to travel through time · scroll to zoom, drag to pan · pins are evolutionary milestones · scale is compressed for the Precambrian
         </div>
       </section>
       <main className="layout">
@@ -141,7 +156,7 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
       <footer className="foot">
         Data extracted from every taxobox and taxonomy template in the English Wikipedia dump (2026-09). Text and images © Wikipedia /
         Wikimedia Commons contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. Time scale: ICS
-        International Chronostratigraphic Chart. <a href="https://github.com/acycliczebra/Evolution">Source &amp; data dump on GitHub</a>.
+        International Chronostratigraphic Chart.
       </footer>
     </AppContext.Provider>
   );

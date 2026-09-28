@@ -197,3 +197,29 @@ div.hero-img { display: grid; place-items: center; font-size: 90px; }
 .rbar-axis { position: relative; height: 14px; display: block; }
 .rbar-axis span { position: absolute; transform: translateX(-50%); width: auto; margin: 0 !important; }
 .rbar-axis span:first-child { transform: none; } .rbar-axis span:last-child { transform: translateX(-100%); }
+
+/* rank tags */
+.ranktag { display: inline-block; font-size: 10px; line-height: 1; letter-spacing: .06em; text-transform: uppercase; font-weight: 600;
+  padding: 3px 6px 2px; border-radius: 5px; color: var(--muted); background: #0f1830; border: 1px solid #2d3d63; vertical-align: 1px; }
+.ranktag.major { color: var(--rc); border-color: color-mix(in srgb, var(--rc) 45%, transparent); background: color-mix(in srgb, var(--rc) 12%, #0f1830); }
+.ranktag.big { font-size: 12px; padding: 4px 9px 3px; }
+.ranktag.incertae { color: #cbd5e1; border-style: dashed; text-transform: none; letter-spacing: 0; font-style: italic; }
+.rank { display: flex; align-items: center; gap: 8px; }
+.crumb { display: inline-flex; align-items: center; gap: 6px; }
+.crumb .ranktag { font-size: 9px; padding: 2px 4px 1px; }
+.crumb.cur .ranktag { background: #06221a22; color: #06221a; border-color: #06221a55; }
+.crumb.incertae { border-style: dashed; }
+.cmeta .ranktag { margin-right: 2px; }
+.incertae-name { color: #cbd5e1; }
+.incertae-note { font-size: 13.5px; color: var(--muted); margin: 6px 0; padding: 8px 10px; border: 1px dashed #3b4a6b; border-radius: 8px; }
+
+/* draggable time cursor */
+.timeline svg:active { cursor: grabbing; }
+.cursor-handle { cursor: ew-resize; }
+.cursor-hit { fill: transparent; }
+.cursor-knob { fill: #fff; stroke: #0b1120; stroke-width: 2; filter: drop-shadow(0 0 4px #fff); }
+.cursor-handle:hover .cursor-knob { r: 8; }
+.cursor-handle.idle .cursor { opacity: .35; }
+.cursor-handle.idle .cursor-knob { fill: var(--acc); }
+.cursor-handle.idle .cursorlab { fill: var(--acc); }
+.crumb.cur .incertae-name { color: inherit; }

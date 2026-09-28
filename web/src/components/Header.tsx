@@ -58,7 +58,7 @@ export function Header({ meta, onPick, onHome }: Props) {
             {results.map(([key, id, name, rank, common, total]) => (
               <a key={`${key}-${id}`} className="sr" href={`#n=${id}`} onClick={e => { e.preventDefault(); pick(id); }}>
                 <b>{ITALIC_RANKS.has(rank) ? <i>{name}</i> : name}</b>
-                {common && <> <span>{common}</span></>}
+                {common && !name.toLowerCase().startsWith(common.toLowerCase()) && <> <span>{common}</span></>}
                 <small>{rank}{total > 1 ? ` · ${fmtInt(total - 1)} taxa` : ""}</small>
               </a>
             ))}

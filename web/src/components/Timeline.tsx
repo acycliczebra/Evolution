@@ -14,6 +14,8 @@ interface Props {
   unit: string | null;
   T: number | null;
   msTitle: string | null;
+  /** Called while the time cursor is dragged. */
+  onScrub: (T: number) => void;
 }
 
 interface Tip { x: number; y: number; html: React.ReactNode }
@@ -23,13 +25,13 @@ function abbrev(s: string, n: number) {
   return s.length <= n ? s : s.slice(0, Math.max(1, n - 1)) + ".";
 }
 
-export function Timeline({ milestones, domain, setDomain, unit, T, msTitle }: Props) {
+export function Timeline({ milestones, domain, setDomain, unit, T, msTitle, onScrub }: Props) {
   const { scale, selectUnit, selectMilestone } = useApp();
   const wrap = useRef<HTMLDivElement>(null);
   const svg = useRef<SVGSVGElement>(null);
   const [W, setW] = useState(1000);
   const [tip, setTip] = useState<Tip | null>(null);
-  const drag = useRef<{ x: number; d: Domain; moved: boolean } | null>(null);
+  const drag = useRef<{ mode: "pan" | "scrub"; x: number; d: Domain; moved: boolean } | null>(null);
   const domainRef = useRef(domain);
   domainRef.current = domain;
 
@@ -61,16 +63,39 @@ export function Timeline({ milestones, domain, setDomain, unit, T, msTitle }: Pr
   }, [setDomain]);
 
   useEffect(() => {
+    // cleared after the click event so band/pin clicks can tell a drag from a click
     const up = () => { setTimeout(() => { drag.current = null; }, 0); };
     window.addEventListener("pointerup", up);
-    return () => window.removeEventListener("pointerup", up);
+    window.addEventListener("pointercancel", up);
+    return () => {
+      window.removeEventListener("pointerup", up);
+      window.removeEventListener("pointercancel", up);
+    };
   }, []);
 
-  const onPointerMove = (e: React.PointerEvent) => {
+  const onPointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
+    if (e.button !== 0) return;
+    const scrub = (e.target as Element).closest(".cursor-handle") != null;
+    drag.current = { mode: scrub ? "scrub" : "pan", x: e.clientX, d: [...domain] as Domain, moved: false };
+    if (scrub) {
+      e.currentTarget.setPointerCapture(e.pointerId);
+      e.preventDefault();
+    }
+  };
+
+  const onPointerMove = (e: React.PointerEvent<SVGSVGElement>) => {
     const d = drag.current;
     if (!d) return;
+    if (d.mode === "scrub") {
+      d.moved = true;
+      const x = Math.max(0, Math.min(W, e.clientX - e.currentTarget.getBoundingClientRect().left));
+      onScrub(unwarp(wa + (x / W) * (wb - wa)));
+      return;
+    }
     const dx = e.clientX - d.x;
     if (Math.abs(dx) < 4 && !d.moved) return;
+    // capture only once a drag starts, so plain clicks still reach the bands and pins
+    if (!d.moved) e.currentTarget.setPointerCapture(e.pointerId);
     d.moved = true;
     const [a0, b0] = d.d, w0 = warp(a0), w1 = warp(b0);
     const dw = (-dx / W) * (w1 - w0);
@@ -111,7 +136,10 @@ export function Timeline({ milestones, domain, setDomain, unit, T, msTitle }: Pr
 
   const H = PIN_H + ROW_H * LEVELS.length + 22;
   const axisY = PIN_H + ROW_H * LEVELS.length + 14;
-  const cursorX = T != null ? tx(T) : null;
+  // the cursor rests at "today" until a time is chosen; it can always be dragged.
+  // Keep the handle fully inside the strip so it can be grabbed at either end.
+  const rawX = tx(T ?? 0);
+  const cursorX = rawX >= -1 && rawX <= W + 1 ? Math.min(Math.max(rawX, 7), W - 7) : -1;
 
   return (
     <div ref={wrap} className="timeline">
@@ -119,7 +147,7 @@ export function Timeline({ milestones, domain, setDomain, unit, T, msTitle }: Pr
         ref={svg}
         width={W}
         height={H}
-        onPointerDown={e => { drag.current = { x: e.clientX, d: [...domain] as Domain, moved: false }; }}
+        onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onMouseLeave={() => setTip(null)}
       >
@@ -172,10 +200,15 @@ export function Timeline({ milestones, domain, setDomain, unit, T, msTitle }: Pr
             <circle r={4.5} />
           </g>
         ))}
-        {cursorX != null && cursorX >= 0 && cursorX <= W && (
-          <g>
+        {cursorX >= 0 && cursorX <= W && (
+          <g className={`cursor-handle${T == null ? " idle" : ""}`}>
+            <title>Drag to move through time</title>
             <line className="cursor" x1={cursorX} x2={cursorX} y1={0} y2={axisY - 8} />
-            <text className="cursorlab" x={Math.min(Math.max(cursorX, 30), W - 30)} y={H - 1} textAnchor="middle">▲ {fmtShort(T)}</text>
+            <rect className="cursor-hit" x={cursorX - 8} y={PIN_H} width={16} height={axisY - PIN_H} />
+            <circle className="cursor-knob" cx={cursorX} cy={axisY - 8} r={6} />
+            <text className="cursorlab" x={Math.min(Math.max(cursorX, 70), W - 70)} y={H - 1} textAnchor="middle">
+              ▲ {T == null ? "drag to travel in time" : fmtShort(T)}
+            </text>
           </g>
         )}
       </svg>

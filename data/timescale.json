@@ -12,36 +12,11 @@
    "mapcap": "Artist's depiction of a collision between two planetary bodies, similar to the hypothesized collision between Theia and Proto-Earth",
    "desc": "The Hadean is the first and oldest of the four geologic eons of Earth's history, starting with the planet's formation about 4.6 Ga (estimated 4567.30 ± 0.16 Ma set by the age of the oldest solid material in the Solar System—protoplanetary disk dust particles—found as chondrules and calcium–aluminium-rich inclusions in some meteorites about 4.567 Ga), and ending 4.031 Ga, the age of the oldest known intact rock formations on Earth as recognized by the International Commission on Stratigraphy. The interplanetary collision that created the Moon occurred early in this eon. The Hadean eon was succeeded by the Archean eon, with the Late Heavy Bombardment hypothesized to have occurred at the Hadean-Archean boundary.",
    "earth": "A molten, then slowly cooling world battered by impacts. A Mars-sized body (Theia) struck the proto-Earth early on, forming the Moon. By ~4.4 Ga a thin crust and the first oceans had formed under a thick CO₂/steam atmosphere with no free oxygen.",
-   "common": [
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
-     "g": 1
-    }
-   ],
-   "firsts": [
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162
-    }
-   ],
+   "common": [],
+   "firsts": [],
    "firstgenera": [
     {
-     "i": 542018,
+     "i": 542051,
      "n": "Thuchomyces",
      "r": "genus",
      "m": "Thuchomyces lichenoides.png",
@@ -78,18 +53,6 @@
      "b": 0,
      "s": 56,
      "t": 215,
-     "g": 1
-    },
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
      "g": 1
     }
    ],
@@ -146,17 +109,6 @@
      "b": 0,
      "s": 56,
      "t": 215
-    },
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162
     },
     {
      "i": 541747,
@@ -222,7 +174,7 @@
    ],
    "firstgenera": [
     {
-     "i": 542018,
+     "i": 542051,
      "n": "Thuchomyces",
      "r": "genus",
      "m": "Thuchomyces lichenoides.png",
@@ -233,7 +185,7 @@
      "t": 1
     },
     {
-     "i": 527800,
+     "i": 527822,
      "n": "Diskagma",
      "r": "genus",
      "m": "Diskagma holotype.tif",
@@ -244,7 +196,7 @@
      "t": 1
     },
     {
-     "i": 527822,
+     "i": 527844,
      "n": "Horodyskia",
      "r": "genus",
      "m": "Horodyskia moniliformis holotype.png",
@@ -253,7 +205,7 @@
      "b": 1480.0
     },
     {
-     "i": 539059,
+     "i": 539073,
      "n": "Collenia",
      "r": "genus",
      "m": "Collenia undosa Minnesota.jpg",
@@ -285,7 +237,7 @@
      "t": 403
     },
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -317,7 +269,7 @@
      "t": 403
     },
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -364,19 +316,7 @@
      "g": 5
     },
     {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
-     "g": 5
-    },
-    {
-     "i": 527828,
+     "i": 527352,
      "n": "Acritarcha",
      "r": "clade",
      "c": "Acritarchs",
@@ -628,7 +568,7 @@
    ],
    "firstgenera": [
     {
-     "i": 407698,
+     "i": 407621,
      "n": "Caveasphaera",
      "r": "genus",
      "m": "Caveasphaera.jpg",
@@ -637,7 +577,7 @@
      "b": 609.0
     },
     {
-     "i": 407632,
+     "i": 407559,
      "n": "Arborea",
      "r": "genus",
      "m": "Charniodiscus arboreus (TMP 1993.140.0001), Royal Tyrrell Museum, Drumheller, Alberta, 2025-07-13.jpg",
@@ -675,7 +615,7 @@
      "b": 550.0
     },
     {
-     "i": 407625,
+     "i": 407552,
      "n": "Swartpuntia",
      "r": "genus",
      "m": "Swartpuntiagermsi.png",
@@ -686,7 +626,7 @@
      "t": 1
     },
     {
-     "i": 407596,
+     "i": 407523,
      "n": "Frondophyllas",
      "r": "genus",
      "m": "One of the F. grandis founded at Newfoundland, Canada.jpg",
@@ -717,7 +657,7 @@
      "t": 1
     },
     {
-     "i": 407598,
+     "i": 407525,
      "n": "Hapsidophyllas",
      "r": "genus",
      "m": "Hapsidophyllas flexibilis.png",
@@ -728,7 +668,7 @@
      "t": 1
     },
     {
-     "i": 407580,
+     "i": 407687,
      "n": "Ventogyrus",
      "r": "genus",
      "m": "Ventogyrus.jpg",
@@ -737,7 +677,7 @@
      "b": 542.0
     },
     {
-     "i": 405855,
+     "i": 405863,
      "n": "Staurinidia",
      "r": "genus",
      "m": "Staurinidia 3D Reconstruction.png",
@@ -759,7 +699,7 @@
      "t": 1
     },
     {
-     "i": 256991,
+     "i": 256957,
      "n": "Parapaleomerus",
      "r": "genus",
      "m": "玉溪市博物馆-寒武纪早期-云南澄江-中国似古节虫 Parapaleomerua sinensis.jpg",
@@ -779,7 +719,7 @@
      "b": 538.8
     },
     {
-     "i": 407545,
+     "i": 407652,
      "n": "Gehlingia",
      "r": "genus",
      "m": "Gehling dibrachida enigma from Ediacaran.jpg",
@@ -793,7 +733,7 @@
    "alive": 330,
    "life": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -1221,7 +1161,7 @@
      "t": 1
     },
     {
-     "i": 357655,
+     "i": 357650,
      "n": "Paranyctoides",
      "r": "genus",
      "m": "Paranyctoides aralensis.jpg",
@@ -1248,7 +1188,7 @@
      "b": 360.0
     },
     {
-     "i": 327206,
+     "i": 327203,
      "n": "Laquintasaura",
      "r": "genus",
      "m": "Laquintasaura (skeletal reconstruction).png",
@@ -1478,20 +1418,7 @@
    "wiki": "Eoarchean",
    "desc": "The Eoarchean (also spelled Eoarchaean) is the first era of the Archean Eon of the geologic record. It spans 431 million years, from the end of the Hadean Eon 4031 Mya to the start of the Paleoarchean Era 3600 Mya. Some estimates place the beginnings of life on Earth in this era, while others place it earlier. Evidence of archaea and cyanobacteria date to 3500 Mya, which is shortly after the Eoarchean. At that time, the atmosphere was without oxygen and the pressure values ranged from 10 to 100 bar (around 10 to 100 times the atmospheric pressure today).",
    "earth": "Scattered crustal fragments in a global ocean; the Late Heavy Bombardment waned. Oldest preserved rocks (Acasta Gneiss, Isua belt).",
-   "common": [
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
-     "g": 1
-    }
-   ],
+   "common": [],
    "firsts": [
     {
      "i": 538840,
@@ -1503,17 +1430,6 @@
      "b": 0,
      "s": 58,
      "t": 237
-    },
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162
     },
     {
      "i": 541858,
@@ -1529,7 +1445,7 @@
    ],
    "firstgenera": [
     {
-     "i": 542018,
+     "i": 542051,
      "n": "Thuchomyces",
      "r": "genus",
      "m": "Thuchomyces lichenoides.png",
@@ -1567,20 +1483,7 @@
    "mapcap": "Artist's impression of Vaalbara, a hypothetical continent dating from 3.6 to 2.7 billion years ago",
    "desc": "The Paleoarchean, also spelled Palaeoarchaean (formerly known as the early Archean), is a geologic era within the Archean Eon. The name derives from Greek \"Palaios\" ancient. It spans the period of time. The era is defined chronometrically and is not referenced to a specific level of a rock section on Earth. The earliest confirmed evidence of life comes from this era, and Vaalbara, one of Earth's earliest supercontinents, may have formed during this era.",
    "earth": "First cratons (Kaapvaal, Pilbara) formed; shallow seas hosted microbial mats. No oxygen in the air.",
-   "common": [
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
-     "g": 1
-    }
-   ],
+   "common": [],
    "firsts": [
     {
      "i": 538840,
@@ -1643,20 +1546,7 @@
    "mapcap": "A reconstruction of the Earth's continents during the middle Mesoarchean, c. 3 Ga.",
    "desc": "The Mesoarchean (also spelled Mesoarchaean) is a geologic era in the Archean Eon, spanning, which contains the first evidence of modern-style plate subduction and expansion of microbial life. The era is defined chronometrically and is not referenced to a specific level in a rock section on Earth.",
    "earth": "Possible first supercontinent, Vaalbara, and first known glaciation (Pongola). Microbial mats and stromatolites widespread.",
-   "common": [
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
-     "g": 1
-    }
-   ],
+   "common": [],
    "firsts": [
     {
      "i": 541747,
@@ -1703,7 +1593,7 @@
    "alive": 3,
    "life": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -1715,7 +1605,7 @@
    ],
    "firsts_curated": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -1748,18 +1638,6 @@
      "b": 0,
      "s": 56,
      "t": 215,
-     "g": 1
-    },
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
      "g": 1
     }
    ],
@@ -1859,7 +1737,7 @@
    ],
    "firstgenera": [
     {
-     "i": 527800,
+     "i": 527822,
      "n": "Diskagma",
      "r": "genus",
      "m": "Diskagma holotype.tif",
@@ -1870,7 +1748,7 @@
      "t": 1
     },
     {
-     "i": 527822,
+     "i": 527844,
      "n": "Horodyskia",
      "r": "genus",
      "m": "Horodyskia moniliformis holotype.png",
@@ -1879,7 +1757,7 @@
      "b": 1480.0
     },
     {
-     "i": 539059,
+     "i": 539073,
      "n": "Collenia",
      "r": "genus",
      "m": "Collenia undosa Minnesota.jpg",
@@ -1891,7 +1769,7 @@
    "alive": 5,
    "life": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -1937,18 +1815,6 @@
      "s": 56,
      "t": 215,
      "g": 2
-    },
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
-     "g": 1
     }
    ],
    "firsts": [
@@ -2128,7 +1994,7 @@
      "t": 1
     },
     {
-     "i": 527800,
+     "i": 527822,
      "n": "Diskagma",
      "r": "genus",
      "m": "Diskagma holotype.tif",
@@ -2139,7 +2005,7 @@
      "t": 1
     },
     {
-     "i": 527802,
+     "i": 527824,
      "n": "Grandilingulata",
      "r": "genus",
      "m": "Grandilingulata qianxiensis.png",
@@ -2150,7 +2016,7 @@
      "t": 1
     },
     {
-     "i": 527822,
+     "i": 527844,
      "n": "Horodyskia",
      "r": "genus",
      "m": "Horodyskia moniliformis holotype.png",
@@ -2168,7 +2034,7 @@
      "b": 514.5
     },
     {
-     "i": 539059,
+     "i": 539073,
      "n": "Collenia",
      "r": "genus",
      "m": "Collenia undosa Minnesota.jpg",
@@ -2180,7 +2046,7 @@
    "alive": 11,
    "life": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -2190,7 +2056,7 @@
      "t": 4
     },
     {
-     "i": 542058,
+     "i": 542091,
      "n": "Grypania",
      "r": "genus",
      "m": "Grypania spiralis.JPG",
@@ -2212,7 +2078,7 @@
      "t": 527853
     },
     {
-     "i": 542058,
+     "i": 542091,
      "n": "Grypania",
      "r": "genus",
      "m": "Grypania spiralis.JPG",
@@ -2440,7 +2306,7 @@
    ],
    "firstgenera": [
     {
-     "i": 407598,
+     "i": 407525,
      "n": "Hapsidophyllas",
      "r": "genus",
      "m": "Hapsidophyllas flexibilis.png",
@@ -2451,7 +2317,7 @@
      "t": 1
     },
     {
-     "i": 407591,
+     "i": 407518,
      "n": "Charnia",
      "r": "genus",
      "m": "Charnia masoni LEIUG 2328.png",
@@ -2460,7 +2326,7 @@
      "b": 570.0
     },
     {
-     "i": 259027,
+     "i": 259001,
      "n": "Uncus",
      "r": "genus",
      "m": "Uncus dzaugisi.png",
@@ -2471,7 +2337,7 @@
      "t": 1
     },
     {
-     "i": 407691,
+     "i": 407614,
      "n": "Otavia",
      "r": "genus",
      "m": "Otavia antiqua 3D reconstruction.jpg",
@@ -2504,7 +2370,7 @@
      "t": 1
     },
     {
-     "i": 542093,
+     "i": 542126,
      "n": "Nimbia",
      "r": "genus",
      "m": "Nimbia 3D Reconstruction.png",
@@ -2513,7 +2379,7 @@
      "b": 485.4
     },
     {
-     "i": 542070,
+     "i": 542103,
      "n": "Obamus",
      "r": "genus",
      "m": "Obamus NT.jpg",
@@ -2524,7 +2390,7 @@
      "t": 1
     },
     {
-     "i": 527794,
+     "i": 527853,
      "n": "Orbisiana",
      "r": "genus",
      "m": "Orbisiana spumea and grazing trips left by Kimberella.png",
@@ -2533,7 +2399,7 @@
      "b": 575.0
     },
     {
-     "i": 527795,
+     "i": 527854,
      "n": "Palaeopascichnus",
      "r": "genus",
      "m": "Palaeopascichnus CU21.png",
@@ -2542,7 +2408,7 @@
      "b": 580.0
     },
     {
-     "i": 407587,
+     "i": 407514,
      "n": "Bradgatia",
      "r": "genus",
      "m": "Bradgatia.svg",
@@ -2553,7 +2419,7 @@
      "t": 1
     },
     {
-     "i": 542054,
+     "i": 542087,
      "n": "Aulozoon",
      "r": "genus",
      "m": "Phyllozoon hanseni 1.jpg",
@@ -2564,7 +2430,7 @@
      "t": 1
     },
     {
-     "i": 407549,
+     "i": 407656,
      "n": "Lydonia",
      "r": "genus",
      "m": "Lydonia fossil cast.png",
@@ -2575,7 +2441,7 @@
      "t": 1
     },
     {
-     "i": 527802,
+     "i": 527824,
      "n": "Grandilingulata",
      "r": "genus",
      "m": "Grandilingulata qianxiensis.png",
@@ -2586,7 +2452,7 @@
      "t": 1
     },
     {
-     "i": 407606,
+     "i": 407533,
      "n": "Pectinifrons",
      "r": "genus",
      "m": "Pectinifrons.svg",
@@ -2597,7 +2463,7 @@
      "t": 1
     },
     {
-     "i": 407565,
+     "i": 407672,
      "n": "Shaanxilithes",
      "r": "genus",
      "m": "Shaanxilithes ningqiangensis, late Ediacaran, Shaanxi province (China).jpg",
@@ -2622,7 +2488,7 @@
      "t": 544
     },
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -2691,7 +2557,7 @@
      "g": 4
     },
     {
-     "i": 527828,
+     "i": 527352,
      "n": "Acritarcha",
      "r": "clade",
      "c": "Acritarchs",
@@ -2712,18 +2578,6 @@
      "b": 0,
      "s": 56,
      "t": 215,
-     "g": 4
-    },
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
      "g": 4
     },
     {
@@ -2956,7 +2810,7 @@
    ],
    "firstgenera": [
     {
-     "i": 407698,
+     "i": 407621,
      "n": "Caveasphaera",
      "r": "genus",
      "m": "Caveasphaera.jpg",
@@ -2965,7 +2819,7 @@
      "b": 609.0
     },
     {
-     "i": 407632,
+     "i": 407559,
      "n": "Arborea",
      "r": "genus",
      "m": "Charniodiscus arboreus (TMP 1993.140.0001), Royal Tyrrell Museum, Drumheller, Alberta, 2025-07-13.jpg",
@@ -2992,7 +2846,7 @@
      "b": 550.0
     },
     {
-     "i": 407625,
+     "i": 407552,
      "n": "Swartpuntia",
      "r": "genus",
      "m": "Swartpuntiagermsi.png",
@@ -3003,7 +2857,7 @@
      "t": 1
     },
     {
-     "i": 407596,
+     "i": 407523,
      "n": "Frondophyllas",
      "r": "genus",
      "m": "One of the F. grandis founded at Newfoundland, Canada.jpg",
@@ -3034,7 +2888,7 @@
      "t": 1
     },
     {
-     "i": 407598,
+     "i": 407525,
      "n": "Hapsidophyllas",
      "r": "genus",
      "m": "Hapsidophyllas flexibilis.png",
@@ -3045,7 +2899,7 @@
      "t": 1
     },
     {
-     "i": 407580,
+     "i": 407687,
      "n": "Ventogyrus",
      "r": "genus",
      "m": "Ventogyrus.jpg",
@@ -3054,7 +2908,7 @@
      "b": 542.0
     },
     {
-     "i": 405855,
+     "i": 405863,
      "n": "Staurinidia",
      "r": "genus",
      "m": "Staurinidia 3D Reconstruction.png",
@@ -3076,7 +2930,7 @@
      "t": 1
     },
     {
-     "i": 256991,
+     "i": 256957,
      "n": "Parapaleomerus",
      "r": "genus",
      "m": "玉溪市博物馆-寒武纪早期-云南澄江-中国似古节虫 Parapaleomerua sinensis.jpg",
@@ -3096,7 +2950,7 @@
      "b": 538.8
     },
     {
-     "i": 407545,
+     "i": 407652,
      "n": "Gehlingia",
      "r": "genus",
      "m": "Gehling dibrachida enigma from Ediacaran.jpg",
@@ -3139,7 +2993,7 @@
      "b": 550.0
     },
     {
-     "i": 407591,
+     "i": 407518,
      "n": "Charnia",
      "r": "genus",
      "m": "Charnia masoni LEIUG 2328.png",
@@ -3623,7 +3477,7 @@
      "b": 313.0
     },
     {
-     "i": 257038,
+     "i": 257004,
      "n": "Fengzhengia",
      "r": "genus",
      "m": "20220220 Fengzhengia mamingae diagrammatic reconstruction.png",
@@ -4098,7 +3952,7 @@
    ],
    "firstgenera": [
     {
-     "i": 357655,
+     "i": 357650,
      "n": "Paranyctoides",
      "r": "genus",
      "m": "Paranyctoides aralensis.jpg",
@@ -4116,7 +3970,7 @@
      "b": 66.0
     },
     {
-     "i": 327206,
+     "i": 327203,
      "n": "Laquintasaura",
      "r": "genus",
      "m": "Laquintasaura (skeletal reconstruction).png",
@@ -4956,18 +4810,6 @@
      "s": 56,
      "t": 215,
      "g": 1
-    },
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
-     "g": 1
     }
    ],
    "firsts": [
@@ -5026,7 +4868,7 @@
    ],
    "firstgenera": [
     {
-     "i": 527800,
+     "i": 527822,
      "n": "Diskagma",
      "r": "genus",
      "m": "Diskagma holotype.tif",
@@ -5037,7 +4879,7 @@
      "t": 1
     },
     {
-     "i": 527822,
+     "i": 527844,
      "n": "Horodyskia",
      "r": "genus",
      "m": "Horodyskia moniliformis holotype.png",
@@ -5046,7 +4888,7 @@
      "b": 1480.0
     },
     {
-     "i": 539059,
+     "i": 539073,
      "n": "Collenia",
      "r": "genus",
      "m": "Collenia undosa Minnesota.jpg",
@@ -5058,7 +4900,7 @@
    "alive": 5,
    "life": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -5100,7 +4942,7 @@
    "alive": 4,
    "life": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -5214,7 +5056,7 @@
    "alive": 6,
    "life": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -5224,7 +5066,7 @@
      "t": 4
     },
     {
-     "i": 542058,
+     "i": 542091,
      "n": "Grypania",
      "r": "genus",
      "m": "Grypania spiralis.JPG",
@@ -5235,7 +5077,7 @@
    ],
    "firsts_curated": [
     {
-     "i": 542058,
+     "i": 542091,
      "n": "Grypania",
      "r": "genus",
      "m": "Grypania spiralis.JPG",
@@ -5436,7 +5278,7 @@
      "t": 1
     },
     {
-     "i": 527802,
+     "i": 527824,
      "n": "Grandilingulata",
      "r": "genus",
      "m": "Grandilingulata qianxiensis.png",
@@ -5459,7 +5301,7 @@
    "alive": 9,
    "life": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -5584,7 +5426,7 @@
    ],
    "firstgenera": [
     {
-     "i": 527802,
+     "i": 527824,
      "n": "Grandilingulata",
      "r": "genus",
      "m": "Grandilingulata qianxiensis.png",
@@ -5598,7 +5440,7 @@
    "alive": 9,
    "life": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -5896,7 +5738,7 @@
    ],
    "firstgenera": [
     {
-     "i": 407598,
+     "i": 407525,
      "n": "Hapsidophyllas",
      "r": "genus",
      "m": "Hapsidophyllas flexibilis.png",
@@ -5907,7 +5749,7 @@
      "t": 1
     },
     {
-     "i": 407591,
+     "i": 407518,
      "n": "Charnia",
      "r": "genus",
      "m": "Charnia masoni LEIUG 2328.png",
@@ -5916,7 +5758,7 @@
      "b": 570.0
     },
     {
-     "i": 259027,
+     "i": 259001,
      "n": "Uncus",
      "r": "genus",
      "m": "Uncus dzaugisi.png",
@@ -5927,7 +5769,7 @@
      "t": 1
     },
     {
-     "i": 407691,
+     "i": 407614,
      "n": "Otavia",
      "r": "genus",
      "m": "Otavia antiqua 3D reconstruction.jpg",
@@ -5960,7 +5802,7 @@
      "t": 1
     },
     {
-     "i": 542093,
+     "i": 542126,
      "n": "Nimbia",
      "r": "genus",
      "m": "Nimbia 3D Reconstruction.png",
@@ -5969,7 +5811,7 @@
      "b": 485.4
     },
     {
-     "i": 542070,
+     "i": 542103,
      "n": "Obamus",
      "r": "genus",
      "m": "Obamus NT.jpg",
@@ -5980,7 +5822,7 @@
      "t": 1
     },
     {
-     "i": 527794,
+     "i": 527853,
      "n": "Orbisiana",
      "r": "genus",
      "m": "Orbisiana spumea and grazing trips left by Kimberella.png",
@@ -5989,7 +5831,7 @@
      "b": 575.0
     },
     {
-     "i": 527795,
+     "i": 527854,
      "n": "Palaeopascichnus",
      "r": "genus",
      "m": "Palaeopascichnus CU21.png",
@@ -5998,7 +5840,7 @@
      "b": 580.0
     },
     {
-     "i": 407587,
+     "i": 407514,
      "n": "Bradgatia",
      "r": "genus",
      "m": "Bradgatia.svg",
@@ -6009,7 +5851,7 @@
      "t": 1
     },
     {
-     "i": 542054,
+     "i": 542087,
      "n": "Aulozoon",
      "r": "genus",
      "m": "Phyllozoon hanseni 1.jpg",
@@ -6020,7 +5862,7 @@
      "t": 1
     },
     {
-     "i": 407549,
+     "i": 407656,
      "n": "Lydonia",
      "r": "genus",
      "m": "Lydonia fossil cast.png",
@@ -6031,7 +5873,7 @@
      "t": 1
     },
     {
-     "i": 407606,
+     "i": 407533,
      "n": "Pectinifrons",
      "r": "genus",
      "m": "Pectinifrons.svg",
@@ -6042,7 +5884,7 @@
      "t": 1
     },
     {
-     "i": 407565,
+     "i": 407672,
      "n": "Shaanxilithes",
      "r": "genus",
      "m": "Shaanxilithes ningqiangensis, late Ediacaran, Shaanxi province (China).jpg",
@@ -6053,7 +5895,7 @@
      "t": 1
     },
     {
-     "i": 407611,
+     "i": 407538,
      "n": "Primocandelabrum",
      "r": "genus",
      "m": "Primocandelabrum.jpg",
@@ -6193,7 +6035,7 @@
    ],
    "firstgenera": [
     {
-     "i": 407598,
+     "i": 407525,
      "n": "Hapsidophyllas",
      "r": "genus",
      "m": "Hapsidophyllas flexibilis.png",
@@ -6204,7 +6046,7 @@
      "t": 1
     },
     {
-     "i": 407591,
+     "i": 407518,
      "n": "Charnia",
      "r": "genus",
      "m": "Charnia masoni LEIUG 2328.png",
@@ -6213,7 +6055,7 @@
      "b": 570.0
     },
     {
-     "i": 259027,
+     "i": 259001,
      "n": "Uncus",
      "r": "genus",
      "m": "Uncus dzaugisi.png",
@@ -6224,7 +6066,7 @@
      "t": 1
     },
     {
-     "i": 407691,
+     "i": 407614,
      "n": "Otavia",
      "r": "genus",
      "m": "Otavia antiqua 3D reconstruction.jpg",
@@ -6257,7 +6099,7 @@
      "t": 1
     },
     {
-     "i": 542093,
+     "i": 542126,
      "n": "Nimbia",
      "r": "genus",
      "m": "Nimbia 3D Reconstruction.png",
@@ -6266,7 +6108,7 @@
      "b": 485.4
     },
     {
-     "i": 542070,
+     "i": 542103,
      "n": "Obamus",
      "r": "genus",
      "m": "Obamus NT.jpg",
@@ -6277,7 +6119,7 @@
      "t": 1
     },
     {
-     "i": 527794,
+     "i": 527853,
      "n": "Orbisiana",
      "r": "genus",
      "m": "Orbisiana spumea and grazing trips left by Kimberella.png",
@@ -6286,7 +6128,7 @@
      "b": 575.0
     },
     {
-     "i": 527795,
+     "i": 527854,
      "n": "Palaeopascichnus",
      "r": "genus",
      "m": "Palaeopascichnus CU21.png",
@@ -6295,7 +6137,7 @@
      "b": 580.0
     },
     {
-     "i": 407587,
+     "i": 407514,
      "n": "Bradgatia",
      "r": "genus",
      "m": "Bradgatia.svg",
@@ -6306,7 +6148,7 @@
      "t": 1
     },
     {
-     "i": 542054,
+     "i": 542087,
      "n": "Aulozoon",
      "r": "genus",
      "m": "Phyllozoon hanseni 1.jpg",
@@ -6317,7 +6159,7 @@
      "t": 1
     },
     {
-     "i": 407549,
+     "i": 407656,
      "n": "Lydonia",
      "r": "genus",
      "m": "Lydonia fossil cast.png",
@@ -6328,7 +6170,7 @@
      "t": 1
     },
     {
-     "i": 407606,
+     "i": 407533,
      "n": "Pectinifrons",
      "r": "genus",
      "m": "Pectinifrons.svg",
@@ -6339,7 +6181,7 @@
      "t": 1
     },
     {
-     "i": 407565,
+     "i": 407672,
      "n": "Shaanxilithes",
      "r": "genus",
      "m": "Shaanxilithes ningqiangensis, late Ediacaran, Shaanxi province (China).jpg",
@@ -6350,7 +6192,7 @@
      "t": 1
     },
     {
-     "i": 407611,
+     "i": 407538,
      "n": "Primocandelabrum",
      "r": "genus",
      "m": "Primocandelabrum.jpg",
@@ -6421,18 +6263,6 @@
      "s": 293739,
      "t": 407715,
      "g": 24
-    },
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
-     "g": 4
     },
     {
      "i": 426668,
@@ -6614,7 +6444,7 @@
      "t": 257
     },
     {
-     "i": 407582,
+     "i": 407509,
      "n": "Petalonamae",
      "r": "phylum",
      "m": "Charniodiscus arboreus (TMP 1993.140.0001), Royal Tyrrell Museum, Drumheller, Alberta, 2025-07-13.jpg",
@@ -6637,7 +6467,7 @@
    ],
    "firstgenera": [
     {
-     "i": 407632,
+     "i": 407559,
      "n": "Arborea",
      "r": "genus",
      "m": "Charniodiscus arboreus (TMP 1993.140.0001), Royal Tyrrell Museum, Drumheller, Alberta, 2025-07-13.jpg",
@@ -6655,7 +6485,7 @@
      "b": 550.0
     },
     {
-     "i": 407580,
+     "i": 407687,
      "n": "Ventogyrus",
      "r": "genus",
      "m": "Ventogyrus.jpg",
@@ -6664,7 +6494,7 @@
      "b": 542.0
     },
     {
-     "i": 407545,
+     "i": 407652,
      "n": "Gehlingia",
      "r": "genus",
      "m": "Gehling dibrachida enigma from Ediacaran.jpg",
@@ -6697,7 +6527,7 @@
      "t": 1
     },
     {
-     "i": 407693,
+     "i": 407616,
      "n": "Pseudorhizostomites",
      "r": "genus",
      "m": "Pseudorhizostomites howchini Ediacara.jpg",
@@ -6708,7 +6538,7 @@
      "t": 1
     },
     {
-     "i": 542037,
+     "i": 542070,
      "n": "Cochleatina",
      "r": "genus",
      "m": "Cochleatina.jpg",
@@ -6717,7 +6547,7 @@
      "b": 529
     },
     {
-     "i": 539076,
+     "i": 539069,
      "n": "Beltanelliformis",
      "r": "genus",
      "m": "Anthozoa - Nemiana simplex.JPG",
@@ -6748,7 +6578,7 @@
      "t": 1
     },
     {
-     "i": 407547,
+     "i": 407654,
      "n": "Gibbavasis",
      "r": "genus",
      "m": "Gibbavasis kushkii.jpg",
@@ -6768,7 +6598,7 @@
      "b": 506.5
     },
     {
-     "i": 407577,
+     "i": 407684,
      "n": "Redkinia",
      "r": "genus",
      "m": "Redkinia 3D Reconstruction.png",
@@ -6777,7 +6607,7 @@
      "b": 538.8
     },
     {
-     "i": 407573,
+     "i": 407680,
      "n": "Mawsonites",
      "r": "genus",
      "m": "Mawsonites spriggi.jpg",
@@ -6786,7 +6616,7 @@
      "b": 538.8
     },
     {
-     "i": 404912,
+     "i": 404909,
      "n": "Inaria",
      "r": "genus",
      "m": "Inaria karli.jpg",
@@ -6800,7 +6630,7 @@
    "alive": 54,
    "life": [
     {
-     "i": 539390,
+     "i": 539350,
      "n": "Cyanobacteria",
      "r": "phylum",
      "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -6871,7 +6701,7 @@
      "g": 4
     },
     {
-     "i": 527828,
+     "i": 527352,
      "n": "Acritarcha",
      "r": "clade",
      "c": "Acritarchs",
@@ -6892,18 +6722,6 @@
      "b": 0,
      "s": 56,
      "t": 215,
-     "g": 4
-    },
-    {
-     "i": 541888,
-     "n": "Incertae sedis",
-     "r": "clade",
-     "c": "Pepper mild tigré virus",
-     "m": "BrochoadmonesDB15.jpg",
-     "a": 4031,
-     "b": 0,
-     "s": 62,
-     "t": 162,
      "g": 4
     },
     {
@@ -7135,7 +6953,7 @@
    ],
    "firstgenera": [
     {
-     "i": 407698,
+     "i": 407621,
      "n": "Caveasphaera",
      "r": "genus",
      "m": "Caveasphaera.jpg",
@@ -7144,7 +6962,7 @@
      "b": 609.0
     },
     {
-     "i": 407632,
+     "i": 407559,
      "n": "Arborea",
      "r": "genus",
      "m": "Charniodiscus arboreus (TMP 1993.140.0001), Royal Tyrrell Museum, Drumheller, Alberta, 2025-07-13.jpg",
@@ -7162,7 +6980,7 @@
      "b": 521.0
     },
     {
-     "i": 407625,
+     "i": 407552,
      "n": "Swartpuntia",
      "r": "genus",
      "m": "Swartpuntiagermsi.png",
@@ -7173,7 +6991,7 @@
      "t": 1
     },
     {
-     "i": 407596,
+     "i": 407523,
      "n": "Frondophyllas",
      "r": "genus",
      "m": "One of the F. grandis founded at Newfoundland, Canada.jpg",
@@ -7204,7 +7022,7 @@
      "t": 1
     },
     {
-     "i": 407580,
+     "i": 407687,
      "n": "Ventogyrus",
      "r": "genus",
      "m": "Ventogyrus.jpg",
@@ -7213,7 +7031,7 @@
      "b": 542.0
     },
     {
-     "i": 405855,
+     "i": 405863,
      "n": "Staurinidia",
      "r": "genus",
      "m": "Staurinidia 3D Reconstruction.png",
@@ -7235,7 +7053,7 @@
      "t": 1
     },
     {
-     "i": 256991,
+     "i": 256957,
      "n": "Parapaleomerus",
      "r": "genus",
      "m": "玉溪市博物馆-寒武纪早期-云南澄江-中国似古节虫 Parapaleomerua sinensis.jpg",
@@ -7255,7 +7073,7 @@
      "b": 538.8
     },
     {
-     "i": 407545,
+     "i": 407652,
      "n": "Gehlingia",
      "r": "genus",
      "m": "Gehling dibrachida enigma from Ediacaran.jpg",
@@ -7275,7 +7093,7 @@
      "b": 542.0
     },
     {
-     "i": 302525,
+     "i": 302572,
      "n": "Latouchella",
      "r": "genus",
      "m": "Latouchella costata.JPG",
@@ -7307,7 +7125,7 @@
      "b": 550.0
     },
     {
-     "i": 407591,
+     "i": 407518,
      "n": "Charnia",
      "r": "genus",
      "m": "Charnia masoni LEIUG 2328.png",
@@ -7316,7 +7134,7 @@
      "b": 570.0
     },
     {
-     "i": 403369,
+     "i": 403358,
      "n": "Kimberella",
      "r": "genus",
      "m": "Kimberella quadrata.jpg",
@@ -7347,7 +7165,7 @@
      "b": 550.0
     },
     {
-     "i": 403369,
+     "i": 403358,
      "n": "Kimberella",
      "r": "genus",
      "m": "Kimberella quadrata.jpg",
@@ -7690,7 +7508,7 @@
      "b": 514.5
     },
     {
-     "i": 257038,
+     "i": 257004,
      "n": "Fengzhengia",
      "r": "genus",
      "m": "20220220 Fengzhengia mamingae diagrammatic reconstruction.png",
@@ -7701,7 +7519,7 @@
      "t": 1
     },
     {
-     "i": 257034,
+     "i": 257000,
      "n": "Erjiecaris",
      "r": "genus",
      "m": "Erjiecaris.png",
@@ -7826,7 +7644,7 @@
      "b": 497.0
     },
     {
-     "i": 302519,
+     "i": 302566,
      "n": "Scenella",
      "r": "genus",
      "m": "Scenella tenuistriata.png",
@@ -8399,7 +8217,7 @@
      "b": 443.1
     },
     {
-     "i": 256973,
+     "i": 257061,
      "n": "Keurbos",
      "r": "genus",
      "m": "Holotype Specimen of Keurbos susanae.jpg",
@@ -8913,7 +8731,7 @@
      "b": 393.47
     },
     {
-     "i": 399635,
+     "i": 399625,
      "n": "Qianodus",
      "r": "genus",
      "m": "Qianodus holotype.jpg",
@@ -8972,16 +8790,7 @@
      "b": 419.62
     },
     {
-     "i": 250410,
-     "n": "Brontoscorpio",
-     "r": "genus",
-     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
-     "x": 1,
-     "a": 419.62,
-     "b": 413.02
-    },
-    {
-     "i": 250418,
+     "i": 250414,
      "n": "Praearcturus",
      "r": "genus",
      "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
@@ -8990,6 +8799,15 @@
      "b": 413.02,
      "s": 1,
      "t": 1
+    },
+    {
+     "i": 250425,
+     "n": "Brontoscorpio",
+     "r": "genus",
+     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
+     "x": 1,
+     "a": 419.62,
+     "b": 413.02
     },
     {
      "i": 400347,
@@ -9128,7 +8946,7 @@
      "t": 5
     },
     {
-     "i": 235317,
+     "i": 235328,
      "n": "Pneumodesmus",
      "r": "genus",
      "m": "Pneumodesmus newmani - MUSE.JPG",
@@ -9555,7 +9373,7 @@
      "b": 360.0
     },
     {
-     "i": 399606,
+     "i": 399597,
      "n": "Ageleodus",
      "r": "genus",
      "m": "Ageleodus pectinatus.jpg",
@@ -9595,7 +9413,7 @@
      "b": 251.9
     },
     {
-     "i": 256731,
+     "i": 256704,
      "n": "Dicranurus",
      "r": "genus",
      "m": "Dicranurus hamatus elegantus, Early Devonian, Haragan Formation, Coal County, Oklahoma, USA - Houston Museum of Natural Science - DSC01680.JPG",
@@ -9613,7 +9431,7 @@
      "b": 323.4
     },
     {
-     "i": 369114,
+     "i": 369108,
      "n": "Casineria",
      "r": "genus",
      "m": "Casineria kiddi.jpg",
@@ -10141,7 +9959,7 @@
      "b": 283.3
     },
     {
-     "i": 256967,
+     "i": 257055,
      "n": "Camptophyllia",
      "r": "genus",
      "m": "Gill1924 fig-06.jpg",
@@ -10197,7 +10015,7 @@
      "b": 323.4
     },
     {
-     "i": 369114,
+     "i": 369108,
      "n": "Casineria",
      "r": "genus",
      "m": "Casineria kiddi.jpg",
@@ -10237,7 +10055,7 @@
      "t": 1
     },
     {
-     "i": 403351,
+     "i": 403369,
      "n": "Tullimonstrum",
      "r": "genus",
      "m": "Tullimonstrum gregarium 4334.JPG",
@@ -10255,7 +10073,7 @@
      "b": 298.9
     },
     {
-     "i": 250421,
+     "i": 250417,
      "n": "Eoscorpius",
      "r": "genus",
      "m": "A monograph of the terrestrial Palaeozoic Arachnida of North America progress Page8 fig 10.png",
@@ -11917,7 +11735,7 @@
    ],
    "firstgenera": [
     {
-     "i": 327206,
+     "i": 327203,
      "n": "Laquintasaura",
      "r": "genus",
      "m": "Laquintasaura (skeletal reconstruction).png",
@@ -12524,7 +12342,7 @@
    ],
    "firstgenera": [
     {
-     "i": 357655,
+     "i": 357650,
      "n": "Paranyctoides",
      "r": "genus",
      "m": "Paranyctoides aralensis.jpg",
@@ -13252,7 +13070,7 @@
      "t": 17
     },
     {
-     "i": 202323,
+     "i": 202317,
      "n": "Archimyrmex",
      "r": "genus",
      "m": "Archimyrmex wedmannae Smfmei2016 01.jpg",
@@ -13732,7 +13550,7 @@
      "t": 733
     },
     {
-     "i": 422965,
+     "i": 423723,
      "n": "Polyporales",
      "r": "order",
      "m": "Ganoderma applanatum02.jpg",
@@ -13981,7 +13799,7 @@
      "t": 48
     },
     {
-     "i": 355775,
+     "i": 355772,
      "n": "Sahelanthropus",
      "r": "genus",
      "c": "Sahelanthropus tchadensis \"Toumaï\"",
@@ -14726,7 +14544,7 @@
      "g": 6
     },
     {
-     "i": 407647,
+     "i": 407574,
      "n": "Chancelloriida",
      "r": "order",
      "m": "Chancelloria (7991988514).jpg",
@@ -14926,7 +14744,7 @@
      "b": 514.5
     },
     {
-     "i": 257038,
+     "i": 257004,
      "n": "Fengzhengia",
      "r": "genus",
      "m": "20220220 Fengzhengia mamingae diagrammatic reconstruction.png",
@@ -14937,7 +14755,7 @@
      "t": 1
     },
     {
-     "i": 257034,
+     "i": 257000,
      "n": "Erjiecaris",
      "r": "genus",
      "m": "Erjiecaris.png",
@@ -14999,7 +14817,7 @@
      "t": 1
     },
     {
-     "i": 302519,
+     "i": 302566,
      "n": "Scenella",
      "r": "genus",
      "m": "Scenella tenuistriata.png",
@@ -15240,7 +15058,7 @@
      "g": 7
     },
     {
-     "i": 407647,
+     "i": 407574,
      "n": "Chancelloriida",
      "r": "order",
      "m": "Chancelloria (7991988514).jpg",
@@ -15442,7 +15260,7 @@
      "b": 514.5
     },
     {
-     "i": 257038,
+     "i": 257004,
      "n": "Fengzhengia",
      "r": "genus",
      "m": "20220220 Fengzhengia mamingae diagrammatic reconstruction.png",
@@ -15453,7 +15271,7 @@
      "t": 1
     },
     {
-     "i": 257034,
+     "i": 257000,
      "n": "Erjiecaris",
      "r": "genus",
      "m": "Erjiecaris.png",
@@ -15542,7 +15360,7 @@
      "b": 514.0
     },
     {
-     "i": 302519,
+     "i": 302566,
      "n": "Scenella",
      "r": "genus",
      "m": "Scenella tenuistriata.png",
@@ -16040,7 +15858,7 @@
      "b": 497
     },
     {
-     "i": 257072,
+     "i": 257038,
      "n": "Perspicaris",
      "r": "genus",
      "m": "Perspicaris.png",
@@ -16195,7 +16013,7 @@
      "t": 1
     },
     {
-     "i": 302581,
+     "i": 302558,
      "n": "Wiwaxia",
      "r": "genus",
      "m": "Wiwaxia 3G crop.JPG",
@@ -16361,7 +16179,7 @@
      "g": 4
     },
     {
-     "i": 527828,
+     "i": 527352,
      "n": "Acritarcha",
      "r": "clade",
      "c": "Acritarchs",
@@ -16647,7 +16465,7 @@
      "b": 443.1
     },
     {
-     "i": 256995,
+     "i": 256961,
      "n": "Strabops",
      "r": "genus",
      "m": "Strabops thatcheri fossil aglaspidid. Potosi Dolomite, Upper Cambrian.jpg",
@@ -16866,7 +16684,7 @@
      "g": 4
     },
     {
-     "i": 527828,
+     "i": 527352,
      "n": "Acritarcha",
      "r": "clade",
      "c": "Acritarchs",
@@ -16890,7 +16708,7 @@
      "g": 4
     },
     {
-     "i": 258989,
+     "i": 259005,
      "n": "Palaeoscolecida",
      "r": "class",
      "c": "Palaeoscolecid",
@@ -17061,7 +16879,7 @@
      "t": 267
     },
     {
-     "i": 527353,
+     "i": 527380,
      "n": "Discoba",
      "r": "clade",
      "m": "Moramonas marocensis fig1a.jpg",
@@ -17414,7 +17232,7 @@
      "g": 3
     },
     {
-     "i": 258989,
+     "i": 259005,
      "n": "Palaeoscolecida",
      "r": "class",
      "c": "Palaeoscolecid",
@@ -17482,7 +17300,7 @@
      "t": 263
     },
     {
-     "i": 527353,
+     "i": 527380,
      "n": "Discoba",
      "r": "clade",
      "m": "Moramonas marocensis fig1a.jpg",
@@ -17492,7 +17310,7 @@
      "t": 261
     },
     {
-     "i": 527355,
+     "i": 527382,
      "n": "Euglenozoa",
      "r": "phylum",
      "m": "Two Euglena.jpg",
@@ -18142,7 +17960,7 @@
      "b": 419.62
     },
     {
-     "i": 256973,
+     "i": 257061,
      "n": "Keurbos",
      "r": "genus",
      "m": "Holotype Specimen of Keurbos susanae.jpg",
@@ -18639,7 +18457,7 @@
    ],
    "firstgenera": [
     {
-     "i": 399635,
+     "i": 399625,
      "n": "Qianodus",
      "r": "genus",
      "m": "Qianodus holotype.jpg",
@@ -19243,7 +19061,7 @@
      "t": 1
     },
     {
-     "i": 302560,
+     "i": 302537,
      "n": "Kulindroplax",
      "r": "genus",
      "m": "Kulliaporax.png",
@@ -19281,7 +19099,7 @@
      "b": 433.4
     },
     {
-     "i": 256735,
+     "i": 256708,
      "n": "Miraspis",
      "r": "genus",
      "m": "Miraspis mira.JPG",
@@ -19346,7 +19164,7 @@
      "t": 5
     },
     {
-     "i": 235317,
+     "i": 235328,
      "n": "Pneumodesmus",
      "r": "genus",
      "m": "Pneumodesmus newmani - MUSE.JPG",
@@ -19618,7 +19436,7 @@
      "t": 5
     },
     {
-     "i": 399981,
+     "i": 399969,
      "n": "Antiarchiformes",
      "r": "order",
      "m": "Bothriolepis canadensis-001.JPG",
@@ -19639,7 +19457,7 @@
      "t": 3
     },
     {
-     "i": 296771,
+     "i": 296729,
      "n": "Neomphaliones",
      "r": "subclass",
      "m": "Vetigastropoda various 1.jpg",
@@ -19668,7 +19486,7 @@
      "t": 2
     },
     {
-     "i": 399951,
+     "i": 399983,
      "n": "Silurolepidae",
      "r": "family",
      "m": "Silurolepis platydorsalis.jpg",
@@ -19727,7 +19545,7 @@
      "b": 419.0
     },
     {
-     "i": 399958,
+     "i": 399990,
      "n": "Qilinyu",
      "r": "genus",
      "m": "Qilinyu rostrata.jpg",
@@ -19756,7 +19574,7 @@
      "b": 393.47
     },
     {
-     "i": 255433,
+     "i": 255430,
      "n": "Dibasterium",
      "r": "genus",
      "m": "20200812 Dibasterium durgae.png",
@@ -19826,7 +19644,7 @@
      "b": 419.62
     },
     {
-     "i": 256985,
+     "i": 257073,
      "n": "Maldybulakia",
      "r": "genus",
      "m": "Maldybulakia.png",
@@ -20224,16 +20042,7 @@
      "b": 393.47
     },
     {
-     "i": 250410,
-     "n": "Brontoscorpio",
-     "r": "genus",
-     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
-     "x": 1,
-     "a": 419.62,
-     "b": 413.02
-    },
-    {
-     "i": 250418,
+     "i": 250414,
      "n": "Praearcturus",
      "r": "genus",
      "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
@@ -20242,6 +20051,15 @@
      "b": 413.02,
      "s": 1,
      "t": 1
+    },
+    {
+     "i": 250425,
+     "n": "Brontoscorpio",
+     "r": "genus",
+     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
+     "x": 1,
+     "a": 419.62,
+     "b": 413.02
     },
     {
      "i": 400347,
@@ -20282,7 +20100,7 @@
      "b": 419.0
     },
     {
-     "i": 399958,
+     "i": 399990,
      "n": "Qilinyu",
      "r": "genus",
      "m": "Qilinyu rostrata.jpg",
@@ -20311,7 +20129,7 @@
      "b": 393.47
     },
     {
-     "i": 397433,
+     "i": 397429,
      "n": "Tegeolepis",
      "r": "genus",
      "m": "Tegeolepis clarki mandibles.jpg",
@@ -20737,7 +20555,7 @@
      "b": 358.86
     },
     {
-     "i": 256731,
+     "i": 256704,
      "n": "Dicranurus",
      "r": "genus",
      "m": "Dicranurus hamatus elegantus, Early Devonian, Haragan Formation, Coal County, Oklahoma, USA - Houston Museum of Natural Science - DSC01680.JPG",
@@ -20764,16 +20582,7 @@
      "b": 375.0
     },
     {
-     "i": 250410,
-     "n": "Brontoscorpio",
-     "r": "genus",
-     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
-     "x": 1,
-     "a": 419.62,
-     "b": 413.02
-    },
-    {
-     "i": 250418,
+     "i": 250414,
      "n": "Praearcturus",
      "r": "genus",
      "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
@@ -20782,6 +20591,15 @@
      "b": 413.02,
      "s": 1,
      "t": 1
+    },
+    {
+     "i": 250425,
+     "n": "Brontoscorpio",
+     "r": "genus",
+     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
+     "x": 1,
+     "a": 419.62,
+     "b": 413.02
     },
     {
      "i": 400347,
@@ -20833,7 +20651,7 @@
      "t": 1
     },
     {
-     "i": 399966,
+     "i": 399954,
      "n": "Gemuendina",
      "r": "genus",
      "m": "Gemuendina stuertzi cast (cropped).jpg",
@@ -20844,7 +20662,7 @@
      "t": 1
     },
     {
-     "i": 256755,
+     "i": 256728,
      "n": "Terataspis",
      "r": "genus",
      "m": "Terataspis grandis e.JPG",
@@ -21254,7 +21072,7 @@
      "b": 360.0
     },
     {
-     "i": 399606,
+     "i": 399597,
      "n": "Ageleodus",
      "r": "genus",
      "m": "Ageleodus pectinatus.jpg",
@@ -21303,7 +21121,7 @@
      "b": 323.4
     },
     {
-     "i": 369114,
+     "i": 369108,
      "n": "Casineria",
      "r": "genus",
      "m": "Casineria kiddi.jpg",
@@ -21323,7 +21141,7 @@
      "t": 1
     },
     {
-     "i": 250408,
+     "i": 250423,
      "n": "Gondwanascorpio",
      "r": "genus",
      "m": "Gondwanascorpio00.jpg",
@@ -21334,7 +21152,7 @@
      "t": 1
     },
     {
-     "i": 250421,
+     "i": 250417,
      "n": "Eoscorpius",
      "r": "genus",
      "m": "A monograph of the terrestrial Palaeozoic Arachnida of North America progress Page8 fig 10.png",
@@ -21802,7 +21620,7 @@
      "b": 360.0
     },
     {
-     "i": 399606,
+     "i": 399597,
      "n": "Ageleodus",
      "r": "genus",
      "m": "Ageleodus pectinatus.jpg",
@@ -21842,7 +21660,7 @@
      "b": 251.9
     },
     {
-     "i": 256731,
+     "i": 256704,
      "n": "Dicranurus",
      "r": "genus",
      "m": "Dicranurus hamatus elegantus, Early Devonian, Haragan Formation, Coal County, Oklahoma, USA - Houston Museum of Natural Science - DSC01680.JPG",
@@ -21860,7 +21678,7 @@
      "b": 323.4
     },
     {
-     "i": 369114,
+     "i": 369108,
      "n": "Casineria",
      "r": "genus",
      "m": "Casineria kiddi.jpg",
@@ -22300,7 +22118,7 @@
      "b": 323.4
     },
     {
-     "i": 369114,
+     "i": 369108,
      "n": "Casineria",
      "r": "genus",
      "m": "Casineria kiddi.jpg",
@@ -22309,7 +22127,7 @@
      "b": 338.87
     },
     {
-     "i": 250421,
+     "i": 250417,
      "n": "Eoscorpius",
      "r": "genus",
      "m": "A monograph of the terrestrial Palaeozoic Arachnida of North America progress Page8 fig 10.png",
@@ -22743,7 +22561,7 @@
      "t": 2
     },
     {
-     "i": 397363,
+     "i": 397359,
      "n": "Cosmoptychiidae",
      "r": "family",
      "m": "Cosmoptychius striatus Traquair.png",
@@ -22765,7 +22583,7 @@
      "t": 2
     },
     {
-     "i": 399602,
+     "i": 399592,
      "n": "Gregoriidae",
      "r": "family",
      "m": "Srianta cf. S. srianta.png",
@@ -22864,7 +22682,7 @@
      "b": 323.4
     },
     {
-     "i": 302578,
+     "i": 302555,
      "n": "Typhloesus",
      "r": "genus",
      "m": "Typhloesus fossils 2022.jpg",
@@ -23431,7 +23249,7 @@
      "b": 298.9
     },
     {
-     "i": 302578,
+     "i": 302555,
      "n": "Typhloesus",
      "r": "genus",
      "m": "Typhloesus fossils 2022.jpg",
@@ -23930,7 +23748,7 @@
      "b": 298.9
     },
     {
-     "i": 369110,
+     "i": 369104,
      "n": "Asaphestera",
      "r": "genus",
      "m": "Asaphestera platyris (holotype, RM 2.1192).png",
@@ -24320,7 +24138,7 @@
    ],
    "firstgenera": [
     {
-     "i": 256967,
+     "i": 257055,
      "n": "Camptophyllia",
      "r": "genus",
      "m": "Gill1924 fig-06.jpg",
@@ -24340,7 +24158,7 @@
      "b": 308.0
     },
     {
-     "i": 403351,
+     "i": 403369,
      "n": "Tullimonstrum",
      "r": "genus",
      "m": "Tullimonstrum gregarium 4334.JPG",
@@ -24378,7 +24196,7 @@
      "b": 307
     },
     {
-     "i": 405863,
+     "i": 405859,
      "n": "Octomedusa",
      "r": "genus",
      "m": "Octomedusa pieckorum (Mass Extinctions-BIG FIVE).jpg",
@@ -25270,7 +25088,7 @@
      "t": 928
     },
     {
-     "i": 278945,
+     "i": 279539,
      "n": "Cerithioidea",
      "r": "superfamily",
      "m": "Terebralia palustris 2.png",
@@ -25902,7 +25720,7 @@
      "b": 256.0
     },
     {
-     "i": 344364,
+     "i": 344361,
      "n": "Palaeagama",
      "r": "genus",
      "m": "Palaeagama vielhaueri.png",
@@ -25920,7 +25738,7 @@
      "b": 270.0
     },
     {
-     "i": 328973,
+     "i": 328970,
      "n": "Eorasaurus",
      "r": "genus",
      "m": "Eorasaurus.png",
@@ -28446,7 +28264,7 @@
    ],
    "firstgenera": [
     {
-     "i": 327206,
+     "i": 327203,
      "n": "Laquintasaura",
      "r": "genus",
      "m": "Laquintasaura (skeletal reconstruction).png",
@@ -29008,7 +28826,7 @@
      "b": 143.1
     },
     {
-     "i": 398121,
+     "i": 398119,
      "n": "Palaeocarcharias",
      "r": "genus",
      "m": "Palaeocarcharias stromeri.JPG",
@@ -29626,7 +29444,7 @@
      "t": 1
     },
     {
-     "i": 328683,
+     "i": 328697,
      "n": "Yaverlandia",
      "r": "genus",
      "m": "Yaverlandia skull replica.png",
@@ -30546,7 +30364,7 @@
    ],
    "firstgenera": [
     {
-     "i": 357655,
+     "i": 357650,
      "n": "Paranyctoides",
      "r": "genus",
      "m": "Paranyctoides aralensis.jpg",
@@ -31154,7 +30972,7 @@
      "b": 33.9
     },
     {
-     "i": 202322,
+     "i": 202316,
      "n": "Prionomyrmex",
      "r": "genus",
      "m": "Prionomyrmex longiceps dorsal view Mbi5827d1.jpg",
@@ -31669,7 +31487,7 @@
      "b": 37.8
     },
     {
-     "i": 202323,
+     "i": 202317,
      "n": "Archimyrmex",
      "r": "genus",
      "m": "Archimyrmex wedmannae Smfmei2016 01.jpg",
@@ -32618,7 +32436,7 @@
      "t": 733
     },
     {
-     "i": 422965,
+     "i": 423723,
      "n": "Polyporales",
      "r": "order",
      "m": "Ganoderma applanatum02.jpg",
@@ -34425,7 +34243,7 @@
      "g": 18
     },
     {
-     "i": 407647,
+     "i": 407574,
      "n": "Chancelloriida",
      "r": "order",
      "m": "Chancelloria (7991988514).jpg",
@@ -34530,7 +34348,7 @@
      "g": 3
     },
     {
-     "i": 527828,
+     "i": 527352,
      "n": "Acritarcha",
      "r": "clade",
      "c": "Acritarchs",
@@ -34740,7 +34558,7 @@
      "t": 1
     },
     {
-     "i": 256991,
+     "i": 256957,
      "n": "Parapaleomerus",
      "r": "genus",
      "m": "玉溪市博物馆-寒武纪早期-云南澄江-中国似古节虫 Parapaleomerua sinensis.jpg",
@@ -34760,7 +34578,7 @@
      "b": 538.8
     },
     {
-     "i": 302566,
+     "i": 302543,
      "n": "Halkieria",
      "r": "genus",
      "m": "Halkieria.jpg",
@@ -34789,7 +34607,7 @@
      "b": 521.0
     },
     {
-     "i": 259016,
+     "i": 258990,
      "n": "Saccorhytus",
      "r": "genus",
      "m": "Saccorhytus.png",
@@ -34809,7 +34627,7 @@
      "b": 485.4
     },
     {
-     "i": 407657,
+     "i": 407584,
      "n": "Chancelloria",
      "r": "genus",
      "m": "Fossil sponge Chancelloria pentacta.png",
@@ -34856,7 +34674,7 @@
      "b": 538.8
     },
     {
-     "i": 407667,
+     "i": 407594,
      "n": "Salterella",
      "r": "genus",
      "m": "Salterella pulchella.png",
@@ -34975,7 +34793,7 @@
      "g": 6
     },
     {
-     "i": 407647,
+     "i": 407574,
      "n": "Chancelloriida",
      "r": "order",
      "m": "Chancelloria (7991988514).jpg",
@@ -35199,7 +35017,7 @@
      "b": 514.5
     },
     {
-     "i": 257038,
+     "i": 257004,
      "n": "Fengzhengia",
      "r": "genus",
      "m": "20220220 Fengzhengia mamingae diagrammatic reconstruction.png",
@@ -35210,7 +35028,7 @@
      "t": 1
     },
     {
-     "i": 257034,
+     "i": 257000,
      "n": "Erjiecaris",
      "r": "genus",
      "m": "Erjiecaris.png",
@@ -35263,7 +35081,7 @@
      "t": 1
     },
     {
-     "i": 302519,
+     "i": 302566,
      "n": "Scenella",
      "r": "genus",
      "m": "Scenella tenuistriata.png",
@@ -35691,7 +35509,7 @@
      "b": 514.5
     },
     {
-     "i": 257038,
+     "i": 257004,
      "n": "Fengzhengia",
      "r": "genus",
      "m": "20220220 Fengzhengia mamingae diagrammatic reconstruction.png",
@@ -35702,7 +35520,7 @@
      "t": 1
     },
     {
-     "i": 257034,
+     "i": 257000,
      "n": "Erjiecaris",
      "r": "genus",
      "m": "Erjiecaris.png",
@@ -35773,7 +35591,7 @@
      "b": 514.0
     },
     {
-     "i": 302519,
+     "i": 302566,
      "n": "Scenella",
      "r": "genus",
      "m": "Scenella tenuistriata.png",
@@ -35955,7 +35773,7 @@
      "g": 6
     },
     {
-     "i": 407647,
+     "i": 407574,
      "n": "Chancelloriida",
      "r": "order",
      "m": "Chancelloria (7991988514).jpg",
@@ -36097,7 +35915,7 @@
      "t": 31
     },
     {
-     "i": 527743,
+     "i": 527770,
      "n": "Chitinozoa",
      "r": "class",
      "c": "Chitinozoan",
@@ -36149,7 +35967,7 @@
      "t": 9
     },
     {
-     "i": 258990,
+     "i": 259006,
      "n": "Palaeoscolecidae",
      "r": "family",
      "c": "Palaeoscolecida",
@@ -36231,7 +36049,7 @@
      "b": 497
     },
     {
-     "i": 257072,
+     "i": 257038,
      "n": "Perspicaris",
      "r": "genus",
      "m": "Perspicaris.png",
@@ -36667,7 +36485,7 @@
      "b": 497
     },
     {
-     "i": 257072,
+     "i": 257038,
      "n": "Perspicaris",
      "r": "genus",
      "m": "Perspicaris.png",
@@ -37085,7 +36903,7 @@
      "t": 14
     },
     {
-     "i": 296741,
+     "i": 296699,
      "n": "Bellerophontoidea",
      "r": "superfamily",
      "m": "Bucanopsis leda.jpg",
@@ -37155,7 +36973,7 @@
      "b": 488.3
     },
     {
-     "i": 257005,
+     "i": 256971,
      "n": "Goticaris",
      "r": "genus",
      "m": "Goticaris.png",
@@ -37231,7 +37049,7 @@
      "b": 485.4
     },
     {
-     "i": 257003,
+     "i": 256969,
      "n": "Cambropachycope",
      "r": "genus",
      "m": "Cambropachycope.png",
@@ -37253,7 +37071,7 @@
      "t": 1
     },
     {
-     "i": 234241,
+     "i": 234236,
      "n": "Bredocaris",
      "r": "genus",
      "m": "M94730.jpg",
@@ -37264,7 +37082,7 @@
      "t": 1
     },
     {
-     "i": 257008,
+     "i": 256974,
      "n": "Oelandocaris",
      "r": "genus",
      "m": "Stein et al. 2008 f01.png",
@@ -37477,7 +37295,7 @@
      "t": 15
     },
     {
-     "i": 256749,
+     "i": 256722,
      "n": "Lichida",
      "r": "order",
      "m": "Terataspis grandis e.JPG",
@@ -37488,7 +37306,7 @@
      "t": 13
     },
     {
-     "i": 256726,
+     "i": 256699,
      "n": "Odontopleuridae",
      "r": "family",
      "m": "Radiaspis sp., Middle Devonian, El Otfal Formation, Morocco - Houston Museum of Natural Science - DSC01607.JPG",
@@ -37552,7 +37370,7 @@
      "t": 2
     },
     {
-     "i": 296748,
+     "i": 296706,
      "n": "Bellerophontidae",
      "r": "family",
      "m": "Bucanopsis leda.jpg",
@@ -37582,7 +37400,7 @@
      "b": 494.0
     },
     {
-     "i": 256995,
+     "i": 256961,
      "n": "Strabops",
      "r": "genus",
      "m": "Strabops thatcheri fossil aglaspidid. Potosi Dolomite, Upper Cambrian.jpg",
@@ -37716,7 +37534,7 @@
      "t": 1
     },
     {
-     "i": 257022,
+     "i": 256988,
      "n": "Cambrocaris",
      "r": "genus",
      "m": "Cambrocaris partial reconstruction.png",
@@ -37863,7 +37681,7 @@
      "g": 3
     },
     {
-     "i": 527828,
+     "i": 527352,
      "n": "Acritarcha",
      "r": "clade",
      "c": "Acritarchs",
@@ -37912,7 +37730,7 @@
      "t": 43
     },
     {
-     "i": 256749,
+     "i": 256722,
      "n": "Lichida",
      "r": "order",
      "m": "Terataspis grandis e.JPG",
@@ -37923,7 +37741,7 @@
      "t": 13
     },
     {
-     "i": 256726,
+     "i": 256699,
      "n": "Odontopleuridae",
      "r": "family",
      "m": "Radiaspis sp., Middle Devonian, El Otfal Formation, Morocco - Houston Museum of Natural Science - DSC01607.JPG",
@@ -37954,7 +37772,7 @@
      "t": 2
     },
     {
-     "i": 296748,
+     "i": 296706,
      "n": "Bellerophontidae",
      "r": "family",
      "m": "Bucanopsis leda.jpg",
@@ -37986,7 +37804,7 @@
      "t": 1
     },
     {
-     "i": 256995,
+     "i": 256961,
      "n": "Strabops",
      "r": "genus",
      "m": "Strabops thatcheri fossil aglaspidid. Potosi Dolomite, Upper Cambrian.jpg",
@@ -38088,7 +37906,7 @@
      "t": 1
     },
     {
-     "i": 257022,
+     "i": 256988,
      "n": "Cambrocaris",
      "r": "genus",
      "m": "Cambrocaris partial reconstruction.png",
@@ -38230,7 +38048,7 @@
      "g": 3
     },
     {
-     "i": 527828,
+     "i": 527352,
      "n": "Acritarcha",
      "r": "clade",
      "c": "Acritarchs",
@@ -38444,7 +38262,7 @@
      "g": 4
     },
     {
-     "i": 527828,
+     "i": 527352,
      "n": "Acritarcha",
      "r": "clade",
      "c": "Acritarchs",
@@ -38468,7 +38286,7 @@
      "g": 4
     },
     {
-     "i": 258989,
+     "i": 259005,
      "n": "Palaeoscolecida",
      "r": "class",
      "c": "Palaeoscolecid",
@@ -38910,7 +38728,7 @@
      "g": 5
     },
     {
-     "i": 527828,
+     "i": 527352,
      "n": "Acritarcha",
      "r": "clade",
      "c": "Acritarchs",
@@ -38934,7 +38752,7 @@
      "g": 4
     },
     {
-     "i": 258989,
+     "i": 259005,
      "n": "Palaeoscolecida",
      "r": "class",
      "c": "Palaeoscolecid",
@@ -39396,7 +39214,7 @@
      "g": 4
     },
     {
-     "i": 258989,
+     "i": 259005,
      "n": "Palaeoscolecida",
      "r": "class",
      "c": "Palaeoscolecid",
@@ -39478,7 +39296,7 @@
      "t": 279
     },
     {
-     "i": 527353,
+     "i": 527380,
      "n": "Discoba",
      "r": "clade",
      "m": "Moramonas marocensis fig1a.jpg",
@@ -39488,7 +39306,7 @@
      "t": 261
     },
     {
-     "i": 527355,
+     "i": 527382,
      "n": "Euglenozoa",
      "r": "phylum",
      "m": "Two Euglena.jpg",
@@ -39538,7 +39356,7 @@
      "t": 68
     },
     {
-     "i": 527466,
+     "i": 527493,
      "n": "Euglenida",
      "r": "class",
      "c": "Euglenid",
@@ -39716,7 +39534,7 @@
      "b": 458.2
     },
     {
-     "i": 527525,
+     "i": 527552,
      "n": "Moyeria",
      "r": "genus",
      "m": "Moyeria-2019-plate-1-1.jpg",
@@ -39870,7 +39688,7 @@
      "g": 4
     },
     {
-     "i": 258989,
+     "i": 259005,
      "n": "Palaeoscolecida",
      "r": "class",
      "c": "Palaeoscolecid",
@@ -39952,7 +39770,7 @@
      "t": 263
     },
     {
-     "i": 527353,
+     "i": 527380,
      "n": "Discoba",
      "r": "clade",
      "m": "Moramonas marocensis fig1a.jpg",
@@ -39962,7 +39780,7 @@
      "t": 261
     },
     {
-     "i": 527355,
+     "i": 527382,
      "n": "Euglenozoa",
      "r": "phylum",
      "m": "Two Euglena.jpg",
@@ -40012,7 +39830,7 @@
      "t": 68
     },
     {
-     "i": 527466,
+     "i": 527493,
      "n": "Euglenida",
      "r": "class",
      "c": "Euglenid",
@@ -40222,7 +40040,7 @@
      "b": 458.2
     },
     {
-     "i": 527525,
+     "i": 527552,
      "n": "Moyeria",
      "r": "genus",
      "m": "Moyeria-2019-plate-1-1.jpg",
@@ -41519,7 +41337,7 @@
      "b": 336.0
     },
     {
-     "i": 256973,
+     "i": 257061,
      "n": "Keurbos",
      "r": "genus",
      "m": "Holotype Specimen of Keurbos susanae.jpg",
@@ -41579,7 +41397,7 @@
      "t": 1
     },
     {
-     "i": 256736,
+     "i": 256709,
      "n": "Odontopleura",
      "r": "genus",
      "m": "Odontopleura ovata reconstruction.jpg",
@@ -41608,7 +41426,7 @@
      "t": 1
     },
     {
-     "i": 234139,
+     "i": 234141,
      "n": "Luprisca",
      "r": "genus",
      "m": "Luprisca incuba.png",
@@ -41628,7 +41446,7 @@
      "b": 252.3
     },
     {
-     "i": 256728,
+     "i": 256701,
      "n": "Radiaspis",
      "r": "genus",
      "m": "Radiaspis sp., Middle Devonian, El Otfal Formation, Morocco - Houston Museum of Natural Science - DSC01607.JPG",
@@ -41998,7 +41816,7 @@
      "b": 419.62
     },
     {
-     "i": 256973,
+     "i": 257061,
      "n": "Keurbos",
      "r": "genus",
      "m": "Holotype Specimen of Keurbos susanae.jpg",
@@ -42081,7 +41899,7 @@
      "b": 412.3
     },
     {
-     "i": 255435,
+     "i": 255432,
      "n": "Smotrychaspis",
      "r": "genus",
      "m": "Smotrychaspis Holotype.png",
@@ -42463,7 +42281,7 @@
    ],
    "firstgenera": [
     {
-     "i": 399635,
+     "i": 399625,
      "n": "Qianodus",
      "r": "genus",
      "m": "Qianodus holotype.jpg",
@@ -42528,7 +42346,7 @@
      "b": 358.86
     },
     {
-     "i": 255435,
+     "i": 255432,
      "n": "Smotrychaspis",
      "r": "genus",
      "m": "Smotrychaspis Holotype.png",
@@ -42919,7 +42737,7 @@
    ],
    "firstgenera": [
     {
-     "i": 399635,
+     "i": 399625,
      "n": "Qianodus",
      "r": "genus",
      "m": "Qianodus holotype.jpg",
@@ -42983,7 +42801,7 @@
      "b": 413.02
     },
     {
-     "i": 399960,
+     "i": 399992,
      "n": "Xiushanosteus",
      "r": "genus",
      "m": "Xiushanosteus.jpg",
@@ -42994,7 +42812,7 @@
      "t": 1
     },
     {
-     "i": 296412,
+     "i": 296416,
      "n": "Platyceras",
      "r": "genus",
      "m": "PlatycerasLoganOhio.jpg",
@@ -43003,7 +42821,7 @@
      "b": 221.0
     },
     {
-     "i": 399637,
+     "i": 399627,
      "n": "Shenacanthus",
      "r": "genus",
      "m": "Shenacanthus vermiformis.jpg",
@@ -43459,7 +43277,7 @@
      "b": 415.0
     },
     {
-     "i": 257625,
+     "i": 257622,
      "n": "Papiliomaris",
      "r": "genus",
      "c": "Papiliomaris kluessendorfae",
@@ -43480,7 +43298,7 @@
      "b": 436.5
     },
     {
-     "i": 256986,
+     "i": 257074,
      "n": "Parioscorpio",
      "r": "genus",
      "m": "20211029 Parioscorpio venator.png",
@@ -43500,7 +43318,7 @@
      "t": 1
     },
     {
-     "i": 302560,
+     "i": 302537,
      "n": "Kulindroplax",
      "r": "genus",
      "m": "Kulliaporax.png",
@@ -43520,7 +43338,7 @@
      "b": 433.4
     },
     {
-     "i": 256735,
+     "i": 256708,
      "n": "Miraspis",
      "r": "genus",
      "m": "Miraspis mira.JPG",
@@ -43888,7 +43706,7 @@
      "b": 419.6
     },
     {
-     "i": 302560,
+     "i": 302537,
      "n": "Kulindroplax",
      "r": "genus",
      "m": "Kulliaporax.png",
@@ -43917,7 +43735,7 @@
      "b": 433.4
     },
     {
-     "i": 256735,
+     "i": 256708,
      "n": "Miraspis",
      "r": "genus",
      "m": "Miraspis mira.JPG",
@@ -43935,7 +43753,7 @@
      "b": 418.1
     },
     {
-     "i": 256751,
+     "i": 256724,
      "n": "Arctinurus",
      "r": "genus",
      "m": "Arctinurus boltoni.jpg",
@@ -43946,7 +43764,7 @@
      "t": 1
     },
     {
-     "i": 302558,
+     "i": 302535,
      "n": "Emo",
      "r": "genus",
      "m": "Emo vorticaudum holotype.webp",
@@ -43966,7 +43784,7 @@
      "b": 419.62
     },
     {
-     "i": 303809,
+     "i": 303793,
      "n": "Kenostrychus",
      "r": "genus",
      "m": "Kenostrychus.jpg",
@@ -43977,7 +43795,7 @@
      "t": 1
     },
     {
-     "i": 250422,
+     "i": 250418,
      "n": "Eramoscorpius",
      "r": "genus",
      "m": "Eramoscorpius fossil.png",
@@ -44496,7 +44314,7 @@
      "b": 423
     },
     {
-     "i": 256757,
+     "i": 256730,
      "n": "Acanthopyge",
      "r": "genus",
      "m": "Acanthopyge NMNH.jpg",
@@ -44737,7 +44555,7 @@
      "t": 5
     },
     {
-     "i": 399981,
+     "i": 399969,
      "n": "Antiarchiformes",
      "r": "order",
      "m": "Bothriolepis canadensis-001.JPG",
@@ -44758,7 +44576,7 @@
      "t": 3
     },
     {
-     "i": 296771,
+     "i": 296729,
      "n": "Neomphaliones",
      "r": "subclass",
      "m": "Vetigastropoda various 1.jpg",
@@ -44787,7 +44605,7 @@
      "t": 2
     },
     {
-     "i": 399951,
+     "i": 399983,
      "n": "Silurolepidae",
      "r": "family",
      "m": "Silurolepis platydorsalis.jpg",
@@ -44818,7 +44636,7 @@
      "t": 1
     },
     {
-     "i": 543632,
+     "i": 543628,
      "n": "Zosterophyllales",
      "r": "order",
      "m": "Zosterophyllum fossils.jpg",
@@ -44866,7 +44684,7 @@
      "b": 419.2
     },
     {
-     "i": 255433,
+     "i": 255430,
      "n": "Dibasterium",
      "r": "genus",
      "m": "20200812 Dibasterium durgae.png",
@@ -44974,7 +44792,7 @@
      "t": 1
     },
     {
-     "i": 399952,
+     "i": 399984,
      "n": "Silurolepis",
      "r": "genus",
      "m": "Silurolepis platydorsalis.jpg",
@@ -45341,16 +45159,7 @@
      "b": 393.47
     },
     {
-     "i": 250410,
-     "n": "Brontoscorpio",
-     "r": "genus",
-     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
-     "x": 1,
-     "a": 419.62,
-     "b": 413.02
-    },
-    {
-     "i": 250418,
+     "i": 250414,
      "n": "Praearcturus",
      "r": "genus",
      "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
@@ -45359,6 +45168,15 @@
      "b": 413.02,
      "s": 1,
      "t": 1
+    },
+    {
+     "i": 250425,
+     "n": "Brontoscorpio",
+     "r": "genus",
+     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
+     "x": 1,
+     "a": 419.62,
+     "b": 413.02
     },
     {
      "i": 400347,
@@ -45408,7 +45226,7 @@
      "b": 419.0
     },
     {
-     "i": 399958,
+     "i": 399990,
      "n": "Qilinyu",
      "r": "genus",
      "m": "Qilinyu rostrata.jpg",
@@ -45437,7 +45255,7 @@
      "b": 393.47
     },
     {
-     "i": 397433,
+     "i": 397429,
      "n": "Tegeolepis",
      "r": "genus",
      "m": "Tegeolepis clarki mandibles.jpg",
@@ -45807,7 +45625,7 @@
      "b": 393.47
     },
     {
-     "i": 256731,
+     "i": 256704,
      "n": "Dicranurus",
      "r": "genus",
      "m": "Dicranurus hamatus elegantus, Early Devonian, Haragan Formation, Coal County, Oklahoma, USA - Houston Museum of Natural Science - DSC01680.JPG",
@@ -45825,16 +45643,7 @@
      "b": 393.47
     },
     {
-     "i": 250410,
-     "n": "Brontoscorpio",
-     "r": "genus",
-     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
-     "x": 1,
-     "a": 419.62,
-     "b": 413.02
-    },
-    {
-     "i": 250418,
+     "i": 250414,
      "n": "Praearcturus",
      "r": "genus",
      "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
@@ -45843,6 +45652,15 @@
      "b": 413.02,
      "s": 1,
      "t": 1
+    },
+    {
+     "i": 250425,
+     "n": "Brontoscorpio",
+     "r": "genus",
+     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
+     "x": 1,
+     "a": 419.62,
+     "b": 413.02
     },
     {
      "i": 400347,
@@ -45903,7 +45721,7 @@
      "b": 393.47
     },
     {
-     "i": 397433,
+     "i": 397429,
      "n": "Tegeolepis",
      "r": "genus",
      "m": "Tegeolepis clarki mandibles.jpg",
@@ -46234,7 +46052,7 @@
      "t": 7
     },
     {
-     "i": 399973,
+     "i": 399961,
      "n": "Pseudopetalichthyida",
      "r": "order",
      "m": "Pseudopetalichthyida.JPG",
@@ -46256,7 +46074,7 @@
      "t": 6
     },
     {
-     "i": 399974,
+     "i": 399962,
      "n": "Paraplesiobatidae",
      "r": "family",
      "c": "Pseudopetalichthyida",
@@ -46288,7 +46106,7 @@
      "b": 387.95
     },
     {
-     "i": 256731,
+     "i": 256704,
      "n": "Dicranurus",
      "r": "genus",
      "m": "Dicranurus hamatus elegantus, Early Devonian, Haragan Formation, Coal County, Oklahoma, USA - Houston Museum of Natural Science - DSC01680.JPG",
@@ -46297,7 +46115,7 @@
      "b": 393.47
     },
     {
-     "i": 399966,
+     "i": 399954,
      "n": "Gemuendina",
      "r": "genus",
      "m": "Gemuendina stuertzi cast (cropped).jpg",
@@ -46308,7 +46126,7 @@
      "t": 1
     },
     {
-     "i": 399619,
+     "i": 399609,
      "n": "Doliodus",
      "r": "genus",
      "m": "NHM-UK P PV-P-6540 2.tif",
@@ -46317,7 +46135,7 @@
      "b": 393.47
     },
     {
-     "i": 520866,
+     "i": 520861,
      "n": "Psilophyton",
      "r": "genus",
      "m": "Psilophyton NMNH.jpg",
@@ -46364,7 +46182,7 @@
      "t": 1
     },
     {
-     "i": 397353,
+     "i": 397349,
      "n": "Cheirolepis",
      "r": "genus",
      "m": "Cheirolepis.jpg",
@@ -46715,7 +46533,7 @@
      "t": 7
     },
     {
-     "i": 399601,
+     "i": 399591,
      "n": "Euchondrocephali",
      "r": "subclass",
      "c": "Holocephalans",
@@ -46749,7 +46567,7 @@
      "t": 7
     },
     {
-     "i": 399973,
+     "i": 399961,
      "n": "Pseudopetalichthyida",
      "r": "order",
      "m": "Pseudopetalichthyida.JPG",
@@ -46800,7 +46618,7 @@
      "t": 1
     },
     {
-     "i": 399966,
+     "i": 399954,
      "n": "Gemuendina",
      "r": "genus",
      "m": "Gemuendina stuertzi cast (cropped).jpg",
@@ -46811,7 +46629,7 @@
      "t": 1
     },
     {
-     "i": 256755,
+     "i": 256728,
      "n": "Terataspis",
      "r": "genus",
      "m": "Terataspis grandis e.JPG",
@@ -46858,7 +46676,7 @@
      "b": 283.5
     },
     {
-     "i": 399619,
+     "i": 399609,
      "n": "Doliodus",
      "r": "genus",
      "m": "NHM-UK P PV-P-6540 2.tif",
@@ -46905,7 +46723,7 @@
      "t": 1
     },
     {
-     "i": 255338,
+     "i": 255340,
      "n": "Dorfopterus",
      "r": "genus",
      "m": "Dorfopterus angusticollis holotype drawing.png",
@@ -47118,7 +46936,7 @@
      "t": 7
     },
     {
-     "i": 399601,
+     "i": 399591,
      "n": "Euchondrocephali",
      "r": "subclass",
      "c": "Holocephalans",
@@ -47366,7 +47184,7 @@
      "b": 358.86
     },
     {
-     "i": 399857,
+     "i": 399873,
      "n": "Carolowilhelmina",
      "r": "genus",
      "m": "Carolowilhelmina geognostica4.jpg",
@@ -47767,7 +47585,7 @@
      "b": 360.0
     },
     {
-     "i": 399606,
+     "i": 399597,
      "n": "Ageleodus",
      "r": "genus",
      "m": "Ageleodus pectinatus.jpg",
@@ -47807,7 +47625,7 @@
      "b": 323.4
     },
     {
-     "i": 369114,
+     "i": 369108,
      "n": "Casineria",
      "r": "genus",
      "m": "Casineria kiddi.jpg",
@@ -47827,7 +47645,7 @@
      "t": 1
     },
     {
-     "i": 250408,
+     "i": 250423,
      "n": "Gondwanascorpio",
      "r": "genus",
      "m": "Gondwanascorpio00.jpg",
@@ -47838,7 +47656,7 @@
      "t": 1
     },
     {
-     "i": 250421,
+     "i": 250417,
      "n": "Eoscorpius",
      "r": "genus",
      "m": "A monograph of the terrestrial Palaeozoic Arachnida of North America progress Page8 fig 10.png",
@@ -48243,7 +48061,7 @@
      "b": 387.95
     },
     {
-     "i": 399606,
+     "i": 399597,
      "n": "Ageleodus",
      "r": "genus",
      "m": "Ageleodus pectinatus.jpg",
@@ -48274,7 +48092,7 @@
      "t": 1
     },
     {
-     "i": 256731,
+     "i": 256704,
      "n": "Dicranurus",
      "r": "genus",
      "m": "Dicranurus hamatus elegantus, Early Devonian, Haragan Formation, Coal County, Oklahoma, USA - Houston Museum of Natural Science - DSC01680.JPG",
@@ -48292,7 +48110,7 @@
      "b": 393.47
     },
     {
-     "i": 250408,
+     "i": 250423,
      "n": "Gondwanascorpio",
      "r": "genus",
      "m": "Gondwanascorpio00.jpg",
@@ -48350,16 +48168,7 @@
      "b": 375.0
     },
     {
-     "i": 250410,
-     "n": "Brontoscorpio",
-     "r": "genus",
-     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
-     "x": 1,
-     "a": 419.62,
-     "b": 413.02
-    },
-    {
-     "i": 250418,
+     "i": 250414,
      "n": "Praearcturus",
      "r": "genus",
      "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
@@ -48368,6 +48177,15 @@
      "b": 413.02,
      "s": 1,
      "t": 1
+    },
+    {
+     "i": 250425,
+     "n": "Brontoscorpio",
+     "r": "genus",
+     "m": "NHMUK PI I 534, lectotype (part) of Praearcturus gigas.jpg",
+     "x": 1,
+     "a": 419.62,
+     "b": 413.02
     }
    ],
    "alive": 1018,
@@ -48735,7 +48553,7 @@
      "b": 360.0
     },
     {
-     "i": 399606,
+     "i": 399597,
      "n": "Ageleodus",
      "r": "genus",
      "m": "Ageleodus pectinatus.jpg",
@@ -48764,7 +48582,7 @@
      "b": 323.4
     },
     {
-     "i": 369114,
+     "i": 369108,
      "n": "Casineria",
      "r": "genus",
      "m": "Casineria kiddi.jpg",
@@ -48784,7 +48602,7 @@
      "t": 1
     },
     {
-     "i": 250408,
+     "i": 250423,
      "n": "Gondwanascorpio",
      "r": "genus",
      "m": "Gondwanascorpio00.jpg",
@@ -48795,7 +48613,7 @@
      "t": 1
     },
     {
-     "i": 250421,
+     "i": 250417,
      "n": "Eoscorpius",
      "r": "genus",
      "m": "A monograph of the terrestrial Palaeozoic Arachnida of North America progress Page8 fig 10.png",
@@ -49200,7 +49018,7 @@
      "b": 323.4
     },
     {
-     "i": 369114,
+     "i": 369108,
      "n": "Casineria",
      "r": "genus",
      "m": "Casineria kiddi.jpg",
@@ -49209,7 +49027,7 @@
      "b": 338.87
     },
     {
-     "i": 250421,
+     "i": 250417,
      "n": "Eoscorpius",
      "r": "genus",
      "m": "A monograph of the terrestrial Palaeozoic Arachnida of North America progress Page8 fig 10.png",
@@ -49619,7 +49437,7 @@
      "t": 2
     },
     {
-     "i": 397363,
+     "i": 397359,
      "n": "Cosmoptychiidae",
      "r": "family",
      "m": "Cosmoptychius striatus Traquair.png",
@@ -49641,7 +49459,7 @@
      "t": 2
     },
     {
-     "i": 399602,
+     "i": 399592,
      "n": "Gregoriidae",
      "r": "family",
      "m": "Srianta cf. S. srianta.png",
@@ -49740,7 +49558,7 @@
      "b": 323.4
     },
     {
-     "i": 302578,
+     "i": 302555,
      "n": "Typhloesus",
      "r": "genus",
      "m": "Typhloesus fossils 2022.jpg",
@@ -50283,7 +50101,7 @@
      "b": 298.9
     },
     {
-     "i": 302578,
+     "i": 302555,
      "n": "Typhloesus",
      "r": "genus",
      "m": "Typhloesus fossils 2022.jpg",
@@ -50760,7 +50578,7 @@
      "b": 298.9
     },
     {
-     "i": 369110,
+     "i": 369104,
      "n": "Asaphestera",
      "r": "genus",
      "m": "Asaphestera platyris (holotype, RM 2.1192).png",
@@ -51118,7 +50936,7 @@
    ],
    "firstgenera": [
     {
-     "i": 256967,
+     "i": 257055,
      "n": "Camptophyllia",
      "r": "genus",
      "m": "Gill1924 fig-06.jpg",
@@ -51138,7 +50956,7 @@
      "b": 308.0
     },
     {
-     "i": 403351,
+     "i": 403369,
      "n": "Tullimonstrum",
      "r": "genus",
      "m": "Tullimonstrum gregarium 4334.JPG",
@@ -51176,7 +50994,7 @@
      "b": 307
     },
     {
-     "i": 405863,
+     "i": 405859,
      "n": "Octomedusa",
      "r": "genus",
      "m": "Octomedusa pieckorum (Mass Extinctions-BIG FIVE).jpg",
@@ -51522,7 +51340,7 @@
      "t": 8
     },
     {
-     "i": 344517,
+     "i": 344510,
      "n": "Parareptilia",
      "r": "subclass",
      "c": "Parareptiles",
@@ -51554,7 +51372,7 @@
      "t": 3
     },
     {
-     "i": 344518,
+     "i": 344511,
      "n": "Procolophonomorpha",
      "r": "order",
      "c": "Procolophonomorphs",
@@ -51737,7 +51555,7 @@
      "t": 1
     },
     {
-     "i": 397373,
+     "i": 397369,
      "n": "Amblypterus",
      "r": "genus",
      "m": "FOS201.2.jpg",
@@ -53198,7 +53016,7 @@
      "t": 4
     },
     {
-     "i": 360126,
+     "i": 360143,
      "n": "Dimacrodontidae",
      "r": "family",
      "m": "Dimacrodon.jpg",
@@ -53334,7 +53152,7 @@
      "b": 274.4
     },
     {
-     "i": 344531,
+     "i": 344524,
      "n": "Tridentinosaurus",
      "r": "genus",
      "m": "Tridentinosaurus antiquus 78.jpg",
@@ -53372,7 +53190,7 @@
      "b": 270.0
     },
     {
-     "i": 344502,
+     "i": 344507,
      "n": "Maiothisavros",
      "r": "genus",
      "m": "Maiothisavros dianeae (ROMVP 87366, holotype).png",
@@ -53576,7 +53394,7 @@
      "t": 21064
     },
     {
-     "i": 278945,
+     "i": 279539,
      "n": "Cerithioidea",
      "r": "superfamily",
      "m": "Terebralia palustris 2.png",
@@ -54235,7 +54053,7 @@
      "b": 265.0
     },
     {
-     "i": 344364,
+     "i": 344361,
      "n": "Palaeagama",
      "r": "genus",
      "m": "Palaeagama vielhaueri.png",
@@ -54253,7 +54071,7 @@
      "b": 270.0
     },
     {
-     "i": 328973,
+     "i": 328970,
      "n": "Eorasaurus",
      "r": "genus",
      "m": "Eorasaurus.png",
@@ -54654,7 +54472,7 @@
      "t": 2
     },
     {
-     "i": 359423,
+     "i": 359412,
      "n": "Procynosuchidae",
      "r": "family",
      "c": "Procynosuchids",
@@ -55088,7 +54906,7 @@
      "t": 7
     },
     {
-     "i": 359411,
+     "i": 359400,
      "n": "Charassognathidae",
      "r": "family",
      "c": "Charassognathids",
@@ -55122,7 +54940,7 @@
      "t": 3
     },
     {
-     "i": 359417,
+     "i": 359406,
      "n": "Dviniidae",
      "r": "family",
      "m": "Dvinia prima.png",
@@ -55604,7 +55422,7 @@
      "t": 7
     },
     {
-     "i": 359411,
+     "i": 359400,
      "n": "Charassognathidae",
      "r": "family",
      "c": "Charassognathids",
@@ -60005,7 +59823,7 @@
    ],
    "firstgenera": [
     {
-     "i": 327206,
+     "i": 327203,
      "n": "Laquintasaura",
      "r": "genus",
      "m": "Laquintasaura (skeletal reconstruction).png",
@@ -60588,7 +60406,7 @@
      "t": 1
     },
     {
-     "i": 326054,
+     "i": 326049,
      "n": "Kotasaurus",
      "r": "genus",
      "m": "160-million-year-old mounted dinosaur skeleton.jpg",
@@ -61537,7 +61355,7 @@
      "b": 182.0
     },
     {
-     "i": 326044,
+     "i": 326039,
      "n": "Sanpasaurus",
      "r": "genus",
      "m": "Sanpasaurus dorsal vertebra.png",
@@ -61985,7 +61803,7 @@
      "b": 33.9
     },
     {
-     "i": 517643,
+     "i": 517632,
      "n": "Nanjinganthus",
      "r": "genus",
      "m": "Nanjinganthus protologue Figure 1F.jpg",
@@ -62038,7 +61856,7 @@
      "t": 1
     },
     {
-     "i": 519046,
+     "i": 519044,
      "n": "Yimaia",
      "r": "genus",
      "m": "Yimaia recurva.jpg",
@@ -62389,7 +62207,7 @@
      "t": 24
     },
     {
-     "i": 295802,
+     "i": 295632,
      "n": "Eucyclidae",
      "r": "family",
      "m": "Eucyclus capitaneus 01.JPG",
@@ -62458,7 +62276,7 @@
      "t": 1
     },
     {
-     "i": 398121,
+     "i": 398119,
      "n": "Palaeocarcharias",
      "r": "genus",
      "m": "Palaeocarcharias stromeri.JPG",
@@ -62536,7 +62354,7 @@
      "b": 170.0
     },
     {
-     "i": 327053,
+     "i": 327050,
      "n": "Spicomellus",
      "r": "genus",
      "m": "Spicomellus Skeletal.svg",
@@ -62950,7 +62768,7 @@
      "b": 166.1
     },
     {
-     "i": 398121,
+     "i": 398119,
      "n": "Palaeocarcharias",
      "r": "genus",
      "m": "Palaeocarcharias stromeri.JPG",
@@ -63070,7 +62888,7 @@
      "b": 121.4
     },
     {
-     "i": 327053,
+     "i": 327050,
      "n": "Spicomellus",
      "r": "genus",
      "m": "Spicomellus Skeletal.svg",
@@ -64905,7 +64723,7 @@
      "b": 121.4
     },
     {
-     "i": 328683,
+     "i": 328697,
      "n": "Yaverlandia",
      "r": "genus",
      "m": "Yaverlandia skull replica.png",
@@ -64916,7 +64734,7 @@
      "t": 1
     },
     {
-     "i": 325403,
+     "i": 325398,
      "n": "Chilesaurus",
      "r": "genus",
      "m": "Chilesaurus holotype cast.jpg",
@@ -65381,7 +65199,7 @@
      "b": 121.4
     },
     {
-     "i": 328683,
+     "i": 328697,
      "n": "Yaverlandia",
      "r": "genus",
      "m": "Yaverlandia skull replica.png",
@@ -65930,7 +65748,7 @@
      "t": 1
     },
     {
-     "i": 326551,
+     "i": 326565,
      "n": "Emiliasaura",
      "r": "genus",
      "m": "Emiliasaura alessandrii.png",
@@ -66447,7 +66265,7 @@
      "b": 122.0
     },
     {
-     "i": 326566,
+     "i": 326563,
      "n": "Therosaurus",
      "r": "genus",
      "m": "Iguanodon de Bernissart IRSNB 01.JPG",
@@ -67324,7 +67142,7 @@
      "t": 1
     },
     {
-     "i": 325192,
+     "i": 325205,
      "n": "Vectaerovenator",
      "r": "genus",
      "m": "VectaerovenatorCameronSpahn.jpg",
@@ -68369,7 +68187,7 @@
      "b": 93.5
     },
     {
-     "i": 202790,
+     "i": 202782,
      "n": "Zigrasimecia",
      "r": "genus",
      "m": "Zigrasimecia hoelldobleri FANTWEB00052 right profile.jpg",
@@ -68396,7 +68214,7 @@
      "b": 66.0
     },
     {
-     "i": 202793,
+     "i": 202785,
      "n": "Brownimecia",
      "r": "genus",
      "m": "Brownimecia clavata AMNH-NJ667 holotype 01.jpg",
@@ -69214,7 +69032,7 @@
    ],
    "firstgenera": [
     {
-     "i": 357655,
+     "i": 357650,
      "n": "Paranyctoides",
      "r": "genus",
      "m": "Paranyctoides aralensis.jpg",
@@ -69701,7 +69519,7 @@
    ],
    "firstgenera": [
     {
-     "i": 357655,
+     "i": 357650,
      "n": "Paranyctoides",
      "r": "genus",
      "m": "Paranyctoides aralensis.jpg",
@@ -69750,7 +69568,7 @@
      "t": 1
     },
     {
-     "i": 236115,
+     "i": 236112,
      "n": "Protozoea",
      "r": "genus",
      "m": "Protozoea hilgendorfi.JPG",
@@ -69790,7 +69608,7 @@
      "t": 31
     },
     {
-     "i": 323813,
+     "i": 323821,
      "n": "Maaqwi",
      "r": "genus",
      "m": "Maaqwi.png",
@@ -71673,7 +71491,7 @@
      "b": 56.8
     },
     {
-     "i": 327870,
+     "i": 327863,
      "n": "Asiatosuchus",
      "r": "genus",
      "m": "Asiatosuchus nanlingensis.png",
@@ -71739,7 +71557,7 @@
      "b": 58.0
     },
     {
-     "i": 324037,
+     "i": 324032,
      "n": "Qianshanornis",
      "r": "genus",
      "m": "Qianshanornis rapax.jpg",
@@ -72143,7 +71961,7 @@
      "b": 33.9
     },
     {
-     "i": 202322,
+     "i": 202316,
      "n": "Prionomyrmex",
      "r": "genus",
      "m": "Prionomyrmex longiceps dorsal view Mbi5827d1.jpg",
@@ -72213,7 +72031,7 @@
      "t": 1
     },
     {
-     "i": 517623,
+     "i": 517653,
      "n": "Pteroheterochrosperma",
      "r": "genus",
      "m": "Pteroheterochrosperma horseflyensis HT USNM PAL 722530.jpg",
@@ -72656,7 +72474,7 @@
      "b": 33.9
     },
     {
-     "i": 202322,
+     "i": 202316,
      "n": "Prionomyrmex",
      "r": "genus",
      "m": "Prionomyrmex longiceps dorsal view Mbi5827d1.jpg",
@@ -72694,7 +72512,7 @@
      "b": 48.63
     },
     {
-     "i": 202312,
+     "i": 202319,
      "n": "Macabeemyrma",
      "r": "genus",
      "m": "Macabeemyrma ovata head.svg",
@@ -72705,7 +72523,7 @@
      "t": 1
     },
     {
-     "i": 398005,
+     "i": 398015,
      "n": "Parotodus",
      "r": "genus",
      "m": "Parotodus benedenii FLMNH.jpg",
@@ -72735,7 +72553,7 @@
      "t": 1
     },
     {
-     "i": 202316,
+     "i": 202323,
      "n": "Ypresiomyrma",
      "r": "genus",
      "m": "Ypresiomyrma rebekkae holotype.jpg",
@@ -73079,7 +72897,7 @@
      "b": 34.0
     },
     {
-     "i": 202323,
+     "i": 202317,
      "n": "Archimyrmex",
      "r": "genus",
      "m": "Archimyrmex wedmannae Smfmei2016 01.jpg",
@@ -74930,7 +74748,7 @@
      "t": 733
     },
     {
-     "i": 422965,
+     "i": 423723,
      "n": "Polyporales",
      "r": "order",
      "m": "Ganoderma applanatum02.jpg",
@@ -75401,7 +75219,7 @@
      "t": 733
     },
     {
-     "i": 422965,
+     "i": 423723,
      "n": "Polyporales",
      "r": "order",
      "m": "Ganoderma applanatum02.jpg",
@@ -75591,7 +75409,7 @@
      "t": 2
     },
     {
-     "i": 527362,
+     "i": 527389,
      "n": "Trypanosoma",
      "r": "genus",
      "m": "Trypanosoma sp. PHIL 613 lores.jpg",
@@ -75976,7 +75794,7 @@
      "t": 1
     },
     {
-     "i": 345758,
+     "i": 345750,
      "n": "Brygmophyseter",
      "r": "genus",
      "m": "Brygmophyseter skeleton (cropped).jpg",
@@ -76055,7 +75873,7 @@
      "t": 21
     },
     {
-     "i": 527362,
+     "i": 527389,
      "n": "Trypanosoma",
      "r": "genus",
      "m": "Trypanosoma sp. PHIL 613 lores.jpg",
@@ -77448,7 +77266,7 @@
      "t": 8
     },
     {
-     "i": 345751,
+     "i": 345761,
      "n": "Zygophyseter",
      "r": "genus",
      "m": "Zygophyseter varolai Natural History Museum University of Pisa I-16828.jpg",
@@ -77488,7 +77306,7 @@
      "b": 5.3
     },
     {
-     "i": 345762,
+     "i": 345754,
      "n": "Livyatan",
      "r": "genus",
      "m": "Livyatan melvillei skull.jpg",
@@ -79980,7 +79798,7 @@
      "t": 45
     },
     {
-     "i": 279676,
+     "i": 280270,
      "n": "Semisulcospiridae",
      "r": "family",
      "m": "Semisulcospira kurodai2.jpg",
@@ -80461,7 +80279,7 @@
      "t": 24
     },
     {
-     "i": 279676,
+     "i": 280270,
      "n": "Semisulcospiridae",
      "r": "family",
      "m": "Semisulcospira kurodai2.jpg",
@@ -81867,7 +81685,7 @@
    "wiki": "Cyanobacteria",
    "cat": "life",
    "taxon": {
-    "i": 539390,
+    "i": 539350,
     "n": "Cyanobacteria",
     "r": "phylum",
     "m": "Cyanobacteria - Sphaerocodium kokeni.JPG",
@@ -81898,7 +81716,7 @@
    "wiki": "Grypania",
    "cat": "life",
    "taxon": {
-    "i": 542058,
+    "i": 542091,
     "n": "Grypania",
     "r": "genus",
     "m": "Grypania spiralis.JPG",
@@ -82121,7 +81939,7 @@
    "wiki": "Pneumodesmus",
    "cat": "life",
    "taxon": {
-    "i": 235317,
+    "i": 235328,
     "n": "Pneumodesmus",
     "r": "genus",
     "m": "Pneumodesmus newmani - MUSE.JPG",
@@ -82475,7 +82293,7 @@
    "wiki": "Sahelanthropus",
    "cat": "life",
    "taxon": {
-    "i": 355775,
+    "i": 355772,
     "n": "Sahelanthropus",
     "r": "genus",
     "c": "Sahelanthropus tchadensis \"Toumaï\"",

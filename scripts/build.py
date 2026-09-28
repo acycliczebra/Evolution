@@ -50,6 +50,8 @@ MANUAL_ORDER = ["virus_group", "realm", "subrealm", "domain", "superregnum", "re
                 "species_subgroup", "species_complex", "species", "subspecies"]
 MAJOR_RANKS = {"domain", "kingdom", "phylum", "division", "class", "order", "family", "genus", "species"}
 SPECIES_RANKS = {"species", "ichnospecies", "oospecies"}
+INCERTAE = "incertae sedis"
+INCERTAE_RE = re.compile(r"\bincertae\s+(sedis|familiae|ordinis)\b", re.I)
 LIVING_EVIDENCE_RANKS = {"genus", "subgenus", "species", "subspecies", "variety", "form", "section", "subsection",
                          "series", "species group", "species complex"}
 
@@ -528,6 +530,8 @@ def main():
             continue
         cur = anchor
         for rk, nm in chain[anchor_i + 1:]:
+            if INCERTAE_RE.search(nm):  # "ordo = incertae sedis" means the order is unknown
+                nm = f"Incertae sedis ({nodes[cur].get('name', cur)})"
             cur = synth(cur, rk, nm)
         attach(nodes[cur], a)
     print(f"  synthetic nodes: {synth_count}, unplaced articles: {unplaced}", flush=True)
@@ -568,6 +572,12 @@ def main():
     for k, n in nodes.items():
         if k != "Life":
             children[n["pk"]].append(k)
+
+    # "Incertae sedis" groups are placeholders for members of uncertain placement, not real taxa
+    # of whatever rank slot the template or taxobox put them in.
+    for n in nodes.values():
+        if INCERTAE_RE.search(n.get("name") or ""):
+            n["rank"] = INCERTAE
 
     # prune empty leaves (template-only taxa with no article and nothing below them)
     changed = True
@@ -670,7 +680,7 @@ def main():
     # --------------------------------------------- order + numbering
     def sort_key(c):
         cn = nodes[c]
-        return (c == "__unplaced", -cn["tot"], cn.get("name", c).lower())
+        return (c == "__unplaced", cn.get("rank") == INCERTAE, -cn["tot"], cn.get("name", c).lower())
 
     for k in children:
         children[k].sort(key=sort_key)

@@ -14,6 +14,21 @@ export const isItalic = (n: Pick<Brief, "r">) => !!n.r && ITALIC_RANKS.has(n.r);
 
 export const MAJOR_RANKS = new Set(["root", "domain", "kingdom", "phylum", "division", "class", "order", "family", "genus", "species"]);
 
+export const INCERTAE = "incertae sedis";
+export const isIncertae = (n: Pick<Brief, "r">) => n.r === INCERTAE;
+
+/** Colour per major rank (and its sub/super/infra variants), used for rank tags. */
+const RANK_COLOR: Record<string, string> = {
+  root: "#6ee7b7", domain: "#f472b6", kingdom: "#fb923c", phylum: "#facc15", division: "#facc15",
+  class: "#4ade80", order: "#22d3ee", family: "#60a5fa", tribe: "#818cf8", genus: "#a78bfa",
+  species: "#e879f9", variety: "#e879f9", form: "#e879f9",
+};
+export function rankColor(rank?: string): string | undefined {
+  if (!rank) return undefined;
+  const base = rank.replace(/^(super|sub|infra|parv|magn|grand|mir|micro|nano)/, "");
+  return RANK_COLOR[rank] ?? RANK_COLOR[base];
+}
+
 export const STATUS: Record<string, [string, string]> = {
   EX: ["Extinct", "#5b1a1a"], EW: ["Extinct in the wild", "#6d2a44"], CR: ["Critically endangered", "#cc3333"],
   EN: ["Endangered", "#cc6633"], VU: ["Vulnerable", "#cc9900"], NT: ["Near threatened", "#7fa33a"],

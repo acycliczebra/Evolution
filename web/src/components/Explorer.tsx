@@ -2,11 +2,11 @@ import { useCallback, useEffect, useState } from "react";
 import type { Brief, Filter, Taxon, View } from "../types";
 import { getLineage, getTaxon } from "../data";
 import { fmtShort, isAlive, rangeText } from "../time";
-import { MAJOR_RANKS, STATUS, fmtInt, glyphFor, wikiUrl } from "../taxa";
+import { MAJOR_RANKS, STATUS, fmtInt, glyphFor, isIncertae, wikiUrl } from "../taxa";
 import { useApp } from "../context";
 import { Img } from "./Img";
 import { RangeAxis, RangeBar } from "./RangeBar";
-import { SciName, TaxonLink } from "./common";
+import { RankTag, SciName, TaxonLink } from "./common";
 import { TreeView } from "./TreeView";
 
 interface Props {
@@ -57,7 +57,7 @@ export function Explorer({ id, T, filter, setFilter, view, setView }: Props) {
   return (
     <section className="explorer">
       <Crumbs lineage={lineage} />
-      <Hero n={node} T={T} loading={loading} />
+      <Hero n={node} T={T} loading={loading} parent={lineage[lineage.length - 2]} />
       <div className="kids-head">
         <h2>
           {total ? <>Subgroups <span className="muted">{kids.length}{kids.length !== total ? ` of ${fmtInt(total)}` : ""}</span></> : "No subgroups"}
@@ -100,9 +100,10 @@ function Crumbs({ lineage }: { lineage: Taxon[] }) {
           <TaxonLink
             id={a.i}
             title={a.r}
-            className={`crumb ${MAJOR_RANKS.has(a.r || "") ? "major" : "minor"}${i === lineage.length - 1 ? " cur" : ""}`}
+            className={`crumb ${MAJOR_RANKS.has(a.r || "") ? "major" : "minor"}${isIncertae(a) ? " incertae" : ""}${i === lineage.length - 1 ? " cur" : ""}`}
           >
-            {a.i === 0 ? "🌳 Life" : <SciName n={a} />}
+            {a.i !== 0 && <RankTag rank={a.r} />}
+            <span className="crumb-name">{a.i === 0 ? "🌳 Life" : <SciName n={a} />}</span>
           </TaxonLink>
         </span>
       ))}
@@ -110,7 +111,7 @@ function Crumbs({ lineage }: { lineage: Taxon[] }) {
   );
 }
 
-function Hero({ n, T, loading }: { n: Taxon; T: number | null; loading: boolean }) {
+function Hero({ n, T, loading, parent }: { n: Taxon; T: number | null; loading: boolean; parent?: Taxon }) {
   const { go, jumpToTime } = useApp();
   const st = n.st ? STATUS[n.st.replace(/[^A-Z0-9]/g, "")] : undefined;
   return (
@@ -120,9 +121,18 @@ function Hero({ n, T, loading }: { n: Taxon; T: number | null; loading: boolean 
         {n.m && !n.own ? <div className="imgnote">Representative image from a member group</div> : n.cap ? <div className="imgnote">{n.cap}</div> : null}
       </div>
       <div className="hero-body">
-        <div className="rank">{n.r || ""}{n.x ? <> · <span className="ext">extinct †</span></> : null}</div>
+        <div className="rank">
+          {n.i !== 0 && <RankTag rank={n.r} big />}
+          {n.x ? <span className="ext">extinct †</span> : null}
+        </div>
         <h1>{n.x ? "† " : ""}{n.i === 0 ? "Life" : <SciName n={n} />}</h1>
-        {n.c && <div className="common">{n.c}</div>}
+        {isIncertae(n) && (
+          <p className="incertae-note">
+            <i>Incertae sedis</i> ("of uncertain placement") is not a taxon: it collects members of
+            {parent ? <> <SciName n={parent} /></> : " the parent group"} whose exact position within it is unresolved.
+          </p>
+        )}
+        {n.c && !isIncertae(n) && <div className="common">{n.c}</div>}
         {n.au && <div className="author">{n.au}</div>}
         <div className="pills">
           {st && <span className="pill" style={{ background: st[1] }}>{st[0]}</span>}
@@ -156,7 +166,7 @@ function KidCard({ k, T }: { k: Brief; T: number | null }) {
         <div className="cname">{k.x ? "† " : ""}<SciName n={k} /></div>
         {k.c && <div className="ccommon">{k.c}</div>}
         <div className="cmeta">
-          <span className="crank">{k.r || ""}</span>
+          <RankTag rank={k.r} />
           {k.s ? ` · ${fmtInt(k.s)} sp.` : k.t ? ` · ${fmtInt(k.t)} taxa` : ""}
         </div>
         {k.a != null && <><div className="crange">{rangeText(k)}</div><RangeBar n={k} T={T} /></>}
