@@ -62,6 +62,31 @@ python scripts/build.py out/ .                                 # ~3 min → data
    geography/climate and iconic life, and the milestones. Dates and paleomaps from Wikipedia's
    period articles override the skeleton when present.
 
+## Languages
+
+The site is available in English, French, Hindi, Italian, Japanese,
+Korean, Persian, Portuguese, Russian, Spanish, Turkish and Vietnamese (language menu in the header;
+the choice and the order of recently used languages are kept in `localStorage`). URLs stay in
+English (`#n=<id>&u=<unit>`), so switching the language keeps the open taxon and time.
+
+* **Names, summaries and article links** come from each language's own Wikipedia (2026-09-01
+  dumps): every English article the site uses (taxa, geologic units, milestones) is matched to its
+  local article through the local wiki's interlanguage links, and the local title and lead paragraph
+  are taken from the local dump. Where no local article exists the English text is shown, marked as such.
+* **Interface strings** are in `web/src/i18n/<lang>.json` (source: `web/src/i18n/en.ts`); curated
+  content (geologic unit names, notes on Earth, milestones, rank names, globe labels) is translated in
+  `scripts/i18n/content.<lang>.json`.
+
+```
+# per language: langlinks table + multistream dump parts (downloaded one at a time, deleted after use)
+python scripts/i18n_extract.py . out/redirects.tsv i18n/ 20260901 hi es fr pt ru ja vi tr fa ko it
+python scripts/i18n_build.py . i18n/ hi es fr pt ru ja vi tr fa ko it   # -> web/public/data/l/<lang>/
+```
+
+`web/public/data/l/<lang>/` holds `n/<chunk>.json` (localized name, article and lead per taxon,
+overlaying the English chunks), `time.json` (localized time scale and curated content), and
+`s/<bucket>.json` search shards over the local names.
+
 ## Paleogeographic globe
 
 The globe is rendered with three.js from scientific reconstructions (not Wikipedia images),
@@ -102,6 +127,8 @@ Pushing to `main` deploys to GitHub Pages via `.github/workflows/pages.yml`.
 | `src/components/TimePanel.tsx` | selected period: globe, description, life, first appearances |
 | `src/components/Globe.tsx` | three.js paleogeographic globe (lazy-loaded) |
 | `src/data.ts` | chunk loading and search |
-| `src/time.ts` | time scale helpers (warped scale, formatting) |
+| `src/time.ts` | time scale helpers (warped scale) |
+| `src/i18n/` | languages, UI strings, localized formatting and content (`useI18n`) |
+| `src/components/LanguageMenu.tsx` | language menu (recently used first) |
 
 Text and images © Wikipedia / Wikimedia Commons contributors, CC BY-SA 4.0.

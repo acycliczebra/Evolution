@@ -6,13 +6,12 @@ import time
 import urllib.request
 
 CHUNK = 128 << 20
+UA = {"User-Agent": "EvolutionTreeBuilder/1.0"}
 
 
-def main():
-    url, out = sys.argv[1], sys.argv[2]
-    threads = int(sys.argv[3]) if len(sys.argv) > 3 else 8
-    req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "EvolutionTreeBuilder/1.0"})
-    size = int(urllib.request.urlopen(req).headers["Content-Length"])
+def download(url, out, threads=8, chunk=CHUNK, log=print):
+    req = urllib.request.Request(url, method="HEAD", headers=UA)
+    size = int(urllib.request.urlopen(req, timeout=60).headers["Content-Length"])
     state = out + ".done"
     done = set()
     if os.path.exists(state):
@@ -20,9 +19,10 @@ def main():
     if not os.path.exists(out):
         with open(out, "wb") as f:
             f.truncate(size)
-    chunks = [i for i in range(0, size, CHUNK) if i not in done]
+    chunks = [i for i in range(0, size, chunk) if i not in done]
     lock = threading.Lock()
-    got = [len(done) * CHUNK]
+    got = [len(done) * chunk]
+    failed = []
     t0 = time.time()
 
     def work():
@@ -31,10 +31,10 @@ def main():
                 if not chunks:
                     return
                 start = chunks.pop(0)
-            end = min(start + CHUNK, size) - 1
+            end = min(start + chunk, size) - 1
             for attempt in range(10):
                 try:
-                    r = urllib.request.Request(url, headers={"Range": f"bytes={start}-{end}", "User-Agent": "EvolutionTreeBuilder/1.0"})
+                    r = urllib.request.Request(url, headers={"Range": f"bytes={start}-{end}", **UA})
                     data = urllib.request.urlopen(r, timeout=60).read()
                     if len(data) != end - start + 1:
                         raise IOError("short read")
@@ -46,19 +46,30 @@ def main():
                             s.write(f"{start}\n")
                         got[0] += len(data)
                         el = time.time() - t0
-                        print(f"{got[0] / size * 100:5.1f}%  {got[0] / 1e9:.1f}/{size / 1e9:.1f} GB  {el:.0f}s", flush=True)
+                        log(f"{got[0] / size * 100:5.1f}%  {got[0] / 1e9:.1f}/{size / 1e9:.1f} GB  {el:.0f}s")
                     break
                 except Exception as ex:
-                    print(f"retry {start}: {ex!r}", flush=True)
+                    log(f"retry {start}: {ex!r}")
                     time.sleep(2 ** min(attempt, 5))
             else:
-                print(f"FAILED chunk {start}", flush=True)
+                log(f"FAILED chunk {start}")
+                failed.append(start)
 
     ts = [threading.Thread(target=work) for _ in range(threads)]
     for t in ts:
         t.start()
     for t in ts:
         t.join()
+    if failed:
+        raise IOError(f"{len(failed)} chunks failed for {url}")
+    os.remove(state)
+    return size
+
+
+def main():
+    url, out = sys.argv[1], sys.argv[2]
+    threads = int(sys.argv[3]) if len(sys.argv) > 3 else 8
+    download(url, out, threads, log=lambda s: print(s, flush=True))
     print("COMPLETE", flush=True)
 
 

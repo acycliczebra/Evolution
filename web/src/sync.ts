@@ -5,14 +5,13 @@
  * (or the cursor instant when no unit is selected). Undated taxa never force a change.
  */
 import type { Brief, Taxon, Unit } from "./types";
-import { fmtShort } from "./time";
 
 /** The selected span of time, oldest first: [start Ma, end Ma]. */
 export interface TimeWindow {
   start: number;
   end: number;
-  /** Human label, e.g. "the Cretaceous" or "69 Ma". */
-  label: string;
+  /** The selected unit (English name), or undefined when it is just an instant. */
+  unit?: string;
 }
 
 export type Relation = "alive" | "extinct" | "future" | "unknown";
@@ -20,8 +19,8 @@ export type Relation = "alive" | "extinct" | "future" | "unknown";
 const EPS = 1e-6;
 
 export function timeWindow(unit: Unit | undefined, T: number | null): TimeWindow | null {
-  if (unit) return { start: unit.start, end: unit.end, label: `the ${unit.name}` };
-  if (T != null) return { start: T, end: T, label: fmtShort(T) };
+  if (unit) return { start: unit.start, end: unit.end, unit: unit.name };
+  if (T != null) return { start: T, end: T };
   return null;
 }
 

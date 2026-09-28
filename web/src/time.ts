@@ -1,30 +1,7 @@
-import type { Brief, Unit, UnitLevel } from "./types";
+import type { Unit, UnitLevel } from "./types";
 
 export const LEVELS: UnitLevel[] = ["eon", "era", "period", "epoch", "age"];
 export const EARTH_AGE = 4567;
-
-export function fmtMa(ma: number | undefined | null): string {
-  if (ma == null) return "?";
-  if (ma === 0) return "present";
-  if (ma >= 1000) return (ma / 1000).toFixed(ma % 1000 === 0 ? 0 : 2).replace(/\.?0+$/, "") + " billion years ago";
-  if (ma >= 1) return (+ma.toFixed(ma < 10 ? 2 : 1)).toLocaleString("en-US") + " million years ago";
-  const ky = ma * 1000;
-  if (ky >= 1) return (+ky.toFixed(ky < 10 ? 1 : 0)).toLocaleString("en-US") + " thousand years ago";
-  return Math.round(ma * 1e6).toLocaleString("en-US") + " years ago";
-}
-
-export function fmtShort(ma: number | undefined | null): string {
-  if (ma == null) return "?";
-  if (ma === 0) return "0";
-  if (ma >= 1000) return (ma / 1000).toFixed(2).replace(/\.?0+$/, "") + " Ga";
-  if (ma >= 1) return +ma.toFixed(ma < 10 ? 2 : 1) + " Ma";
-  if (ma >= 0.001) return +(ma * 1000).toFixed(1) + " ka";
-  return Math.round(ma * 1e6) + " yr";
-}
-
-export function fmtDuration(ma: number): string {
-  return fmtShort(ma).replace(" Ma", " million years").replace(" ka", " thousand years").replace(" Ga", " billion years");
-}
 
 /** Piecewise-linear warp so the Phanerozoic gets room while the whole history stays visible. */
 const WARP: [number, number][] = [[EARTH_AGE, 0], [2500, 0.12], [538.8, 0.26], [251.902, 0.47], [66, 0.7], [2.58, 0.95], [0, 1]];
@@ -63,13 +40,6 @@ export function zoomDomain([a, b]: Domain, t: number, f: number): Domain | null 
 export function unitDomain(u: Unit): Domain {
   const pad = (warp(u.end) - warp(u.start)) * 0.35;
   return [unwarp(Math.max(0, warp(u.start) - pad)), unwarp(Math.min(1, warp(u.end) + pad))];
-}
-
-export function rangeText(n: Brief): string {
-  if (n.a == null) return n.x ? "Extinct (age unknown)" : "Extant";
-  const b = n.b ?? 0;
-  if (!n.x && b === 0) return `${fmtShort(n.a)} – present`;
-  return `${fmtShort(n.a)} – ${fmtShort(b)}`;
 }
 
 export class TimeScale {

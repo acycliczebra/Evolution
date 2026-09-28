@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import { fmtShort } from "../time";
+import { useI18n } from "../i18n";
 
 const EARTH = `${import.meta.env.BASE_URL}earth/`;
 
@@ -79,30 +79,24 @@ function lonLatToVector(lon: number, lat: number): THREE.Vector3 {
 }
 
 function Attribution({ entry }: { entry: GlobeEntry }) {
+  const { t, tn } = useI18n();
   switch (entry.src) {
     case "paleodem":
-      return (
-        <>
-          Paleogeography: <a href="https://www.earthbyte.org/paleodem-resource-scotese-and-wright-2018/" target="_blank" rel="noopener">PALEOMAP PaleoDEM</a>{" "}
-          (Scotese &amp; Wright 2018, CC BY 4.0), elevation and ocean depth.
-        </>
-      );
+      return tn("globe.paleodem", {
+        link: <a href="https://www.earthbyte.org/paleodem-resource-scotese-and-wright-2018/" target="_blank" rel="noopener">PALEOMAP PaleoDEM</a>,
+      });
     case "gplates":
-      return (
-        <>
-          Continents: <a href="https://www.earthbyte.org/gplates-web-service/" target="_blank" rel="noopener">GPlates</a> plate model
-          of Merdith et al. (2021). Coastlines only; relief and ocean depth are illustrative.
-        </>
-      );
+      return tn("globe.gplates", { link: <a href="https://www.earthbyte.org/gplates-web-service/" target="_blank" rel="noopener">GPlates</a> });
     case "precambrian":
-      return <>No reliable global reconstruction exists this far back; continents are not drawn.</>;
+      return <>{t("globe.noReconstruction")}</>;
     case "hadean":
-      return <>Artist&apos;s impression: a young Earth of cooling crust and magma. No rocks survive to map it.</>;
+      return <>{t("globe.hadeanNote")}</>;
   }
 }
 
 /** Interactive paleogeographic globe for time T (Ma). */
 export function Globe({ T }: { T: number }) {
+  const { t, fmtShort, globeLabel } = useI18n();
   const mount = useRef<HTMLDivElement>(null);
   const stage = useRef<Stage | null>(null);
   const [index, setIndex] = useState<GlobeEntry[] | null>(null);
@@ -236,17 +230,17 @@ export function Globe({ T }: { T: number }) {
 
   return (
     <figure className="globe">
-      <div ref={mount} className={`globe-canvas${loading ? " loading" : ""}`} title="Drag to rotate · scroll to zoom" />
+      <div ref={mount} className={`globe-canvas${loading ? " loading" : ""}`} title={t("globe.hint")} />
       {entry && (
         <figcaption>
           <b>
             {entry.ma != null
-              ? `Earth ${entry.ma === 0 ? "today" : `${fmtShort(entry.ma)} ago`}${entry.label ? ` · ${entry.label}` : ""}`
-              : entry.src === "hadean" ? "Hadean Earth" : "Earth before 1 billion years ago"}
+              ? `${entry.ma === 0 ? t("globe.today") : t("globe.ago", { time: fmtShort(entry.ma) })}${entry.label ? ` · ${globeLabel(entry.label)}` : ""}`
+              : entry.src === "hadean" ? t("globe.hadean") : t("globe.precambrian")}
           </b>
-          {entry.ma != null && Math.abs(entry.ma - T) >= 1 && <span className="muted"> (nearest reconstruction to {fmtShort(T)})</span>}
+          {entry.ma != null && Math.abs(entry.ma - T) >= 1 && <span className="muted"> {t("globe.nearest", { time: fmtShort(T) })}</span>}
           <br />
-          <span className="muted"><Attribution entry={entry} /> Drag to rotate.</span>
+          <span className="muted"><Attribution entry={entry} /> {t("globe.drag")}</span>
         </figcaption>
       )}
     </figure>

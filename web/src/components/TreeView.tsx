@@ -5,8 +5,9 @@ import { select } from "d3-selection";
 import { zoom, zoomIdentity, type ZoomTransform } from "d3-zoom";
 import type { Brief, Taxon } from "../types";
 import { getTaxon } from "../data";
-import { fmtInt, isItalic } from "../taxa";
+import { isItalic } from "../taxa";
 import { useApp } from "../context";
+import { useI18n } from "../i18n";
 
 const MAX_KIDS = 40;
 
@@ -20,11 +21,12 @@ interface Expansion { open: boolean; kids?: Brief[] }
 /** Expandable horizontal tree rooted at the current taxon; click a dot to expand, a label to open. */
 export function TreeView({ root, keep }: { root: Taxon; keep: (b: Brief) => boolean }) {
   const { go } = useApp();
+  const { t, fmtInt, lang } = useI18n();
   const svgRef = useRef<SVGSVGElement>(null);
   const [exp, setExp] = useState<Map<number, Expansion>>(() => new Map());
   const [transform, setTransform] = useState<ZoomTransform>(zoomIdentity);
 
-  useEffect(() => { setExp(new Map()); }, [root.i]);
+  useEffect(() => { setExp(new Map()); }, [root.i, lang.code]);
 
   useEffect(() => {
     const z = zoom<SVGSVGElement, unknown>().scaleExtent([0.2, 3]).on("zoom", e => setTransform(e.transform));
@@ -43,18 +45,18 @@ export function TreeView({ root, keep }: { root: Taxon; keep: (b: Brief) => bool
           const e = exp.get(k.i);
           return build(k, e?.kids, !!e?.open);
         });
-        if (shown.length > MAX_KIDS) node.children.push({ i: -1 - b.i, n: `+${shown.length - MAX_KIDS} more`, more: shown.length - MAX_KIDS });
+        if (shown.length > MAX_KIDS) node.children.push({ i: -1 - b.i, n: t("tree.more", { count: shown.length - MAX_KIDS }), more: shown.length - MAX_KIDS });
       }
       return node;
     };
     return build(root, root.k, true);
-  }, [root, exp, keep]);
+  }, [root, exp, keep, t]);
 
   const toggle = async (d: TNode) => {
     if (d.more || d.i === root.i) return;
     const cur = exp.get(d.i);
     let kids = cur?.kids;
-    if (!kids) kids = (await getTaxon(d.i))?.k ?? [];
+    if (!kids) kids = (await getTaxon(d.i, lang.code))?.k ?? [];
     setExp(m => new Map(m).set(d.i, { kids, open: !cur?.open }));
   };
 
@@ -81,7 +83,7 @@ export function TreeView({ root, keep }: { root: Taxon; keep: (b: Brief) => bool
               return (
                 <g key={n.i} className={`tnode${n.x ? " ext" : ""}${n.more ? " more" : ""}`} transform={`translate(${d.y + 60},${d.x + off})`}>
                   <circle r={r} onClick={() => toggle(n)}>
-                    {!n.more && <title>Click to expand/collapse</title>}
+                    {!n.more && <title>{t("tree.toggle")}</title>}
                   </circle>
                   <text x={14} dy="0.32em" onClick={() => { if (!n.more) go(n.i); }}>
                     {n.more ? n.n : (

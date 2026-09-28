@@ -1,18 +1,20 @@
 import type { Brief } from "../types";
 import { glyphFor, isIncertae, isItalic, rankColor } from "../taxa";
 import { useApp } from "../context";
+import { useI18n } from "../i18n";
 import { Img } from "./Img";
 
 /** Small rank indicator ("phylum", "genus", …); incertae sedis is flagged as a placement note, not a rank. */
 export function RankTag({ rank, big = false }: { rank?: string; big?: boolean }) {
+  const i18n = useI18n();
   if (!rank) return null;
   if (rank === "incertae sedis") {
-    return <span className={`ranktag incertae${big ? " big" : ""}`} title="Incertae sedis: members whose placement within the parent group is uncertain">uncertain placement</span>;
+    return <span className={`ranktag incertae${big ? " big" : ""}`} title={i18n.t("rank.incertaeTitle")}>{i18n.t("rank.incertae")}</span>;
   }
   const c = rankColor(rank);
   return (
     <span className={`ranktag${c ? " major" : ""}${big ? " big" : ""}`} style={c ? ({ "--rc": c } as React.CSSProperties) : undefined}>
-      {rank}
+      {i18n.rank(rank)}
     </span>
   );
 }
@@ -48,14 +50,16 @@ export function TaxonLink({ id, className, title, children }: { id: number; clas
 }
 
 /** Small image + name tile used in the time panel. */
-export function MiniCard({ b, extra = "" }: { b: Brief; extra?: string }) {
+export function MiniCard({ b: raw, extra = "" }: { b: Brief; extra?: string }) {
+  const { brief, rank } = useI18n();
+  const b = brief(raw);
   return (
     <TaxonLink id={b.i} className={`mini ${b.x ? "extinct" : ""}`} title={b.c || b.n}>
       <Img file={b.m} width={120} glyph={glyphFor(b.r)} />
       <span>
         <b>{b.x ? "† " : ""}<SciName n={b} /></b>
         {b.c && <small>{b.c}</small>}
-        <small className="muted">{b.r || ""}{extra}</small>
+        <small className="muted">{rank(b.r)}{extra}</small>
       </span>
     </TaxonLink>
   );

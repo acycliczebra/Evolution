@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Filter, Meta, Milestone, TimeData, Unit, View } from "./types";
-import { TimeScale, unitDomain, zoomDomain, fmtShort, EARTH_AGE, type Domain } from "./time";
+import { TimeScale, unitDomain, zoomDomain, EARTH_AGE, type Domain } from "./time";
 import { AppContext, type AppActions } from "./context";
 import { getLineage, getTaxon } from "./data";
 import { nearestFitting, relation, timeWindow, type TimeWindow } from "./sync";
@@ -9,6 +9,7 @@ import { Timeline } from "./components/Timeline";
 import { Explorer } from "./components/Explorer";
 import { TimePanel } from "./components/TimePanel";
 import { SciName } from "./components/common";
+import { useI18n } from "./i18n";
 
 const FULL: Domain = [EARTH_AGE, 0];
 const NOTICE_MS = 6000;
@@ -19,6 +20,10 @@ function readHash() {
 }
 
 export function App({ meta, time }: { meta: Meta; time: TimeData }) {
+  const i18n = useI18n();
+  const { t, tn, lang } = i18n;
+  const i18nRef = useRef(i18n);
+  i18nRef.current = i18n;
   const scale = useMemo(() => new TimeScale(time.units), [time]);
   const initial = useMemo(() => {
     const h = readHash();
@@ -98,7 +103,14 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     if (seq !== syncSeq.current) return;
     const target = nearestFitting(lineage, w);
     setId(target.i); // replaces the history entry, keeping taxon and time consistent in the URL
-    say(<><SciName n={n} /> {rel === "extinct" ? "had died out by" : "hadn't evolved yet in"} {w.label}, so showing {target.i === 0 ? "all life" : <SciName n={target} />} instead.</>);
+    const i = i18nRef.current;
+    const key = rel === "extinct" ? (w.unit ? "notice.extinctUnit" : "notice.extinctAt") : (w.unit ? "notice.futureUnit" : "notice.futureAt");
+    say(i.tn(key, {
+      taxon: <SciName n={n} />,
+      unit: w.unit ? i.unitName(w.unit) : "",
+      time: i.fmtShort(w.start),
+      target: target.i === 0 ? i.t("notice.allLife") : <SciName n={target} />,
+    }));
   }, []);
 
   /** Navigate to a taxon; if it didn't exist at the selected time, move the time to its origin. */
@@ -122,7 +134,8 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
       setT(n.a);
       setMilestone(null);
       zoomTo(u);
-      say(<>Moved to the {u.name} ({fmtShort(n.a)}), when <SciName n={n} /> first appeared.</>);
+      const i = i18nRef.current;
+      say(i.tn("notice.moved", { unit: i.unitName(u.name), time: i.fmtShort(n.a), taxon: <SciName n={n} /> }));
     });
   }, [scale, zoomTo]);
 
@@ -184,30 +197,33 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     [scale, go, selectUnit, selectMilestone, jumpToTime],
   );
   const [a, b] = domain;
-  const [nodeLabel, setNodeLabel] = useState("Life");
+  const [nodeLabel, setNodeLabel] = useState<string | null>(null);
   useEffect(() => {
     let live = true;
-    getTaxon(id).then(n => { if (live && n) setNodeLabel(n.i === 0 ? "Life" : n.c || n.n); });
+    getTaxon(id, lang.code).then(n => { if (live && n) setNodeLabel(n.i === 0 ? null : n.c || n.n); });
     return () => { live = false; };
-  }, [id]);
-  const fmt = (t: number) => (t === 0 ? "today" : t >= 1000 ? `${(t / 1000).toFixed(2).replace(/\.?0+$/, "")} Ga` : `${+t.toFixed(1)} Ma`);
+  }, [id, lang.code]);
+  const fmt = (x: number) => (x === 0 ? t("time.today") : i18n.fmtShort(x >= 1000 ? +x.toPrecision(3) : +x.toFixed(1)));
 
   return (
     <AppContext.Provider value={actions}>
       <Header meta={meta} onPick={go} onHome={home} />
       <section className="timeline-wrap">
         <div className="timeline-bar">
-          <div className="tl-title">Geologic time <span className="muted">· {fmt(a)} → {fmt(b)}</span></div>
+          <div className="tl-title">{t("timeline.title")} <span className="muted">· <bdi>{fmt(a)} → {fmt(b)}</bdi></span></div>
           <div className="tl-controls">
-            <button onClick={() => zoomBy(2)} title="Zoom out">−</button>
-            <button onClick={() => zoomBy(0.5)} title="Zoom in">+</button>
-            <button onClick={() => setDomain(FULL)} title="Show all of Earth's history">All time</button>
-            <span className="legend"><i className="dot life" />Life <i className="dot extinction" />Extinction <i className="dot earth" />Earth</span>
+            <button onClick={() => zoomBy(2)} title={t("timeline.zoomOut")}>−</button>
+            <button onClick={() => zoomBy(0.5)} title={t("timeline.zoomIn")}>+</button>
+            <button onClick={() => setDomain(FULL)} title={t("timeline.allTitle")}>{t("timeline.all")}</button>
+            <span className="legend">
+              <i className="dot life" />{t("timeline.legendLife")} <i className="dot extinction" />{t("timeline.legendExtinction")}{" "}
+              <i className="dot earth" />{t("timeline.legendEarth")}
+            </span>
           </div>
         </div>
         <Timeline milestones={time.milestones} domain={domain} setDomain={setDomain} unit={unit} T={T} msTitle={milestone?.title ?? null} onScrub={scrubTo} onPickUnit={pickUnitFromTimeline} />
         <div className="tl-hint muted">
-          Click a band to explore that time · drag the ▲ cursor to travel through time · scroll to zoom, drag to pan · pins are evolutionary milestones · scale is compressed for the Precambrian
+          {t("timeline.hint")}
         </div>
       </section>
       <main className={`layout pane-${pane}`}>
@@ -215,22 +231,25 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
         <TimePanel unit={unit} T={T} milestone={milestone} milestones={time.milestones} />
       </main>
       <footer className="foot">
-        Data extracted from every taxobox and taxonomy template in the English Wikipedia dump (2026-09). Text and images © Wikipedia /
-        Wikimedia Commons contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. Time scale: ICS
-        International Chronostratigraphic Chart.
+        <b>{t("footer.stats", { taxa: i18n.fmtInt(meta.count), species: i18n.fmtInt(meta.species) })}</b>
+        <br />
+        {t("footer.data")}{" "}
+        {lang.code !== "en" && <>{t("footer.translated", { wiki: i18n.wikiName })} </>}
+        {tn("footer.license", { license: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> })}{" "}
+        {t("footer.timescale")}
       </footer>
-      <nav className="mobile-tabs" aria-label="Sections">
+      <nav className="mobile-tabs" aria-label={t("tabs.sections")}>
         <button className={pane === "tree" ? "on" : ""} onClick={() => { setPane("tree"); scrollTo({ top: 0 }); }}>
-          🌳 Organism<small>{nodeLabel}</small>
+          🌳 {t("tabs.organism")}<small>{nodeLabel ?? t("life")}</small>
         </button>
         <button className={pane === "time" ? "on" : ""} onClick={() => { setPane("time"); scrollTo({ top: 0 }); }}>
-          ⏳ Time<small>{unit ?? "Milestones"}</small>
+          ⏳ {t("tabs.time")}<small>{unit ? i18n.unitName(unit) : t("tabs.milestones")}</small>
         </button>
       </nav>
       {notice && (
         <div key={notice.key} className="notice" role="status">
           <span>⏱ {notice.body}</span>
-          <button onClick={() => setNotice(null)} aria-label="Dismiss">×</button>
+          <button onClick={() => setNotice(null)} aria-label={t("notice.dismiss")}>×</button>
         </div>
       )}
     </AppContext.Provider>

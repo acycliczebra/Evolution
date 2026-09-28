@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Milestone } from "../types";
-import { LEVELS, fmtMa, fmtShort, unwarp, warp, zoomDomain, type Domain } from "../time";
+import { LEVELS, unwarp, warp, zoomDomain, type Domain } from "../time";
 import { useApp } from "../context";
+import { useI18n } from "../i18n";
 
 const ROW_H = 24;
 const PIN_H = 34;
@@ -22,13 +23,21 @@ interface Props {
 
 interface Tip { x: number; y: number; html: React.ReactNode }
 
-function abbrev(s: string, n: number) {
-  if (n <= 1) return s[0];
-  return s.length <= n ? s : s.slice(0, Math.max(1, n - 1)) + ".";
+/** Approximate label width: CJK and Hangul glyphs are about twice as wide as Latin ones. */
+const charW = (ch: string) => (ch.codePointAt(0)! >= 0x2e80 ? CHAR_W * 1.8 : CHAR_W);
+const textW = (s: string) => [...s].reduce((w, ch) => w + charW(ch), 0);
+
+function abbrev(s: string, maxW: number) {
+  const chars = [...s];
+  let w = 0, n = 0;
+  while (n < chars.length && w + charW(chars[n]) <= maxW - CHAR_W) w += charW(chars[n++]);
+  if (n >= chars.length) return s;
+  return chars.slice(0, Math.max(1, n)).join("") + ".";
 }
 
 export function Timeline({ milestones, domain, setDomain, unit, T, msTitle, onScrub, onPickUnit }: Props) {
   const { scale, selectMilestone } = useApp();
+  const { t, fmtShort, fmtMa, unitName, milestone: localMs } = useI18n();
   const wrap = useRef<HTMLDivElement>(null);
   const svg = useRef<SVGSVGElement>(null);
   const [W, setW] = useState(1000);
@@ -161,14 +170,15 @@ export function Timeline({ milestones, domain, setDomain, unit, T, msTitle, onSc
                 const x0 = Math.max(0, tx(u.start)), x1 = Math.min(W, tx(u.end));
                 const w = x1 - x0;
                 if (w < 0.3) return null;
-                const label = w > u.name.length * CHAR_W + 8 ? u.name : w > 30 ? abbrev(u.name, Math.floor((w - 6) / CHAR_W)) : "";
+                const name = unitName(u.name);
+                const label = w > textW(name) + 8 ? name : w > 30 ? abbrev(name, w - 6) : "";
                 const cls = "band" + (unit === u.name ? " sel" : path.has(u.name) ? " path" : "");
                 return (
                   <g
                     key={u.name}
                     className={cls}
                     onClick={() => { if (!wasDrag()) onPickUnit(u.name); }}
-                    onMouseMove={e => showTip(e, <><b>{u.name}</b> <span className="muted">{u.level}</span><br />{fmtShort(u.start)} – {fmtShort(u.end)}</>)}
+                    onMouseMove={e => showTip(e, <><b>{name}</b> <span className="muted">{t(`level.${u.level}`)}</span><br />{fmtShort(u.start)} – {fmtShort(u.end)}</>)}
                     onMouseLeave={() => setTip(null)}
                   >
                     <rect x={x0} y={y} width={Math.max(w, 0.5)} height={ROW_H - 1} fill={u.color} />
@@ -195,7 +205,7 @@ export function Timeline({ milestones, domain, setDomain, unit, T, msTitle, onSc
             className={`pin ${m.cat}${msTitle === m.title ? " sel" : ""}`}
             transform={`translate(${x},${y})`}
             onClick={() => { if (!wasDrag()) selectMilestone(m); }}
-            onMouseMove={e => showTip(e, <><b>{m.title}</b><br /><span className="muted">{fmtMa(m.ma)}</span><br />{m.desc}</>)}
+            onMouseMove={e => { const lm = localMs(m); showTip(e, <><b>{lm.title}</b><br /><span className="muted">{fmtMa(m.ma)}</span><br />{lm.desc}</>); }}
             onMouseLeave={() => setTip(null)}
           >
             <line y1={4} y2={PIN_H - y} />
@@ -204,12 +214,12 @@ export function Timeline({ milestones, domain, setDomain, unit, T, msTitle, onSc
         ))}
         {cursorX >= 0 && cursorX <= W && (
           <g className={`cursor-handle${T == null ? " idle" : ""}`}>
-            <title>Drag to move through time</title>
+            <title>{t("timeline.dragCursor")}</title>
             <line className="cursor" x1={cursorX} x2={cursorX} y1={0} y2={axisY - 8} />
             <rect className="cursor-hit" x={cursorX - 8} y={PIN_H} width={16} height={axisY - PIN_H} />
             <circle className="cursor-knob" cx={cursorX} cy={axisY - 8} r={6} />
             <text className="cursorlab" x={Math.min(Math.max(cursorX, 70), W - 70)} y={H - 1} textAnchor="middle">
-              ▲ {T == null ? "drag to travel in time" : fmtShort(T)}
+              ▲ {T == null ? t("timeline.cursorIdle") : fmtShort(T)}
             </text>
           </g>
         )}

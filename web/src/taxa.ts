@@ -29,15 +29,8 @@ export function rankColor(rank?: string): string | undefined {
   return RANK_COLOR[rank] ?? RANK_COLOR[base];
 }
 
-export const STATUS: Record<string, [string, string]> = {
-  EX: ["Extinct", "#5b1a1a"], EW: ["Extinct in the wild", "#6d2a44"], CR: ["Critically endangered", "#cc3333"],
-  EN: ["Endangered", "#cc6633"], VU: ["Vulnerable", "#cc9900"], NT: ["Near threatened", "#7fa33a"],
-  LC: ["Least concern", "#3a8f5a"], DD: ["Data deficient", "#777"], DOM: ["Domesticated", "#4a6fa5"],
-  FOSSIL: ["Fossil", "#7a5c3e"], G5: ["Secure (NatureServe)", "#3a8f5a"], NE: ["Not evaluated", "#666"], PE: ["Possibly extinct", "#8a3030"],
+/** Conservation status colours; labels are the `status.<code>` messages. */
+export const STATUS: Record<string, string> = {
+  EX: "#5b1a1a", EW: "#6d2a44", CR: "#cc3333", EN: "#cc6633", VU: "#cc9900", NT: "#7fa33a", LC: "#3a8f5a",
+  DD: "#777", DOM: "#4a6fa5", FOSSIL: "#7a5c3e", G5: "#3a8f5a", NE: "#666", PE: "#8a3030",
 };
-
-export const fmtInt = (n?: number) => (n ?? 0).toLocaleString("en-US");
-
-export const wikiUrl = (title: string) =>
-  "https://en.wikipedia.org/wiki/" +
-  encodeURIComponent(title.replace(/ /g, "_")).replace(/%2F/g, "/").replace(/%3A/g, ":");

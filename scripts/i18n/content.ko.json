@@ -1,0 +1,774 @@
+{
+ "unitNames": {
+  "Hadean": "명왕누대",
+  "Archean": "시생누대",
+  "Proterozoic": "원생누대",
+  "Phanerozoic": "현생누대",
+  "Eoarchean": "초시생대",
+  "Paleoarchean": "고시생대",
+  "Mesoarchean": "중시생대",
+  "Neoarchean": "신시생대",
+  "Paleoproterozoic": "고원생대",
+  "Mesoproterozoic": "중원생대",
+  "Neoproterozoic": "신원생대",
+  "Paleozoic": "고생대",
+  "Mesozoic": "중생대",
+  "Cenozoic": "신생대",
+  "Siderian": "시데리아기",
+  "Rhyacian": "리아시아기",
+  "Orosirian": "오로시리아기",
+  "Statherian": "스타테리아기",
+  "Calymmian": "칼리미아기",
+  "Ectasian": "엑타시아기",
+  "Stenian": "스테니아기",
+  "Tonian": "토니아기",
+  "Cryogenian": "크라이오제니아기",
+  "Ediacaran": "에디아카라기",
+  "Cambrian": "캄브리아기",
+  "Ordovician": "오르도비스기",
+  "Silurian": "실루리아기",
+  "Devonian": "데본기",
+  "Carboniferous": "석탄기",
+  "Permian": "페름기",
+  "Triassic": "트라이아스기",
+  "Jurassic": "쥐라기",
+  "Cretaceous": "백악기",
+  "Paleogene": "팔레오기",
+  "Neogene": "네오기",
+  "Quaternary": "제4기",
+  "Terreneuvian": "테레뇌브세",
+  "Cambrian Series 2": "캄브리아기 제2세",
+  "Miaolingian": "먀오링세",
+  "Furongian": "푸룽세",
+  "Early Ordovician": "전기 오르도비스세",
+  "Middle Ordovician": "중기 오르도비스세",
+  "Late Ordovician": "후기 오르도비스세",
+  "Llandovery": "랜도버리세",
+  "Wenlock": "웬록세",
+  "Ludlow": "러들로세",
+  "Pridoli": "프르지돌리세",
+  "Early Devonian": "전기 데본세",
+  "Middle Devonian": "중기 데본세",
+  "Late Devonian": "후기 데본세",
+  "Early Mississippian": "전기 미시시피세",
+  "Middle Mississippian": "중기 미시시피세",
+  "Late Mississippian": "후기 미시시피세",
+  "Early Pennsylvanian": "전기 펜실베이니아세",
+  "Middle Pennsylvanian": "중기 펜실베이니아세",
+  "Late Pennsylvanian": "후기 펜실베이니아세",
+  "Cisuralian": "시수랄리아세",
+  "Guadalupian": "과달루페세",
+  "Lopingian": "러핑세",
+  "Early Triassic": "전기 트라이아스세",
+  "Middle Triassic": "중기 트라이아스세",
+  "Late Triassic": "후기 트라이아스세",
+  "Early Jurassic": "전기 쥐라세",
+  "Middle Jurassic": "중기 쥐라세",
+  "Late Jurassic": "후기 쥐라세",
+  "Early Cretaceous": "전기 백악세",
+  "Late Cretaceous": "후기 백악세",
+  "Paleocene": "팔레오세",
+  "Eocene": "에오세",
+  "Oligocene": "올리고세",
+  "Miocene": "마이오세",
+  "Pliocene": "플라이오세",
+  "Pleistocene": "플라이스토세",
+  "Holocene": "홀로세",
+  "Fortunian": "포추니안절",
+  "Cambrian Stage 2": "캄브리아기 제2절",
+  "Cambrian Stage 3": "캄브리아기 제3절",
+  "Cambrian Stage 4": "캄브리아기 제4절",
+  "Wuliuan": "우류절",
+  "Drumian": "드럼절",
+  "Guzhangian": "구장절",
+  "Paibian": "파이비절",
+  "Jiangshanian": "장산절",
+  "Cambrian Stage 10": "캄브리아기 제10절",
+  "Tremadocian": "트레마독절",
+  "Floian": "플로절",
+  "Dapingian": "다핑절",
+  "Darriwilian": "다리윌절",
+  "Sandbian": "샌드비절",
+  "Katian": "케이티절",
+  "Hirnantian": "히르난트절",
+  "Rhuddanian": "루단절",
+  "Aeronian": "에어로니절",
+  "Telychian": "텔리치절",
+  "Sheinwoodian": "셰인우드절",
+  "Homerian": "호머절",
+  "Gorstian": "고스트절",
+  "Ludfordian": "러드퍼드절",
+  "Lochkovian": "로치코프절",
+  "Pragian": "프라하절",
+  "Emsian": "엠스절",
+  "Eifelian": "아이펠절",
+  "Givetian": "지베절",
+  "Frasnian": "프란절",
+  "Famennian": "파멘절",
+  "Tournaisian": "투르네절",
+  "Visean": "비제절",
+  "Serpukhovian": "세르푸호프절",
+  "Bashkirian": "바시키르절",
+  "Moscovian": "모스크바절",
+  "Kasimovian": "카시모프절",
+  "Gzhelian": "그젤절",
+  "Asselian": "아셀절",
+  "Sakmarian": "사크마라절",
+  "Artinskian": "아르틴스크절",
+  "Kungurian": "쿵구르절",
+  "Roadian": "로드절",
+  "Wordian": "워드절",
+  "Capitanian": "캐피탄절",
+  "Wuchiapingian": "우자핑절",
+  "Changhsingian": "창싱절",
+  "Induan": "인더스절",
+  "Olenekian": "올레네크절",
+  "Anisian": "아니시아절",
+  "Ladinian": "라딘절",
+  "Carnian": "카르니아절",
+  "Norian": "노리아절",
+  "Rhaetian": "레티아절",
+  "Hettangian": "헤탕주절",
+  "Sinemurian": "시네뮈르절",
+  "Pliensbachian": "플린스바흐절",
+  "Toarcian": "토아르시절",
+  "Aalenian": "알레니아절",
+  "Bajocian": "바조스절",
+  "Bathonian": "바통절",
+  "Callovian": "칼로비아절",
+  "Oxfordian": "옥스퍼드절",
+  "Kimmeridgian": "키메리지절",
+  "Tithonian": "티토니아절",
+  "Berriasian": "베리아스절",
+  "Valanginian": "발랑지니아절",
+  "Hauterivian": "오테리비아절",
+  "Barremian": "바렘절",
+  "Aptian": "압트절",
+  "Albian": "알브절",
+  "Cenomanian": "세노마니아절",
+  "Turonian": "투로니아절",
+  "Coniacian": "코냐크절",
+  "Santonian": "산토니아절",
+  "Campanian": "캄파니아절",
+  "Maastrichtian": "마스트리흐트절",
+  "Danian": "다니아절",
+  "Selandian": "셀란디아절",
+  "Thanetian": "타넷절",
+  "Ypresian": "이프르절",
+  "Lutetian": "루테티아절",
+  "Bartonian": "바턴절",
+  "Priabonian": "프리아보나절",
+  "Rupelian": "뤼펠절",
+  "Chattian": "채티아절",
+  "Aquitanian": "아키텐절",
+  "Burdigalian": "부르디갈라절",
+  "Langhian": "랑게절",
+  "Serravallian": "세라발레절",
+  "Tortonian": "토르토나절",
+  "Messinian": "메시나절",
+  "Zanclean": "잔클레절",
+  "Piacenzian": "피아첸차절",
+  "Gelasian": "젤라절",
+  "Calabrian": "칼라브리아절",
+  "Chibanian": "지바절",
+  "Late Pleistocene": "후기 플라이스토세",
+  "Greenlandian": "그린란드절",
+  "Northgrippian": "노스그립절",
+  "Meghalayan": "메갈라야절"
+ },
+ "units": {
+  "Hadean": {
+   "earth": "녹아 있다가 서서히 식어 가던 세계로, 충돌이 끊이지 않았습니다. 초기에 화성 크기의 천체(테이아)가 원시 지구와 충돌하여 달이 형성되었습니다. 약 4.4 Ga 무렵에는 자유 산소가 없는 두꺼운 CO₂/수증기 대기 아래에서 얇은 지각과 최초의 바다가 형성되었습니다."
+  },
+  "Archean": {
+   "earth": "맨틀은 더 뜨거웠고, 전 지구적 바다에 작은 원시 대륙과 호상 열도가 있었습니다. 대기는 CO₂와 메테인이 풍부하고 산소가 거의 없었으며, 젊은 태양은 약 25% 더 어두웠습니다. 바다는 녹은 철 때문에 초록빛을 띠었고 호상 철광층이 쌓였습니다."
+  },
+  "Proterozoic": {
+   "earth": "대륙이 성장하여 초대륙(컬럼비아, 로디니아, 파노티아)으로 모였습니다. 대산화 사건으로 산소가 증가했고, 여러 차례의 '눈덩이 지구' 빙하기에 행성 전체가 얼어붙었습니다."
+  },
+  "Phanerozoic": {
+   "earth": "'눈에 보이는 생명'의 누대: 대륙은 흩어진 조각에서 판게아로 모였다가 다시 갈라졌고, 생명은 육지와 하늘과 모든 바다로 퍼져 나갔습니다."
+  },
+  "Eoarchean": {
+   "earth": "전 지구적 바다에 흩어진 지각 조각들이 있었고, 후기 대폭격이 잦아들었습니다. 가장 오래된 보존 암석(아카스타 편마암, 이수아 대)이 이 시기의 것입니다."
+  },
+  "Paleoarchean": {
+   "earth": "최초의 크라톤(카프발, 필바라)이 형성되었고, 얕은 바다에는 미생물 매트가 자리 잡았습니다. 대기에는 산소가 없었습니다."
+  },
+  "Mesoarchean": {
+   "earth": "최초의 초대륙일 가능성이 있는 발바라와 알려진 최초의 빙하기(퐁골라)가 있었습니다. 미생물 매트와 스트로마톨라이트가 널리 퍼졌습니다."
+  },
+  "Neoarchean": {
+   "earth": "대륙 지각이 빠르게 성장했고, 산소 발생 광합성이 자리 잡아 대산화 사건의 발판을 마련했습니다."
+  },
+  "Paleoproterozoic": {
+   "earth": "대산화 사건으로 처음으로 대기에 산소가 생겼고, 이어서 휴로니안 빙하기가 찾아왔습니다. 초대륙 컬럼비아(누나)가 모였습니다."
+  },
+  "Mesoproterozoic": {
+   "earth": "'지루한 10억 년': 안정된 기후, 낮은 산소, 황화물이 풍부한 심해. 컬럼비아가 분열하고 로디니아가 모였습니다."
+  },
+  "Neoproterozoic": {
+   "earth": "로디니아가 분열했고, 지구는 전 지구적 '눈덩이 지구' 빙하기를 견뎌 냈습니다. 이후 산소가 다시 증가하고 최초의 동물이 나타났습니다."
+  },
+  "Paleozoic": {
+   "earth": "흩어진 대륙과 따뜻하고 얕은 바다로 시작하여 판게아의 형성으로 끝났습니다. 식물과 동물이 육지로 진출했고 광대한 석탄 숲이 자랐습니다."
+  },
+  "Mesozoic": {
+   "earth": "판게아가 로라시아와 곤드와나로, 이어서 오늘날의 대륙들로 갈라졌고 대서양이 열렸습니다. 대부분 극지방 빙모가 없는 따뜻한 온실 세계였습니다."
+  },
+  "Cenozoic": {
+   "earth": "'포유류의 시대'. 대륙이 현재 위치로 이동했고, 인도가 아시아와 충돌하여 히말라야가 솟았으며, 지구는 온실 상태에서 빙하기로 식어 갔습니다."
+  },
+  "Siderian": {
+   "earth": "남세균이 만든 산소가 바닷속 철과 반응하면서 호상 철광층 형성이 절정에 달했고, 대산화 사건이 시작되었습니다."
+  },
+  "Rhyacian": {
+   "earth": "가장 긴 빙하기 중 하나인 휴로니안 빙하기가 행성을 뒤덮었습니다. 부시펠트 복합체가 형성되었습니다."
+  },
+  "Orosirian": {
+   "earth": "거의 모든 대륙에서 격렬한 조산 운동이 일어났고, 두 번의 거대한 소행성 충돌(브레드퍼트, 서드베리)이 있었습니다."
+  },
+  "Statherian": {
+   "earth": "초대륙 컬럼비아(누나)의 형성이 완료되었습니다. 산소 농도는 낮은 수준에서 안정되었습니다."
+  },
+  "Calymmian": {
+   "earth": "컬럼비아가 분열하기 시작하면서 대륙 위에 탁상지 퇴적층이 넓어졌습니다."
+  },
+  "Ectasian": {
+   "earth": "탁상지 퇴적층이 계속 확장되었고, 바다 심층수는 여전히 산소가 부족했습니다."
+  },
+  "Stenian": {
+   "earth": "그렌빌 조산 운동을 통해 초대륙 로디니아가 형성되었습니다."
+  },
+  "Tonian": {
+   "earth": "로디니아가 갈라지기 시작했습니다. 산소가 증가하고 진핵 조류가 다양해졌습니다."
+  },
+  "Cryogenian": {
+   "earth": "'눈덩이 지구': 스터트 빙하기와 마리노 빙하기에 적도 근처까지 행성 전체가 얼음으로 덮였을 수 있습니다.",
+   "temp": "5"
+  },
+  "Ediacaran": {
+   "earth": "옛 로디니아의 대륙들이 흩어졌습니다(파노티아). 눈덩이 빙하가 녹은 뒤 바다에 산소가 풍부해졌습니다.",
+   "temp": "17"
+  },
+  "Cambrian": {
+   "earth": "해수면이 높아 대륙이 물에 잠긴 따뜻한 온실 세계였고, 곤드와나는 남극에 걸쳐 있었습니다. 육지는 맨 암석과 미생물 피막뿐이었습니다.",
+   "sea": "4 m에서 90 m까지 꾸준히 상승"
+  },
+  "Ordovician": {
+   "earth": "대륙들이 흩어져 있었고 곤드와나는 남반구에 있었습니다. 해수면이 높고 기후가 따뜻했으나, 말기의 급격한 빙하기가 대멸종을 일으켰습니다.",
+   "sea": "180 m; 카라독 시기에 220 m까지 상승했다가 오르도비스기 말 빙하기에 141 m로 급락"
+  },
+  "Silurian": {
+   "earth": "오르도비스기 빙하기가 끝난 뒤 따뜻하고 안정된 기후. 로렌시아와 발티카가 충돌했습니다(칼레도니아 조산 운동). 식물이 해안을 푸르게 물들이기 시작했습니다.",
+   "sea": "약 180 m, 짧은 하강기 있음"
+  },
+  "Devonian": {
+   "earth": "'어류의 시대'. 유라메리카('구적색 사암 대륙')와 곤드와나가 가까워졌습니다. 최초의 숲이 퍼지고 토양이 형성되었으며, 해수면은 높고 기후는 따뜻했습니다.",
+   "sea": "약 189 m에서 비교적 안정, 기간 내내 점차 120 m로 하강"
+  },
+  "Carboniferous": {
+   "earth": "광대한 늪지 석탄 숲이 열대를 뒤덮었고, 산소 농도는 약 35%로 정점에 달했습니다. 판게아가 형성되고 있었으며, 남쪽의 곤드와나는 큰 빙하기에 휩싸였습니다.",
+   "sea": "미시시피세 동안 120 m에서 현재 수준으로 하강한 뒤, 기 말까지 약 80 m로 꾸준히 상승"
+  },
+  "Permian": {
+   "earth": "판게아가 완전히 형성되어 판탈라사 대양에 둘러싸였고, 내륙은 광대한 사막이었습니다. 시베리아 트랩의 분출과 역사상 최대의 대멸종으로 끝났습니다."
+  },
+  "Triassic": {
+   "earth": "가장 거대했던 판게아: 극지방 빙하 없이 덥고 건조하며 몬순 기후였습니다. 생명은 대멸종에서 서서히 회복했고, 판게아가 갈라지기 시작하면서 또 한 번의 대멸종으로 끝났습니다."
+  },
+  "Jurassic": {
+   "earth": "판게아가 로라시아와 곤드와나로 갈라졌고 중앙 대서양이 열렸습니다. 따뜻하고 습한 온실 기후에 침엽수, 소철, 양치식물의 울창한 숲이 있었습니다."
+  },
+  "Cretaceous": {
+   "earth": "대륙이 현재 위치를 향해 이동했고, 매우 높은 해수면으로 서부 내륙 해로 같은 내해가 생겼습니다. 뜨거운 온실 기후였으며, 칙술루브 소행성 충돌로 끝났습니다."
+  },
+  "Paleogene": {
+   "earth": "K–Pg 대멸종 이후 포유류가 빈 생태적 지위로 방산했습니다. 뜨거웠던 초기 에오세(PETM)가 지나고 냉각이 시작되어 에오세–올리고세 경계에 최초의 남극 빙상이 생겼습니다.",
+   "temp": "18"
+  },
+  "Neogene": {
+   "earth": "대륙은 현재 위치에 가까웠고, 파나마 지협이 닫히고 히말라야와 알프스가 솟았습니다. 기후가 서늘하고 건조해지며 초원이 대륙 곳곳으로 퍼졌습니다.",
+   "temp": "14"
+  },
+  "Quaternary": {
+   "earth": "빙하기: 빙기와 간빙기가 반복되었고, 빙기 절정에는 빙상이 북아메리카와 유라시아 북부를 덮고 해수면이 최대 120 m 낮아졌습니다.",
+   "temp": "14"
+  },
+  "Terreneuvian": {
+   "earth": "얕은 대륙붕 바다가 넓어졌고, 광물질 골격이 진화하면서 소형 껍데기 화석이 풍부하게 나타났습니다."
+  },
+  "Cambrian Series 2": {
+   "earth": "캄브리아기 대폭발의 절정. 중국 청장 같은 유명 화석지에 몸이 연한 동물들이 보존되어 있습니다."
+  },
+  "Miaolingian": {
+   "earth": "따뜻한 바다; 버제스 셰일 동물군이 로렌시아 가장자리에 살았습니다."
+  },
+  "Furongian": {
+   "earth": "삼엽충이 반복적으로 멸종하고('바이오미어' 사건) 다양성이 낮았던 시기로, 푸룽세 공백이라 불립니다."
+  },
+  "Early Ordovician": {
+   "earth": "높은 해수면; 오르도비스기 대방산 사건이 시작되었습니다."
+  },
+  "Middle Ordovician": {
+   "earth": "오르도비스기 대방산 사건의 절정; 태형동물과 산호의 초가 발달했습니다.",
+   "sea": "180 m; 카라독 시기에 220 m까지 상승했다가 오르도비스기 말 빙하기에 141 m로 급락"
+  },
+  "Late Ordovician": {
+   "earth": "곤드와나가 남극 위로 이동했고, 짧은 빙하기가 두 번째로 큰 대멸종과 함께 오르도비스기를 끝냈습니다."
+  },
+  "Llandovery": {
+   "earth": "오르도비스기 말 대멸종 이후의 회복기; 얼음이 녹으면서 해수면이 상승했습니다."
+  },
+  "Wenlock": {
+   "earth": "판상산호와 사방산호로 이루어진 따뜻한 초; 식물이 육지에 자리 잡았습니다."
+  },
+  "Ludlow": {
+   "earth": "얕은 바다; 광익류(바다전갈)가 거대한 크기에 이르렀습니다."
+  },
+  "Pridoli": {
+   "earth": "고생대에서 가장 짧은 세; 최초의 턱이 있는 어류가 다양해졌습니다."
+  },
+  "Early Devonian": {
+   "earth": "육상 식물이 내륙으로 퍼졌고, 라이니 처트에 초기 육상 생태계가 보존되어 있습니다."
+  },
+  "Middle Devonian": {
+   "earth": "와티에자 같은 나무 크기 식물로 이루어진 최초의 숲."
+  },
+  "Late Devonian": {
+   "earth": "아르카이옵테리스 숲; 후기 데본기 대멸종이 초를 황폐화했습니다.",
+   "sea": "약 189 m에서 비교적 안정, 기간 내내 점차 120 m로 하강"
+  },
+  "Early Mississippian": {
+   "earth": "따뜻하고 얕은 바다; 바다나리 군락."
+  },
+  "Middle Mississippian": {
+   "earth": "육상에서 네발동물이 다양해졌습니다."
+  },
+  "Late Mississippian": {
+   "earth": "곤드와나 빙하기가 시작되었습니다."
+  },
+  "Early Pennsylvanian": {
+   "earth": "석탄 늪이 유라메리카 전역으로 퍼졌습니다."
+  },
+  "Middle Pennsylvanian": {
+   "earth": "석탄 숲의 절정; 매우 높은 산소 농도; 거대 곤충."
+  },
+  "Late Pennsylvanian": {
+   "earth": "기후가 건조해지면서 석탄기 우림 붕괴가 일어났습니다."
+  },
+  "Cisuralian": {
+   "earth": "판게아 형성; 기후가 건조해졌습니다."
+  },
+  "Guadalupian": {
+   "earth": "수궁류가 우세; 말기에 캐피탄절 대멸종."
+  },
+  "Lopingian": {
+   "earth": "시베리아 트랩이 분출하여 페름기 대멸종을 일으켰습니다."
+  },
+  "Early Triassic": {
+   "earth": "대멸종 이후의 온실 상태; 리스트로사우루스가 육지를 지배했습니다."
+  },
+  "Middle Triassic": {
+   "earth": "회복기; 지배파충류가 다양해졌습니다."
+  },
+  "Late Triassic": {
+   "earth": "카르니아절 다우 사건; 최초의 공룡과 포유류가 나타났습니다."
+  },
+  "Early Jurassic": {
+   "earth": "대서양이 열리기 시작; 따뜻하고 습한 기후."
+  },
+  "Middle Jurassic": {
+   "earth": "용각류가 다양해짐; 곤드와나와 로라시아가 분리되었습니다."
+  },
+  "Late Jurassic": {
+   "earth": "모리슨층 생태계; 거대 용각류."
+  },
+  "Early Cretaceous": {
+   "earth": "곤드와나가 분열; 속씨식물(꽃식물)이 나타났습니다."
+  },
+  "Late Cretaceous": {
+   "earth": "높은 해수면; 서부 내륙 해로; 칙술루브 충돌."
+  },
+  "Paleocene": {
+   "earth": "K–Pg 대멸종에서 회복 중인 따뜻하고 숲이 우거진 세계."
+  },
+  "Eocene": {
+   "earth": "신생대에서 가장 따뜻한 세; 극지방 근처에도 야자나무가 자랐습니다."
+  },
+  "Oligocene": {
+   "earth": "남극이 얼음으로 덮이고 초원이 퍼지기 시작했습니다."
+  },
+  "Miocene": {
+   "earth": "따뜻했다가 서늘해지는 기후; 켈프 숲과 초원이 확장되었습니다."
+  },
+  "Pliocene": {
+   "earth": "파나마 지협이 형성되고 기후가 빙하기를 향해 서늘해졌습니다."
+  },
+  "Pleistocene": {
+   "earth": "반복되는 빙하기; 거대 동물이 돌아다녔습니다."
+  },
+  "Holocene": {
+   "earth": "현재의 간빙기; 인류 문명."
+  }
+ },
+ "milestones": {
+  "Formation of Earth": {
+   "title": "지구의 형성",
+   "desc": "붕괴하는 가스와 먼지 구름에서 태양계가 응축되고, 지구는 수천만 년 안에 강착하여 형성됩니다."
+  },
+  "Moon-forming impact": {
+   "title": "달을 만든 충돌",
+   "desc": "화성 크기의 행성 테이아가 원시 지구와 충돌합니다. 그 파편이 달을 이룹니다."
+  },
+  "First oceans": {
+   "title": "최초의 바다",
+   "desc": "가장 오래된 지르콘 결정은 액체 상태의 물과 대륙 지각이 이미 존재했음을 보여 줍니다."
+  },
+  "Last universal common ancestor": {
+   "title": "모든 생물의 마지막 공통 조상",
+   "desc": "분자시계 추정에 따르면 모든 살아 있는 세포의 조상인 LUCA가 이 무렵에 살았습니다."
+  },
+  "Earliest evidence of life": {
+   "title": "가장 오래된 생명의 증거",
+   "desc": "그린란드 암석의 탄소 동위원소와 스트로마톨라이트로 추정되는 구조가 초기 미생물 생명을 기록하고 있습니다."
+  },
+  "Microbial mats & stromatolites": {
+   "title": "미생물 매트와 스트로마톨라이트",
+   "desc": "서오스트레일리아의 잘 보존된 스트로마톨라이트는 번성한 미생물 군집을 보여 줍니다."
+  },
+  "Oxygenic photosynthesis": {
+   "title": "산소 발생 광합성",
+   "desc": "남세균이 물을 분해하고 부산물로 산소를 내놓기 시작합니다."
+  },
+  "Great Oxidation Event": {
+   "title": "대산화 사건",
+   "desc": "처음으로 대기에 자유 산소가 축적되어 행성의 화학을 바꾸어 놓습니다."
+  },
+  "Huronian glaciation": {
+   "title": "휴로니안 빙하기",
+   "desc": "최초의 대빙하기로, 산소가 메테인 온실 효과를 파괴하면서 시작되었을 수 있습니다."
+  },
+  "First complex cells?": {
+   "title": "최초의 복잡한 세포?",
+   "desc": "나선형의 육안 크기 화석인 그리파니아는 초기 진핵 조류일 수 있습니다."
+  },
+  "Eukaryotes": {
+   "title": "진핵생물",
+   "desc": "핵과 미토콘드리아를 가진 세포 — 모든 식물, 동물, 균류의 조상 — 가 확고히 자리 잡습니다."
+  },
+  "Sexual reproduction & multicellularity": {
+   "title": "유성 생식과 다세포성",
+   "desc": "홍조류인 방기오모르파는 알려진 가장 오래된 유성 생식 다세포 생물입니다."
+  },
+  "First fungi": {
+   "title": "최초의 균류",
+   "desc": "오우라스파이라 같은 미화석은 원생누대 후기에 이미 균류가 있었음을 시사합니다."
+  },
+  "Snowball Earth": {
+   "title": "눈덩이 지구",
+   "desc": "스터트 빙하기와 마리노 빙하기에 행성 전체가 얼어붙었을 수 있습니다."
+  },
+  "First animals": {
+   "title": "최초의 동물",
+   "desc": "해면동물의 생체지표는 가장 이른 동물의 존재를 암시하며, 동물은 곧 에디아카라기에 다양해집니다."
+  },
+  "Ediacaran biota": {
+   "title": "에디아카라 생물군",
+   "desc": "디킨소니아와 카르니아 같은 최초의 대형 복잡 다세포 생물이 해저에 삽니다."
+  },
+  "Cambrian explosion": {
+   "title": "캄브리아기 대폭발",
+   "desc": "대부분의 주요 동물군이 눈, 껍데기, 다리를 갖춘 채 화석 기록에 빠르게 나타납니다."
+  },
+  "First trilobites": {
+   "title": "최초의 삼엽충",
+   "desc": "갑옷을 두른 상징적인 절지동물인 삼엽충이 나타나 2억 7천만 년 동안 바다를 지배합니다."
+  },
+  "First vertebrates": {
+   "title": "최초의 척추동물",
+   "desc": "하이커우익티스 같은 작은 무악어류가 캄브리아기 바다를 헤엄칩니다."
+  },
+  "Plants colonise land": {
+   "title": "식물의 육상 진출",
+   "desc": "우산이끼류와 가까운 최초의 육상 식물 포자가 화석 기록에 나타납니다."
+  },
+  "Late Ordovician extinction": {
+   "title": "후기 오르도비스기 대멸종",
+   "desc": "빙하기와 해수면 하강으로 해양 생물 종의 약 85%가 사라집니다."
+  },
+  "First jawed fish": {
+   "title": "최초의 턱이 있는 어류",
+   "desc": "아가미활에서 턱이 진화하고, 유악 척추동물이 빠르게 다양해집니다."
+  },
+  "First vascular plants": {
+   "title": "최초의 관다발 식물",
+   "desc": "물을 운반하는 조직을 가진 작은 식물 쿡소니아가 습한 땅에서 자랍니다."
+  },
+  "First land animal": {
+   "title": "최초의 육상 동물",
+   "desc": "노래기인 프네우모데스무스는 육지에서 공기 호흡을 한 것으로 알려진 가장 오래된 동물입니다."
+  },
+  "First insects": {
+   "title": "최초의 곤충",
+   "desc": "라이니 처트에서 나온 리니오그나타는 알려진 가장 오래된 곤충 중 하나입니다."
+  },
+  "First forests": {
+   "title": "최초의 숲",
+   "desc": "와티에자와 아르카이옵테리스 같은 나무 모양 식물이 최초의 숲을 이룹니다."
+  },
+  "Fish walk toward land": {
+   "title": "육지로 걸어 나온 물고기",
+   "desc": "목과 손목뼈를 가진 육기어류 틱타알릭은 어류와 네발동물을 잇습니다."
+  },
+  "Late Devonian extinction": {
+   "title": "후기 데본기 대멸종",
+   "desc": "여러 차례의 멸종 펄스로 종의 약 70%, 특히 초를 만드는 생물이 사라집니다."
+  },
+  "First tetrapods": {
+   "title": "최초의 네발동물",
+   "desc": "아칸토스테가와 이크티오스테가 같은 네 다리 척추동물이 늪에 삽니다."
+  },
+  "First seed plants": {
+   "title": "최초의 종자식물",
+   "desc": "씨앗 덕분에 식물은 번식을 위해 물에 의존하지 않게 됩니다."
+  },
+  "First flying animals": {
+   "title": "최초의 비행 동물",
+   "desc": "날개 달린 곤충(유시류)이 하늘로 날아올라 최초로 비행한 동물이 됩니다."
+  },
+  "First amniotes": {
+   "title": "최초의 양막류",
+   "desc": "단단한 껍데기의 알 덕분에 척추동물은 물을 떠나 번식할 수 있게 되었습니다. 힐로노무스는 초기 파충류입니다."
+  },
+  "First synapsids": {
+   "title": "최초의 단궁류",
+   "desc": "포유류로 이어지는 계통이 파충류에서 갈라집니다."
+  },
+  "Carboniferous rainforest collapse": {
+   "title": "석탄기 우림 붕괴",
+   "desc": "기후가 건조해지면서 석탄 숲이 조각나고 육상 생물상이 재편됩니다."
+  },
+  "The Great Dying": {
+   "title": "페름기 대멸종",
+   "desc": "페름기–트라이아스기 대멸종으로 해양 생물 종의 약 90%와 육상 생물 종의 약 70%가 사라집니다."
+  },
+  "First dinosaurs": {
+   "title": "최초의 공룡",
+   "desc": "에오랍토르와 헤레라사우루스 같은 초기 공룡이 남아메리카에 나타납니다."
+  },
+  "First flying vertebrates": {
+   "title": "최초의 비행 척추동물",
+   "desc": "익룡이 동력 비행을 할 수 있는 최초의 척추동물이 됩니다."
+  },
+  "First mammals": {
+   "title": "최초의 포유류",
+   "desc": "아델로바실레우스 같은 작고 뒤쥐를 닮은 포유형류가 나타납니다."
+  },
+  "Triassic–Jurassic extinction": {
+   "title": "트라이아스기–쥐라기 대멸종",
+   "desc": "판게아가 갈라지며 일어난 화산 활동으로 많은 지배파충류가 사라지고, 공룡에게 길이 열립니다."
+  },
+  "Pangaea breaks up": {
+   "title": "판게아의 분열",
+   "desc": "대서양이 열리면서 초대륙이 로라시아와 곤드와나로 갈라집니다."
+  },
+  "First birds": {
+   "title": "최초의 새",
+   "desc": "깃털 달린 공룡 아르카이오프테릭스가 공룡과 새를 잇습니다."
+  },
+  "First flowering plants": {
+   "title": "최초의 꽃식물",
+   "desc": "속씨식물이 나타나 곧 육상 생태계를 바꾸어 놓습니다."
+  },
+  "First bees": {
+   "title": "최초의 벌",
+   "desc": "벌이 꽃식물과 함께 진화하며 꽃가루받이 협력 관계가 시작됩니다."
+  },
+  "End of the dinosaurs": {
+   "title": "공룡의 종말",
+   "desc": "소행성이 칙술루브에 충돌하고, 모든 비조류 공룡을 포함해 종의 약 75%가 멸종합니다."
+  },
+  "Paleocene–Eocene Thermal Maximum": {
+   "title": "팔레오세–에오세 극열기",
+   "desc": "급격한 탄소 방출로 지구 기온이 5–8 °C 오르고, 현생 포유류 목들이 퍼져 나갑니다."
+  },
+  "Whales return to the sea": {
+   "title": "바다로 돌아간 고래",
+   "desc": "육상에 살던 고래의 조상 파키케투스가 지금의 파키스탄 지역에 삽니다."
+  },
+  "Antarctica freezes": {
+   "title": "남극의 결빙",
+   "desc": "에오세–올리고세 전환기에 지구가 식으면서 남극 빙상이 형성됩니다."
+  },
+  "First apes": {
+   "title": "최초의 유인원",
+   "desc": "유인원(사람상과)이 구세계원숭이에서 갈라집니다."
+  },
+  "Human lineage splits from chimps": {
+   "title": "인류 계통과 침팬지의 분기",
+   "desc": "사헬란트로푸스는 인류 계통의 가장 이른 구성원 중 하나일 수 있습니다."
+  },
+  "Lucy": {
+   "title": "루시",
+   "desc": "오스트랄로피테쿠스 아파렌시스가 동아프리카에서 두 다리로 똑바로 서서 걷습니다."
+  },
+  "Genus Homo": {
+   "title": "사람속",
+   "desc": "우리 속의 첫 구성원들이 나타나고, 곧이어 석기가 등장합니다."
+  },
+  "Ice ages begin": {
+   "title": "빙하기의 시작",
+   "desc": "제4기 빙하 작용: 빙상이 약 10만 년 주기로 전진과 후퇴를 반복합니다."
+  },
+  "Homo sapiens": {
+   "title": "호모 사피엔스",
+   "desc": "해부학적 현생 인류가 아프리카에 나타납니다."
+  },
+  "Agriculture": {
+   "title": "농업",
+   "desc": "신석기 혁명: 인류가 식물과 동물을 길들입니다."
+  }
+ },
+ "globeLabels": {
+  "Cambrian/Precambrian boundary": "캄브리아기/선캄브리아 시대 경계",
+  "Cambro-Ordovician Boundary": "캄브리아기–오르도비스기 경계",
+  "Devono-Carboniferous Boundary": "데본기–석탄기 경계",
+  "Early Cambrian": "전기 캄브리아세",
+  "Early Cretaceous": "전기 백악세",
+  "Early Devonian": "전기 데본세",
+  "Early Eocene": "전기 에오세",
+  "Early Jurassic": "전기 쥐라세",
+  "Early Middle Cambrian boundary": "전기–중기 캄브리아세 경계",
+  "Early Miocene": "전기 마이오세",
+  "Early Mississippian": "전기 미시시피세",
+  "Early Oligocene": "전기 올리고세",
+  "Early Ordovician": "전기 오르도비스세",
+  "Early Pennsylvanian": "전기 펜실베이니아세",
+  "Early Permian": "전기 페름세",
+  "Early Silurian": "전기 실루리아세",
+  "EarlyMiddleCarboniferous": "전기–중기 석탄기",
+  "Holocene": "홀로세",
+  "Jurassic Cretaceous Boundary": "쥐라기–백악기 경계",
+  "KT Boundary": "K–T 경계",
+  "Late Cambrian": "후기 캄브리아세",
+  "Late Cretaceous": "후기 백악세",
+  "Late Devonian": "후기 데본세",
+  "Late Eocene": "후기 에오세",
+  "Late Jurassic": "후기 쥐라세",
+  "Late Mississippian": "후기 미시시피세",
+  "Late Oligocene": "후기 올리고세",
+  "Late Ordovician": "후기 오르도비스세",
+  "Late Pennsylvanian": "후기 펜실베이니아세",
+  "Late Silurian": "후기 실루리아세",
+  "Late Triassic": "후기 트라이아스세",
+  "LatePermian": "후기 페름세",
+  "Mid-Cretaceous": "백악기 중엽",
+  "Middle Devonian": "중기 데본세",
+  "Middle Jurassic": "중기 쥐라세",
+  "Middle Miocene": "중기 마이오세",
+  "Middle Mississippian": "중기 미시시피세",
+  "Middle Ordovician": "중기 오르도비스세",
+  "Middle Pennsylvanian": "중기 펜실베이니아세",
+  "Middle Permian": "중기 페름세",
+  "Middle Silurian": "중기 실루리아세",
+  "Middle Triassic": "중기 트라이아스세",
+  "Paleocene": "팔레오세",
+  "Paleocene Eocene Boundary": "팔레오세–에오세 경계",
+  "Permo-Triassic Boundary": "페름기–트라이아스기 경계",
+  "Pliocene": "플라이오세",
+  "early Middle Cambrian": "중기 캄브리아세 초",
+  "early Middle Eocene": "중기 에오세 초",
+  "late Middle Cambrian": "중기 캄브리아세 말",
+  "late Middle Eocene": "중기 에오세 말",
+  "middle Late Miocene": "후기 마이오세 중엽"
+ },
+ "ranks": {
+  "species": "종",
+  "genus": "속",
+  "family": "과",
+  "subfamily": "아과",
+  "tribe": "족",
+  "order": "목",
+  "subspecies": "아종",
+  "superfamily": "상과",
+  "subgenus": "아속",
+  "subtribe": "아족",
+  "clade": "분기군",
+  "suborder": "아목",
+  "class": "강",
+  "section": "절",
+  "incertae sedis": "incertae sedis",
+  "variety": "변종",
+  "ichnogenus": "생흔속",
+  "subclass": "아강",
+  "infraorder": "하목",
+  "phylum": "문",
+  "superorder": "상목",
+  "oogenus": "알화석속",
+  "subsection": "아절",
+  "series": "계열",
+  "parvorder": "소목",
+  "division": "문",
+  "subphylum": "아문",
+  "species group": "종군",
+  "infraclass": "하강",
+  "ichnofamily": "생흔과",
+  "informal group": "비공식 분류군",
+  "supertribe": "상족",
+  "oofamily": "알화석과",
+  "subdivision": "아문",
+  "kingdom": "계",
+  "species complex": "종 복합체",
+  "stem group": "줄기군",
+  "superclass": "상강",
+  "alliance": "연합",
+  "subkingdom": "아계",
+  "infraphylum": "하문",
+  "subterclass": "아하강",
+  "possible clade": "추정 분기군",
+  "superphylum": "상문",
+  "mirordo-mb": "mirordo",
+  "realm": "영역",
+  "grandordo-mb": "grandordo",
+  "node": "마디",
+  "ichnospecies": "생흔종",
+  "basic shell type": "기본 껍데기 유형",
+  "nanordo": "nanordo",
+  "subseries": "아계열",
+  "total group": "전체군",
+  "domain": "역",
+  "species subgroup": "종아군",
+  "infratribus": "하족",
+  "cohort": "코호트",
+  "oospecies": "알화석종",
+  "virus": "바이러스",
+  "morphotype": "형태형",
+  "epifamilia": "에피과",
+  "branch": "가지",
+  "magnorder": "대목",
+  "grade": "등급",
+  "zooseries": "동물 계열",
+  "parvclass": "소강",
+  "infrafamilia": "하과",
+  "strain": "균주",
+  "plesion": "플레시온",
+  "superkingdom": "상계",
+  "root": "뿌리",
+  "micrordo": "micrordo",
+  "subcohort": "아코호트",
+  "gradus": "등급",
+  "ichnosubfamilia": "생흔아과",
+  "hyperfamilia": "초상과",
+  "superlegion": "상군단",
+  "supercohort": "상코호트",
+  "supersectio": "상절",
+  "form taxon": "형태 분류군",
+  "superdivision": "상문",
+  "serotype": "혈청형",
+  "group": "군",
+  "ichnoclassis": "생흔강",
+  "ichnoordo": "생흔목",
+  "ooclassis": "알화석강"
+ }
+}

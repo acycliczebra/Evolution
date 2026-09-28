@@ -1,0 +1,774 @@
+{
+ "unitNames": {
+  "Hadean": "Liên đại Hỏa Thành",
+  "Archean": "Liên đại Thái Cổ",
+  "Proterozoic": "Liên đại Nguyên Sinh",
+  "Phanerozoic": "Liên đại Hiển Sinh",
+  "Eoarchean": "Đại Thái Cổ Sơ",
+  "Paleoarchean": "Đại Cổ Thái Cổ",
+  "Mesoarchean": "Đại Trung Thái Cổ",
+  "Neoarchean": "Đại Tân Thái Cổ",
+  "Paleoproterozoic": "Đại Cổ Nguyên Sinh",
+  "Mesoproterozoic": "Đại Trung Nguyên Sinh",
+  "Neoproterozoic": "Đại Tân Nguyên Sinh",
+  "Paleozoic": "Đại Cổ Sinh",
+  "Mesozoic": "Đại Trung Sinh",
+  "Cenozoic": "Đại Tân Sinh",
+  "Siderian": "Kỷ Sideri",
+  "Rhyacian": "Kỷ Rhyaxi",
+  "Orosirian": "Kỷ Orosira",
+  "Statherian": "Kỷ Statheri",
+  "Calymmian": "Kỷ Calymmi",
+  "Ectasian": "Kỷ Ectasi",
+  "Stenian": "Kỷ Steni",
+  "Tonian": "Kỷ Toni",
+  "Cryogenian": "Kỷ Cryogen",
+  "Ediacaran": "Kỷ Ediacara",
+  "Cambrian": "Kỷ Cambri",
+  "Ordovician": "Kỷ Ordovic",
+  "Silurian": "Kỷ Silur",
+  "Devonian": "Kỷ Devon",
+  "Carboniferous": "Kỷ Than Đá",
+  "Permian": "Kỷ Permi",
+  "Triassic": "Kỷ Tam Điệp",
+  "Jurassic": "Kỷ Jura",
+  "Cretaceous": "Kỷ Phấn Trắng",
+  "Paleogene": "Kỷ Paleogen",
+  "Neogene": "Kỷ Neogen",
+  "Quaternary": "Kỷ Đệ Tứ",
+  "Terreneuvian": "Thế Terreneuve",
+  "Cambrian Series 2": "Thế 2 kỷ Cambri",
+  "Miaolingian": "Thế Miêu Lĩnh",
+  "Furongian": "Thế Phù Dung",
+  "Early Ordovician": "Ordovic sớm",
+  "Middle Ordovician": "Ordovic giữa",
+  "Late Ordovician": "Ordovic muộn",
+  "Llandovery": "Thế Llandovery",
+  "Wenlock": "Thế Wenlock",
+  "Ludlow": "Thế Ludlow",
+  "Pridoli": "Thế Pridoli",
+  "Early Devonian": "Devon sớm",
+  "Middle Devonian": "Devon giữa",
+  "Late Devonian": "Devon muộn",
+  "Early Mississippian": "Mississippi sớm",
+  "Middle Mississippian": "Mississippi giữa",
+  "Late Mississippian": "Mississippi muộn",
+  "Early Pennsylvanian": "Pennsylvania sớm",
+  "Middle Pennsylvanian": "Pennsylvania giữa",
+  "Late Pennsylvanian": "Pennsylvania muộn",
+  "Cisuralian": "Thế Cisural",
+  "Guadalupian": "Thế Guadalupe",
+  "Lopingian": "Thế Lạc Bình",
+  "Early Triassic": "Tam Điệp sớm",
+  "Middle Triassic": "Tam Điệp giữa",
+  "Late Triassic": "Tam Điệp muộn",
+  "Early Jurassic": "Jura sớm",
+  "Middle Jurassic": "Jura giữa",
+  "Late Jurassic": "Jura muộn",
+  "Early Cretaceous": "Phấn Trắng sớm",
+  "Late Cretaceous": "Phấn Trắng muộn",
+  "Paleocene": "Thế Paleocen",
+  "Eocene": "Thế Eocen",
+  "Oligocene": "Thế Oligocen",
+  "Miocene": "Thế Miocen",
+  "Pliocene": "Thế Pliocen",
+  "Pleistocene": "Thế Pleistocen",
+  "Holocene": "Thế Holocen",
+  "Fortunian": "Tầng Fortune",
+  "Cambrian Stage 2": "Tầng 2 kỷ Cambri",
+  "Cambrian Stage 3": "Tầng 3 kỷ Cambri",
+  "Cambrian Stage 4": "Tầng 4 kỷ Cambri",
+  "Wuliuan": "Tầng Ô Lưu",
+  "Drumian": "Tầng Drum",
+  "Guzhangian": "Tầng Cổ Trượng",
+  "Paibian": "Tầng Bài Bích",
+  "Jiangshanian": "Tầng Giang Sơn",
+  "Cambrian Stage 10": "Tầng 10 kỷ Cambri",
+  "Tremadocian": "Tầng Tremadoc",
+  "Floian": "Tầng Floian",
+  "Dapingian": "Tầng Đại Bình",
+  "Darriwilian": "Tầng Darriwil",
+  "Sandbian": "Tầng Sandby",
+  "Katian": "Tầng Katy",
+  "Hirnantian": "Tầng Hirnant",
+  "Rhuddanian": "Tầng Rhuddan",
+  "Aeronian": "Tầng Aeron",
+  "Telychian": "Tầng Telych",
+  "Sheinwoodian": "Tầng Sheinwood",
+  "Homerian": "Tầng Homer",
+  "Gorstian": "Tầng Gorst",
+  "Ludfordian": "Tầng Ludford",
+  "Lochkovian": "Tầng Lochkov",
+  "Pragian": "Tầng Praha",
+  "Emsian": "Tầng Ems",
+  "Eifelian": "Tầng Eifel",
+  "Givetian": "Tầng Givet",
+  "Frasnian": "Tầng Frasne",
+  "Famennian": "Tầng Famenne",
+  "Tournaisian": "Tầng Tournai",
+  "Visean": "Tầng Visé",
+  "Serpukhovian": "Tầng Serpukhov",
+  "Bashkirian": "Tầng Bashkiria",
+  "Moscovian": "Tầng Moskva",
+  "Kasimovian": "Tầng Kasimov",
+  "Gzhelian": "Tầng Gzhel",
+  "Asselian": "Tầng Assel",
+  "Sakmarian": "Tầng Sakmara",
+  "Artinskian": "Tầng Artinsk",
+  "Kungurian": "Tầng Kungur",
+  "Roadian": "Tầng Road",
+  "Wordian": "Tầng Word",
+  "Capitanian": "Tầng Capitan",
+  "Wuchiapingian": "Tầng Ngô Gia Bình",
+  "Changhsingian": "Tầng Trường Hưng",
+  "Induan": "Tầng Indus",
+  "Olenekian": "Tầng Olenek",
+  "Anisian": "Tầng Anisia",
+  "Ladinian": "Tầng Ladin",
+  "Carnian": "Tầng Carnia",
+  "Norian": "Tầng Nori",
+  "Rhaetian": "Tầng Rhaetia",
+  "Hettangian": "Tầng Hettange",
+  "Sinemurian": "Tầng Sinemur",
+  "Pliensbachian": "Tầng Pliensbach",
+  "Toarcian": "Tầng Toarcia",
+  "Aalenian": "Tầng Aalen",
+  "Bajocian": "Tầng Bajocia",
+  "Bathonian": "Tầng Bathon",
+  "Callovian": "Tầng Callove",
+  "Oxfordian": "Tầng Oxford",
+  "Kimmeridgian": "Tầng Kimmeridge",
+  "Tithonian": "Tầng Tithon",
+  "Berriasian": "Tầng Berrias",
+  "Valanginian": "Tầng Valangin",
+  "Hauterivian": "Tầng Hauterive",
+  "Barremian": "Tầng Barreme",
+  "Aptian": "Tầng Apt",
+  "Albian": "Tầng Alba",
+  "Cenomanian": "Tầng Cenoman",
+  "Turonian": "Tầng Turon",
+  "Coniacian": "Tầng Coniac",
+  "Santonian": "Tầng Santon",
+  "Campanian": "Tầng Campania",
+  "Maastrichtian": "Tầng Maastricht",
+  "Danian": "Tầng Đan Mạch",
+  "Selandian": "Tầng Seland",
+  "Thanetian": "Tầng Thanet",
+  "Ypresian": "Tầng Ypres",
+  "Lutetian": "Tầng Lutetia",
+  "Bartonian": "Tầng Barton",
+  "Priabonian": "Tầng Priabona",
+  "Rupelian": "Tầng Rupel",
+  "Chattian": "Tầng Chatti",
+  "Aquitanian": "Tầng Aquitaine",
+  "Burdigalian": "Tầng Burdigala",
+  "Langhian": "Tầng Langhe",
+  "Serravallian": "Tầng Serravalle",
+  "Tortonian": "Tầng Torton",
+  "Messinian": "Tầng Messina",
+  "Zanclean": "Tầng Zancle",
+  "Piacenzian": "Tầng Piacenza",
+  "Gelasian": "Tầng Gelasia",
+  "Calabrian": "Tầng Calabria",
+  "Chibanian": "Tầng Chiba",
+  "Late Pleistocene": "Pleistocen muộn",
+  "Greenlandian": "Tầng Greenland",
+  "Northgrippian": "Tầng Northgrip",
+  "Meghalayan": "Tầng Meghalaya"
+ },
+ "units": {
+  "Hadean": {
+   "earth": "Một thế giới nóng chảy rồi nguội dần, liên tục bị va chạm. Từ rất sớm, một thiên thể cỡ Sao Hỏa (Theia) đã đâm vào Trái Đất nguyên thủy, tạo nên Mặt Trăng. Khoảng 4,4 Ga, một lớp vỏ mỏng và những đại dương đầu tiên đã hình thành dưới bầu khí quyển dày đặc CO₂/hơi nước, không có oxy tự do."
+  },
+  "Archean": {
+   "earth": "Lớp phủ nóng hơn, các tiền lục địa nhỏ và vòng cung đảo nằm giữa một đại dương toàn cầu. Khí quyển giàu CO₂ và mêtan, gần như không có oxy; Mặt Trời trẻ mờ hơn khoảng 25%. Đại dương có màu xanh lục do sắt hòa tan, lắng đọng thành các thành hệ sắt dải."
+  },
+  "Proterozoic": {
+   "earth": "Các lục địa lớn dần và kết hợp thành siêu lục địa (Columbia, Rodinia, Pannotia). Oxy tăng lên trong Sự kiện Oxy hóa Lớn, và hành tinh đóng băng trong nhiều đợt băng hà 'Trái Đất quả cầu tuyết'."
+  },
+  "Phanerozoic": {
+   "earth": "Liên đại của 'sự sống hữu hình': các lục địa trôi dạt từ những mảnh rời rạc hợp thành Pangaea rồi lại tách ra, trong khi sự sống chiếm lĩnh đất liền, bầu trời và mọi đại dương."
+  },
+  "Eoarchean": {
+   "earth": "Các mảnh vỏ rải rác trong một đại dương toàn cầu; Thời kỳ Bắn phá Muộn Dữ dội suy yếu. Những khối đá cổ nhất còn được bảo tồn (Gneiss Acasta, đai Isua)."
+  },
+  "Paleoarchean": {
+   "earth": "Các nền cổ (craton) đầu tiên (Kaapvaal, Pilbara) hình thành; biển nông có các thảm vi sinh vật. Không khí không có oxy."
+  },
+  "Mesoarchean": {
+   "earth": "Có thể là siêu lục địa đầu tiên, Vaalbara, và đợt băng hà đầu tiên được biết đến (Pongola). Thảm vi sinh vật và stromatolit phổ biến rộng rãi."
+  },
+  "Neoarchean": {
+   "earth": "Vỏ lục địa phát triển nhanh; quang hợp tạo oxy được thiết lập, mở đường cho Sự kiện Oxy hóa Lớn."
+  },
+  "Paleoproterozoic": {
+   "earth": "Sự kiện Oxy hóa Lớn lần đầu tiên làm khí quyển có oxy; tiếp theo là băng hà Huron. Siêu lục địa Columbia (Nuna) hình thành."
+  },
+  "Mesoproterozoic": {
+   "earth": "'Tỷ năm buồn tẻ': khí hậu ổn định, oxy thấp, đại dương sâu giàu sulfua. Columbia tan rã và Rodinia hình thành."
+  },
+  "Neoproterozoic": {
+   "earth": "Rodinia tan rã; Trái Đất trải qua các đợt băng hà toàn cầu 'Trái Đất quả cầu tuyết', sau đó oxy tăng trở lại và những động vật đầu tiên xuất hiện."
+  },
+  "Paleozoic": {
+   "earth": "Bắt đầu với các lục địa rải rác và biển nông ấm áp, kết thúc với sự hình thành Pangaea. Thực vật và động vật chiếm lĩnh đất liền; những khu rừng than đá rộng lớn phát triển."
+  },
+  "Mesozoic": {
+   "earth": "Pangaea tách thành Laurasia và Gondwana rồi thành các lục địa ngày nay; Đại Tây Dương mở ra. Phần lớn là một thế giới nhà kính ấm áp, không có chỏm băng ở vùng cực."
+  },
+  "Cenozoic": {
+   "earth": "'Thời đại của thú'. Các lục địa di chuyển đến vị trí hiện nay, Ấn Độ va chạm với châu Á nâng dãy Himalaya lên, và Trái Đất nguội dần từ trạng thái nhà kính nóng sang các kỷ băng hà."
+  },
+  "Siderian": {
+   "earth": "Các thành hệ sắt dải đạt đỉnh khi oxy từ vi khuẩn lam phản ứng với sắt trong đại dương; Sự kiện Oxy hóa Lớn bắt đầu."
+  },
+  "Rhyacian": {
+   "earth": "Băng hà Huron, một trong những kỷ băng hà dài nhất, bao trùm hành tinh. Phức hệ Bushveld hình thành."
+  },
+  "Orosirian": {
+   "earth": "Hoạt động tạo núi mạnh mẽ trên hầu hết các lục địa; hai vụ va chạm tiểu hành tinh khổng lồ (Vredefort, Sudbury)."
+  },
+  "Statherian": {
+   "earth": "Siêu lục địa Columbia (Nuna) hoàn tất quá trình hình thành. Nồng độ oxy ổn định ở mức thấp."
+  },
+  "Calymmian": {
+   "earth": "Các lớp phủ nền mở rộng trên các lục địa khi Columbia bắt đầu tan rã."
+  },
+  "Ectasian": {
+   "earth": "Các lớp phủ nền tiếp tục mở rộng; nước sâu đại dương vẫn nghèo oxy."
+  },
+  "Stenian": {
+   "earth": "Siêu lục địa Rodinia hình thành qua kiến tạo sơn Grenville."
+  },
+  "Tonian": {
+   "earth": "Rodinia bắt đầu tách giãn. Oxy tăng lên và tảo nhân thực đa dạng hóa."
+  },
+  "Cryogenian": {
+   "earth": "'Trái Đất quả cầu tuyết': các đợt băng hà Sturt và Marino có thể đã phủ băng lên hành tinh đến gần xích đạo.",
+   "temp": "5"
+  },
+  "Ediacaran": {
+   "earth": "Các lục địa của Rodinia cũ trôi dạt xa nhau (Pannotia). Đại dương trở nên giàu oxy sau khi băng của các đợt quả cầu tuyết tan chảy.",
+   "temp": "17"
+  },
+  "Cambrian": {
+   "earth": "Thế giới nhà kính ấm áp với mực nước biển cao làm ngập các lục địa; Gondwana nằm vắt qua cực nam. Đất liền chỉ là đá trơ và lớp vỏ vi sinh vật.",
+   "sea": "Tăng đều từ 4 m lên 90 m"
+  },
+  "Ordovician": {
+   "earth": "Các lục địa rải rác, Gondwana nằm ở bán cầu nam; mực nước biển cao và khí hậu ấm cho đến khi một đợt băng hà đột ngột vào cuối kỷ gây ra đại tuyệt chủng.",
+   "sea": "180 m; tăng lên 220 m vào thời Caradoc và giảm mạnh xuống 141 m trong các đợt băng hà cuối kỷ Ordovic"
+  },
+  "Silurian": {
+   "earth": "Khí hậu ấm áp, ổn định sau khi kỷ băng hà Ordovic kết thúc. Laurentia và Baltica va chạm (kiến tạo sơn Caledonia). Thực vật bắt đầu phủ xanh các bờ biển.",
+   "sea": "Khoảng 180 m, với những đợt giảm ngắn hạn"
+  },
+  "Devonian": {
+   "earth": "'Thời đại của cá'. Euramerica ('lục địa Sa thạch Đỏ Cổ') và Gondwana tiến lại gần nhau. Những khu rừng đầu tiên lan rộng và đất hình thành; mực nước biển cao và khí hậu ấm.",
+   "sea": "Tương đối ổn định quanh 189 m, giảm dần xuống 120 m trong suốt kỷ"
+  },
+  "Carboniferous": {
+   "earth": "Những khu rừng than đá đầm lầy rộng lớn phủ kín vùng nhiệt đới; oxy đạt đỉnh khoảng 35%. Pangaea đang hình thành và một kỷ băng hà lớn bao trùm Gondwana ở phía nam.",
+   "sea": "Giảm từ 120 m xuống mức hiện nay trong suốt thế Mississippi, rồi tăng đều lên khoảng 80 m vào cuối kỷ"
+  },
+  "Permian": {
+   "earth": "Pangaea hình thành hoàn chỉnh, bao quanh bởi đại dương Panthalassa; nội địa là những sa mạc mênh mông. Kết thúc bằng các đợt phun trào Bẫy Siberia và cuộc đại tuyệt chủng lớn nhất trong lịch sử."
+  },
+  "Triassic": {
+   "earth": "Pangaea ở kích thước lớn nhất: nóng, khô và có gió mùa, không có băng ở vùng cực. Sự sống phục hồi chậm sau Đại Diệt vong; kỷ kết thúc bằng một cuộc đại tuyệt chủng khác khi Pangaea bắt đầu tách giãn."
+  },
+  "Jurassic": {
+   "earth": "Pangaea tách thành Laurasia và Gondwana; trung tâm Đại Tây Dương mở ra. Khí hậu nhà kính ấm, ẩm với những khu rừng tươi tốt gồm cây lá kim, tuế và dương xỉ."
+  },
+  "Cretaceous": {
+   "earth": "Các lục địa di chuyển về vị trí hiện đại; mực nước biển rất cao tạo nên các biển nội địa như Đường biển Nội địa phía Tây. Khí hậu nhà kính nóng; kỷ kết thúc bằng vụ va chạm tiểu hành tinh tại Chicxulub."
+  },
+  "Paleogene": {
+   "earth": "Sau cuộc tuyệt chủng K–Pg, thú bức xạ vào các ổ sinh thái trống. Giai đoạn Eocen sớm nóng (PETM) nhường chỗ cho quá trình nguội đi và những dải băng đầu tiên ở Nam Cực tại ranh giới Eocen–Oligocen.",
+   "temp": "18"
+  },
+  "Neogene": {
+   "earth": "Các lục địa gần vị trí hiện đại; eo đất Panama khép lại, dãy Himalaya và Alps nâng lên. Khí hậu trở nên mát và khô hơn, đồng cỏ lan rộng khắp các lục địa.",
+   "temp": "14"
+  },
+  "Quaternary": {
+   "earth": "Các kỷ băng hà: những chu kỳ băng hà và gian băng lặp lại, với các dải băng phủ Bắc Mỹ và bắc Á-Âu vào đỉnh băng hà và mực nước biển thấp hơn tới 120 m.",
+   "temp": "14"
+  },
+  "Terreneuvian": {
+   "earth": "Các biển thềm nông mở rộng; hóa thạch vỏ nhỏ xuất hiện dồi dào khi bộ xương khoáng hóa tiến hóa."
+  },
+  "Cambrian Series 2": {
+   "earth": "Đỉnh điểm của Bùng nổ kỷ Cambri. Các địa điểm hóa thạch nổi tiếng như Trừng Giang ở Trung Quốc bảo tồn động vật thân mềm."
+  },
+  "Miaolingian": {
+   "earth": "Đại dương ấm; hệ động vật đá phiến Burgess sống ở rìa Laurentia."
+  },
+  "Furongian": {
+   "earth": "Thời kỳ có nhiều đợt tuyệt chủng bọ ba thùy lặp lại (các sự kiện 'biomere') và độ đa dạng thấp, gọi là khoảng trống Phù Dung."
+  },
+  "Early Ordovician": {
+   "earth": "Mực nước biển cao; Sự kiện Đa dạng hóa Sinh học Lớn kỷ Ordovic bắt đầu."
+  },
+  "Middle Ordovician": {
+   "earth": "Đỉnh điểm của Sự kiện Đa dạng hóa Sinh học Lớn kỷ Ordovic; các rạn của động vật hình rêu và san hô.",
+   "sea": "180 m; tăng lên 220 m vào thời Caradoc và giảm mạnh xuống 141 m trong các đợt băng hà cuối kỷ Ordovic"
+  },
+  "Late Ordovician": {
+   "earth": "Gondwana trôi qua cực nam; một đợt băng hà ngắn kết thúc kỷ Ordovic bằng cuộc đại tuyệt chủng lớn thứ hai."
+  },
+  "Llandovery": {
+   "earth": "Phục hồi sau cuộc tuyệt chủng cuối kỷ Ordovic; mực nước biển dâng khi băng tan."
+  },
+  "Wenlock": {
+   "earth": "Các rạn ấm áp của san hô vách đáy và san hô bốn tia; thực vật định cư trên đất liền."
+  },
+  "Ludlow": {
+   "earth": "Biển nông; bọ cạp biển (Eurypterida) đạt kích thước khổng lồ."
+  },
+  "Pridoli": {
+   "earth": "Thế ngắn nhất của Đại Cổ Sinh; những loài cá có hàm đầu tiên đa dạng hóa."
+  },
+  "Early Devonian": {
+   "earth": "Thực vật trên cạn lan vào nội địa; đá chert Rhynie bảo tồn một hệ sinh thái trên cạn sơ khai."
+  },
+  "Middle Devonian": {
+   "earth": "Những khu rừng đầu tiên gồm các thực vật cỡ cây gỗ như Wattieza."
+  },
+  "Late Devonian": {
+   "earth": "Rừng Archaeopteris; cuộc tuyệt chủng Devon muộn tàn phá các rạn san hô.",
+   "sea": "Tương đối ổn định quanh 189 m, giảm dần xuống 120 m trong suốt kỷ"
+  },
+  "Early Mississippian": {
+   "earth": "Biển nông ấm; những đồng cỏ huệ biển."
+  },
+  "Middle Mississippian": {
+   "earth": "Động vật bốn chân đa dạng hóa trên cạn."
+  },
+  "Late Mississippian": {
+   "earth": "Băng hà Gondwana bắt đầu."
+  },
+  "Early Pennsylvanian": {
+   "earth": "Đầm lầy than lan rộng khắp Euramerica."
+  },
+  "Middle Pennsylvanian": {
+   "earth": "Đỉnh cao của rừng than; oxy rất cao; côn trùng khổng lồ."
+  },
+  "Late Pennsylvanian": {
+   "earth": "Sự sụp đổ rừng mưa kỷ Than Đá khi khí hậu khô đi."
+  },
+  "Cisuralian": {
+   "earth": "Pangaea hình thành; khí hậu khô dần."
+  },
+  "Guadalupian": {
+   "earth": "Cung thú chiếm ưu thế; cuộc tuyệt chủng Capitan vào cuối thế."
+  },
+  "Lopingian": {
+   "earth": "Bẫy Siberia phun trào, gây ra Đại Diệt vong."
+  },
+  "Early Triassic": {
+   "earth": "Trạng thái nhà kính nóng sau cuộc tuyệt chủng; Lystrosaurus thống trị đất liền."
+  },
+  "Middle Triassic": {
+   "earth": "Phục hồi; thằn lằn chúa (Archosauria) đa dạng hóa."
+  },
+  "Late Triassic": {
+   "earth": "Sự kiện Mưa nhiều Carnia; những khủng long và thú đầu tiên xuất hiện."
+  },
+  "Early Jurassic": {
+   "earth": "Đại Tây Dương bắt đầu mở ra; khí hậu ấm ẩm."
+  },
+  "Middle Jurassic": {
+   "earth": "Khủng long chân thằn lằn đa dạng hóa; Gondwana và Laurasia tách rời."
+  },
+  "Late Jurassic": {
+   "earth": "Các hệ sinh thái thành hệ Morrison; khủng long chân thằn lằn khổng lồ."
+  },
+  "Early Cretaceous": {
+   "earth": "Gondwana tan rã; thực vật có hoa xuất hiện."
+  },
+  "Late Cretaceous": {
+   "earth": "Mực nước biển cao; Đường biển Nội địa phía Tây; va chạm Chicxulub."
+  },
+  "Paleocene": {
+   "earth": "Thế giới ấm áp, nhiều rừng, đang phục hồi sau cuộc tuyệt chủng K–Pg."
+  },
+  "Eocene": {
+   "earth": "Thế ấm nhất của Đại Tân Sinh; cây cọ mọc gần các vùng cực."
+  },
+  "Oligocene": {
+   "earth": "Nam Cực bị băng phủ; đồng cỏ bắt đầu lan rộng."
+  },
+  "Miocene": {
+   "earth": "Khí hậu ấm rồi nguội dần; rừng tảo bẹ và đồng cỏ mở rộng."
+  },
+  "Pliocene": {
+   "earth": "Eo đất Panama hình thành; khí hậu nguội dần hướng tới các kỷ băng hà."
+  },
+  "Pleistocene": {
+   "earth": "Các đợt băng hà lặp lại; động vật lớn (megafauna) lang thang khắp nơi."
+  },
+  "Holocene": {
+   "earth": "Thời kỳ gian băng hiện nay; nền văn minh nhân loại."
+  }
+ },
+ "milestones": {
+  "Formation of Earth": {
+   "title": "Trái Đất hình thành",
+   "desc": "Hệ Mặt Trời ngưng tụ từ một đám mây khí và bụi đang suy sập; Trái Đất bồi tụ trong vòng vài chục triệu năm."
+  },
+  "Moon-forming impact": {
+   "title": "Va chạm tạo Mặt Trăng",
+   "desc": "Một hành tinh cỡ Sao Hỏa, Theia, va chạm với Trái Đất nguyên thủy. Các mảnh vỡ tạo thành Mặt Trăng."
+  },
+  "First oceans": {
+   "title": "Những đại dương đầu tiên",
+   "desc": "Các tinh thể zircon cổ nhất cho thấy nước lỏng và vỏ lục địa đã tồn tại."
+  },
+  "Last universal common ancestor": {
+   "title": "Tổ tiên chung phổ quát cuối cùng",
+   "desc": "Theo ước tính đồng hồ phân tử, LUCA, tổ tiên của mọi tế bào sống, sống vào khoảng thời gian này."
+  },
+  "Earliest evidence of life": {
+   "title": "Bằng chứng sự sống sớm nhất",
+   "desc": "Đồng vị carbon và các stromatolit khả dĩ trong đá ở Greenland ghi lại sự sống vi sinh vật sơ khai."
+  },
+  "Microbial mats & stromatolites": {
+   "title": "Thảm vi sinh vật & stromatolit",
+   "desc": "Các stromatolit được bảo tồn tốt ở Tây Úc cho thấy những quần xã vi sinh vật phát triển mạnh."
+  },
+  "Oxygenic photosynthesis": {
+   "title": "Quang hợp tạo oxy",
+   "desc": "Vi khuẩn lam bắt đầu tách nước và giải phóng oxy như một sản phẩm phụ."
+  },
+  "Great Oxidation Event": {
+   "title": "Sự kiện Oxy hóa Lớn",
+   "desc": "Lần đầu tiên oxy tự do tích tụ trong khí quyển, làm biến đổi hóa học của hành tinh."
+  },
+  "Huronian glaciation": {
+   "title": "Băng hà Huron",
+   "desc": "Kỷ băng hà lớn đầu tiên, có thể do oxy phá hủy hiệu ứng nhà kính của mêtan."
+  },
+  "First complex cells?": {
+   "title": "Những tế bào phức tạp đầu tiên?",
+   "desc": "Grypania, một hóa thạch vĩ mô dạng cuộn, có thể là một loài tảo nhân thực sơ khai."
+  },
+  "Eukaryotes": {
+   "title": "Sinh vật nhân thực",
+   "desc": "Các tế bào có nhân và ty thể — tổ tiên của mọi thực vật, động vật và nấm — được xác lập vững chắc."
+  },
+  "Sexual reproduction & multicellularity": {
+   "title": "Sinh sản hữu tính & đa bào",
+   "desc": "Bangiomorpha, một loài tảo đỏ, là sinh vật đa bào sinh sản hữu tính cổ nhất được biết đến."
+  },
+  "First fungi": {
+   "title": "Những loài nấm đầu tiên",
+   "desc": "Các vi hóa thạch như Ourasphaira cho thấy nấm đã có mặt vào cuối Liên đại Nguyên Sinh."
+  },
+  "Snowball Earth": {
+   "title": "Trái Đất quả cầu tuyết",
+   "desc": "Các đợt băng hà Sturt và Marino có thể đã đóng băng toàn bộ hành tinh."
+  },
+  "First animals": {
+   "title": "Những động vật đầu tiên",
+   "desc": "Dấu ấn sinh học của bọt biển gợi ý về những động vật sớm nhất; động vật sẽ sớm đa dạng hóa trong kỷ Ediacara."
+  },
+  "Ediacaran biota": {
+   "title": "Quần sinh vật Ediacara",
+   "desc": "Những sinh vật đa bào phức tạp cỡ lớn đầu tiên, như Dickinsonia và Charnia, sống trên đáy biển."
+  },
+  "Cambrian explosion": {
+   "title": "Bùng nổ kỷ Cambri",
+   "desc": "Hầu hết các nhóm động vật chính xuất hiện nhanh chóng trong hồ sơ hóa thạch, với mắt, vỏ và chân."
+  },
+  "First trilobites": {
+   "title": "Những bọ ba thùy đầu tiên",
+   "desc": "Bọ ba thùy, loài chân khớp có giáp mang tính biểu tượng, xuất hiện và sẽ thống trị biển cả trong 270 triệu năm."
+  },
+  "First vertebrates": {
+   "title": "Những động vật có xương sống đầu tiên",
+   "desc": "Những loài cá không hàm nhỏ như Haikouichthys bơi trong các biển kỷ Cambri."
+  },
+  "Plants colonise land": {
+   "title": "Thực vật chiếm lĩnh đất liền",
+   "desc": "Bào tử của những thực vật trên cạn sớm nhất, có họ hàng với rêu tản, xuất hiện trong hồ sơ hóa thạch."
+  },
+  "Late Ordovician extinction": {
+   "title": "Tuyệt chủng Ordovic muộn",
+   "desc": "Băng hà và mực nước biển hạ thấp giết chết ~85% các loài sinh vật biển."
+  },
+  "First jawed fish": {
+   "title": "Những loài cá có hàm đầu tiên",
+   "desc": "Hàm tiến hóa từ các cung mang; động vật có xương sống có hàm nhanh chóng đa dạng hóa."
+  },
+  "First vascular plants": {
+   "title": "Những thực vật có mạch đầu tiên",
+   "desc": "Cooksonia, một loài cây nhỏ có mô dẫn nước, mọc trên đất ẩm."
+  },
+  "First land animal": {
+   "title": "Động vật trên cạn đầu tiên",
+   "desc": "Pneumodesmus, một loài cuốn chiếu, là động vật cổ nhất được biết đến hít thở không khí trên cạn."
+  },
+  "First insects": {
+   "title": "Những côn trùng đầu tiên",
+   "desc": "Rhyniognatha từ đá chert Rhynie là một trong những côn trùng cổ nhất được biết đến."
+  },
+  "First forests": {
+   "title": "Những khu rừng đầu tiên",
+   "desc": "Các thực vật dạng cây như Wattieza và Archaeopteris tạo nên những khu rừng đầu tiên."
+  },
+  "Fish walk toward land": {
+   "title": "Cá bước lên cạn",
+   "desc": "Tiktaalik, một loài cá vây thùy có cổ và xương cổ tay, là cầu nối giữa cá và động vật bốn chân."
+  },
+  "Late Devonian extinction": {
+   "title": "Tuyệt chủng Devon muộn",
+   "desc": "Một chuỗi các đợt tuyệt chủng xóa sổ ~70% số loài, đặc biệt là các sinh vật tạo rạn."
+  },
+  "First tetrapods": {
+   "title": "Những động vật bốn chân đầu tiên",
+   "desc": "Các động vật có xương sống bốn chi như Acanthostega và Ichthyostega sống trong đầm lầy."
+  },
+  "First seed plants": {
+   "title": "Những thực vật có hạt đầu tiên",
+   "desc": "Hạt giúp thực vật thoát khỏi sự phụ thuộc vào nước để sinh sản."
+  },
+  "First flying animals": {
+   "title": "Những động vật biết bay đầu tiên",
+   "desc": "Côn trùng có cánh (Pterygota) bay lên không trung, trở thành những động vật đầu tiên biết bay."
+  },
+  "First amniotes": {
+   "title": "Những động vật có màng ối đầu tiên",
+   "desc": "Trứng vỏ cứng cho phép động vật có xương sống sinh sản xa nguồn nước; Hylonomus là một loài bò sát sơ khai."
+  },
+  "First synapsids": {
+   "title": "Những động vật một cung bên đầu tiên",
+   "desc": "Dòng dõi dẫn đến thú tách ra khỏi bò sát."
+  },
+  "Carboniferous rainforest collapse": {
+   "title": "Sụp đổ rừng mưa kỷ Than Đá",
+   "desc": "Rừng than bị chia cắt khi khí hậu khô đi, định hình lại sự sống trên cạn."
+  },
+  "The Great Dying": {
+   "title": "Đại Diệt vong",
+   "desc": "Cuộc tuyệt chủng Permi–Tam Điệp giết chết ~90% loài sinh vật biển và ~70% loài trên cạn."
+  },
+  "First dinosaurs": {
+   "title": "Những khủng long đầu tiên",
+   "desc": "Các khủng long sơ khai như Eoraptor và Herrerasaurus xuất hiện ở Nam Mỹ."
+  },
+  "First flying vertebrates": {
+   "title": "Những động vật có xương sống biết bay đầu tiên",
+   "desc": "Thằn lằn bay trở thành những động vật có xương sống đầu tiên có khả năng bay chủ động."
+  },
+  "First mammals": {
+   "title": "Những loài thú đầu tiên",
+   "desc": "Các dạng thú nhỏ giống chuột chù như Adelobasileus xuất hiện."
+  },
+  "Triassic–Jurassic extinction": {
+   "title": "Tuyệt chủng Tam Điệp–Jura",
+   "desc": "Núi lửa phun trào khi Pangaea tách giãn giết chết nhiều thằn lằn chúa, mở đường cho khủng long."
+  },
+  "Pangaea breaks up": {
+   "title": "Pangaea tan rã",
+   "desc": "Siêu lục địa tách thành Laurasia và Gondwana khi Đại Tây Dương mở ra."
+  },
+  "First birds": {
+   "title": "Những loài chim đầu tiên",
+   "desc": "Archaeopteryx, một loài khủng long có lông vũ, là mắt xích giữa khủng long và chim."
+  },
+  "First flowering plants": {
+   "title": "Những thực vật có hoa đầu tiên",
+   "desc": "Thực vật hạt kín xuất hiện và sớm làm biến đổi các hệ sinh thái trên cạn."
+  },
+  "First bees": {
+   "title": "Những loài ong đầu tiên",
+   "desc": "Ong tiến hóa cùng thực vật có hoa; mối quan hệ thụ phấn bắt đầu."
+  },
+  "End of the dinosaurs": {
+   "title": "Sự kết thúc của khủng long",
+   "desc": "Một tiểu hành tinh va vào Chicxulub; ~75% số loài, bao gồm tất cả khủng long phi chim, bị tuyệt chủng."
+  },
+  "Paleocene–Eocene Thermal Maximum": {
+   "title": "Cực đại Nhiệt Paleocen–Eocen",
+   "desc": "Một đợt giải phóng carbon nhanh làm Trái Đất ấm lên 5–8 °C; các bộ thú hiện đại lan rộng."
+  },
+  "Whales return to the sea": {
+   "title": "Cá voi trở lại biển",
+   "desc": "Pakicetus, một tổ tiên sống trên cạn của cá voi, sống ở vùng nay là Pakistan."
+  },
+  "Antarctica freezes": {
+   "title": "Nam Cực đóng băng",
+   "desc": "Dải băng Nam Cực hình thành khi Trái Đất nguội đi trong giai đoạn chuyển tiếp Eocen–Oligocen."
+  },
+  "First apes": {
+   "title": "Những loài vượn đầu tiên",
+   "desc": "Vượn (Hominoidea) tách khỏi khỉ Cựu Thế giới."
+  },
+  "Human lineage splits from chimps": {
+   "title": "Dòng dõi loài người tách khỏi tinh tinh",
+   "desc": "Sahelanthropus có thể là một trong những thành viên sớm nhất của dòng dõi loài người."
+  },
+  "Lucy": {
+   "title": "Lucy",
+   "desc": "Australopithecus afarensis đi thẳng bằng hai chân ở Đông Phi."
+  },
+  "Genus Homo": {
+   "title": "Chi Homo",
+   "desc": "Những thành viên đầu tiên của chi chúng ta xuất hiện; công cụ đá sớm theo sau."
+  },
+  "Ice ages begin": {
+   "title": "Các kỷ băng hà bắt đầu",
+   "desc": "Băng hà kỷ Đệ Tứ: các dải băng tiến lên và rút lui theo chu kỳ ~100.000 năm."
+  },
+  "Homo sapiens": {
+   "title": "Homo sapiens",
+   "desc": "Người hiện đại về mặt giải phẫu xuất hiện ở châu Phi."
+  },
+  "Agriculture": {
+   "title": "Nông nghiệp",
+   "desc": "Cách mạng Đồ đá mới: con người thuần hóa thực vật và động vật."
+  }
+ },
+ "globeLabels": {
+  "Cambrian/Precambrian boundary": "Ranh giới Cambri/Tiền Cambri",
+  "Cambro-Ordovician Boundary": "Ranh giới Cambri–Ordovic",
+  "Devono-Carboniferous Boundary": "Ranh giới Devon–Than Đá",
+  "Early Cambrian": "Cambri sớm",
+  "Early Cretaceous": "Phấn Trắng sớm",
+  "Early Devonian": "Devon sớm",
+  "Early Eocene": "Eocen sớm",
+  "Early Jurassic": "Jura sớm",
+  "Early Middle Cambrian boundary": "Ranh giới Cambri sớm–giữa",
+  "Early Miocene": "Miocen sớm",
+  "Early Mississippian": "Mississippi sớm",
+  "Early Oligocene": "Oligocen sớm",
+  "Early Ordovician": "Ordovic sớm",
+  "Early Pennsylvanian": "Pennsylvania sớm",
+  "Early Permian": "Permi sớm",
+  "Early Silurian": "Silur sớm",
+  "EarlyMiddleCarboniferous": "Than Đá sớm–giữa",
+  "Holocene": "Holocen",
+  "Jurassic Cretaceous Boundary": "Ranh giới Jura–Phấn Trắng",
+  "KT Boundary": "Ranh giới K–T",
+  "Late Cambrian": "Cambri muộn",
+  "Late Cretaceous": "Phấn Trắng muộn",
+  "Late Devonian": "Devon muộn",
+  "Late Eocene": "Eocen muộn",
+  "Late Jurassic": "Jura muộn",
+  "Late Mississippian": "Mississippi muộn",
+  "Late Oligocene": "Oligocen muộn",
+  "Late Ordovician": "Ordovic muộn",
+  "Late Pennsylvanian": "Pennsylvania muộn",
+  "Late Silurian": "Silur muộn",
+  "Late Triassic": "Tam Điệp muộn",
+  "LatePermian": "Permi muộn",
+  "Mid-Cretaceous": "Giữa kỷ Phấn Trắng",
+  "Middle Devonian": "Devon giữa",
+  "Middle Jurassic": "Jura giữa",
+  "Middle Miocene": "Miocen giữa",
+  "Middle Mississippian": "Mississippi giữa",
+  "Middle Ordovician": "Ordovic giữa",
+  "Middle Pennsylvanian": "Pennsylvania giữa",
+  "Middle Permian": "Permi giữa",
+  "Middle Silurian": "Silur giữa",
+  "Middle Triassic": "Tam Điệp giữa",
+  "Paleocene": "Paleocen",
+  "Paleocene Eocene Boundary": "Ranh giới Paleocen–Eocen",
+  "Permo-Triassic Boundary": "Ranh giới Permi–Tam Điệp",
+  "Pliocene": "Pliocen",
+  "early Middle Cambrian": "đầu Cambri giữa",
+  "early Middle Eocene": "đầu Eocen giữa",
+  "late Middle Cambrian": "cuối Cambri giữa",
+  "late Middle Eocene": "cuối Eocen giữa",
+  "middle Late Miocene": "giữa Miocen muộn"
+ },
+ "ranks": {
+  "species": "loài",
+  "genus": "chi",
+  "family": "họ",
+  "subfamily": "phân họ",
+  "tribe": "tông",
+  "order": "bộ",
+  "subspecies": "phân loài",
+  "superfamily": "liên họ",
+  "subgenus": "phân chi",
+  "subtribe": "phân tông",
+  "clade": "nhánh",
+  "suborder": "phân bộ",
+  "class": "lớp",
+  "section": "đoạn",
+  "incertae sedis": "incertae sedis",
+  "variety": "thứ",
+  "ichnogenus": "chi dấu vết",
+  "subclass": "phân lớp",
+  "infraorder": "phân thứ bộ",
+  "phylum": "ngành",
+  "superorder": "liên bộ",
+  "oogenus": "chi trứng",
+  "subsection": "phân đoạn",
+  "series": "loạt",
+  "parvorder": "tiểu bộ",
+  "division": "ngành",
+  "subphylum": "phân ngành",
+  "species group": "nhóm loài",
+  "infraclass": "phân thứ lớp",
+  "ichnofamily": "họ dấu vết",
+  "informal group": "nhóm không chính thức",
+  "supertribe": "liên tông",
+  "oofamily": "họ trứng",
+  "subdivision": "phân ngành",
+  "kingdom": "giới",
+  "species complex": "phức hợp loài",
+  "stem group": "nhóm thân",
+  "superclass": "liên lớp",
+  "alliance": "liên minh",
+  "subkingdom": "phân giới",
+  "infraphylum": "phân thứ ngành",
+  "subterclass": "tiểu phân lớp",
+  "possible clade": "nhánh khả dĩ",
+  "superphylum": "liên ngành",
+  "mirordo-mb": "mirordo",
+  "realm": "miền",
+  "grandordo-mb": "grandordo",
+  "node": "nút",
+  "ichnospecies": "loài dấu vết",
+  "basic shell type": "kiểu vỏ cơ bản",
+  "nanordo": "nanordo",
+  "subseries": "phân loạt",
+  "total group": "nhóm tổng",
+  "domain": "vực",
+  "species subgroup": "phân nhóm loài",
+  "infratribus": "phân thứ tông",
+  "cohort": "đoàn",
+  "oospecies": "loài trứng",
+  "virus": "virus",
+  "morphotype": "kiểu hình thái",
+  "epifamilia": "epifamilia",
+  "branch": "cành",
+  "magnorder": "đại bộ",
+  "grade": "cấp",
+  "zooseries": "loạt động vật",
+  "parvclass": "tiểu lớp",
+  "infrafamilia": "phân thứ họ",
+  "strain": "chủng",
+  "plesion": "plesion",
+  "superkingdom": "liên giới",
+  "root": "gốc",
+  "micrordo": "micrordo",
+  "subcohort": "phân đoàn",
+  "gradus": "cấp",
+  "ichnosubfamilia": "phân họ dấu vết",
+  "hyperfamilia": "siêu họ",
+  "superlegion": "liên quân đoàn",
+  "supercohort": "liên đoàn",
+  "supersectio": "liên đoạn",
+  "form taxon": "đơn vị phân loại hình thái",
+  "superdivision": "liên ngành",
+  "serotype": "kiểu huyết thanh",
+  "group": "nhóm",
+  "ichnoclassis": "lớp dấu vết",
+  "ichnoordo": "bộ dấu vết",
+  "ooclassis": "lớp trứng"
+ }
+}

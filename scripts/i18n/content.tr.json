@@ -1,0 +1,774 @@
+{
+ "unitNames": {
+  "Hadean": "Hadeyen",
+  "Archean": "Arkeen",
+  "Proterozoic": "Proterozoyik",
+  "Phanerozoic": "Fanerozoyik",
+  "Eoarchean": "Eoarkeen",
+  "Paleoarchean": "Paleoarkeen",
+  "Mesoarchean": "Mezoarkeen",
+  "Neoarchean": "Neoarkeen",
+  "Paleoproterozoic": "Paleoproterozoyik",
+  "Mesoproterozoic": "Mezoproterozoyik",
+  "Neoproterozoic": "Neoproterozoyik",
+  "Paleozoic": "Paleozoyik",
+  "Mesozoic": "Mezozoyik",
+  "Cenozoic": "Senozoyik",
+  "Siderian": "Sideriyen",
+  "Rhyacian": "Riyasiyen",
+  "Orosirian": "Orosiriyen",
+  "Statherian": "Stateriyen",
+  "Calymmian": "Kalimiyen",
+  "Ectasian": "Ektasiyen",
+  "Stenian": "Steniyen",
+  "Tonian": "Toniyen",
+  "Cryogenian": "Kriyojeniyen",
+  "Ediacaran": "Ediyakaran",
+  "Cambrian": "Kambriyen",
+  "Ordovician": "Ordovisiyen",
+  "Silurian": "Silüriyen",
+  "Devonian": "Devoniyen",
+  "Carboniferous": "Karbonifer",
+  "Permian": "Permiyen",
+  "Triassic": "Triyas",
+  "Jurassic": "Jura",
+  "Cretaceous": "Kretase",
+  "Paleogene": "Paleojen",
+  "Neogene": "Neojen",
+  "Quaternary": "Kuvaterner",
+  "Terreneuvian": "Terreneuviyen",
+  "Cambrian Series 2": "Kambriyen Seri 2",
+  "Miaolingian": "Miaolingiyen",
+  "Furongian": "Furongiyen",
+  "Early Ordovician": "Erken Ordovisiyen",
+  "Middle Ordovician": "Orta Ordovisiyen",
+  "Late Ordovician": "Geç Ordovisiyen",
+  "Llandovery": "Llandovery",
+  "Wenlock": "Wenlock",
+  "Ludlow": "Ludlow",
+  "Pridoli": "Pridoli",
+  "Early Devonian": "Erken Devoniyen",
+  "Middle Devonian": "Orta Devoniyen",
+  "Late Devonian": "Geç Devoniyen",
+  "Early Mississippian": "Erken Mississipiyen",
+  "Middle Mississippian": "Orta Mississipiyen",
+  "Late Mississippian": "Geç Mississipiyen",
+  "Early Pennsylvanian": "Erken Pensilvaniyen",
+  "Middle Pennsylvanian": "Orta Pensilvaniyen",
+  "Late Pennsylvanian": "Geç Pensilvaniyen",
+  "Cisuralian": "Sisuraliyen",
+  "Guadalupian": "Guadalupiyen",
+  "Lopingian": "Lopingiyen",
+  "Early Triassic": "Erken Triyas",
+  "Middle Triassic": "Orta Triyas",
+  "Late Triassic": "Geç Triyas",
+  "Early Jurassic": "Erken Jura",
+  "Middle Jurassic": "Orta Jura",
+  "Late Jurassic": "Geç Jura",
+  "Early Cretaceous": "Erken Kretase",
+  "Late Cretaceous": "Geç Kretase",
+  "Paleocene": "Paleosen",
+  "Eocene": "Eosen",
+  "Oligocene": "Oligosen",
+  "Miocene": "Miyosen",
+  "Pliocene": "Pliyosen",
+  "Pleistocene": "Pleistosen",
+  "Holocene": "Holosen",
+  "Fortunian": "Fortuniyen",
+  "Cambrian Stage 2": "Kambriyen Kat 2",
+  "Cambrian Stage 3": "Kambriyen Kat 3",
+  "Cambrian Stage 4": "Kambriyen Kat 4",
+  "Wuliuan": "Wuliuan",
+  "Drumian": "Drumiyen",
+  "Guzhangian": "Guzhangiyen",
+  "Paibian": "Paibiyen",
+  "Jiangshanian": "Jiangshaniyen",
+  "Cambrian Stage 10": "Kambriyen Kat 10",
+  "Tremadocian": "Tremadosiyen",
+  "Floian": "Floiyen",
+  "Dapingian": "Dapingiyen",
+  "Darriwilian": "Darriwiliyen",
+  "Sandbian": "Sandbiyen",
+  "Katian": "Katiyen",
+  "Hirnantian": "Hirnantiyen",
+  "Rhuddanian": "Rhuddaniyen",
+  "Aeronian": "Aeroniyen",
+  "Telychian": "Telychiyen",
+  "Sheinwoodian": "Sheinwoodiyen",
+  "Homerian": "Homeriyen",
+  "Gorstian": "Gorstiyen",
+  "Ludfordian": "Ludfordiyen",
+  "Lochkovian": "Lochkoviyen",
+  "Pragian": "Pragiyen",
+  "Emsian": "Emsiyen",
+  "Eifelian": "Eifeliyen",
+  "Givetian": "Givetiyen",
+  "Frasnian": "Frasniyen",
+  "Famennian": "Famenniyen",
+  "Tournaisian": "Turneziyen",
+  "Visean": "Vizeyen",
+  "Serpukhovian": "Serpukoviyen",
+  "Bashkirian": "Başkiriyen",
+  "Moscovian": "Moskoviyen",
+  "Kasimovian": "Kasimoviyen",
+  "Gzhelian": "Gzeliyen",
+  "Asselian": "Asseliyen",
+  "Sakmarian": "Sakmariyen",
+  "Artinskian": "Artinskiyen",
+  "Kungurian": "Kunguriyen",
+  "Roadian": "Roadiyen",
+  "Wordian": "Wordiyen",
+  "Capitanian": "Kapitaniyen",
+  "Wuchiapingian": "Wuchiapingiyen",
+  "Changhsingian": "Changhsingiyen",
+  "Induan": "İndusiyen",
+  "Olenekian": "Olenekiyen",
+  "Anisian": "Anisiyen",
+  "Ladinian": "Ladiniyen",
+  "Carnian": "Karniyen",
+  "Norian": "Noriyen",
+  "Rhaetian": "Retiyen",
+  "Hettangian": "Hettanjiyen",
+  "Sinemurian": "Sinemuriyen",
+  "Pliensbachian": "Pliensbahiyen",
+  "Toarcian": "Toarsiyen",
+  "Aalenian": "Aaleniyen",
+  "Bajocian": "Bajosiyen",
+  "Bathonian": "Batoniyen",
+  "Callovian": "Kalloviyen",
+  "Oxfordian": "Oksfordiyen",
+  "Kimmeridgian": "Kimmericiyen",
+  "Tithonian": "Titoniyen",
+  "Berriasian": "Berriasiyen",
+  "Valanginian": "Valanjiniyen",
+  "Hauterivian": "Hoteriviyen",
+  "Barremian": "Barremiyen",
+  "Aptian": "Aptiyen",
+  "Albian": "Albiyen",
+  "Cenomanian": "Senomaniyen",
+  "Turonian": "Turoniyen",
+  "Coniacian": "Konyasiyen",
+  "Santonian": "Santoniyen",
+  "Campanian": "Kampaniyen",
+  "Maastrichtian": "Maastrihtiyen",
+  "Danian": "Daniyen",
+  "Selandian": "Selandiyen",
+  "Thanetian": "Tanetiyen",
+  "Ypresian": "İpresiyen",
+  "Lutetian": "Lütesiyen",
+  "Bartonian": "Bartoniyen",
+  "Priabonian": "Priaboniyen",
+  "Rupelian": "Rupeliyen",
+  "Chattian": "Şatiyen",
+  "Aquitanian": "Akitaniyen",
+  "Burdigalian": "Burdigaliyen",
+  "Langhian": "Langiyen",
+  "Serravallian": "Serravaliyen",
+  "Tortonian": "Tortoniyen",
+  "Messinian": "Mesiniyen",
+  "Zanclean": "Zankliyen",
+  "Piacenzian": "Piasensiyen",
+  "Gelasian": "Gelasiyen",
+  "Calabrian": "Kalabriyen",
+  "Chibanian": "Çibaniyen",
+  "Late Pleistocene": "Geç Pleistosen",
+  "Greenlandian": "Grönlandiyen",
+  "Northgrippian": "Northgrippiyen",
+  "Meghalayan": "Meghalayiyen"
+ },
+ "units": {
+  "Hadean": {
+   "earth": "Önce erimiş, sonra yavaşça soğuyan ve çarpışmalarla dövülen bir dünya. Erken dönemde Mars büyüklüğünde bir cisim (Theia) ilk Dünya'ya çarparak Ay'ı oluşturdu. ~4,4 Ga itibarıyla, serbest oksijen içermeyen kalın bir CO₂/su buharı atmosferinin altında ince bir kabuk ve ilk okyanuslar oluşmuştu."
+  },
+  "Archean": {
+   "earth": "Daha sıcak bir manto, küresel bir okyanusta küçük ilk kıtalar ve ada yayları. Atmosfer CO₂ ve metan bakımından zengindi ve neredeyse hiç oksijen içermiyordu; genç Güneş ~%25 daha sönüktü. Okyanuslar çözünmüş demir nedeniyle yeşilimsiydi ve bantlı demir oluşumlarını çökeltiyordu."
+  },
+  "Proterozoic": {
+   "earth": "Kıtalar büyüdü ve süperkıtalar hâlinde birleşti (Columbia, Rodinia, Pannotia). Büyük Oksidasyon Olayı ile oksijen arttı ve gezegen birkaç 'Kartopu Dünya' buzullaşmasında dondu."
+  },
+  "Phanerozoic": {
+   "earth": "'Görünür yaşam' üst zamanı: kıtalar dağınık parçalardan Pangea'da birleşip yeniden ayrıldı; yaşam ise karaları, havayı ve tüm okyanusları fethetti."
+  },
+  "Eoarchean": {
+   "earth": "Küresel bir okyanusta dağınık kabuk parçaları; Geç Ağır Bombardıman zayıfladı. Korunmuş en eski kayaçlar (Acasta Gnaysı, Isua kuşağı)."
+  },
+  "Paleoarchean": {
+   "earth": "İlk kratonlar (Kaapvaal, Pilbara) oluştu; sığ denizlerde mikrobiyal örtüler yaşıyordu. Havada oksijen yoktu."
+  },
+  "Mesoarchean": {
+   "earth": "Muhtemel ilk süperkıta Vaalbara ve bilinen ilk buzullaşma (Pongola). Mikrobiyal örtüler ve stromatolitler yaygındı."
+  },
+  "Neoarchean": {
+   "earth": "Kıtasal kabuk hızla büyüdü; oksijenli fotosentez yerleşerek Büyük Oksidasyon Olayı'na zemin hazırladı."
+  },
+  "Paleoproterozoic": {
+   "earth": "Büyük Oksidasyon Olayı atmosferi ilk kez oksijenli hâle getirdi; ardından Huron buzullaşması geldi. Süperkıta Columbia (Nuna) birleşti."
+  },
+  "Mesoproterozoic": {
+   "earth": "'Sıkıcı Milyar Yıl': kararlı iklim, düşük oksijen, sülfürlü derin okyanuslar. Columbia parçalandı ve Rodinia birleşti."
+  },
+  "Neoproterozoic": {
+   "earth": "Rodinia parçalandı; Dünya küresel 'Kartopu Dünya' buzullaşmalarına dayandı, ardından oksijen yeniden arttı ve ilk hayvanlar ortaya çıktı."
+  },
+  "Paleozoic": {
+   "earth": "Dağınık kıtalar ve ılık sığ denizlerle başladı, Pangea'nın birleşmesiyle sona erdi. Bitkiler ve hayvanlar karaları fethetti; geniş kömür ormanları büyüdü."
+  },
+  "Mesozoic": {
+   "earth": "Pangea önce Laurasia ve Gondvana'ya, ardından bugünkü kıtalara bölündü; Atlas Okyanusu açıldı. Çoğunlukla kutup buzulları olmayan sıcak bir sera dünyası."
+  },
+  "Cenozoic": {
+   "earth": "'Memeliler Çağı'. Kıtalar bugünkü konumlarına geldi, Hindistan Asya ile çarpışarak Himalayaları yükseltti ve Dünya bir sıcak sera ortamından buzul çağlarına doğru soğudu."
+  },
+  "Siderian": {
+   "earth": "Siyanobakterilerin ürettiği oksijen okyanuslardaki demirle tepkimeye girdikçe bantlı demir oluşumları doruğa ulaştı; Büyük Oksidasyon Olayı başladı."
+  },
+  "Rhyacian": {
+   "earth": "En uzun buzul çağlarından biri olan Huron buzullaşması gezegeni kasıp kavurdu. Bushveld Kompleksi oluştu."
+  },
+  "Orosirian": {
+   "earth": "Neredeyse her kıtada yoğun dağ oluşumu (orojenezler); iki büyük asteroit çarpması (Vredefort, Sudbury)."
+  },
+  "Statherian": {
+   "earth": "Süperkıta Columbia (Nuna) birleşmesini tamamladı. Oksijen düzeyleri düşük seviyede dengelendi."
+  },
+  "Calymmian": {
+   "earth": "Columbia parçalanmaya başlarken platform örtüleri kıtalar üzerinde genişledi."
+  },
+  "Ectasian": {
+   "earth": "Platform örtüleri genişlemeye devam etti; okyanusların derin suları hâlâ oksijence fakirdi."
+  },
+  "Stenian": {
+   "earth": "Süperkıta Rodinia, Grenville orojenezi ile birleşti."
+  },
+  "Tonian": {
+   "earth": "Rodinia yarılarak parçalanmaya başladı. Oksijen arttı ve ökaryotik algler çeşitlendi."
+  },
+  "Cryogenian": {
+   "earth": "'Kartopu Dünya': Sturtiyen ve Marinoan buzullaşmaları gezegeni neredeyse ekvatora kadar buzla örtmüş olabilir.",
+   "temp": "5"
+  },
+  "Ediacaran": {
+   "earth": "Eski Rodinia'nın kıtaları birbirinden uzaklaştı (Pannotia). Kartopu buzullaşmaları eridikten sonra okyanuslar oksijenlendi.",
+   "temp": "17"
+  },
+  "Cambrian": {
+   "earth": "Yüksek deniz seviyelerinin kıtaları su altında bıraktığı sıcak bir sera dünyası; Gondvana güney kutbu üzerinde uzanıyordu. Karalar çıplak kaya ve mikrobiyal kabuklardan ibaretti.",
+   "sea": "4 m'den 90 m'ye düzenli olarak yükseliyor"
+  },
+  "Ordovician": {
+   "earth": "Kıtalar dağınıktı, Gondvana güney yarımküredeydi; sondaki ani bir buzullaşma kitlesel bir yok oluşu tetikleyene dek deniz seviyeleri yüksek, iklim ılıktı.",
+   "sea": "180 m; Caradoc'ta 220 m'ye yükseliyor, Ordovisiyen sonu buzullaşmalarında keskin biçimde 141 m'ye düşüyor"
+  },
+  "Silurian": {
+   "earth": "Ordovisiyen buzul çağı eridikten sonra sıcak ve kararlı bir iklim. Laurentia ile Baltica çarpıştı (Kaledoniyen orojenezi). Bitkiler kıyıları yeşillendirmeye başladı.",
+   "sea": "Yaklaşık 180 m, kısa süreli düşüşlerle"
+  },
+  "Devonian": {
+   "earth": "'Balıklar Çağı'. Avramerika ('Eski Kırmızı Kumtaşı kıtası') ile Gondvana birbirine yaklaştı. İlk ormanlar yayıldı ve topraklar oluştu; deniz seviyeleri yüksek, iklim sıcaktı.",
+   "sea": "Yaklaşık 189 m civarında görece sabit, dönem boyunca yavaş yavaş 120 m'ye düşüyor"
+  },
+  "Carboniferous": {
+   "earth": "Geniş bataklık kömür ormanları tropik bölgeleri kapladı; oksijen ~%35 ile doruğa ulaştı. Pangea birleşiyordu ve büyük bir buzul çağı güneydeki Gondvana'yı sardı.",
+   "sea": "Mississipiyen boyunca 120 m'den günümüz seviyesine düşüyor, ardından dönem sonunda yaklaşık 80 m'ye düzenli olarak yükseliyor"
+  },
+  "Permian": {
+   "earth": "Pangea, Panthalassa okyanusuyla çevrili olarak tamamen birleşmişti; iç kesimler uçsuz bucaksız çöllerdi. Sibirya Trapları'nın püskürmeleri ve tarihin en büyük kitlesel yok oluşuyla sona erdi."
+  },
+  "Triassic": {
+   "earth": "Pangea en geniş hâlinde: sıcak, kurak ve musonlu, kutup buzulları yok. Yaşam Büyük Ölüm'den yavaş yavaş toparlandı; dönem, Pangea yarılmaya başlarken bir başka kitlesel yok oluşla sona erdi."
+  },
+  "Jurassic": {
+   "earth": "Pangea, Laurasia ve Gondvana'ya bölündü; orta Atlas Okyanusu açıldı. Kozalaklılar, sikaslar ve eğrelti otlarından oluşan gür ormanlarla sıcak, nemli bir sera iklimi."
+  },
+  "Cretaceous": {
+   "earth": "Kıtalar bugünkü konumlarına doğru ilerledi; çok yüksek deniz seviyeleri Batı İç Denizi gibi iç denizler oluşturdu. Sıcak sera iklimi; dönem Chicxulub'daki bir asteroit çarpmasıyla sona erdi."
+  },
+  "Paleogene": {
+   "earth": "K–Pg yok oluşunun ardından memeliler boşalan nişlere yayıldı. Sıcak erken Eosen (PETM) yerini soğumaya ve Eosen–Oligosen sınırında ilk Antarktika buz örtülerine bıraktı.",
+   "temp": "18"
+  },
+  "Neogene": {
+   "earth": "Kıtalar bugünkü konumlarına yakındı; Panama Kıstağı kapandı, Himalayalar ve Alpler yükseldi. İklim soğuyup kuraklaştı ve otlaklar kıtalara yayıldı.",
+   "temp": "14"
+  },
+  "Quaternary": {
+   "earth": "Buzul çağları: tekrarlanan buzul ve buzularası döngüler; buzul doruklarında buz örtüleri Kuzey Amerika'yı ve kuzey Avrasya'yı kaplıyor, deniz seviyeleri 120 m'ye kadar daha düşük oluyordu.",
+   "temp": "14"
+  },
+  "Terreneuvian": {
+   "earth": "Sığ şelf denizleri karaları kapladı; mineralli iskeletlerin evrimleşmesiyle küçük kavkılı fosiller bol miktarda ortaya çıkar."
+  },
+  "Cambrian Series 2": {
+   "earth": "Kambriyen patlamasının doruğu. Çin'deki Chengjiang gibi ünlü fosil yatakları yumuşak gövdeli hayvanları korumuştur."
+  },
+  "Miaolingian": {
+   "earth": "Sıcak okyanuslar; Burgess Şeyli faunası Laurentia'nın kenarında yaşıyordu."
+  },
+  "Furongian": {
+   "earth": "Tekrarlanan trilobit yok oluşlarının ('biyomer' olayları) ve Furongiyen boşluğu denen düşük çeşitliliğin yaşandığı bir dönem."
+  },
+  "Early Ordovician": {
+   "earth": "Yüksek deniz seviyeleri; Büyük Ordovisiyen Biyoçeşitlenme Olayı başlıyor."
+  },
+  "Middle Ordovician": {
+   "earth": "Büyük Ordovisiyen Biyoçeşitlenme Olayı'nın doruğu; yosun hayvanları ve mercanlardan resifler.",
+   "sea": "180 m; Caradoc'ta 220 m'ye yükseliyor, Ordovisiyen sonu buzullaşmalarında keskin biçimde 141 m'ye düşüyor"
+  },
+  "Late Ordovician": {
+   "earth": "Gondvana güney kutbunun üzerine kaydı; kısa bir buzullaşma Ordovisiyen'i en büyük ikinci kitlesel yok oluşla sona erdirdi."
+  },
+  "Llandovery": {
+   "earth": "Ordovisiyen sonu yok oluşundan sonra toparlanma; buzlar eridikçe deniz seviyeleri yükseldi."
+  },
+  "Wenlock": {
+   "earth": "Tabulata ve rugosa mercanlarından sıcak resifler; bitkiler karada yerleşti."
+  },
+  "Ludlow": {
+   "earth": "Sığ denizler; eurypteridler (deniz akrepleri) dev boyutlara ulaştı."
+  },
+  "Pridoli": {
+   "earth": "Paleozoyik'in en kısa devri; ilk çeneli balıklar çeşitleniyor."
+  },
+  "Early Devonian": {
+   "earth": "Kara bitkileri iç kesimlere yayılıyor; Rhynie çörtü erken bir kara ekosistemini koruyor."
+  },
+  "Middle Devonian": {
+   "earth": "Wattieza gibi ağaç boyutundaki bitkilerden ilk ormanlar."
+  },
+  "Late Devonian": {
+   "earth": "Archaeopteris ormanları; Geç Devoniyen yok oluşu resifleri yerle bir etti.",
+   "sea": "Yaklaşık 189 m civarında görece sabit, dönem boyunca yavaş yavaş 120 m'ye düşüyor"
+  },
+  "Early Mississippian": {
+   "earth": "Sıcak sığ denizler; deniz zambağı çayırları."
+  },
+  "Middle Mississippian": {
+   "earth": "Dört ayaklılar karada çeşitlendi."
+  },
+  "Late Mississippian": {
+   "earth": "Gondvana buzullaşması başladı."
+  },
+  "Early Pennsylvanian": {
+   "earth": "Kömür bataklıkları Avramerika'ya yayıldı."
+  },
+  "Middle Pennsylvanian": {
+   "earth": "Kömür ormanlarının doruğu; çok yüksek oksijen; dev böcekler."
+  },
+  "Late Pennsylvanian": {
+   "earth": "İklim kuraklaştıkça Karbonifer yağmur ormanlarının çöküşü."
+  },
+  "Cisuralian": {
+   "earth": "Pangea birleşmiş; kuraklaşan iklim."
+  },
+  "Guadalupian": {
+   "earth": "Terapsidler baskın; sonda Kapitaniyen yok oluşu."
+  },
+  "Lopingian": {
+   "earth": "Sibirya Trapları püskürüyor ve Büyük Ölüm'e yol açıyor."
+  },
+  "Early Triassic": {
+   "earth": "Yok oluşun ardından sıcak sera ortamı; karada Lystrosaurus baskındı."
+  },
+  "Middle Triassic": {
+   "earth": "Toparlanma; arkozorlar çeşitlendi."
+  },
+  "Late Triassic": {
+   "earth": "Karniyen Plüviyal Olayı; ilk dinozorlar ve memeliler ortaya çıkıyor."
+  },
+  "Early Jurassic": {
+   "earth": "Atlas Okyanusu açılmaya başlıyor; sıcak, nemli iklim."
+  },
+  "Middle Jurassic": {
+   "earth": "Sauropodlar çeşitleniyor; Gondvana ve Laurasia ayrılıyor."
+  },
+  "Late Jurassic": {
+   "earth": "Morrison Formasyonu ekosistemleri; dev sauropodlar."
+  },
+  "Early Cretaceous": {
+   "earth": "Gondvana parçalanıyor; çiçekli bitkiler ortaya çıkıyor."
+  },
+  "Late Cretaceous": {
+   "earth": "Yüksek denizler; Batı İç Denizi; Chicxulub çarpması."
+  },
+  "Paleocene": {
+   "earth": "K–Pg yok oluşundan toparlanan sıcak, ormanlık bir dünya."
+  },
+  "Eocene": {
+   "earth": "Senozoyik'in en sıcak devri; kutupların yakınında palmiyeler."
+  },
+  "Oligocene": {
+   "earth": "Antarktika buzlarla kaplanıyor; otlaklar yayılmaya başlıyor."
+  },
+  "Miocene": {
+   "earth": "Önce sıcak, sonra soğuyan iklim; kelp ormanları ve otlaklar genişliyor."
+  },
+  "Pliocene": {
+   "earth": "Panama Kıstağı oluşuyor; iklim buzul çağlarına doğru soğuyor."
+  },
+  "Pleistocene": {
+   "earth": "Tekrarlanan buzullaşmalar; megafauna dolaşıyordu."
+  },
+  "Holocene": {
+   "earth": "İçinde bulunduğumuz buzularası dönem; insan uygarlığı."
+  }
+ },
+ "milestones": {
+  "Formation of Earth": {
+   "title": "Dünya'nın oluşumu",
+   "desc": "Güneş Sistemi çöken bir gaz ve toz bulutundan yoğunlaşır; Dünya birkaç on milyon yıl içinde birikerek oluşur."
+  },
+  "Moon-forming impact": {
+   "title": "Ay'ı oluşturan çarpışma",
+   "desc": "Mars büyüklüğünde bir gezegen olan Theia, ilk Dünya ile çarpışır. Enkaz Ay'ı oluşturur."
+  },
+  "First oceans": {
+   "title": "İlk okyanuslar",
+   "desc": "En eski zirkon kristalleri, sıvı suyun ve kıtasal kabuğun o zaman zaten var olduğunu gösterir."
+  },
+  "Last universal common ancestor": {
+   "title": "Son evrensel ortak ata",
+   "desc": "Tüm canlı hücrelerin atası olan LUCA, moleküler saat tahminlerine göre bu dönemlerde yaşadı."
+  },
+  "Earliest evidence of life": {
+   "title": "Yaşamın en eski kanıtı",
+   "desc": "Grönland kayaçlarındaki karbon izotopları ve olası stromatolitler erken mikrobiyal yaşamı kaydeder."
+  },
+  "Microbial mats & stromatolites": {
+   "title": "Mikrobiyal örtüler ve stromatolitler",
+   "desc": "Batı Avustralya'daki iyi korunmuş stromatolitler gelişen mikrobiyal toplulukları gösterir."
+  },
+  "Oxygenic photosynthesis": {
+   "title": "Oksijenli fotosentez",
+   "desc": "Siyanobakteriler suyu parçalamaya ve yan ürün olarak oksijen salmaya başlar."
+  },
+  "Great Oxidation Event": {
+   "title": "Büyük Oksidasyon Olayı",
+   "desc": "Serbest oksijen ilk kez atmosferde birikerek gezegenin kimyasını dönüştürür."
+  },
+  "Huronian glaciation": {
+   "title": "Huron buzullaşması",
+   "desc": "Muhtemelen oksijenin metan kaynaklı sera etkisini yok etmesiyle tetiklenen ilk büyük buzul çağı."
+  },
+  "First complex cells?": {
+   "title": "İlk karmaşık hücreler?",
+   "desc": "Sarmal biçimli, gözle görülebilen bir fosil olan Grypania erken bir ökaryotik alg olabilir."
+  },
+  "Eukaryotes": {
+   "title": "Ökaryotlar",
+   "desc": "Çekirdekli ve mitokondrili hücreler — tüm bitkilerin, hayvanların ve mantarların ataları — iyice yerleşmiştir."
+  },
+  "Sexual reproduction & multicellularity": {
+   "title": "Eşeyli üreme ve çok hücrelilik",
+   "desc": "Bir kırmızı alg olan Bangiomorpha, eşeyli üreyen bilinen en eski çok hücreli organizmadır."
+  },
+  "First fungi": {
+   "title": "İlk mantarlar",
+   "desc": "Ourasphaira gibi mikrofosiller, mantarların geç Proterozoyik'te var olduğunu düşündürür."
+  },
+  "Snowball Earth": {
+   "title": "Kartopu Dünya",
+   "desc": "Sturtiyen ve Marinoan buzullaşmaları tüm gezegeni dondurmuş olabilir."
+  },
+  "First animals": {
+   "title": "İlk hayvanlar",
+   "desc": "Sünger biyobelirteçleri en eski hayvanlara işaret eder; hayvanlar kısa süre sonra Ediyakaran'da çeşitlenecekti."
+  },
+  "Ediacaran biota": {
+   "title": "Ediyakara biyotası",
+   "desc": "Dickinsonia ve Charnia gibi ilk büyük, karmaşık çok hücreli organizmalar deniz tabanında yaşar."
+  },
+  "Cambrian explosion": {
+   "title": "Kambriyen patlaması",
+   "desc": "Başlıca hayvan gruplarının çoğu gözleri, kabukları ve bacaklarıyla fosil kayıtlarında hızla ortaya çıkar."
+  },
+  "First trilobites": {
+   "title": "İlk trilobitler",
+   "desc": "Simgesel zırhlı eklembacaklılar olan trilobitler ortaya çıkar ve 270 milyon yıl boyunca denizlere hâkim olacaktır."
+  },
+  "First vertebrates": {
+   "title": "İlk omurgalılar",
+   "desc": "Haikouichthys gibi küçük çenesiz balıklar Kambriyen denizlerinde yüzer."
+  },
+  "Plants colonise land": {
+   "title": "Bitkiler karaları fethediyor",
+   "desc": "Ciğerotlarıyla akraba en eski kara bitkilerinin sporları fosil kayıtlarında ortaya çıkar."
+  },
+  "Late Ordovician extinction": {
+   "title": "Geç Ordovisiyen yok oluşu",
+   "desc": "Buzullaşma ve düşen deniz seviyeleri deniz türlerinin ~%85'ini yok eder."
+  },
+  "First jawed fish": {
+   "title": "İlk çeneli balıklar",
+   "desc": "Çeneler solungaç yaylarından evrimleşir; çeneli omurgalılar hızla çeşitlenir."
+  },
+  "First vascular plants": {
+   "title": "İlk damarlı bitkiler",
+   "desc": "Su ileten dokulara sahip minik bir bitki olan Cooksonia nemli topraklarda büyür."
+  },
+  "First land animal": {
+   "title": "İlk kara hayvanı",
+   "desc": "Bir kırkayak olan Pneumodesmus, karada hava soluyan bilinen en eski hayvandır."
+  },
+  "First insects": {
+   "title": "İlk böcekler",
+   "desc": "Rhynie çörtünden Rhyniognatha, bilinen en eski böcekler arasındadır."
+  },
+  "First forests": {
+   "title": "İlk ormanlar",
+   "desc": "Wattieza ve Archaeopteris gibi ağaç benzeri bitkiler ilk ormanları oluşturur."
+  },
+  "Fish walk toward land": {
+   "title": "Balıklar karaya doğru yürüyor",
+   "desc": "Boynu ve bilek kemikleri olan etli yüzgeçli bir balık olan Tiktaalik, balıklar ile dört ayaklılar arasında köprü kurar."
+  },
+  "Late Devonian extinction": {
+   "title": "Geç Devoniyen yok oluşu",
+   "desc": "Bir dizi yok oluş dalgası, başta resif yapıcılar olmak üzere türlerin ~%70'ini ortadan kaldırır."
+  },
+  "First tetrapods": {
+   "title": "İlk dört ayaklılar",
+   "desc": "Acanthostega ve Ichthyostega gibi dört uzuvlu omurgalılar bataklıklarda yaşar."
+  },
+  "First seed plants": {
+   "title": "İlk tohumlu bitkiler",
+   "desc": "Tohumlar, bitkileri üreme için suya bağımlılıktan kurtarır."
+  },
+  "First flying animals": {
+   "title": "İlk uçan hayvanlar",
+   "desc": "Kanatlı böcekler (Pterygota) havalanır; uçan ilk hayvanlar bunlardır."
+  },
+  "First amniotes": {
+   "title": "İlk amniyotlar",
+   "desc": "Sert kabuklu yumurtalar, omurgalıların sudan uzakta üremesini sağlar; Hylonomus erken bir sürüngendir."
+  },
+  "First synapsids": {
+   "title": "İlk sinapsidler",
+   "desc": "Memelilere uzanan soy hattı sürüngenlerden ayrılır."
+  },
+  "Carboniferous rainforest collapse": {
+   "title": "Karbonifer yağmur ormanlarının çöküşü",
+   "desc": "İklim kuraklaştıkça kömür ormanları parçalanır ve karadaki yaşam yeniden şekillenir."
+  },
+  "The Great Dying": {
+   "title": "Büyük Ölüm",
+   "desc": "Permiyen–Triyas yok oluşu deniz türlerinin ~%90'ını ve kara türlerinin ~%70'ini yok eder."
+  },
+  "First dinosaurs": {
+   "title": "İlk dinozorlar",
+   "desc": "Eoraptor ve Herrerasaurus gibi erken dinozorlar Güney Amerika'da ortaya çıkar."
+  },
+  "First flying vertebrates": {
+   "title": "İlk uçan omurgalılar",
+   "desc": "Pterozorlar, aktif uçuş yeteneğine sahip ilk omurgalılar olur."
+  },
+  "First mammals": {
+   "title": "İlk memeliler",
+   "desc": "Adelobasileus gibi küçük, sivri fareye benzeyen mammaliaformlar ortaya çıkar."
+  },
+  "Triassic–Jurassic extinction": {
+   "title": "Triyas–Jura yok oluşu",
+   "desc": "Pangea yarılırken yaşanan volkanizma birçok arkozoru yok ederek dinozorların önünü açar."
+  },
+  "Pangaea breaks up": {
+   "title": "Pangea parçalanıyor",
+   "desc": "Atlas Okyanusu açılırken süperkıta Laurasia ve Gondvana'ya bölünür."
+  },
+  "First birds": {
+   "title": "İlk kuşlar",
+   "desc": "Tüylü bir dinozor olan Archaeopteryx, dinozorlarla kuşlar arasında bağ kurar."
+  },
+  "First flowering plants": {
+   "title": "İlk çiçekli bitkiler",
+   "desc": "Kapalı tohumlular ortaya çıkar ve kısa sürede kara ekosistemlerini dönüştürür."
+  },
+  "First bees": {
+   "title": "İlk arılar",
+   "desc": "Arılar çiçekli bitkilerle birlikte evrimleşir; tozlaşma ortaklıkları başlar."
+  },
+  "End of the dinosaurs": {
+   "title": "Dinozorların sonu",
+   "desc": "Chicxulub'a bir asteroit çarpar; kuş olmayan tüm dinozorlar dahil türlerin ~%75'inin soyu tükenir."
+  },
+  "Paleocene–Eocene Thermal Maximum": {
+   "title": "Paleosen–Eosen Termal Maksimumu",
+   "desc": "Hızlı bir karbon salımı Dünya'yı 5–8 °C ısıtır; modern memeli takımları yayılır."
+  },
+  "Whales return to the sea": {
+   "title": "Balinalar denize dönüyor",
+   "desc": "Balinaların karada yaşayan bir atası olan Pakicetus, bugünkü Pakistan'ın bulunduğu bölgede yaşar."
+  },
+  "Antarctica freezes": {
+   "title": "Antarktika donuyor",
+   "desc": "Eosen–Oligosen geçişinde Dünya soğurken Antarktika buz örtüsü oluşur."
+  },
+  "First apes": {
+   "title": "İlk insansı maymunlar",
+   "desc": "İnsansı maymunlar (Hominoidea) Eski Dünya maymunlarından ayrılır."
+  },
+  "Human lineage splits from chimps": {
+   "title": "İnsan soyu şempanzelerden ayrılıyor",
+   "desc": "Sahelanthropus, insan soyunun en erken üyelerinden biri olabilir."
+  },
+  "Lucy": {
+   "title": "Lucy",
+   "desc": "Australopithecus afarensis Doğu Afrika'da iki ayağı üzerinde dik yürür."
+  },
+  "Genus Homo": {
+   "title": "Homo cinsi",
+   "desc": "Cinsimizin ilk üyeleri ortaya çıkar; kısa süre sonra taş aletler gelir."
+  },
+  "Ice ages begin": {
+   "title": "Buzul çağları başlıyor",
+   "desc": "Kuvaterner buzullaşması: buz örtüleri ~100.000 yıllık döngülerle ilerler ve geri çekilir."
+  },
+  "Homo sapiens": {
+   "title": "Homo sapiens",
+   "desc": "Anatomik olarak modern insanlar Afrika'da ortaya çıkar."
+  },
+  "Agriculture": {
+   "title": "Tarım",
+   "desc": "Neolitik Devrim: insanlar bitkileri ve hayvanları evcilleştirir."
+  }
+ },
+ "globeLabels": {
+  "Cambrian/Precambrian boundary": "Kambriyen/Prekambriyen sınırı",
+  "Cambro-Ordovician Boundary": "Kambriyen–Ordovisiyen sınırı",
+  "Devono-Carboniferous Boundary": "Devoniyen–Karbonifer sınırı",
+  "Early Cambrian": "Erken Kambriyen",
+  "Early Cretaceous": "Erken Kretase",
+  "Early Devonian": "Erken Devoniyen",
+  "Early Eocene": "Erken Eosen",
+  "Early Jurassic": "Erken Jura",
+  "Early Middle Cambrian boundary": "Erken–Orta Kambriyen sınırı",
+  "Early Miocene": "Erken Miyosen",
+  "Early Mississippian": "Erken Mississipiyen",
+  "Early Oligocene": "Erken Oligosen",
+  "Early Ordovician": "Erken Ordovisiyen",
+  "Early Pennsylvanian": "Erken Pensilvaniyen",
+  "Early Permian": "Erken Permiyen",
+  "Early Silurian": "Erken Silüriyen",
+  "EarlyMiddleCarboniferous": "Erken–Orta Karbonifer",
+  "Holocene": "Holosen",
+  "Jurassic Cretaceous Boundary": "Jura–Kretase sınırı",
+  "KT Boundary": "K–T sınırı",
+  "Late Cambrian": "Geç Kambriyen",
+  "Late Cretaceous": "Geç Kretase",
+  "Late Devonian": "Geç Devoniyen",
+  "Late Eocene": "Geç Eosen",
+  "Late Jurassic": "Geç Jura",
+  "Late Mississippian": "Geç Mississipiyen",
+  "Late Oligocene": "Geç Oligosen",
+  "Late Ordovician": "Geç Ordovisiyen",
+  "Late Pennsylvanian": "Geç Pensilvaniyen",
+  "Late Silurian": "Geç Silüriyen",
+  "Late Triassic": "Geç Triyas",
+  "LatePermian": "Geç Permiyen",
+  "Mid-Cretaceous": "Orta Kretase",
+  "Middle Devonian": "Orta Devoniyen",
+  "Middle Jurassic": "Orta Jura",
+  "Middle Miocene": "Orta Miyosen",
+  "Middle Mississippian": "Orta Mississipiyen",
+  "Middle Ordovician": "Orta Ordovisiyen",
+  "Middle Pennsylvanian": "Orta Pensilvaniyen",
+  "Middle Permian": "Orta Permiyen",
+  "Middle Silurian": "Orta Silüriyen",
+  "Middle Triassic": "Orta Triyas",
+  "Paleocene": "Paleosen",
+  "Paleocene Eocene Boundary": "Paleosen–Eosen sınırı",
+  "Permo-Triassic Boundary": "Permiyen–Triyas sınırı",
+  "Pliocene": "Pliyosen",
+  "early Middle Cambrian": "Orta Kambriyen'in başı",
+  "early Middle Eocene": "Orta Eosen'in başı",
+  "late Middle Cambrian": "Orta Kambriyen'in sonu",
+  "late Middle Eocene": "Orta Eosen'in sonu",
+  "middle Late Miocene": "Geç Miyosen'in ortası"
+ },
+ "ranks": {
+  "species": "tür",
+  "genus": "cins",
+  "family": "familya",
+  "subfamily": "altfamilya",
+  "tribe": "oymak",
+  "order": "takım",
+  "subspecies": "alttür",
+  "superfamily": "üstfamilya",
+  "subgenus": "altcins",
+  "subtribe": "altoymak",
+  "clade": "klad",
+  "suborder": "alttakım",
+  "class": "sınıf",
+  "section": "seksiyon",
+  "incertae sedis": "incertae sedis",
+  "variety": "varyete",
+  "ichnogenus": "iz cinsi",
+  "subclass": "altsınıf",
+  "infraorder": "infratakım",
+  "phylum": "şube",
+  "superorder": "üsttakım",
+  "oogenus": "yumurta cinsi",
+  "subsection": "altseksiyon",
+  "series": "seri",
+  "parvorder": "parvtakım",
+  "division": "bölüm",
+  "subphylum": "altşube",
+  "species group": "tür grubu",
+  "infraclass": "infrasınıf",
+  "ichnofamily": "iz familyası",
+  "informal group": "gayriresmî grup",
+  "supertribe": "üstoymak",
+  "oofamily": "yumurta familyası",
+  "subdivision": "altbölüm",
+  "kingdom": "âlem",
+  "species complex": "tür kompleksi",
+  "stem group": "gövde grubu",
+  "superclass": "üstsınıf",
+  "alliance": "birlik",
+  "subkingdom": "altâlem",
+  "infraphylum": "infraşube",
+  "subterclass": "subtersınıf",
+  "possible clade": "olası klad",
+  "superphylum": "üstşube",
+  "mirordo-mb": "mirordo",
+  "realm": "diyar",
+  "grandordo-mb": "grandordo",
+  "node": "düğüm",
+  "ichnospecies": "iz türü",
+  "basic shell type": "temel kabuk tipi",
+  "nanordo": "nanotakım",
+  "subseries": "altseri",
+  "total group": "toplam grup",
+  "domain": "domain",
+  "species subgroup": "tür altgrubu",
+  "infratribus": "infraoymak",
+  "cohort": "kohort",
+  "oospecies": "yumurta türü",
+  "virus": "virüs",
+  "morphotype": "morfotip",
+  "epifamilia": "epifamilya",
+  "branch": "dal",
+  "magnorder": "magnotakım",
+  "grade": "derece",
+  "zooseries": "zooseri",
+  "parvclass": "parvsınıf",
+  "infrafamilia": "infrafamilya",
+  "strain": "suş",
+  "plesion": "plesion",
+  "superkingdom": "üstâlem",
+  "root": "kök",
+  "micrordo": "mikrotakım",
+  "subcohort": "altkohort",
+  "gradus": "gradus",
+  "ichnosubfamilia": "iz altfamilyası",
+  "hyperfamilia": "hiperfamilya",
+  "superlegion": "üstlejyon",
+  "supercohort": "üstkohort",
+  "supersectio": "üstseksiyon",
+  "form taxon": "form takson",
+  "superdivision": "üstbölüm",
+  "serotype": "serotip",
+  "group": "grup",
+  "ichnoclassis": "iz sınıfı",
+  "ichnoordo": "iz takımı",
+  "ooclassis": "yumurta sınıfı"
+ }
+}

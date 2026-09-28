@@ -1,0 +1,774 @@
+{
+ "unitNames": {
+  "Hadean": "冥王代",
+  "Archean": "太古代",
+  "Proterozoic": "原生代",
+  "Phanerozoic": "顕生代",
+  "Eoarchean": "原太古代",
+  "Paleoarchean": "古太古代",
+  "Mesoarchean": "中太古代",
+  "Neoarchean": "新太古代",
+  "Paleoproterozoic": "古原生代",
+  "Mesoproterozoic": "中原生代",
+  "Neoproterozoic": "新原生代",
+  "Paleozoic": "古生代",
+  "Mesozoic": "中生代",
+  "Cenozoic": "新生代",
+  "Siderian": "シデリアン",
+  "Rhyacian": "リィアキアン",
+  "Orosirian": "オロシリアン",
+  "Statherian": "スタテリアン",
+  "Calymmian": "カリミアン",
+  "Ectasian": "エクタシアン",
+  "Stenian": "ステニアン",
+  "Tonian": "トニアン",
+  "Cryogenian": "クライオジェニアン",
+  "Ediacaran": "エディアカラ紀",
+  "Cambrian": "カンブリア紀",
+  "Ordovician": "オルドビス紀",
+  "Silurian": "シルル紀",
+  "Devonian": "デボン紀",
+  "Carboniferous": "石炭紀",
+  "Permian": "ペルム紀",
+  "Triassic": "三畳紀",
+  "Jurassic": "ジュラ紀",
+  "Cretaceous": "白亜紀",
+  "Paleogene": "古第三紀",
+  "Neogene": "新第三紀",
+  "Quaternary": "第四紀",
+  "Terreneuvian": "テレニュービアン",
+  "Cambrian Series 2": "カンブリア紀第2世",
+  "Miaolingian": "ミャオリンギアン",
+  "Furongian": "フロンギアン",
+  "Early Ordovician": "前期オルドビス紀",
+  "Middle Ordovician": "中期オルドビス紀",
+  "Late Ordovician": "後期オルドビス紀",
+  "Llandovery": "ランドベリ",
+  "Wenlock": "ウェンロック",
+  "Ludlow": "ラドロー",
+  "Pridoli": "プリドリ",
+  "Early Devonian": "前期デボン紀",
+  "Middle Devonian": "中期デボン紀",
+  "Late Devonian": "後期デボン紀",
+  "Early Mississippian": "前期ミシシッピアン",
+  "Middle Mississippian": "中期ミシシッピアン",
+  "Late Mississippian": "後期ミシシッピアン",
+  "Early Pennsylvanian": "前期ペンシルバニアン",
+  "Middle Pennsylvanian": "中期ペンシルバニアン",
+  "Late Pennsylvanian": "後期ペンシルバニアン",
+  "Cisuralian": "シスウラリアン",
+  "Guadalupian": "グアダルピアン",
+  "Lopingian": "ローピンジアン",
+  "Early Triassic": "前期三畳紀",
+  "Middle Triassic": "中期三畳紀",
+  "Late Triassic": "後期三畳紀",
+  "Early Jurassic": "前期ジュラ紀",
+  "Middle Jurassic": "中期ジュラ紀",
+  "Late Jurassic": "後期ジュラ紀",
+  "Early Cretaceous": "前期白亜紀",
+  "Late Cretaceous": "後期白亜紀",
+  "Paleocene": "暁新世",
+  "Eocene": "始新世",
+  "Oligocene": "漸新世",
+  "Miocene": "中新世",
+  "Pliocene": "鮮新世",
+  "Pleistocene": "更新世",
+  "Holocene": "完新世",
+  "Fortunian": "フォーチュニアン",
+  "Cambrian Stage 2": "カンブリア紀第2期",
+  "Cambrian Stage 3": "カンブリア紀第3期",
+  "Cambrian Stage 4": "カンブリア紀第4期",
+  "Wuliuan": "ウリューアン",
+  "Drumian": "ドラミアン",
+  "Guzhangian": "グージャンギアン",
+  "Paibian": "パイビアン",
+  "Jiangshanian": "ジャンシャニアン",
+  "Cambrian Stage 10": "カンブリア紀第10期",
+  "Tremadocian": "トレマドッキアン",
+  "Floian": "フロイアン",
+  "Dapingian": "ダーピンジアン",
+  "Darriwilian": "ダリウィリアン",
+  "Sandbian": "サンドビアン",
+  "Katian": "カティアン",
+  "Hirnantian": "ヒルナンティアン",
+  "Rhuddanian": "ラッダニアン",
+  "Aeronian": "アエロニアン",
+  "Telychian": "テリチアン",
+  "Sheinwoodian": "シェイウッディアン",
+  "Homerian": "ホメリアン",
+  "Gorstian": "ゴースティアン",
+  "Ludfordian": "ルドフォーディアン",
+  "Lochkovian": "ロッコヴィアン",
+  "Pragian": "プラギアン",
+  "Emsian": "エムシアン",
+  "Eifelian": "アイフェリアン",
+  "Givetian": "ジベティアン",
+  "Frasnian": "フラニアン",
+  "Famennian": "ファメニアン",
+  "Tournaisian": "トルネーシアン",
+  "Visean": "ビゼーアン",
+  "Serpukhovian": "サープコビアン",
+  "Bashkirian": "バシキーリアン",
+  "Moscovian": "モスコビアン",
+  "Kasimovian": "カシモビアン",
+  "Gzhelian": "グゼリアン",
+  "Asselian": "アッセリアン",
+  "Sakmarian": "サクマーリアン",
+  "Artinskian": "アーティンスキアン",
+  "Kungurian": "クングーリアン",
+  "Roadian": "ローディアン",
+  "Wordian": "ウォーディアン",
+  "Capitanian": "キャピタニアン",
+  "Wuchiapingian": "ウーチャーピンジアン",
+  "Changhsingian": "チャンシンジアン",
+  "Induan": "インドゥアン",
+  "Olenekian": "オレネキアン",
+  "Anisian": "アニシアン",
+  "Ladinian": "ラディニアン",
+  "Carnian": "カーニアン",
+  "Norian": "ノーリアン",
+  "Rhaetian": "レーティアン",
+  "Hettangian": "ヘッタンギアン",
+  "Sinemurian": "シネムーリアン",
+  "Pliensbachian": "プリンスバッキアン",
+  "Toarcian": "トアルシアン",
+  "Aalenian": "アーレニアン",
+  "Bajocian": "バッジョシアン",
+  "Bathonian": "バトニアン",
+  "Callovian": "カロビアン",
+  "Oxfordian": "オックスフォーディアン",
+  "Kimmeridgian": "キンメリッジアン",
+  "Tithonian": "チトニアン",
+  "Berriasian": "ベリアシアン",
+  "Valanginian": "バランギニアン",
+  "Hauterivian": "オーテリビアン",
+  "Barremian": "バレミアン",
+  "Aptian": "アプチアン",
+  "Albian": "アルビアン",
+  "Cenomanian": "セノマニアン",
+  "Turonian": "チューロニアン",
+  "Coniacian": "コニアシアン",
+  "Santonian": "サントニアン",
+  "Campanian": "カンパニアン",
+  "Maastrichtian": "マーストリヒチアン",
+  "Danian": "ダニアン",
+  "Selandian": "セランディアン",
+  "Thanetian": "サネティアン",
+  "Ypresian": "ヤプレシアン",
+  "Lutetian": "ルテシアン",
+  "Bartonian": "バートニアン",
+  "Priabonian": "プリアボニアン",
+  "Rupelian": "ルペリアン",
+  "Chattian": "チャッティアン",
+  "Aquitanian": "アキタニアン",
+  "Burdigalian": "バーディガリアン",
+  "Langhian": "ランギアン",
+  "Serravallian": "サーラバリアン",
+  "Tortonian": "トートニアン",
+  "Messinian": "メッシニアン",
+  "Zanclean": "ザンクリアン",
+  "Piacenzian": "ピアセンジアン",
+  "Gelasian": "ジェラシアン",
+  "Calabrian": "カラブリアン",
+  "Chibanian": "チバニアン",
+  "Late Pleistocene": "後期更新世",
+  "Greenlandian": "グリーンランディアン",
+  "Northgrippian": "ノースグリッピアン",
+  "Meghalayan": "メガーラヤン"
+ },
+ "units": {
+  "Hadean": {
+   "earth": "溶融状態から徐々に冷えていく、天体衝突に打ちのめされた世界。初期に火星ほどの大きさの天体（テイア）が原始地球に衝突し、月が形成された。約 4.4 Ga までに、自由酸素を含まない濃い CO₂／水蒸気の大気の下で、薄い地殻と最初の海が形成された。"
+  },
+  "Archean": {
+   "earth": "マントルは現在より高温で、全球的な海に小さな原始大陸や島弧が点在していた。大気は CO₂ とメタンに富み、酸素はほぼ存在しなかった。若い太陽は現在より約 25% 暗かった。海は溶存鉄で緑がかり、縞状鉄鉱層が堆積した。"
+  },
+  "Proterozoic": {
+   "earth": "大陸が成長して超大陸（コロンビア、ロディニア、パノティア）に集合した。大酸化イベントで酸素が増加し、地球は何度かの「スノーボールアース」氷河時代に凍りついた。"
+  },
+  "Phanerozoic": {
+   "earth": "「目に見える生命」の累代。散在していた大陸は移動してパンゲアとなり、再び分裂した。その間に生命は陸、空、そしてあらゆる海に進出した。"
+  },
+  "Eoarchean": {
+   "earth": "全球的な海に地殻の断片が点在し、後期重爆撃は次第に弱まった。現存最古の岩石（アカスタ片麻岩、イスア帯）が残る。"
+  },
+  "Paleoarchean": {
+   "earth": "最初のクラトン（カープバール、ピルバラ）が形成され、浅い海には微生物マットが広がった。大気中に酸素はなかった。"
+  },
+  "Mesoarchean": {
+   "earth": "最初の超大陸とされるバールバラと、知られる最古の氷河作用（ポンゴラ氷河時代）が存在した可能性がある。微生物マットやストロマトライトが広く分布した。"
+  },
+  "Neoarchean": {
+   "earth": "大陸地殻が急速に成長し、酸素発生型光合成が定着して、大酸化イベントへの舞台が整った。"
+  },
+  "Paleoproterozoic": {
+   "earth": "大酸化イベントによって大気が初めて酸素を含むようになり、続いてヒューロニアン氷河時代が訪れた。超大陸コロンビア（ヌーナ）が形成された。"
+  },
+  "Mesoproterozoic": {
+   "earth": "「退屈な10億年」：安定した気候、低い酸素濃度、硫化物に富む深海。コロンビアが分裂し、ロディニアが形成された。"
+  },
+  "Neoproterozoic": {
+   "earth": "ロディニアが分裂し、地球は全球的な「スノーボールアース」氷河時代を経験した。その後、酸素が再び増加し、最初の動物が現れた。"
+  },
+  "Paleozoic": {
+   "earth": "散在する大陸と暖かい浅海で始まり、パンゲアの形成で終わった。植物と動物が陸上に進出し、広大な石炭林が茂った。"
+  },
+  "Mesozoic": {
+   "earth": "パンゲアはローラシアとゴンドワナに分かれ、さらに現在の大陸へと分裂し、大西洋が開いた。極域に氷床のない、おおむね温暖な温室世界だった。"
+  },
+  "Cenozoic": {
+   "earth": "「哺乳類の時代」。大陸は現在の位置へ移動し、インドがアジアに衝突してヒマラヤが隆起した。地球は温室状態から氷河時代へと寒冷化した。"
+  },
+  "Siderian": {
+   "earth": "シアノバクテリアが放出した酸素が海中の鉄と反応し、縞状鉄鉱層の形成が最盛期を迎えた。大酸化イベントが始まった。"
+  },
+  "Rhyacian": {
+   "earth": "史上最も長い氷河時代の一つであるヒューロニアン氷河時代が地球を覆った。ブッシュフェルト複合岩体が形成された。"
+  },
+  "Orosirian": {
+   "earth": "ほぼすべての大陸で激しい造山運動が起こり、二つの巨大な小惑星衝突（フレデフォート、サドベリー）があった。"
+  },
+  "Statherian": {
+   "earth": "超大陸コロンビア（ヌーナ）の形成が完了した。酸素濃度は低い水準で安定した。"
+  },
+  "Calymmian": {
+   "earth": "コロンビアが分裂し始めるとともに、大陸上に卓状地の被覆層が広がった。"
+  },
+  "Ectasian": {
+   "earth": "卓状地の被覆層がさらに拡大した。深層水は依然として酸素に乏しかった。"
+  },
+  "Stenian": {
+   "earth": "グレンヴィル造山運動を通じて超大陸ロディニアが形成された。"
+  },
+  "Tonian": {
+   "earth": "ロディニアが分裂し始めた。酸素が増加し、真核藻類が多様化した。"
+  },
+  "Cryogenian": {
+   "earth": "「スノーボールアース」：スターチアン氷期とマリノアン氷期には、ほぼ赤道まで氷に覆われていた可能性がある。",
+   "temp": "5"
+  },
+  "Ediacaran": {
+   "earth": "かつてのロディニアの大陸群は離れていった（パノティア）。スノーボール氷河時代が終わって氷が融けると、海は酸素に富むようになった。",
+   "temp": "17"
+  },
+  "Cambrian": {
+   "earth": "海水準が高く大陸が浸水した温暖な温室世界。ゴンドワナは南極にまたがっていた。陸地はむき出しの岩と微生物の被膜だけだった。",
+   "sea": "4 m から 90 m へ着実に上昇"
+  },
+  "Ordovician": {
+   "earth": "大陸は散在し、ゴンドワナは南半球にあった。海水準は高く気候は温暖だったが、末期の急激な氷河作用が大量絶滅を引き起こした。",
+   "sea": "180 m。カラドック期に 220 m まで上昇し、オルドビス紀末の氷河作用で 141 m まで急低下"
+  },
+  "Silurian": {
+   "earth": "オルドビス紀の氷河時代が終わり、温暖で安定した気候となった。ローレンシアとバルティカが衝突した（カレドニア造山運動）。植物が海岸線を緑に染め始めた。",
+   "sea": "約 180 m、短期的な低下を伴う"
+  },
+  "Devonian": {
+   "earth": "「魚の時代」。ユーラメリカ（「旧赤色砂岩大陸」）とゴンドワナが接近した。最初の森林が広がり土壌が形成された。海水準は高く気候は温暖だった。",
+   "sea": "約 189 m で比較的安定し、紀を通じて次第に 120 m まで低下"
+  },
+  "Carboniferous": {
+   "earth": "広大な湿地の石炭林が熱帯を覆い、酸素濃度は約 35% で最高に達した。パンゲアが形成されつつあり、南のゴンドワナは大規模な氷河時代に覆われていた。",
+   "sea": "ミシシッピアンを通じて 120 m から現在の水準まで低下し、その後着実に上昇して紀の終わりには約 80 m"
+  },
+  "Permian": {
+   "earth": "パンゲアが完全に形成され、パンサラッサ海に囲まれた。内陸は広大な砂漠だった。シベリア・トラップの噴火と史上最大の大量絶滅で幕を閉じた。"
+  },
+  "Triassic": {
+   "earth": "パンゲアが最大規模に達し、高温・乾燥でモンスーン性の気候、極域に氷はなかった。生命は大絶滅からゆっくりと回復した。パンゲアが裂け始めると、再び大量絶滅が起きて紀が終わった。"
+  },
+  "Jurassic": {
+   "earth": "パンゲアがローラシアとゴンドワナに分裂し、中央大西洋が開いた。温暖湿潤な温室気候で、針葉樹、ソテツ類、シダ類の森林が茂った。"
+  },
+  "Cretaceous": {
+   "earth": "大陸は現在の位置に向かって移動した。非常に高い海水準により、西部内陸海路などの内陸海が生じた。高温の温室気候で、チクシュルーブへの小惑星衝突によって紀が終わった。"
+  },
+  "Paleogene": {
+   "earth": "K–Pg 絶滅の後、哺乳類が空いたニッチへと適応放散した。高温の前期始新世（PETM）の後は寒冷化が進み、始新世–漸新世境界で最初の南極氷床が形成された。",
+   "temp": "18"
+  },
+  "Neogene": {
+   "earth": "大陸はほぼ現在の位置にあった。パナマ地峡が閉じ、ヒマラヤとアルプスが隆起した。気候は寒冷・乾燥化し、草原が各大陸に広がった。",
+   "temp": "14"
+  },
+  "Quaternary": {
+   "earth": "氷河時代：氷期と間氷期が繰り返され、氷期の最盛期には氷床が北アメリカとユーラシア北部を覆い、海水準は最大 120 m 低下した。",
+   "temp": "14"
+  },
+  "Terreneuvian": {
+   "earth": "浅い大陸棚の海が広がった。鉱物化した骨格の進化に伴い、微小有殻化石が大量に現れた。"
+  },
+  "Cambrian Series 2": {
+   "earth": "カンブリア爆発の最盛期。中国の澄江など有名な化石産地には軟体性の動物が保存されている。"
+  },
+  "Miaolingian": {
+   "earth": "暖かい海。バージェス頁岩の動物群がローレンシアの縁辺に生息していた。"
+  },
+  "Furongian": {
+   "earth": "三葉虫の絶滅（「バイオメア」事象）が繰り返され、多様性が低かった時期で、「フロンギアン・ギャップ」と呼ばれる。"
+  },
+  "Early Ordovician": {
+   "earth": "海水準が高く、オルドビス紀大放散が始まった。"
+  },
+  "Middle Ordovician": {
+   "earth": "オルドビス紀大放散の最盛期。コケムシとサンゴの礁。",
+   "sea": "180 m。カラドック期に 220 m まで上昇し、オルドビス紀末の氷河作用で 141 m まで急低下"
+  },
+  "Late Ordovician": {
+   "earth": "ゴンドワナが南極上に移動し、短い氷河作用が史上2番目に大きな大量絶滅とともにオルドビス紀を終わらせた。"
+  },
+  "Llandovery": {
+   "earth": "オルドビス紀末の絶滅からの回復期。氷が融けて海水準が上昇した。"
+  },
+  "Wenlock": {
+   "earth": "床板サンゴと四射サンゴによる暖かい礁。植物が陸上に定着した。"
+  },
+  "Ludlow": {
+   "earth": "浅い海。ウミサソリが巨大化した。"
+  },
+  "Pridoli": {
+   "earth": "古生代で最も短い世。最初の顎口類の魚が多様化した。"
+  },
+  "Early Devonian": {
+   "earth": "陸上植物が内陸へ広がった。ライニーチャートには初期の陸上生態系が保存されている。"
+  },
+  "Middle Devonian": {
+   "earth": "ワッティエザなど樹木サイズの植物による最初の森林。"
+  },
+  "Late Devonian": {
+   "earth": "アーケオプテリスの森林。後期デボン紀の大量絶滅が礁を壊滅させた。",
+   "sea": "約 189 m で比較的安定し、紀を通じて次第に 120 m まで低下"
+  },
+  "Early Mississippian": {
+   "earth": "暖かい浅海。ウミユリの群生。"
+  },
+  "Middle Mississippian": {
+   "earth": "四肢動物が陸上で多様化した。"
+  },
+  "Late Mississippian": {
+   "earth": "ゴンドワナの氷河作用が始まった。"
+  },
+  "Early Pennsylvanian": {
+   "earth": "石炭湿地がユーラメリカ全域に広がった。"
+  },
+  "Middle Pennsylvanian": {
+   "earth": "石炭林の最盛期。酸素濃度が非常に高く、巨大昆虫がいた。"
+  },
+  "Late Pennsylvanian": {
+   "earth": "気候の乾燥化により石炭紀の熱帯雨林が崩壊した。"
+  },
+  "Cisuralian": {
+   "earth": "パンゲアが形成され、気候が乾燥化した。"
+  },
+  "Guadalupian": {
+   "earth": "獣弓類が優勢となり、末期にキャピタニアン絶滅が起こった。"
+  },
+  "Lopingian": {
+   "earth": "シベリア・トラップが噴火し、大絶滅（P–T 境界大量絶滅）を引き起こした。"
+  },
+  "Early Triassic": {
+   "earth": "絶滅後の高温な温室期。リストロサウルスが陸上を支配した。"
+  },
+  "Middle Triassic": {
+   "earth": "回復期。主竜類が多様化した。"
+  },
+  "Late Triassic": {
+   "earth": "カーニアン多雨事象。最初の恐竜と哺乳類が現れた。"
+  },
+  "Early Jurassic": {
+   "earth": "大西洋が開き始めた。温暖湿潤な気候。"
+  },
+  "Middle Jurassic": {
+   "earth": "竜脚類が多様化し、ゴンドワナとローラシアが分離した。"
+  },
+  "Late Jurassic": {
+   "earth": "モリソン層の生態系。巨大な竜脚類。"
+  },
+  "Early Cretaceous": {
+   "earth": "ゴンドワナが分裂し、被子植物が現れた。"
+  },
+  "Late Cretaceous": {
+   "earth": "高い海水準、西部内陸海路、チクシュルーブ衝突。"
+  },
+  "Paleocene": {
+   "earth": "K–Pg 絶滅から回復しつつある、温暖で森林に覆われた世界。"
+  },
+  "Eocene": {
+   "earth": "新生代で最も温暖な世。極域の近くにもヤシの木が生えていた。"
+  },
+  "Oligocene": {
+   "earth": "南極大陸が氷に覆われ、草原が広がり始めた。"
+  },
+  "Miocene": {
+   "earth": "温暖な気候から寒冷化へ。ケルプの森と草原が拡大した。"
+  },
+  "Pliocene": {
+   "earth": "パナマ地峡が形成され、気候は氷河時代に向けて寒冷化した。"
+  },
+  "Pleistocene": {
+   "earth": "氷河作用が繰り返され、メガファウナ（大型動物）が闊歩した。"
+  },
+  "Holocene": {
+   "earth": "現在の間氷期。人類の文明。"
+  }
+ },
+ "milestones": {
+  "Formation of Earth": {
+   "title": "地球の形成",
+   "desc": "収縮するガスと塵の雲から太陽系が凝縮し、地球は数千万年のうちに集積して形成された。"
+  },
+  "Moon-forming impact": {
+   "title": "月を形成した衝突",
+   "desc": "火星ほどの大きさの惑星テイアが原始地球に衝突し、その破片から月が形成された。"
+  },
+  "First oceans": {
+   "title": "最初の海",
+   "desc": "最古のジルコン結晶は、液体の水と大陸地殻がすでに存在していたことを示している。"
+  },
+  "Last universal common ancestor": {
+   "title": "全生物の最終共通祖先",
+   "desc": "分子時計による推定では、すべての現生細胞の祖先である LUCA はこの頃に生きていた。"
+  },
+  "Earliest evidence of life": {
+   "title": "最古の生命の証拠",
+   "desc": "グリーンランドの岩石中の炭素同位体とストロマトライトと思われる構造が、初期の微生物の存在を記録している。"
+  },
+  "Microbial mats & stromatolites": {
+   "title": "微生物マットとストロマトライト",
+   "desc": "西オーストラリアの保存状態のよいストロマトライトは、繁栄する微生物群集を示している。"
+  },
+  "Oxygenic photosynthesis": {
+   "title": "酸素発生型光合成",
+   "desc": "シアノバクテリアが水を分解し、副産物として酸素を放出し始めた。"
+  },
+  "Great Oxidation Event": {
+   "title": "大酸化イベント",
+   "desc": "自由酸素が初めて大気中に蓄積し、惑星の化学を一変させた。"
+  },
+  "Huronian glaciation": {
+   "title": "ヒューロニアン氷河時代",
+   "desc": "最初の大氷河時代。酸素がメタンによる温室効果を破壊したことが引き金になった可能性がある。"
+  },
+  "First complex cells?": {
+   "title": "最初の複雑な細胞？",
+   "desc": "コイル状の肉眼的化石であるグリパニアは、初期の真核藻類かもしれない。"
+  },
+  "Eukaryotes": {
+   "title": "真核生物",
+   "desc": "核とミトコンドリアをもつ細胞——すべての植物、動物、菌類の祖先——が確立した。"
+  },
+  "Sexual reproduction & multicellularity": {
+   "title": "有性生殖と多細胞化",
+   "desc": "紅藻のバンギオモルファは、知られる最古の有性生殖を行う多細胞生物である。"
+  },
+  "First fungi": {
+   "title": "最初の菌類",
+   "desc": "オウラスファイラなどの微化石は、原生代後期までに菌類が存在していたことを示唆している。"
+  },
+  "Snowball Earth": {
+   "title": "スノーボールアース",
+   "desc": "スターチアン氷期とマリノアン氷期には、惑星全体が凍りついた可能性がある。"
+  },
+  "First animals": {
+   "title": "最初の動物",
+   "desc": "海綿動物のバイオマーカーが最初期の動物の存在を示唆する。動物はまもなくエディアカラ紀に多様化した。"
+  },
+  "Ediacaran biota": {
+   "title": "エディアカラ生物群",
+   "desc": "ディッキンソニアやカルニアなど、最初の大型で複雑な多細胞生物が海底に生息した。"
+  },
+  "Cambrian explosion": {
+   "title": "カンブリア爆発",
+   "desc": "主要な動物群の大半が、眼や殻や脚を備えて化石記録に急速に現れた。"
+  },
+  "First trilobites": {
+   "title": "最初の三葉虫",
+   "desc": "装甲をまとった象徴的な節足動物である三葉虫が現れ、2億7000万年にわたって海を支配することになる。"
+  },
+  "First vertebrates": {
+   "title": "最初の脊椎動物",
+   "desc": "ハイコウイクチスのような小型の無顎類がカンブリア紀の海を泳いでいた。"
+  },
+  "Plants colonise land": {
+   "title": "植物の陸上進出",
+   "desc": "苔類に近縁な最古の陸上植物の胞子が化石記録に現れる。"
+  },
+  "Late Ordovician extinction": {
+   "title": "後期オルドビス紀の大量絶滅",
+   "desc": "氷河作用と海水準の低下により、海洋生物種の約 85% が絶滅した。"
+  },
+  "First jawed fish": {
+   "title": "最初の顎をもつ魚",
+   "desc": "鰓弓から顎が進化し、顎口類は急速に多様化した。"
+  },
+  "First vascular plants": {
+   "title": "最初の維管束植物",
+   "desc": "水を通す組織をもつ小さな植物クックソニアが湿った地面に生えていた。"
+  },
+  "First land animal": {
+   "title": "最初の陸上動物",
+   "desc": "ヤスデの一種プネウモデスムスは、陸上で空気を呼吸した知られる最古の動物である。"
+  },
+  "First insects": {
+   "title": "最初の昆虫",
+   "desc": "ライニーチャートから産出したリニオグナタは、知られる最古の昆虫の一つである。"
+  },
+  "First forests": {
+   "title": "最初の森林",
+   "desc": "ワッティエザやアーケオプテリスなどの樹木状の植物が最初の森林を形成した。"
+  },
+  "Fish walk toward land": {
+   "title": "陸へ向かう魚",
+   "desc": "首と手首の骨をもつ肉鰭類ティクターリクは、魚類と四肢動物の橋渡しとなる。"
+  },
+  "Late Devonian extinction": {
+   "title": "後期デボン紀の大量絶滅",
+   "desc": "一連の絶滅の波が種の約 70% を消し去り、とりわけ礁をつくる生物が打撃を受けた。"
+  },
+  "First tetrapods": {
+   "title": "最初の四肢動物",
+   "desc": "アカントステガやイクチオステガのような四肢をもつ脊椎動物が沼地に暮らしていた。"
+  },
+  "First seed plants": {
+   "title": "最初の種子植物",
+   "desc": "種子によって、植物は繁殖のために水に依存する必要がなくなった。"
+  },
+  "First flying animals": {
+   "title": "最初の飛行動物",
+   "desc": "翅をもつ昆虫（有翅昆虫亜綱）が空へ飛び立ち、最初に飛んだ動物となった。"
+  },
+  "First amniotes": {
+   "title": "最初の有羊膜類",
+   "desc": "硬い殻をもつ卵により、脊椎動物は水から離れて繁殖できるようになった。ヒロノムスは初期の爬虫類である。"
+  },
+  "First synapsids": {
+   "title": "最初の単弓類",
+   "desc": "哺乳類へとつながる系統が爬虫類から分岐した。"
+  },
+  "Carboniferous rainforest collapse": {
+   "title": "石炭紀の熱帯雨林崩壊",
+   "desc": "気候の乾燥化に伴って石炭林が分断され、陸上生物の姿が一変した。"
+  },
+  "The Great Dying": {
+   "title": "大絶滅（グレート・ダイイング）",
+   "desc": "ペルム紀–三畳紀の大量絶滅により、海洋生物種の約 90%、陸上生物種の約 70% が絶滅した。"
+  },
+  "First dinosaurs": {
+   "title": "最初の恐竜",
+   "desc": "エオラプトルやヘレラサウルスのような初期の恐竜が南アメリカに現れた。"
+  },
+  "First flying vertebrates": {
+   "title": "最初の飛行脊椎動物",
+   "desc": "翼竜は、動力飛行が可能になった最初の脊椎動物となった。"
+  },
+  "First mammals": {
+   "title": "最初の哺乳類",
+   "desc": "アデロバシレウスのような、トガリネズミに似た小型の哺乳形類が現れた。"
+  },
+  "Triassic–Jurassic extinction": {
+   "title": "三畳紀–ジュラ紀の大量絶滅",
+   "desc": "パンゲアの分裂に伴う火山活動が多くの主竜類を絶滅させ、恐竜の時代への道を開いた。"
+  },
+  "Pangaea breaks up": {
+   "title": "パンゲアの分裂",
+   "desc": "大西洋が開くとともに、超大陸はローラシアとゴンドワナに分かれた。"
+  },
+  "First birds": {
+   "title": "最初の鳥類",
+   "desc": "羽毛をもつ恐竜である始祖鳥（アーケオプテリクス）は、恐竜と鳥類をつなぐ存在である。"
+  },
+  "First flowering plants": {
+   "title": "最初の被子植物",
+   "desc": "被子植物が現れ、まもなく陸上生態系を大きく変えた。"
+  },
+  "First bees": {
+   "title": "最初のハチ",
+   "desc": "ハナバチ類は被子植物とともに進化し、送粉のパートナーシップが始まった。"
+  },
+  "End of the dinosaurs": {
+   "title": "恐竜の終焉",
+   "desc": "小惑星がチクシュルーブに衝突し、すべての非鳥類型恐竜を含む種の約 75% が絶滅した。"
+  },
+  "Paleocene–Eocene Thermal Maximum": {
+   "title": "暁新世–始新世温暖化極大",
+   "desc": "急速な炭素放出により地球は 5–8 °C 温暖化し、現代的な哺乳類の目が広がった。"
+  },
+  "Whales return to the sea": {
+   "title": "クジラが海へ戻る",
+   "desc": "陸生のクジラの祖先パキケトゥスが、現在のパキスタンにあたる地域に生息していた。"
+  },
+  "Antarctica freezes": {
+   "title": "南極大陸の凍結",
+   "desc": "始新世–漸新世の移行期に地球が寒冷化し、南極氷床が形成された。"
+  },
+  "First apes": {
+   "title": "最初の類人猿",
+   "desc": "類人猿（ヒト上科）が旧世界ザルから分岐した。"
+  },
+  "Human lineage splits from chimps": {
+   "title": "ヒトの系統がチンパンジーから分岐",
+   "desc": "サヘラントロプスは、ヒトの系統の最初期のメンバーの一つである可能性がある。"
+  },
+  "Lucy": {
+   "title": "ルーシー",
+   "desc": "アウストラロピテクス・アファレンシスが東アフリカで二足で直立歩行していた。"
+  },
+  "Genus Homo": {
+   "title": "ヒト属",
+   "desc": "私たちの属の最初のメンバーが現れ、まもなく石器が続いた。"
+  },
+  "Ice ages begin": {
+   "title": "氷河時代の始まり",
+   "desc": "第四紀の氷河作用：氷床が約10万年の周期で拡大と後退を繰り返した。"
+  },
+  "Homo sapiens": {
+   "title": "ホモ・サピエンス",
+   "desc": "解剖学的現代人がアフリカに現れた。"
+  },
+  "Agriculture": {
+   "title": "農業",
+   "desc": "新石器革命：人類が植物と動物を家畜化・栽培化した。"
+  }
+ },
+ "globeLabels": {
+  "Cambrian/Precambrian boundary": "カンブリア紀/先カンブリア時代境界",
+  "Cambro-Ordovician Boundary": "カンブリア紀–オルドビス紀境界",
+  "Devono-Carboniferous Boundary": "デボン紀–石炭紀境界",
+  "Early Cambrian": "前期カンブリア紀",
+  "Early Cretaceous": "前期白亜紀",
+  "Early Devonian": "前期デボン紀",
+  "Early Eocene": "前期始新世",
+  "Early Jurassic": "前期ジュラ紀",
+  "Early Middle Cambrian boundary": "前期–中期カンブリア紀境界",
+  "Early Miocene": "前期中新世",
+  "Early Mississippian": "前期ミシシッピアン",
+  "Early Oligocene": "前期漸新世",
+  "Early Ordovician": "前期オルドビス紀",
+  "Early Pennsylvanian": "前期ペンシルバニアン",
+  "Early Permian": "前期ペルム紀",
+  "Early Silurian": "前期シルル紀",
+  "EarlyMiddleCarboniferous": "前期–中期石炭紀",
+  "Holocene": "完新世",
+  "Jurassic Cretaceous Boundary": "ジュラ紀–白亜紀境界",
+  "KT Boundary": "K–T 境界",
+  "Late Cambrian": "後期カンブリア紀",
+  "Late Cretaceous": "後期白亜紀",
+  "Late Devonian": "後期デボン紀",
+  "Late Eocene": "後期始新世",
+  "Late Jurassic": "後期ジュラ紀",
+  "Late Mississippian": "後期ミシシッピアン",
+  "Late Oligocene": "後期漸新世",
+  "Late Ordovician": "後期オルドビス紀",
+  "Late Pennsylvanian": "後期ペンシルバニアン",
+  "Late Silurian": "後期シルル紀",
+  "Late Triassic": "後期三畳紀",
+  "LatePermian": "後期ペルム紀",
+  "Mid-Cretaceous": "白亜紀中期",
+  "Middle Devonian": "中期デボン紀",
+  "Middle Jurassic": "中期ジュラ紀",
+  "Middle Miocene": "中期中新世",
+  "Middle Mississippian": "中期ミシシッピアン",
+  "Middle Ordovician": "中期オルドビス紀",
+  "Middle Pennsylvanian": "中期ペンシルバニアン",
+  "Middle Permian": "中期ペルム紀",
+  "Middle Silurian": "中期シルル紀",
+  "Middle Triassic": "中期三畳紀",
+  "Paleocene": "暁新世",
+  "Paleocene Eocene Boundary": "暁新世–始新世境界",
+  "Permo-Triassic Boundary": "ペルム紀–三畳紀境界",
+  "Pliocene": "鮮新世",
+  "early Middle Cambrian": "中期カンブリア紀前半",
+  "early Middle Eocene": "中期始新世前半",
+  "late Middle Cambrian": "中期カンブリア紀後半",
+  "late Middle Eocene": "中期始新世後半",
+  "middle Late Miocene": "後期中新世中頃"
+ },
+ "ranks": {
+  "species": "種",
+  "genus": "属",
+  "family": "科",
+  "subfamily": "亜科",
+  "tribe": "族",
+  "order": "目",
+  "subspecies": "亜種",
+  "superfamily": "上科",
+  "subgenus": "亜属",
+  "subtribe": "亜族",
+  "clade": "クレード",
+  "suborder": "亜目",
+  "class": "綱",
+  "section": "節",
+  "incertae sedis": "所属不明",
+  "variety": "変種",
+  "ichnogenus": "生痕属",
+  "subclass": "亜綱",
+  "infraorder": "下目",
+  "phylum": "門",
+  "superorder": "上目",
+  "oogenus": "卵属",
+  "subsection": "亜節",
+  "series": "列",
+  "parvorder": "小目",
+  "division": "門",
+  "subphylum": "亜門",
+  "species group": "種群",
+  "infraclass": "下綱",
+  "ichnofamily": "生痕科",
+  "informal group": "非公式群",
+  "supertribe": "上族",
+  "oofamily": "卵科",
+  "subdivision": "亜門",
+  "kingdom": "界",
+  "species complex": "種複合体",
+  "stem group": "ステムグループ",
+  "superclass": "上綱",
+  "alliance": "群団",
+  "subkingdom": "亜界",
+  "infraphylum": "下門",
+  "subterclass": "亜下綱",
+  "possible clade": "推定クレード",
+  "superphylum": "上門",
+  "mirordo-mb": "奇目",
+  "realm": "領域",
+  "grandordo-mb": "巨目",
+  "node": "ノード",
+  "ichnospecies": "生痕種",
+  "basic shell type": "基本殻型",
+  "nanordo": "極小目",
+  "subseries": "亜列",
+  "total group": "トータルグループ",
+  "domain": "ドメイン",
+  "species subgroup": "種亜群",
+  "infratribus": "下族",
+  "cohort": "区",
+  "oospecies": "卵種",
+  "virus": "ウイルス",
+  "morphotype": "形態型",
+  "epifamilia": "次科",
+  "branch": "枝",
+  "magnorder": "大目",
+  "grade": "グレード",
+  "zooseries": "動物系列",
+  "parvclass": "小綱",
+  "infrafamilia": "下科",
+  "strain": "株",
+  "plesion": "プレシオン",
+  "superkingdom": "上界",
+  "root": "根",
+  "micrordo": "微目",
+  "subcohort": "亜区",
+  "gradus": "グレード",
+  "ichnosubfamilia": "生痕亜科",
+  "hyperfamilia": "超科",
+  "superlegion": "上軍団",
+  "supercohort": "上区",
+  "supersectio": "上節",
+  "form taxon": "形態分類群",
+  "superdivision": "上門",
+  "serotype": "血清型",
+  "group": "群",
+  "ichnoclassis": "生痕綱",
+  "ichnoordo": "生痕目",
+  "ooclassis": "卵綱"
+ }
+}

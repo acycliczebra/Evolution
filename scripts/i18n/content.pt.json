@@ -1,0 +1,774 @@
+{
+ "unitNames": {
+  "Hadean": "Hadeano",
+  "Archean": "Arqueano",
+  "Proterozoic": "Proterozoico",
+  "Phanerozoic": "Fanerozoico",
+  "Eoarchean": "Eoarqueano",
+  "Paleoarchean": "Paleoarqueano",
+  "Mesoarchean": "Mesoarqueano",
+  "Neoarchean": "Neoarqueano",
+  "Paleoproterozoic": "Paleoproterozoico",
+  "Mesoproterozoic": "Mesoproterozoico",
+  "Neoproterozoic": "Neoproterozoico",
+  "Paleozoic": "Paleozoico",
+  "Mesozoic": "Mesozoico",
+  "Cenozoic": "Cenozoico",
+  "Siderian": "Sideriano",
+  "Rhyacian": "Riaciano",
+  "Orosirian": "Orosiriano",
+  "Statherian": "Estateriano",
+  "Calymmian": "Calimiano",
+  "Ectasian": "Ectasiano",
+  "Stenian": "Esteniano",
+  "Tonian": "Toniano",
+  "Cryogenian": "Criogeniano",
+  "Ediacaran": "Ediacarano",
+  "Cambrian": "Cambriano",
+  "Ordovician": "Ordoviciano",
+  "Silurian": "Siluriano",
+  "Devonian": "Devoniano",
+  "Carboniferous": "Carbonífero",
+  "Permian": "Permiano",
+  "Triassic": "Triássico",
+  "Jurassic": "Jurássico",
+  "Cretaceous": "Cretáceo",
+  "Paleogene": "Paleogeno",
+  "Neogene": "Neogeno",
+  "Quaternary": "Quaternário",
+  "Terreneuvian": "Terranoviano",
+  "Cambrian Series 2": "Série 2 do Cambriano",
+  "Miaolingian": "Miaolinguiano",
+  "Furongian": "Furonguiano",
+  "Early Ordovician": "Ordoviciano Inferior",
+  "Middle Ordovician": "Ordoviciano Médio",
+  "Late Ordovician": "Ordoviciano Superior",
+  "Llandovery": "Llandovery",
+  "Wenlock": "Wenlock",
+  "Ludlow": "Ludlow",
+  "Pridoli": "Pridoli",
+  "Early Devonian": "Devoniano Inferior",
+  "Middle Devonian": "Devoniano Médio",
+  "Late Devonian": "Devoniano Superior",
+  "Early Mississippian": "Mississippiano Inferior",
+  "Middle Mississippian": "Mississippiano Médio",
+  "Late Mississippian": "Mississippiano Superior",
+  "Early Pennsylvanian": "Pensilvaniano Inferior",
+  "Middle Pennsylvanian": "Pensilvaniano Médio",
+  "Late Pennsylvanian": "Pensilvaniano Superior",
+  "Cisuralian": "Cisuraliano",
+  "Guadalupian": "Guadalupiano",
+  "Lopingian": "Lopinguiano",
+  "Early Triassic": "Triássico Inferior",
+  "Middle Triassic": "Triássico Médio",
+  "Late Triassic": "Triássico Superior",
+  "Early Jurassic": "Jurássico Inferior",
+  "Middle Jurassic": "Jurássico Médio",
+  "Late Jurassic": "Jurássico Superior",
+  "Early Cretaceous": "Cretáceo Inferior",
+  "Late Cretaceous": "Cretáceo Superior",
+  "Paleocene": "Paleoceno",
+  "Eocene": "Eoceno",
+  "Oligocene": "Oligoceno",
+  "Miocene": "Mioceno",
+  "Pliocene": "Plioceno",
+  "Pleistocene": "Pleistoceno",
+  "Holocene": "Holoceno",
+  "Fortunian": "Fortuniano",
+  "Cambrian Stage 2": "Andar 2 do Cambriano",
+  "Cambrian Stage 3": "Andar 3 do Cambriano",
+  "Cambrian Stage 4": "Andar 4 do Cambriano",
+  "Wuliuan": "Wuliuano",
+  "Drumian": "Drumiano",
+  "Guzhangian": "Guzhangiano",
+  "Paibian": "Paibiano",
+  "Jiangshanian": "Jiangshaniano",
+  "Cambrian Stage 10": "Andar 10 do Cambriano",
+  "Tremadocian": "Tremadociano",
+  "Floian": "Floiano",
+  "Dapingian": "Dapingiano",
+  "Darriwilian": "Darriwiliano",
+  "Sandbian": "Sandbiano",
+  "Katian": "Katiano",
+  "Hirnantian": "Hirnantiano",
+  "Rhuddanian": "Rhuddaniano",
+  "Aeronian": "Aeroniano",
+  "Telychian": "Telychiano",
+  "Sheinwoodian": "Sheinwoodiano",
+  "Homerian": "Homeriano",
+  "Gorstian": "Gorstiano",
+  "Ludfordian": "Ludfordiano",
+  "Lochkovian": "Lochkoviano",
+  "Pragian": "Praguiano",
+  "Emsian": "Emsiano",
+  "Eifelian": "Eifeliano",
+  "Givetian": "Givetiano",
+  "Frasnian": "Frasniano",
+  "Famennian": "Fameniano",
+  "Tournaisian": "Tournaisiano",
+  "Visean": "Viseano",
+  "Serpukhovian": "Serpukhoviano",
+  "Bashkirian": "Bashkiriano",
+  "Moscovian": "Moscoviano",
+  "Kasimovian": "Kasimoviano",
+  "Gzhelian": "Gzheliano",
+  "Asselian": "Asseliano",
+  "Sakmarian": "Sakmariano",
+  "Artinskian": "Artinskiano",
+  "Kungurian": "Kunguriano",
+  "Roadian": "Roadiano",
+  "Wordian": "Wordiano",
+  "Capitanian": "Capitaniano",
+  "Wuchiapingian": "Wuchiapinguiano",
+  "Changhsingian": "Changhsinguiano",
+  "Induan": "Induano",
+  "Olenekian": "Olenekiano",
+  "Anisian": "Anisiano",
+  "Ladinian": "Ladiniano",
+  "Carnian": "Carniano",
+  "Norian": "Noriano",
+  "Rhaetian": "Rhaetiano",
+  "Hettangian": "Hettangiano",
+  "Sinemurian": "Sinemuriano",
+  "Pliensbachian": "Pliensbachiano",
+  "Toarcian": "Toarciano",
+  "Aalenian": "Aaleniano",
+  "Bajocian": "Bajociano",
+  "Bathonian": "Bathoniano",
+  "Callovian": "Caloviano",
+  "Oxfordian": "Oxfordiano",
+  "Kimmeridgian": "Kimmeridgiano",
+  "Tithonian": "Tithoniano",
+  "Berriasian": "Berriasiano",
+  "Valanginian": "Valanginiano",
+  "Hauterivian": "Hauteriviano",
+  "Barremian": "Barremiano",
+  "Aptian": "Aptiano",
+  "Albian": "Albiano",
+  "Cenomanian": "Cenomaniano",
+  "Turonian": "Turoniano",
+  "Coniacian": "Coniaciano",
+  "Santonian": "Santoniano",
+  "Campanian": "Campaniano",
+  "Maastrichtian": "Maastrichtiano",
+  "Danian": "Daniano",
+  "Selandian": "Selandiano",
+  "Thanetian": "Thanetiano",
+  "Ypresian": "Ypresiano",
+  "Lutetian": "Lutetiano",
+  "Bartonian": "Bartoniano",
+  "Priabonian": "Priaboniano",
+  "Rupelian": "Rupeliano",
+  "Chattian": "Chattiano",
+  "Aquitanian": "Aquitaniano",
+  "Burdigalian": "Burdigaliano",
+  "Langhian": "Langhiano",
+  "Serravallian": "Serravalliano",
+  "Tortonian": "Tortoniano",
+  "Messinian": "Messiniano",
+  "Zanclean": "Zancliano",
+  "Piacenzian": "Piacenziano",
+  "Gelasian": "Gelasiano",
+  "Calabrian": "Calabriano",
+  "Chibanian": "Chibaniano",
+  "Late Pleistocene": "Pleistoceno Superior",
+  "Greenlandian": "Gronelandiano",
+  "Northgrippian": "Nortegripiano",
+  "Meghalayan": "Meghalaiano"
+ },
+ "units": {
+  "Hadean": {
+   "earth": "Um mundo derretido, que depois esfriou lentamente, castigado por impactos. No início, um corpo do tamanho de Marte (Theia) atingiu a proto-Terra e formou a Lua. Por volta de ~4,4 Ga já haviam se formado uma crosta fina e os primeiros oceanos, sob uma densa atmosfera de CO₂ e vapor, sem oxigênio livre."
+  },
+  "Archean": {
+   "earth": "Manto mais quente, pequenos protocontinentes e arcos de ilhas em um oceano global. A atmosfera era rica em CO₂ e metano e praticamente sem oxigênio; o jovem Sol era ~25% menos brilhante. Os oceanos, esverdeados pelo ferro dissolvido, depositavam formações ferríferas bandadas."
+  },
+  "Proterozoic": {
+   "earth": "Os continentes cresceram e se juntaram em supercontinentes (Columbia, Rodínia, Panótia). O oxigênio aumentou no Grande Evento de Oxidação, e o planeta congelou em várias glaciações do tipo \"Terra bola de neve\"."
+  },
+  "Phanerozoic": {
+   "earth": "O éon da \"vida visível\": os continentes passaram de fragmentos dispersos à Pangeia e se separaram de novo, enquanto a vida colonizava a terra firme, o ar e todos os oceanos."
+  },
+  "Eoarchean": {
+   "earth": "Fragmentos de crosta dispersos em um oceano global; o Intenso Bombardeio Tardio foi diminuindo. As rochas preservadas mais antigas (Gnaisse Acasta, cinturão de Isua)."
+  },
+  "Paleoarchean": {
+   "earth": "Formaram-se os primeiros crátons (Kaapvaal, Pilbara); mares rasos abrigavam esteiras microbianas. Não havia oxigênio no ar."
+  },
+  "Mesoarchean": {
+   "earth": "Possível primeiro supercontinente, Vaalbara, e a primeira glaciação conhecida (Pongola). Esteiras microbianas e estromatólitos amplamente difundidos."
+  },
+  "Neoarchean": {
+   "earth": "A crosta continental cresceu rapidamente; a fotossíntese oxigênica se estabeleceu, preparando o terreno para o Grande Evento de Oxidação."
+  },
+  "Paleoproterozoic": {
+   "earth": "O Grande Evento de Oxidação oxigenou a atmosfera pela primeira vez; seguiu-se a glaciação huroniana. O supercontinente Columbia (Nuna) se formou."
+  },
+  "Mesoproterozoic": {
+   "earth": "O \"Bilhão Chato\": clima estável, pouco oxigênio e oceanos profundos sulfídicos. Columbia se fragmentou e Rodínia se formou."
+  },
+  "Neoproterozoic": {
+   "earth": "Rodínia se fragmentou; a Terra passou por glaciações globais do tipo \"Terra bola de neve\", depois o oxigênio voltou a subir e surgiram os primeiros animais."
+  },
+  "Paleozoic": {
+   "earth": "Começou com continentes dispersos e mares quentes e rasos e terminou com a formação da Pangeia. Plantas e animais colonizaram a terra firme; vastas florestas de carvão cresceram."
+  },
+  "Mesozoic": {
+   "earth": "A Pangeia se dividiu em Laurásia e Gondwana e depois nos continentes atuais; o Atlântico se abriu. Predominou um mundo quente de efeito estufa, sem calotas polares."
+  },
+  "Cenozoic": {
+   "earth": "A \"Era dos Mamíferos\". Os continentes chegaram às posições atuais, a Índia colidiu com a Ásia erguendo o Himalaia, e a Terra esfriou de um clima de estufa até as eras glaciais."
+  },
+  "Siderian": {
+   "earth": "As formações ferríferas bandadas atingiram o auge quando o oxigênio das cianobactérias reagiu com o ferro dos oceanos; começou o Grande Evento de Oxidação."
+  },
+  "Rhyacian": {
+   "earth": "A glaciação huroniana, uma das eras glaciais mais longas, dominou o planeta. Formou-se o Complexo de Bushveld."
+  },
+  "Orosirian": {
+   "earth": "Intensa formação de montanhas (orogenias) em quase todos os continentes; dois enormes impactos de asteroides (Vredefort, Sudbury)."
+  },
+  "Statherian": {
+   "earth": "O supercontinente Columbia (Nuna) completou sua formação. Os níveis de oxigênio se estabilizaram em patamares baixos."
+  },
+  "Calymmian": {
+   "earth": "As coberturas de plataforma se expandiram sobre os continentes enquanto Columbia começava a se fragmentar."
+  },
+  "Ectasian": {
+   "earth": "Continuou a expansão das coberturas de plataforma; as águas oceânicas profundas ainda eram pobres em oxigênio."
+  },
+  "Stenian": {
+   "earth": "O supercontinente Rodínia se formou por meio da orogenia Grenville."
+  },
+  "Tonian": {
+   "earth": "Rodínia começou a se fragmentar. O oxigênio aumentou e as algas eucarióticas se diversificaram."
+  },
+  "Cryogenian": {
+   "earth": "\"Terra bola de neve\": as glaciações Sturtiana e Marinoana podem ter coberto o planeta de gelo quase até o equador.",
+   "temp": "5"
+  },
+  "Ediacaran": {
+   "earth": "Os continentes da antiga Rodínia se afastaram (Panótia). Os oceanos se oxigenaram após o derretimento das glaciações bola de neve.",
+   "temp": "17"
+  },
+  "Cambrian": {
+   "earth": "Mundo quente de efeito estufa, com níveis do mar altos inundando os continentes; Gondwana se estendia sobre o polo sul. A terra firme era rocha nua e crostas microbianas.",
+   "sea": "Subindo de forma constante de 4 m para 90 m"
+  },
+  "Ordovician": {
+   "earth": "Os continentes estavam dispersos, com Gondwana no hemisfério sul; níveis do mar altos e clima quente até que uma forte glaciação no final desencadeou uma extinção em massa.",
+   "sea": "180 m; subindo para 220 m no Caradoc e caindo bruscamente para 141 m nas glaciações do final do Ordoviciano"
+  },
+  "Silurian": {
+   "earth": "Clima quente e estável após o derretimento da era glacial do Ordoviciano. Laurentia e Báltica colidiram (orogenia Caledoniana). As plantas começaram a esverdear as margens.",
+   "sea": "Cerca de 180 m, com breves quedas"
+  },
+  "Devonian": {
+   "earth": "A \"Era dos Peixes\". A Euramérica (o \"continente do Arenito Vermelho Antigo\") e Gondwana convergiram. As primeiras florestas se espalharam e os solos se formaram; níveis do mar altos e clima quente.",
+   "sea": "Relativamente estável em torno de 189 m, caindo gradualmente para 120 m ao longo do período"
+  },
+  "Carboniferous": {
+   "earth": "Vastas florestas pantanosas de carvão cobriam os trópicos; o oxigênio atingiu o pico de ~35%. A Pangeia estava se formando e uma grande era glacial dominava Gondwana, no sul.",
+   "sea": "Caindo de 120 m para o nível atual ao longo do Mississippiano, depois subindo de forma constante até cerca de 80 m no final do período"
+  },
+  "Permian": {
+   "earth": "Pangeia totalmente formada, cercada pelo oceano Pantalassa; seu interior era um vasto deserto. Terminou com as erupções das Armadilhas Siberianas e a maior extinção em massa da história."
+  },
+  "Triassic": {
+   "earth": "A Pangeia em sua maior extensão: clima quente, seco e de monções, sem gelo polar. A vida se recuperou lentamente da Grande Mortandade; o período terminou com outra extinção em massa quando a Pangeia começou a se romper."
+  },
+  "Jurassic": {
+   "earth": "A Pangeia se dividiu em Laurásia e Gondwana; o Atlântico central se abriu. Clima quente e úmido de efeito estufa, com florestas exuberantes de coníferas, cicadáceas e samambaias."
+  },
+  "Cretaceous": {
+   "earth": "Os continentes se deslocaram para suas posições modernas; níveis do mar muito altos criaram mares interiores, como o Mar Interior Ocidental. Clima quente de estufa; o período terminou com o impacto de um asteroide em Chicxulub."
+  },
+  "Paleogene": {
+   "earth": "Após a extinção K-Pg, os mamíferos se diversificaram ocupando nichos vazios. Um Eoceno inicial muito quente (MTPE) deu lugar ao resfriamento e às primeiras calotas de gelo da Antártida no limite Eoceno-Oligoceno.",
+   "temp": "18"
+  },
+  "Neogene": {
+   "earth": "Continentes próximos das posições atuais; o istmo do Panamá se fechou, o Himalaia e os Alpes se ergueram. O clima esfriou e ficou mais seco, e os campos se espalharam pelos continentes.",
+   "temp": "14"
+  },
+  "Quaternary": {
+   "earth": "As eras glaciais: ciclos repetidos de glaciais e interglaciais, com mantos de gelo cobrindo a América do Norte e o norte da Eurásia nos picos glaciais e níveis do mar até 120 m mais baixos.",
+   "temp": "14"
+  },
+  "Terreneuvian": {
+   "earth": "Os mares rasos de plataforma se expandiram; pequenos fósseis de conchas aparecem em abundância à medida que evoluíam esqueletos mineralizados."
+  },
+  "Cambrian Series 2": {
+   "earth": "Auge da explosão cambriana. Sítios fossilíferos famosos, como Chengjiang, na China, preservam animais de corpo mole."
+  },
+  "Miaolingian": {
+   "earth": "Oceanos quentes; a fauna de Burgess Shale vivia na borda da Laurentia."
+  },
+  "Furongian": {
+   "earth": "Uma época de repetidas extinções de trilobitas (eventos de \"biômeros\") e baixa diversidade, chamada de lacuna furonguiana."
+  },
+  "Early Ordovician": {
+   "earth": "Níveis do mar altos; começa o Grande Evento de Biodiversificação do Ordoviciano."
+  },
+  "Middle Ordovician": {
+   "earth": "Auge do Grande Evento de Biodiversificação do Ordoviciano; recifes de briozoários e corais.",
+   "sea": "180 m; subindo para 220 m no Caradoc e caindo bruscamente para 141 m nas glaciações do final do Ordoviciano"
+  },
+  "Late Ordovician": {
+   "earth": "Gondwana se deslocou sobre o polo sul; uma breve glaciação encerrou o Ordoviciano com a segunda maior extinção em massa."
+  },
+  "Llandovery": {
+   "earth": "Recuperação após a extinção do final do Ordoviciano; o nível do mar subiu com o derretimento do gelo."
+  },
+  "Wenlock": {
+   "earth": "Recifes quentes de corais tabulados e rugosos; as plantas se estabeleceram em terra firme."
+  },
+  "Ludlow": {
+   "earth": "Mares rasos; os euriptéridos atingiram tamanhos gigantescos."
+  },
+  "Pridoli": {
+   "earth": "A época mais curta do Paleozoico; os primeiros peixes com mandíbula se diversificam."
+  },
+  "Early Devonian": {
+   "earth": "As plantas terrestres se espalham para o interior; o sílex de Rhynie preserva um ecossistema terrestre primitivo."
+  },
+  "Middle Devonian": {
+   "earth": "Primeiras florestas de plantas do tamanho de árvores, como Wattieza."
+  },
+  "Late Devonian": {
+   "earth": "Florestas de Archaeopteris; a extinção do Devoniano Superior devastou os recifes.",
+   "sea": "Relativamente estável em torno de 189 m, caindo gradualmente para 120 m ao longo do período"
+  },
+  "Early Mississippian": {
+   "earth": "Mares quentes e rasos; campos de crinoides."
+  },
+  "Middle Mississippian": {
+   "earth": "Os tetrápodes se diversificaram em terra firme."
+  },
+  "Late Mississippian": {
+   "earth": "Começou a glaciação de Gondwana."
+  },
+  "Early Pennsylvanian": {
+   "earth": "Os pântanos de carvão se espalharam pela Euramérica."
+  },
+  "Middle Pennsylvanian": {
+   "earth": "Auge das florestas de carvão; oxigênio muito alto; insetos gigantes."
+  },
+  "Late Pennsylvanian": {
+   "earth": "Colapso da floresta tropical do Carbonífero com o clima mais seco."
+  },
+  "Cisuralian": {
+   "earth": "Pangeia formada; clima cada vez mais seco."
+  },
+  "Guadalupian": {
+   "earth": "Os terapsídeos dominam; extinção do Capitaniano no final."
+  },
+  "Lopingian": {
+   "earth": "As Armadilhas Siberianas entram em erupção, causando a Grande Mortandade."
+  },
+  "Early Triassic": {
+   "earth": "Clima de estufa extremo após a extinção; o Lystrosaurus dominava a terra firme."
+  },
+  "Middle Triassic": {
+   "earth": "Recuperação; os arcossauros se diversificaram."
+  },
+  "Late Triassic": {
+   "earth": "Evento Pluvial Carniano; surgem os primeiros dinossauros e mamíferos."
+  },
+  "Early Jurassic": {
+   "earth": "O Atlântico começa a se abrir; clima quente e úmido."
+  },
+  "Middle Jurassic": {
+   "earth": "Os saurópodes se diversificam; Gondwana e Laurásia se separam."
+  },
+  "Late Jurassic": {
+   "earth": "Ecossistemas da Formação Morrison; saurópodes gigantes."
+  },
+  "Early Cretaceous": {
+   "earth": "Gondwana se fragmenta; surgem as plantas com flores."
+  },
+  "Late Cretaceous": {
+   "earth": "Mares altos; Mar Interior Ocidental; impacto de Chicxulub."
+  },
+  "Paleocene": {
+   "earth": "Mundo quente e florestado, recuperando-se da extinção K-Pg."
+  },
+  "Eocene": {
+   "earth": "A época mais quente do Cenozoico; palmeiras perto dos polos."
+  },
+  "Oligocene": {
+   "earth": "A Antártida se cobre de gelo; os campos começam a se espalhar."
+  },
+  "Miocene": {
+   "earth": "Clima quente, depois em resfriamento; florestas de algas (kelp) e campos se expandem."
+  },
+  "Pliocene": {
+   "earth": "Forma-se o istmo do Panamá; o clima esfria rumo às eras glaciais."
+  },
+  "Pleistocene": {
+   "earth": "Glaciações repetidas; a megafauna vagava pela Terra."
+  },
+  "Holocene": {
+   "earth": "O interglacial atual; a civilização humana."
+  }
+ },
+ "milestones": {
+  "Formation of Earth": {
+   "title": "Formação da Terra",
+   "desc": "O Sistema Solar se condensa a partir de uma nuvem de gás e poeira em colapso; a Terra se forma por acreção em poucas dezenas de milhões de anos."
+  },
+  "Moon-forming impact": {
+   "title": "Impacto que formou a Lua",
+   "desc": "Um planeta do tamanho de Marte, Theia, colide com a proto-Terra. Os detritos formam a Lua."
+  },
+  "First oceans": {
+   "title": "Primeiros oceanos",
+   "desc": "Os cristais de zircão mais antigos mostram que já existiam água líquida e crosta continental."
+  },
+  "Last universal common ancestor": {
+   "title": "Último ancestral comum universal",
+   "desc": "LUCA, o ancestral de todas as células vivas, viveu por volta desta época, segundo estimativas do relógio molecular."
+  },
+  "Earliest evidence of life": {
+   "title": "Primeiros indícios de vida",
+   "desc": "Isótopos de carbono e possíveis estromatólitos em rochas da Groenlândia registram vida microbiana primitiva."
+  },
+  "Microbial mats & stromatolites": {
+   "title": "Esteiras microbianas e estromatólitos",
+   "desc": "Estromatólitos bem preservados na Austrália Ocidental mostram comunidades microbianas prósperas."
+  },
+  "Oxygenic photosynthesis": {
+   "title": "Fotossíntese oxigênica",
+   "desc": "As cianobactérias começam a quebrar a água e a liberar oxigênio como subproduto."
+  },
+  "Great Oxidation Event": {
+   "title": "Grande Evento de Oxidação",
+   "desc": "O oxigênio livre se acumula na atmosfera pela primeira vez, transformando a química do planeta."
+  },
+  "Huronian glaciation": {
+   "title": "Glaciação huroniana",
+   "desc": "A primeira grande era glacial, possivelmente desencadeada pelo oxigênio ao destruir o efeito estufa do metano."
+  },
+  "First complex cells?": {
+   "title": "Primeiras células complexas?",
+   "desc": "Grypania, um fóssil macroscópico enrolado, pode ser uma alga eucariótica primitiva."
+  },
+  "Eukaryotes": {
+   "title": "Eucariontes",
+   "desc": "Células com núcleo e mitocôndrias — ancestrais de todas as plantas, animais e fungos — estão firmemente estabelecidas."
+  },
+  "Sexual reproduction & multicellularity": {
+   "title": "Reprodução sexuada e multicelularidade",
+   "desc": "Bangiomorpha, uma alga vermelha, é o organismo multicelular com reprodução sexuada mais antigo que se conhece."
+  },
+  "First fungi": {
+   "title": "Primeiros fungos",
+   "desc": "Microfósseis como Ourasphaira sugerem que os fungos já existiam no final do Proterozoico."
+  },
+  "Snowball Earth": {
+   "title": "Terra bola de neve",
+   "desc": "As glaciações Sturtiana e Marinoana podem ter congelado o planeta inteiro."
+  },
+  "First animals": {
+   "title": "Primeiros animais",
+   "desc": "Biomarcadores de esponjas indicam os animais mais antigos; os animais logo se diversificariam no Ediacarano."
+  },
+  "Ediacaran biota": {
+   "title": "Biota ediacarana",
+   "desc": "Os primeiros organismos multicelulares grandes e complexos, como Dickinsonia e Charnia, vivem no fundo do mar."
+  },
+  "Cambrian explosion": {
+   "title": "Explosão cambriana",
+   "desc": "A maioria dos grandes grupos animais surge rapidamente no registro fóssil, com olhos, conchas e patas."
+  },
+  "First trilobites": {
+   "title": "Primeiros trilobitas",
+   "desc": "Os trilobitas, icônicos artrópodes com carapaça, surgem e dominarão os mares por 270 milhões de anos."
+  },
+  "First vertebrates": {
+   "title": "Primeiros vertebrados",
+   "desc": "Pequenos peixes sem mandíbula, como Haikouichthys, nadam nos mares do Cambriano."
+  },
+  "Plants colonise land": {
+   "title": "As plantas colonizam a terra firme",
+   "desc": "Esporos das primeiras plantas terrestres, aparentadas com as hepáticas, aparecem no registro fóssil."
+  },
+  "Late Ordovician extinction": {
+   "title": "Extinção do Ordoviciano Superior",
+   "desc": "A glaciação e a queda do nível do mar eliminam ~85% das espécies marinhas."
+  },
+  "First jawed fish": {
+   "title": "Primeiros peixes com mandíbula",
+   "desc": "As mandíbulas evoluem a partir dos arcos branquiais; os vertebrados com mandíbula se diversificam rapidamente."
+  },
+  "First vascular plants": {
+   "title": "Primeiras plantas vasculares",
+   "desc": "Cooksonia, uma planta minúscula com tecidos condutores de água, cresce em solo úmido."
+  },
+  "First land animal": {
+   "title": "Primeiro animal terrestre",
+   "desc": "Pneumodesmus, um milípede, é o animal mais antigo conhecido a respirar ar em terra firme."
+  },
+  "First insects": {
+   "title": "Primeiros insetos",
+   "desc": "Rhyniognatha, do sílex de Rhynie, está entre os insetos mais antigos conhecidos."
+  },
+  "First forests": {
+   "title": "Primeiras florestas",
+   "desc": "Plantas arborescentes como Wattieza e Archaeopteris formam as primeiras florestas."
+  },
+  "Fish walk toward land": {
+   "title": "Peixes caminham rumo à terra",
+   "desc": "Tiktaalik, um peixe de nadadeiras lobadas com pescoço e ossos de pulso, faz a ponte entre peixes e tetrápodes."
+  },
+  "Late Devonian extinction": {
+   "title": "Extinção do Devoniano Superior",
+   "desc": "Uma série de pulsos de extinção elimina ~70% das espécies, especialmente os construtores de recifes."
+  },
+  "First tetrapods": {
+   "title": "Primeiros tetrápodes",
+   "desc": "Vertebrados de quatro membros, como Acanthostega e Ichthyostega, vivem em pântanos."
+  },
+  "First seed plants": {
+   "title": "Primeiras plantas com sementes",
+   "desc": "As sementes libertam as plantas da dependência da água para a reprodução."
+  },
+  "First flying animals": {
+   "title": "Primeiros animais voadores",
+   "desc": "Insetos alados (Pterygota) alçam voo, os primeiros animais a voar."
+  },
+  "First amniotes": {
+   "title": "Primeiros amniotas",
+   "desc": "Ovos de casca dura permitem que os vertebrados se reproduzam longe da água; Hylonomus é um réptil primitivo."
+  },
+  "First synapsids": {
+   "title": "Primeiros sinapsídeos",
+   "desc": "A linhagem que leva aos mamíferos se separa dos répteis."
+  },
+  "Carboniferous rainforest collapse": {
+   "title": "Colapso da floresta tropical do Carbonífero",
+   "desc": "As florestas de carvão se fragmentam à medida que o clima fica mais seco, remodelando a vida terrestre."
+  },
+  "The Great Dying": {
+   "title": "A Grande Mortandade",
+   "desc": "A extinção do Permiano-Triássico elimina ~90% das espécies marinhas e ~70% das terrestres."
+  },
+  "First dinosaurs": {
+   "title": "Primeiros dinossauros",
+   "desc": "Dinossauros primitivos como Eoraptor e Herrerasaurus surgem na América do Sul."
+  },
+  "First flying vertebrates": {
+   "title": "Primeiros vertebrados voadores",
+   "desc": "Os pterossauros tornam-se os primeiros vertebrados capazes de voo ativo."
+  },
+  "First mammals": {
+   "title": "Primeiros mamíferos",
+   "desc": "Surgem pequenos mamaliaformes semelhantes a musaranhos, como Adelobasileus."
+  },
+  "Triassic–Jurassic extinction": {
+   "title": "Extinção do Triássico-Jurássico",
+   "desc": "O vulcanismo associado à ruptura da Pangeia elimina muitos arcossauros, abrindo caminho para os dinossauros."
+  },
+  "Pangaea breaks up": {
+   "title": "A Pangeia se fragmenta",
+   "desc": "O supercontinente se divide em Laurásia e Gondwana à medida que o Atlântico se abre."
+  },
+  "First birds": {
+   "title": "Primeiras aves",
+   "desc": "Archaeopteryx, um dinossauro com penas, liga os dinossauros às aves."
+  },
+  "First flowering plants": {
+   "title": "Primeiras plantas com flores",
+   "desc": "As angiospermas surgem e logo transformam os ecossistemas terrestres."
+  },
+  "First bees": {
+   "title": "Primeiras abelhas",
+   "desc": "As abelhas evoluem junto com as plantas com flores; começam as parcerias de polinização."
+  },
+  "End of the dinosaurs": {
+   "title": "Fim dos dinossauros",
+   "desc": "Um asteroide atinge Chicxulub; ~75% das espécies, incluindo todos os dinossauros não avianos, se extinguem."
+  },
+  "Paleocene–Eocene Thermal Maximum": {
+   "title": "Máximo Térmico do Paleoceno-Eoceno",
+   "desc": "Uma rápida liberação de carbono aquece a Terra em 5–8 °C; as ordens modernas de mamíferos se espalham."
+  },
+  "Whales return to the sea": {
+   "title": "As baleias voltam ao mar",
+   "desc": "Pakicetus, um ancestral terrestre das baleias, vive onde hoje é o Paquistão."
+  },
+  "Antarctica freezes": {
+   "title": "A Antártida congela",
+   "desc": "O manto de gelo antártico se forma à medida que a Terra esfria na transição Eoceno-Oligoceno."
+  },
+  "First apes": {
+   "title": "Primeiros grandes símios",
+   "desc": "Os hominoides (Hominoidea) se separam dos macacos do Velho Mundo."
+  },
+  "Human lineage splits from chimps": {
+   "title": "A linhagem humana se separa dos chimpanzés",
+   "desc": "Sahelanthropus pode ser um dos primeiros membros da linhagem humana."
+  },
+  "Lucy": {
+   "title": "Lucy",
+   "desc": "Australopithecus afarensis anda ereto sobre duas pernas na África Oriental."
+  },
+  "Genus Homo": {
+   "title": "Gênero Homo",
+   "desc": "Surgem os primeiros membros do nosso gênero; logo depois vêm as ferramentas de pedra."
+  },
+  "Ice ages begin": {
+   "title": "Começam as eras glaciais",
+   "desc": "Glaciação quaternária: os mantos de gelo avançam e recuam em ciclos de ~100.000 anos."
+  },
+  "Homo sapiens": {
+   "title": "Homo sapiens",
+   "desc": "Os humanos anatomicamente modernos surgem na África."
+  },
+  "Agriculture": {
+   "title": "Agricultura",
+   "desc": "A Revolução Neolítica: os humanos domesticam plantas e animais."
+  }
+ },
+ "globeLabels": {
+  "Cambrian/Precambrian boundary": "Limite Cambriano/Pré-Cambriano",
+  "Cambro-Ordovician Boundary": "Limite Cambriano-Ordoviciano",
+  "Devono-Carboniferous Boundary": "Limite Devoniano-Carbonífero",
+  "Early Cambrian": "Cambriano Inferior",
+  "Early Cretaceous": "Cretáceo Inferior",
+  "Early Devonian": "Devoniano Inferior",
+  "Early Eocene": "Eoceno inicial",
+  "Early Jurassic": "Jurássico Inferior",
+  "Early Middle Cambrian boundary": "Limite Cambriano Inferior-Médio",
+  "Early Miocene": "Mioceno inicial",
+  "Early Mississippian": "Mississippiano Inferior",
+  "Early Oligocene": "Oligoceno inicial",
+  "Early Ordovician": "Ordoviciano Inferior",
+  "Early Pennsylvanian": "Pensilvaniano Inferior",
+  "Early Permian": "Permiano Inferior",
+  "Early Silurian": "Siluriano Inferior",
+  "EarlyMiddleCarboniferous": "Carbonífero Inferior-Médio",
+  "Holocene": "Holoceno",
+  "Jurassic Cretaceous Boundary": "Limite Jurássico-Cretáceo",
+  "KT Boundary": "Limite K-T",
+  "Late Cambrian": "Cambriano Superior",
+  "Late Cretaceous": "Cretáceo Superior",
+  "Late Devonian": "Devoniano Superior",
+  "Late Eocene": "Eoceno final",
+  "Late Jurassic": "Jurássico Superior",
+  "Late Mississippian": "Mississippiano Superior",
+  "Late Oligocene": "Oligoceno final",
+  "Late Ordovician": "Ordoviciano Superior",
+  "Late Pennsylvanian": "Pensilvaniano Superior",
+  "Late Silurian": "Siluriano Superior",
+  "Late Triassic": "Triássico Superior",
+  "LatePermian": "Permiano Superior",
+  "Mid-Cretaceous": "Cretáceo médio",
+  "Middle Devonian": "Devoniano Médio",
+  "Middle Jurassic": "Jurássico Médio",
+  "Middle Miocene": "Mioceno médio",
+  "Middle Mississippian": "Mississippiano Médio",
+  "Middle Ordovician": "Ordoviciano Médio",
+  "Middle Pennsylvanian": "Pensilvaniano Médio",
+  "Middle Permian": "Permiano Médio",
+  "Middle Silurian": "Siluriano Médio",
+  "Middle Triassic": "Triássico Médio",
+  "Paleocene": "Paleoceno",
+  "Paleocene Eocene Boundary": "Limite Paleoceno-Eoceno",
+  "Permo-Triassic Boundary": "Limite Permiano-Triássico",
+  "Pliocene": "Plioceno",
+  "early Middle Cambrian": "Cambriano Médio inicial",
+  "early Middle Eocene": "Eoceno médio inicial",
+  "late Middle Cambrian": "Cambriano Médio final",
+  "late Middle Eocene": "Eoceno médio final",
+  "middle Late Miocene": "meados do Mioceno final"
+ },
+ "ranks": {
+  "species": "espécie",
+  "genus": "gênero",
+  "family": "família",
+  "subfamily": "subfamília",
+  "tribe": "tribo",
+  "order": "ordem",
+  "subspecies": "subespécie",
+  "superfamily": "superfamília",
+  "subgenus": "subgênero",
+  "subtribe": "subtribo",
+  "clade": "clado",
+  "suborder": "subordem",
+  "class": "classe",
+  "section": "seção",
+  "incertae sedis": "incertae sedis",
+  "variety": "variedade",
+  "ichnogenus": "icnogênero",
+  "subclass": "subclasse",
+  "infraorder": "infraordem",
+  "phylum": "filo",
+  "superorder": "superordem",
+  "oogenus": "oogênero",
+  "subsection": "subseção",
+  "series": "série",
+  "parvorder": "parvordem",
+  "division": "divisão",
+  "subphylum": "subfilo",
+  "species group": "grupo de espécies",
+  "infraclass": "infraclasse",
+  "ichnofamily": "icnofamília",
+  "informal group": "grupo informal",
+  "supertribe": "supertribo",
+  "oofamily": "oofamília",
+  "subdivision": "subdivisão",
+  "kingdom": "reino",
+  "species complex": "complexo de espécies",
+  "stem group": "grupo-tronco",
+  "superclass": "superclasse",
+  "alliance": "aliança",
+  "subkingdom": "sub-reino",
+  "infraphylum": "infrafilo",
+  "subterclass": "subterclasse",
+  "possible clade": "possível clado",
+  "superphylum": "superfilo",
+  "mirordo-mb": "mirordem",
+  "realm": "domínio (vírus)",
+  "grandordo-mb": "grandordem",
+  "node": "nó",
+  "ichnospecies": "icnoespécie",
+  "basic shell type": "tipo básico de concha",
+  "nanordo": "nanordem",
+  "subseries": "subsérie",
+  "total group": "grupo total",
+  "domain": "domínio",
+  "species subgroup": "subgrupo de espécies",
+  "infratribus": "infratribo",
+  "cohort": "coorte",
+  "oospecies": "ooespécie",
+  "virus": "vírus",
+  "morphotype": "morfotipo",
+  "epifamilia": "epifamília",
+  "branch": "ramo",
+  "magnorder": "magnordem",
+  "grade": "grado",
+  "zooseries": "zoossérie",
+  "parvclass": "parvclasse",
+  "infrafamilia": "infrafamília",
+  "strain": "cepa",
+  "plesion": "plesion",
+  "superkingdom": "super-reino",
+  "root": "raiz",
+  "micrordo": "micrordem",
+  "subcohort": "subcoorte",
+  "gradus": "grado",
+  "ichnosubfamilia": "icnosubfamília",
+  "hyperfamilia": "hiperfamília",
+  "superlegion": "superlegião",
+  "supercohort": "supercoorte",
+  "supersectio": "superseção",
+  "form taxon": "táxon de forma",
+  "superdivision": "superdivisão",
+  "serotype": "sorotipo",
+  "group": "grupo",
+  "ichnoclassis": "icnoclasse",
+  "ichnoordo": "icno-ordem",
+  "ooclassis": "ooclasse"
+ }
+}
