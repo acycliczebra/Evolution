@@ -1,6 +1,6 @@
 """Pass 2: build the tree of life from extracted data and write
   - data/taxa.jsonl.gz       full organized data dump (one taxon per line)
-  - docs/data/...            chunked JSON consumed by the static site
+  - web/public/data/...      chunked JSON consumed by the React site (web/)
 
 Usage: python build.py <extract_dir> <repo_root>
 """
@@ -262,7 +262,7 @@ def extract_file(wt):
 # ---------------------------------------------------------------- main build
 def main():
     extract_dir, root = sys.argv[1], sys.argv[2]
-    out_site = os.path.join(root, "docs", "data")
+    out_site = os.path.join(root, "web", "public", "data")
     out_dump = os.path.join(root, "data")
 
     print("loading redirects…", flush=True)

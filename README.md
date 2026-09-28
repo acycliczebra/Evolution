@@ -45,7 +45,7 @@ Taxon record fields:
 ```
 python scripts/download.py <dump url> enwiki.xml.bz2          # parallel, resumable download
 python scripts/extract.py enwiki.xml.bz2 enwiki-index.txt.bz2 out/ 30   # ~10 min on 30 cores
-python scripts/build.py out/ .                                 # ~3 min → data/ and docs/data/
+python scripts/build.py out/ .                                 # ~3 min → data/ and web/public/data/
 ```
 
 1. **extract.py** streams the *multistream* dump in parallel and pulls out
@@ -62,7 +62,29 @@ python scripts/build.py out/ .                                 # ~3 min → data
    geography/climate and iconic life, and the milestones. Dates and paleomaps from Wikipedia's
    period articles override the skeleton when present.
 
-The site (`docs/`) is plain HTML/CSS/JS plus D3; data is lazy-loaded in 1,000-taxon chunks and
-the search index is sharded by prefix. Images are hot-linked from Wikimedia Commons.
+## Web app
+
+The site in `web/` is a React + TypeScript app built with Vite (D3 is used for the tree layout
+and zoom). Taxon data is lazy-loaded from `web/public/data` in 1,000-taxon chunks and the search
+index is sharded by prefix; images are hot-linked from Wikimedia Commons.
+
+```
+cd web
+npm install
+npm run dev       # local dev server
+npm run build     # type-check + production build to web/dist
+```
+
+Pushing to `main` deploys to GitHub Pages via `.github/workflows/pages.yml`.
+
+| path | purpose |
+|---|---|
+| `src/App.tsx` | app state (selected taxon, time unit, timeline zoom), URL hash sync |
+| `src/components/Timeline.tsx` | zoomable geologic time strip with milestone pins |
+| `src/components/Explorer.tsx` | breadcrumbs, taxon card, subgroup cards/filters |
+| `src/components/TreeView.tsx` | expandable tree diagram |
+| `src/components/TimePanel.tsx` | selected period: map, description, life, first appearances |
+| `src/data.ts` | chunk loading and search |
+| `src/time.ts` | time scale helpers (warped scale, formatting) |
 
 Text and images © Wikipedia / Wikimedia Commons contributors, CC BY-SA 4.0.
