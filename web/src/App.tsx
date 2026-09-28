@@ -162,13 +162,27 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     reconcileTaxon(timeWindow(u, t));
   }, [scale, zoomTo, reconcileTaxon, pushIfChanged]);
 
+  /**
+   * Show a milestone: bring its card (top of the time panel) into view and open its clade, in one
+   * history entry. The clade is opened as clicked, even where its Wikipedia range starts a little
+   * after the milestone's date; milestones without a clade keep the taxon consistent as usual.
+   */
   const selectMilestone = useCallback((m: Milestone) => {
     const u = scale.deepestAt(m.ma);
-    if (u) pushIfChanged(idRef.current, u.name);
+    pushIfChanged(m.taxon ? m.taxon.i : idRef.current, u?.name ?? unitRef.current);
     setMilestone(m);
     setT(m.ma);
     if (u) setUnit(u.name);
-    reconcileTaxon(timeWindow(u, m.ma));
+    const panel = document.querySelector<HTMLElement>(".timepanel");
+    // side-by-side layout: the panel scrolls on its own; stacked layout: the page scrolls
+    if (panel && panel.scrollHeight > panel.clientHeight) panel.scrollTo({ top: 0, behavior: "smooth" });
+    else if (panel && panel.getBoundingClientRect().top < 0) scrollTo({ top: panel.offsetTop - 70, behavior: "smooth" });
+    if (m.taxon) {
+      syncSeq.current++; // cancels any pending reconciliation of the previous taxon
+      setId(m.taxon.i);
+    } else {
+      reconcileTaxon(timeWindow(u, m.ma));
+    }
   }, [scale, reconcileTaxon, pushIfChanged]);
 
   const jumpToTime = useCallback((at: number) => {
