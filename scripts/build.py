@@ -796,7 +796,7 @@ def main():
     def norm(s):
         s = s.lower()
         s = re.sub(r"[^a-z0-9 ]", "", s.replace("-", " "))
-        return s
+        return re.sub(r"\s+", " ", s).strip()
 
     shards = defaultdict(list)
     for k in pre:
