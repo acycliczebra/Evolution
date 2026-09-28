@@ -18,6 +18,9 @@ interface Props {
   setView: (v: View) => void;
 }
 
+/** Breadcrumbs only tag the principal ranks ("division" is the botanical phylum). */
+const CRUMB_RANKS = new Set(["domain", "kingdom", "phylum", "division", "class", "order", "family", "genus", "species"]);
+
 const FILTERS: [Filter, string][] = [["all", "All"], ["living", "Living"], ["extinct", "Extinct †"], ["time", ""]];
 
 export function Explorer({ id, T, filter, setFilter, view, setView }: Props) {
@@ -102,7 +105,7 @@ function Crumbs({ lineage }: { lineage: Taxon[] }) {
             title={a.r}
             className={`crumb ${MAJOR_RANKS.has(a.r || "") ? "major" : "minor"}${isIncertae(a) ? " incertae" : ""}${i === lineage.length - 1 ? " cur" : ""}`}
           >
-            {a.i !== 0 && <RankTag rank={a.r} />}
+            {a.i !== 0 && CRUMB_RANKS.has(a.r || "") && <RankTag rank={a.r} />}
             <span className="crumb-name">{a.i === 0 ? "🌳 Life" : <SciName n={a} />}</span>
           </TaxonLink>
         </span>
