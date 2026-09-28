@@ -1,0 +1,7 @@
+// Cloudflare Workers static-assets deploy (mirrors the GitHub Pages site).
+// Build first: cd web && npm ci && npm run build
+{
+  "name": "evolution",
+  "compatibility_date": "2026-09-28",
+  "assets": { "directory": "./web/dist" }
+}
