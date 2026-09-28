@@ -33,6 +33,8 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
   const [domain, setDomain] = useState<Domain>(initial.domain);
   const [filter, setFilter] = useState<Filter>("all");
   const [view, setView] = useState<View>("cards");
+  /** Narrow screens show one pane at a time (see .mobile-tabs); ignored by the desktop layout. */
+  const [pane, setPane] = useState<"tree" | "time">("tree");
   const [notice, setNotice] = useState<{ key: number; body: React.ReactNode } | null>(null);
   const pushNext = useRef(false);
   const idRef = useRef(id);
@@ -104,6 +106,7 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     const seq = ++syncSeq.current;
     pushNext.current = true;
     setId(next);
+    setPane("tree");
     const el = document.querySelector<HTMLElement>(".explorer");
     if (el) scrollTo({ top: el.offsetTop - 70, behavior: "smooth" });
     const w = winRef.current;
@@ -167,6 +170,9 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     setUnit(null); setT(null); setMilestone(null); setDomain(FULL); go(0);
   };
 
+  // changing the time never switches panes on mobile; the Organism pane follows the time
+  const pickUnitFromTimeline = useCallback((name: string) => selectUnit(name, true), [selectUnit]);
+
   const zoomBy = (f: number) => {
     const [a, b] = domain;
     const nd = zoomDomain(domain, T ?? (a + b) / 2, f);
@@ -178,6 +184,12 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     [scale, go, selectUnit, selectMilestone, jumpToTime],
   );
   const [a, b] = domain;
+  const [nodeLabel, setNodeLabel] = useState("Life");
+  useEffect(() => {
+    let live = true;
+    getTaxon(id).then(n => { if (live && n) setNodeLabel(n.i === 0 ? "Life" : n.c || n.n); });
+    return () => { live = false; };
+  }, [id]);
   const fmt = (t: number) => (t === 0 ? "today" : t >= 1000 ? `${(t / 1000).toFixed(2).replace(/\.?0+$/, "")} Ga` : `${+t.toFixed(1)} Ma`);
 
   return (
@@ -193,12 +205,12 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
             <span className="legend"><i className="dot life" />Life <i className="dot extinction" />Extinction <i className="dot earth" />Earth</span>
           </div>
         </div>
-        <Timeline milestones={time.milestones} domain={domain} setDomain={setDomain} unit={unit} T={T} msTitle={milestone?.title ?? null} onScrub={scrubTo} />
+        <Timeline milestones={time.milestones} domain={domain} setDomain={setDomain} unit={unit} T={T} msTitle={milestone?.title ?? null} onScrub={scrubTo} onPickUnit={pickUnitFromTimeline} />
         <div className="tl-hint muted">
           Click a band to explore that time · drag the ▲ cursor to travel through time · scroll to zoom, drag to pan · pins are evolutionary milestones · scale is compressed for the Precambrian
         </div>
       </section>
-      <main className="layout">
+      <main className={`layout pane-${pane}`}>
         <Explorer id={id} T={T} win={win} filter={filter} setFilter={setFilter} view={view} setView={setView} />
         <TimePanel unit={unit} T={T} milestone={milestone} milestones={time.milestones} />
       </main>
@@ -207,6 +219,14 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
         Wikimedia Commons contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. Time scale: ICS
         International Chronostratigraphic Chart.
       </footer>
+      <nav className="mobile-tabs" aria-label="Sections">
+        <button className={pane === "tree" ? "on" : ""} onClick={() => { setPane("tree"); scrollTo({ top: 0 }); }}>
+          🌳 Organism<small>{nodeLabel}</small>
+        </button>
+        <button className={pane === "time" ? "on" : ""} onClick={() => { setPane("time"); scrollTo({ top: 0 }); }}>
+          ⏳ Time<small>{unit ?? "Milestones"}</small>
+        </button>
+      </nav>
       {notice && (
         <div key={notice.key} className="notice" role="status">
           <span>⏱ {notice.body}</span>

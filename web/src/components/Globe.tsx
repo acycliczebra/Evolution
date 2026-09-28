@@ -150,7 +150,9 @@ export function Globe({ T }: { T: number }) {
     controls.addEventListener("start", () => { controls.autoRotate = false; });
 
     const resize = () => {
-      const w = el.clientWidth, h = el.clientHeight;
+      const max = renderer.capabilities.maxTextureSize / renderer.getPixelRatio();
+      const w = Math.min(el.clientWidth, max), h = Math.min(el.clientHeight, max);
+      if (!w || !h) return;
       renderer.setSize(w, h, false);
       renderer.domElement.style.width = "100%";
       renderer.domElement.style.height = "100%";

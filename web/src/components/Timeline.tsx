@@ -16,6 +16,8 @@ interface Props {
   msTitle: string | null;
   /** Called while the time cursor is dragged. */
   onScrub: (T: number) => void;
+  /** A band was clicked. */
+  onPickUnit: (name: string) => void;
 }
 
 interface Tip { x: number; y: number; html: React.ReactNode }
@@ -25,8 +27,8 @@ function abbrev(s: string, n: number) {
   return s.length <= n ? s : s.slice(0, Math.max(1, n - 1)) + ".";
 }
 
-export function Timeline({ milestones, domain, setDomain, unit, T, msTitle, onScrub }: Props) {
-  const { scale, selectUnit, selectMilestone } = useApp();
+export function Timeline({ milestones, domain, setDomain, unit, T, msTitle, onScrub, onPickUnit }: Props) {
+  const { scale, selectMilestone } = useApp();
   const wrap = useRef<HTMLDivElement>(null);
   const svg = useRef<SVGSVGElement>(null);
   const [W, setW] = useState(1000);
@@ -165,7 +167,7 @@ export function Timeline({ milestones, domain, setDomain, unit, T, msTitle, onSc
                   <g
                     key={u.name}
                     className={cls}
-                    onClick={() => { if (!wasDrag()) selectUnit(u.name, true); }}
+                    onClick={() => { if (!wasDrag()) onPickUnit(u.name); }}
                     onMouseMove={e => showTip(e, <><b>{u.name}</b> <span className="muted">{u.level}</span><br />{fmtShort(u.start)} – {fmtShort(u.end)}</>)}
                     onMouseLeave={() => setTip(null)}
                   >

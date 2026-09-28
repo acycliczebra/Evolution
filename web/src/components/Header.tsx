@@ -43,7 +43,7 @@ export function Header({ meta, onPick, onHome }: Props) {
         <input
           type="search"
           value={q}
-          placeholder="Search any organism — e.g. guinea pig, Tyrannosaurus, oak…"
+          placeholder={innerWidth < 720 ? "Search organisms…" : "Search any organism — e.g. guinea pig, Tyrannosaurus, oak…"}
           autoComplete="off"
           spellCheck={false}
           onChange={e => setQ(e.target.value)}
