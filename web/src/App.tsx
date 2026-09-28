@@ -8,7 +8,6 @@ import { Explorer } from "./components/Explorer";
 import { TimePanel } from "./components/TimePanel";
 
 const FULL: Domain = [EARTH_AGE, 0];
-const JOURNEY_STEP_MS = 7000;
 
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
@@ -30,7 +29,6 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
   const [domain, setDomain] = useState<Domain>(initial.domain);
   const [filter, setFilter] = useState<Filter>("all");
   const [view, setView] = useState<View>("cards");
-  const [playing, setPlaying] = useState(false);
   const pushNext = useRef(false);
 
   // keep the URL in sync: taxon navigation creates history entries, time selection replaces
@@ -102,21 +100,6 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     setUnit(null); setT(null); setMilestone(null); setDomain(FULL); go(0);
   };
 
-  // "Journey through time": step through the periods (plus Hadean and Archean eras)
-  useEffect(() => {
-    if (!playing) return;
-    const seq = scale.journey();
-    let i = unit ? Math.max(0, seq.findIndex(u => scale.path(unit).includes(u.name))) : 0;
-    const step = () => {
-      if (i >= seq.length) { setPlaying(false); return; }
-      selectUnit(seq[i++].name, true);
-    };
-    step();
-    const timer = setInterval(step, JOURNEY_STEP_MS);
-    return () => clearInterval(timer);
-    // intentionally not re-run when `unit` changes: the journey starts from the unit selected when play was pressed
-  }, [playing, scale, selectUnit]);
-
   const zoomBy = (f: number) => {
     const [a, b] = domain;
     const nd = zoomDomain(domain, T ?? (a + b) / 2, f);
@@ -137,7 +120,6 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
         <div className="timeline-bar">
           <div className="tl-title">Geologic time <span className="muted">· {fmt(a)} → {fmt(b)}</span></div>
           <div className="tl-controls">
-            <button id="tl-play" onClick={() => setPlaying(p => !p)}>{playing ? "⏸ Pause" : "▶ Journey through time"}</button>
             <button onClick={() => zoomBy(2)} title="Zoom out">−</button>
             <button onClick={() => zoomBy(0.5)} title="Zoom in">+</button>
             <button onClick={() => setDomain(FULL)} title="Show all of Earth's history">All time</button>

@@ -113,10 +113,4 @@ export class TimeScale {
     }
     return undefined;
   }
-  /** Sequence stepped through by "Journey through time". */
-  journey(): Unit[] {
-    return this.units
-      .filter(u => u.level === "period" || u.name === "Hadean" || (u.level === "era" && u.parent === "Archean"))
-      .sort((a, b) => b.start - a.start);
-  }
 }

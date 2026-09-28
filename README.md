@@ -12,7 +12,7 @@ every taxobox.
 * Drill down via breadcrumbs, subgroup cards or an expandable tree diagram; search any name
 * A zoomable **geologic time strip** — eon, era, period, epoch and age in official ICS colours —
   with **54 evolutionary milestones**
-* Click any time unit (or press *Journey through time*) to see what Earth looked like
+* Click any time unit (or drag the time cursor) to see what Earth looked like
   (paleogeographic maps), a description, the iconic and most diverse life, and what first appeared
 * Filter any group to the members **alive at the selected time**
 
