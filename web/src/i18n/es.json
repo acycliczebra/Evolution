@@ -4,14 +4,12 @@
   "app.docTitle": "{name} — Árbol de la vida",
   "app.docTitleHome": "Árbol de la vida — 4500 millones de años de evolución",
   "lang.label": "Idioma",
-
   "search.placeholder": "Busca cualquier organismo — p. ej. cobaya, Tyrannosaurus, roble…",
   "search.placeholderShort": "Buscar organismos…",
   "search.none": "Sin resultados",
   "search.taxa": "{count} taxones",
   "search.taxa_one": "{count} taxón",
   "search.taxa_other": "{count} taxones",
-
   "timeline.title": "Tiempo geológico",
   "timeline.zoomOut": "Alejar",
   "timeline.zoomIn": "Acercar",
@@ -23,7 +21,6 @@
   "timeline.hint": "Haz clic en una franja para explorar esa época · arrastra el cursor ▲ para viajar en el tiempo · desplaza para hacer zoom, arrastra para moverte · los marcadores son hitos evolutivos · la escala está comprimida en el Precámbrico",
   "timeline.dragCursor": "Arrastra para moverte en el tiempo",
   "timeline.cursorIdle": "arrastra para viajar en el tiempo",
-
   "notice.extinctUnit": "{taxon} ya se había extinguido en el {unit}, así que se muestra {target}.",
   "notice.extinctAt": "{taxon} ya se había extinguido hace {time}, así que se muestra {target}.",
   "notice.futureUnit": "{taxon} aún no había evolucionado en el {unit}, así que se muestra {target}.",
@@ -31,19 +28,16 @@
   "notice.allLife": "toda la vida",
   "notice.moved": "Se ha pasado al {unit} ({time}), cuando apareció por primera vez {taxon}.",
   "notice.dismiss": "Cerrar",
-
   "footer.data": "Datos extraídos de todas las taxoboxes y plantillas taxonómicas del volcado de la Wikipedia en inglés (2026-09).",
   "footer.translated": "Los nombres y resúmenes en este idioma proceden de {wiki} (2026-09) a través de sus enlaces a los artículos en inglés; se muestra el inglés donde no existe artículo.",
   "footer.wikiName": "Wikipedia en español",
   "footer.license": "Textos e imágenes © colaboradores de Wikipedia / Wikimedia Commons, {license}.",
   "footer.timescale": "Escala temporal: Tabla Cronoestratigráfica Internacional de la ICS.",
   "footer.stats": "{taxa} taxones · {species} especies",
-
   "tabs.sections": "Secciones",
   "tabs.organism": "Organismo",
   "tabs.time": "Tiempo",
   "tabs.milestones": "Hitos",
-
   "life": "Vida",
   "explorer.notFound": "Taxón no encontrado.",
   "explorer.subgroups": "Subgrupos",
@@ -60,9 +54,9 @@
   "filter.aliveUnit": "Vivos en el {unit}",
   "filter.aliveAt": "Vivos hace {time}",
   "filter.aliveNone": "Vivos en el momento elegido",
+  "filter.showUncertain": "Mostrar inciertos",
   "view.cards": "Tarjetas",
   "view.tree": "Árbol",
-
   "relation.alive": "Vivo entonces",
   "relation.extinct": "† Ya extinto entonces",
   "relation.future": "Aún no había evolucionado",
@@ -72,7 +66,6 @@
   "relation.extinctAt": "Ya extinto hace {time}",
   "relation.futureUnit": "Aún no había evolucionado en el {unit}",
   "relation.futureAt": "Aún no había evolucionado hace {time}",
-
   "hero.representative": "Imagen representativa de un grupo miembro",
   "hero.extinct": "extinto †",
   "hero.incertae": "Incertae sedis («de posición incierta») no es un taxón: agrupa a los miembros de {parent} cuya posición exacta dentro de él no está resuelta.",
@@ -96,14 +89,11 @@
   "card.taxa_other": "{count} taxones",
   "tree.toggle": "Haz clic para expandir/contraer",
   "tree.more": "+{count} más",
-
   "range.unknownExtinct": "Extinto (edad desconocida)",
   "range.extant": "Actual",
   "range.toPresent": "{start} – presente",
-
   "rank.incertae": "posición incierta",
   "rank.incertaeTitle": "Incertae sedis: miembros cuya posición dentro del grupo superior es incierta",
-
   "time.present": "presente",
   "time.today": "hoy",
   "time.gyaAgo": "hace {n} mil millones de años",
@@ -119,13 +109,11 @@
   "time.ka": "{n} ka",
   "time.yr": "{n} años",
   "time.now": "ahora",
-
   "level.eon": "eón",
   "level.era": "era",
   "level.period": "período",
   "level.epoch": "época",
   "level.age": "edad",
-
   "panel.overview": "panorama",
   "panel.milestonesTitle": "Hitos de la evolución",
   "panel.milestonesIntro": "Desde la formación de la Tierra hasta hoy. Haz clic en uno, o en cualquier franja de la línea de tiempo de arriba.",
@@ -154,7 +142,6 @@
   "stat.co2": "CO₂ atmosférico",
   "stat.temp": "Temp. media en superficie",
   "stat.sea": "Nivel del mar",
-
   "globe.hint": "Arrastra para girar · desplaza para hacer zoom",
   "globe.today": "La Tierra hoy",
   "globe.ago": "La Tierra hace {time}",
@@ -166,7 +153,6 @@
   "globe.gplates": "Continentes: modelo de placas {link} de Merdith et al. (2021). Solo líneas de costa; el relieve y la profundidad oceánica son ilustrativos.",
   "globe.noReconstruction": "No existe una reconstrucción global fiable tan antigua; no se dibujan los continentes.",
   "globe.hadeanNote": "Recreación artística: una Tierra joven de corteza en enfriamiento y magma. No se conservan rocas para cartografiarla.",
-
   "status.EX": "Extinto",
   "status.EW": "Extinto en estado silvestre",
   "status.CR": "En peligro crítico",

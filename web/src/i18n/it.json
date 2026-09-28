@@ -54,6 +54,7 @@
   "filter.aliveUnit": "Viventi: {unit}",
   "filter.aliveAt": "Viventi {time} fa",
   "filter.aliveNone": "Viventi nel momento scelto",
+  "filter.showUncertain": "Mostra incerti",
   "view.cards": "Schede",
   "view.tree": "Albero",
   "relation.alive": "Vivente in quel periodo",

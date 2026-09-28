@@ -4,12 +4,10 @@
   "app.docTitle": "{name} — درخت زندگی",
   "app.docTitleHome": "درخت زندگی — ۴٫۵ میلیارد سال فرگشت",
   "lang.label": "زبان",
-
   "search.placeholder": "هر جانداری را جست‌وجو کنید — مثلاً خوکچه هندی، تیرانوسوروس، بلوط…",
   "search.placeholderShort": "جست‌وجوی جانداران…",
   "search.none": "موردی یافت نشد",
   "search.taxa": "{count} آرایه",
-
   "timeline.title": "زمان زمین‌شناختی",
   "timeline.zoomOut": "کوچک‌نمایی",
   "timeline.zoomIn": "بزرگ‌نمایی",
@@ -21,7 +19,6 @@
   "timeline.hint": "برای کاوش هر زمان روی نوار آن کلیک کنید · برای سفر در زمان نشانگر ▲ را بکشید · برای بزرگ‌نمایی اسکرول کنید و برای جابه‌جایی بکشید · سنجاق‌ها نقاط عطف فرگشت‌اند · مقیاس پرکامبرین فشرده شده است",
   "timeline.dragCursor": "برای حرکت در زمان بکشید",
   "timeline.cursorIdle": "برای سفر در زمان بکشید",
-
   "notice.extinctUnit": "{taxon} تا {unit} منقرض شده بود، بنابراین به‌جای آن {target} نمایش داده می‌شود.",
   "notice.extinctAt": "{taxon} تا {time} منقرض شده بود، بنابراین به‌جای آن {target} نمایش داده می‌شود.",
   "notice.futureUnit": "{taxon} در {unit} هنوز پدید نیامده بود، بنابراین به‌جای آن {target} نمایش داده می‌شود.",
@@ -29,19 +26,16 @@
   "notice.allLife": "همهٔ جانداران",
   "notice.moved": "به {unit} ({time}) رفتیم، زمانی که {taxon} نخستین بار پدیدار شد.",
   "notice.dismiss": "بستن",
-
   "footer.data": "داده‌ها از همهٔ جعبه‌های آرایه و الگوهای رده‌بندی در نسخهٔ پشتیبان ویکی‌پدیای انگلیسی (۲۰۲۶-۰۹) استخراج شده‌اند.",
   "footer.translated": "نام‌ها و خلاصه‌ها در این زبان از {wiki} (۲۰۲۶-۰۹) و از راه پیوندهایش به مقاله‌های انگلیسی گرفته شده‌اند؛ هرجا مقاله‌ای وجود نداشته باشد، متن انگلیسی نمایش داده می‌شود.",
   "footer.wikiName": "ویکی‌پدیای فارسی",
   "footer.license": "متن و تصاویر © مشارکت‌کنندگان ویکی‌پدیا / ویکی‌انبار، {license}.",
   "footer.timescale": "مقیاس زمانی: جدول بین‌المللی چینه‌شناسی زمانی ICS.",
   "footer.stats": "{taxa} آرایه · {species} گونه",
-
   "tabs.sections": "بخش‌ها",
   "tabs.organism": "جاندار",
   "tabs.time": "زمان",
   "tabs.milestones": "نقاط عطف",
-
   "life": "زندگی",
   "explorer.notFound": "آرایه یافت نشد.",
   "explorer.subgroups": "زیرگروه‌ها",
@@ -58,9 +52,9 @@
   "filter.aliveUnit": "زنده در {unit}",
   "filter.aliveAt": "زنده در {time}",
   "filter.aliveNone": "زنده در زمان انتخاب‌شده",
+  "filter.showUncertain": "نمایش گروه‌های نامشخص",
   "view.cards": "کارت‌ها",
   "view.tree": "درخت",
-
   "relation.alive": "در آن زمان زنده",
   "relation.extinct": "† تا آن زمان منقرض",
   "relation.future": "هنوز پدید نیامده",
@@ -70,7 +64,6 @@
   "relation.extinctAt": "منقرض تا {time}",
   "relation.futureUnit": "هنوز پدید نیامده در {unit}",
   "relation.futureAt": "هنوز پدید نیامده در {time}",
-
   "hero.representative": "تصویر نمونه از یکی از گروه‌های عضو",
   "hero.extinct": "منقرض †",
   "hero.incertae": "Incertae sedis («با جایگاه نامشخص») یک آرایه نیست: اعضایی از {parent} را گرد می‌آورد که جایگاه دقیقشان درون آن هنوز روشن نشده است.",
@@ -86,14 +79,11 @@
   "card.taxa": "{count} آرایه",
   "tree.toggle": "برای باز/بسته کردن کلیک کنید",
   "tree.more": "+{count} مورد دیگر",
-
   "range.unknownExtinct": "منقرض (سن نامعلوم)",
   "range.extant": "زنده",
   "range.toPresent": "{start} – اکنون",
-
   "rank.incertae": "جایگاه نامشخص",
   "rank.incertaeTitle": "Incertae sedis: اعضایی که جایگاهشان درون گروه والد نامشخص است",
-
   "time.present": "اکنون",
   "time.today": "امروز",
   "time.gyaAgo": "{n} میلیارد سال پیش",
@@ -109,13 +99,11 @@
   "time.ka": "{n} هزار سال",
   "time.yr": "{n} سال",
   "time.now": "اکنون",
-
   "level.eon": "ابردوران",
   "level.era": "دوران",
   "level.period": "دوره",
   "level.epoch": "عصر",
   "level.age": "اشکوب",
-
   "panel.overview": "نمای کلی",
   "panel.milestonesTitle": "نقاط عطف فرگشت",
   "panel.milestonesIntro": "از پیدایش زمین تا امروز. روی یکی کلیک کنید، یا روی هر نواری از خط زمان بالا.",
@@ -140,7 +128,6 @@
   "stat.co2": "CO₂ جو",
   "stat.temp": "میانگین دمای سطح",
   "stat.sea": "سطح دریا",
-
   "globe.hint": "برای چرخاندن بکشید · برای بزرگ‌نمایی اسکرول کنید",
   "globe.today": "زمین امروز",
   "globe.ago": "زمین {time} پیش",
@@ -152,7 +139,6 @@
   "globe.gplates": "قاره‌ها: مدل صفحه‌ای {link} از Merdith et al. (2021). تنها خطوط ساحلی؛ ناهمواری و ژرفای اقیانوس نمایشی‌اند.",
   "globe.noReconstruction": "برای این زمان دور هیچ بازسازی جهانی معتبری وجود ندارد؛ قاره‌ها ترسیم نشده‌اند.",
   "globe.hadeanNote": "برداشت هنری: زمینی جوان با پوسته‌ای در حال سرد شدن و ماگما. هیچ سنگی از آن زمان برای نقشه‌برداری باقی نمانده است.",
-
   "status.EX": "منقرض",
   "status.EW": "منقرض در طبیعت",
   "status.CR": "در معرض خطر انقراض بحرانی",

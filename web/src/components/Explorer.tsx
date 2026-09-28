@@ -2,7 +2,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react
 import type { Brief, Filter, Taxon, View } from "../types";
 import { getLineage, getTaxon } from "../data";
 import { relation, type Relation, type TimeWindow } from "../sync";
-import { MAJOR_RANKS, STATUS, glyphFor, isIncertae } from "../taxa";
+import { MAJOR_RANKS, STATUS, glyphFor, isUncertainGroup, isUncertainPlacement, rankOf } from "../taxa";
 import { useApp } from "../context";
 import { useI18n } from "../i18n";
 import { winMsg } from "../i18n/window";
@@ -57,15 +57,19 @@ export function Explorer({ id, T, win, filter, setFilter, view, setView }: Props
     return () => { live = false; };
   }, [id, lang.code]);
 
+  /** Uncertain-placement and informal groups are hidden until "Show uncertain" is on (kept across navigation). */
+  const [showUncertain, setShowUncertain] = useState(false);
   const keep = useCallback((k: Brief) =>
-    filter === "living" ? !k.x : filter === "extinct" ? !!k.x : filter === "time" && win ? relation(k, win) === "alive" : true,
-  [filter, win]);
+    (showUncertain || !isUncertainGroup(k)) &&
+    (filter === "living" ? !k.x : filter === "extinct" ? !!k.x : filter === "time" && win ? relation(k, win) === "alive" : true),
+  [filter, win, showUncertain]);
 
   if (missing) return <section className="explorer"><p>{t("explorer.notFound")}</p></section>;
   if (!node) return <section className="explorer"><article className="hero loading" /></section>;
 
   const kids = (node.k || []).filter(keep);
   const total = (node.k || []).length + (node.kmore || 0);
+  const hasUncertain = (node.k || []).some(isUncertainGroup);
 
   return (
     <section className="explorer">
@@ -87,6 +91,13 @@ export function Explorer({ id, T, win, filter, setFilter, view, setView }: Props
             </button>
           ))}
         </div>
+        {hasUncertain && (
+          <div className="chips">
+            <button className={showUncertain ? "on" : ""} aria-pressed={showUncertain} onClick={() => setShowUncertain(v => !v)}>
+              {t("filter.showUncertain")}
+            </button>
+          </div>
+        )}
         <div className="chips">
           <button className={view === "cards" ? "on" : ""} onClick={() => setView("cards")}>▦ {t("view.cards")}</button>
           <button className={view === "tree" ? "on" : ""} onClick={() => setView("tree")}>⟜ {t("view.tree")}</button>
@@ -185,8 +196,8 @@ function Crumbs({ lineage }: { lineage: Taxon[] }) {
             {i > 0 && <span className="sep">›</span>}
             <TaxonLink
               id={a.i}
-              title={a.c ? `${rank(a.r)} · ${a.c}` : rank(a.r)}
-              className={`crumb ${MAJOR_RANKS.has(a.r || "") ? "major" : "minor"}${isIncertae(a) ? " incertae" : ""}${i === lineage.length - 1 ? " cur" : ""}`}
+              title={a.c ? `${rank(rankOf(a))} · ${a.c}` : rank(rankOf(a))}
+              className={`crumb ${MAJOR_RANKS.has(a.r || "") ? "major" : "minor"}${isUncertainPlacement(a) ? " incertae" : ""}${i === lineage.length - 1 ? " cur" : ""}`}
             >
               {a.i !== 0 && CRUMB_RANKS.has(a.r || "") && <RankTag rank={a.r} />}
               <span className="crumb-name">{a.i === 0 ? <>🌳 <bdi>{t("life")}</bdi></> : <SciName n={a} />}</span>
@@ -227,14 +238,14 @@ function Hero({ n, T, win, loading, parent }: { n: Taxon; T: number | null; win:
       </div>
       <div className="hero-body">
         <div className="rank">
-          {n.i !== 0 && <RankTag rank={n.r} big />}
+          {n.i !== 0 && <RankTag rank={rankOf(n)} big />}
           {n.x ? <span className="ext">{t("hero.extinct")}</span> : null}
         </div>
         <h1>{n.x ? "† " : ""}{n.i === 0 ? t("life") : <SciName n={n} />}</h1>
-        {isIncertae(n) && (
+        {isUncertainPlacement(n) && (
           <p className="incertae-note">{tn("hero.incertae", { parent: parent ? <SciName n={parent} /> : t("hero.parentGroup") })}</p>
         )}
-        {n.c && !isIncertae(n) && <div className="common">{n.c}</div>}
+        {n.c && !isUncertainPlacement(n) && <div className="common">{n.c}</div>}
         {n.au && <div className="author">{n.au}</div>}
         <div className="pills">
           {st && <span className="pill" style={{ background: st }}>{i18n.status(stCode!)}</span>}
@@ -284,7 +295,7 @@ function KidCard({ k, T, win }: { k: Brief; T: number | null; win: TimeWindow | 
         <div className="cname">{k.x ? "† " : ""}<SciName n={k} /></div>
         {k.c && <div className="ccommon">{k.c}</div>}
         <div className="cmeta">
-          <RankTag rank={k.r} />
+          <RankTag rank={rankOf(k)} />
           {k.s ? ` · ${t("card.species", { count: k.s })}` : k.t ? ` · ${t("card.taxa", { count: k.t })}` : ""}
         </div>
         {k.a != null && <><div className="crange"><bdi>{rangeText(k)}</bdi></div><RangeBar n={k} T={T} /></>}

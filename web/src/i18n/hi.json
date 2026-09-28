@@ -4,14 +4,12 @@
   "app.docTitle": "{name} — जीवन वृक्ष",
   "app.docTitleHome": "जीवन वृक्ष — विकास के 4.5 अरब वर्ष",
   "lang.label": "भाषा",
-
   "search.placeholder": "कोई भी जीव खोजें — जैसे गिनी पिग, टायरानोसॉरस, बरगद…",
   "search.placeholderShort": "जीव खोजें…",
   "search.none": "कोई परिणाम नहीं",
   "search.taxa": "{count} टैक्सा",
   "search.taxa_one": "{count} टैक्सॉन",
   "search.taxa_other": "{count} टैक्सा",
-
   "timeline.title": "भूवैज्ञानिक समय",
   "timeline.zoomOut": "ज़ूम आउट",
   "timeline.zoomIn": "ज़ूम इन",
@@ -23,7 +21,6 @@
   "timeline.hint": "उस समय को देखने के लिए किसी पट्टी पर क्लिक करें · समय में यात्रा के लिए ▲ कर्सर को खींचें · ज़ूम के लिए स्क्रॉल करें, खिसकाने के लिए खींचें · पिन विकास के मील के पत्थर हैं · प्रीकैम्ब्रियन के लिए पैमाना संकुचित है",
   "timeline.dragCursor": "समय में आगे-पीछे जाने के लिए खींचें",
   "timeline.cursorIdle": "समय में यात्रा के लिए खींचें",
-
   "notice.extinctUnit": "{unit} तक {taxon} विलुप्त हो चुका था, इसलिए इसके बजाय {target} दिखाया जा रहा है।",
   "notice.extinctAt": "{time} तक {taxon} विलुप्त हो चुका था, इसलिए इसके बजाय {target} दिखाया जा रहा है।",
   "notice.futureUnit": "{unit} में {taxon} अभी विकसित नहीं हुआ था, इसलिए इसके बजाय {target} दिखाया जा रहा है।",
@@ -31,19 +28,16 @@
   "notice.allLife": "समस्त जीवन",
   "notice.moved": "{unit} ({time}) पर ले जाया गया, जब {taxon} पहली बार प्रकट हुआ।",
   "notice.dismiss": "बंद करें",
-
   "footer.data": "डेटा अंग्रेज़ी विकिपीडिया डंप (2026-09) के प्रत्येक टैक्सोबॉक्स और वर्गिकी साँचे से निकाला गया है।",
   "footer.translated": "इस भाषा में नाम और सारांश {wiki} (2026-09) से, अंग्रेज़ी लेखों से उसकी कड़ियों के माध्यम से लिए गए हैं; जहाँ कोई लेख नहीं है, वहाँ अंग्रेज़ी दिखाई जाती है।",
   "footer.wikiName": "हिन्दी विकिपीडिया",
   "footer.license": "पाठ और चित्र © विकिपीडिया / विकिमीडिया कॉमन्स योगदानकर्ता, {license}।",
   "footer.timescale": "समय-पैमाना: ICS अंतर्राष्ट्रीय कालानुक्रमस्तरिकी चार्ट।",
   "footer.stats": "{taxa} टैक्सा · {species} प्रजातियाँ",
-
   "tabs.sections": "खंड",
   "tabs.organism": "जीव",
   "tabs.time": "समय",
   "tabs.milestones": "मील के पत्थर",
-
   "life": "जीवन",
   "explorer.notFound": "टैक्सॉन नहीं मिला।",
   "explorer.subgroups": "उपसमूह",
@@ -60,9 +54,9 @@
   "filter.aliveUnit": "{unit} में जीवित",
   "filter.aliveAt": "{time} पर जीवित",
   "filter.aliveNone": "चयनित समय पर जीवित",
+  "filter.showUncertain": "अनिश्चित दिखाएँ",
   "view.cards": "कार्ड",
   "view.tree": "वृक्ष",
-
   "relation.alive": "तब जीवित",
   "relation.extinct": "† तब तक विलुप्त",
   "relation.future": "अभी विकसित नहीं",
@@ -72,7 +66,6 @@
   "relation.extinctAt": "{time} तक विलुप्त",
   "relation.futureUnit": "{unit} में अभी विकसित नहीं",
   "relation.futureAt": "{time} पर अभी विकसित नहीं",
-
   "hero.representative": "किसी सदस्य समूह का प्रतिनिधि चित्र",
   "hero.extinct": "विलुप्त †",
   "hero.incertae": "Incertae sedis (\"अनिश्चित स्थान वाले\") कोई टैक्सॉन नहीं है: इसमें {parent} के वे सदस्य रखे जाते हैं जिनकी उसके भीतर सटीक स्थिति अभी तय नहीं है।",
@@ -94,14 +87,11 @@
   "card.taxa_other": "{count} टैक्सा",
   "tree.toggle": "फैलाने/समेटने के लिए क्लिक करें",
   "tree.more": "+{count} और",
-
   "range.unknownExtinct": "विलुप्त (आयु अज्ञात)",
   "range.extant": "वर्तमान में जीवित",
   "range.toPresent": "{start} – वर्तमान",
-
   "rank.incertae": "अनिश्चित स्थान",
   "rank.incertaeTitle": "Incertae sedis: वे सदस्य जिनका मूल समूह के भीतर स्थान अनिश्चित है",
-
   "time.present": "वर्तमान",
   "time.today": "आज",
   "time.gyaAgo": "{n} अरब वर्ष पहले",
@@ -117,13 +107,11 @@
   "time.ka": "{n} हज़ार व.",
   "time.yr": "{n} व.",
   "time.now": "अभी",
-
   "level.eon": "इयॉन",
   "level.era": "महाकल्प",
   "level.period": "कल्प",
   "level.epoch": "युग",
   "level.age": "अवस्था",
-
   "panel.overview": "अवलोकन",
   "panel.milestonesTitle": "विकास के मील के पत्थर",
   "panel.milestonesIntro": "पृथ्वी के बनने से आज तक। किसी एक पर क्लिक करें, या ऊपर समयरेखा की किसी भी पट्टी पर क्लिक करें।",
@@ -150,7 +138,6 @@
   "stat.co2": "वायुमंडलीय CO₂",
   "stat.temp": "औसत सतही तापमान",
   "stat.sea": "समुद्र तल",
-
   "globe.hint": "घुमाने के लिए खींचें · ज़ूम के लिए स्क्रॉल करें",
   "globe.today": "आज की पृथ्वी",
   "globe.ago": "{time} पहले की पृथ्वी",
@@ -162,7 +149,6 @@
   "globe.gplates": "महाद्वीप: Merdith et al. (2021) का {link} प्लेट मॉडल। केवल तटरेखाएँ; उच्चावच और समुद्र की गहराई सांकेतिक हैं।",
   "globe.noReconstruction": "इतने पुराने समय का कोई विश्वसनीय वैश्विक पुनर्निर्माण उपलब्ध नहीं है; महाद्वीप नहीं दिखाए गए हैं।",
   "globe.hadeanNote": "कलाकार की कल्पना: ठंडी होती पर्पटी और मैग्मा वाली एक युवा पृथ्वी। इसका मानचित्र बनाने के लिए कोई चट्टान शेष नहीं है।",
-
   "status.EX": "विलुप्त",
   "status.EW": "वन्य रूप में विलुप्त",
   "status.CR": "गंभीर रूप से संकटग्रस्त",

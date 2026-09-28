@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Meta, SearchRow } from "../types";
 import { search } from "../data";
-import { ITALIC_RANKS } from "../taxa";
+import { ITALIC_RANKS, isUncertainPlacement } from "../taxa";
 import { useI18n } from "../i18n";
 import { LanguageMenu } from "./LanguageMenu";
 
@@ -62,7 +62,7 @@ export function Header({ onPick, onHome }: Props) {
               <a key={`${key}-${id}`} className="sr" href={`#n=${id}`} onClick={e => { e.preventDefault(); pick(id); }}>
                 <b>{ITALIC_RANKS.has(r) ? <i>{name}</i> : name}</b>
                 {common && !name.toLowerCase().startsWith(common.toLowerCase()) && <> <span>{common}</span></>}
-                <small>{rank(r)}{total > 1 ? ` · ${t("search.taxa", { count: total - 1 })}` : ""}</small>
+                <small>{isUncertainPlacement({ n: name, r }) ? t("rank.incertae") : rank(r)}{total > 1 ? ` · ${t("search.taxa", { count: total - 1 })}` : ""}</small>
               </a>
             ))}
           </div>

@@ -4,12 +4,10 @@
   "app.docTitle": "{name} — 生命の樹",
   "app.docTitleHome": "生命の樹 — 45億年の進化",
   "lang.label": "言語",
-
   "search.placeholder": "生物を検索 — 例：モルモット、ティラノサウルス、オーク…",
   "search.placeholderShort": "生物を検索…",
   "search.none": "該当なし",
   "search.taxa": "{count} 分類群",
-
   "timeline.title": "地質時代",
   "timeline.zoomOut": "縮小",
   "timeline.zoomIn": "拡大",
@@ -21,7 +19,6 @@
   "timeline.hint": "帯をクリックしてその時代を探索 · ▲ カーソルをドラッグして時間を移動 · スクロールで拡大縮小、ドラッグでパン · ピンは進化の画期 · 先カンブリア時代は縮尺を圧縮",
   "timeline.dragCursor": "ドラッグして時間を移動",
   "timeline.cursorIdle": "ドラッグで時間旅行",
-
   "notice.extinctUnit": "{taxon}は{unit}までに絶滅していたため、代わりに{target}を表示しています。",
   "notice.extinctAt": "{taxon}は{time}までに絶滅していたため、代わりに{target}を表示しています。",
   "notice.futureUnit": "{taxon}は{unit}にはまだ出現していなかったため、代わりに{target}を表示しています。",
@@ -29,19 +26,16 @@
   "notice.allLife": "すべての生命",
   "notice.moved": "{taxon}が初めて出現した{unit}（{time}）に移動しました。",
   "notice.dismiss": "閉じる",
-
   "footer.data": "データは英語版ウィキペディアのダンプ（2026-09）に含まれるすべてのタクソボックスと分類テンプレートから抽出しました。",
   "footer.translated": "この言語の名称と概要は、英語版記事へのリンクを通じて{wiki}（2026-09）から取得しています。記事がない場合は英語で表示します。",
   "footer.wikiName": "日本語版ウィキペディア",
   "footer.license": "文章と画像 © ウィキペディア / ウィキメディア・コモンズの寄稿者、{license}。",
   "footer.timescale": "時間尺度：ICS 国際年代層序表。",
   "footer.stats": "{taxa} 分類群 · {species} 種",
-
   "tabs.sections": "セクション",
   "tabs.organism": "生物",
   "tabs.time": "時代",
   "tabs.milestones": "画期",
-
   "life": "生命",
   "explorer.notFound": "分類群が見つかりません。",
   "explorer.subgroups": "下位分類群",
@@ -58,9 +52,9 @@
   "filter.aliveUnit": "{unit}に生存",
   "filter.aliveAt": "{time}に生存",
   "filter.aliveNone": "選択した時代に生存",
+  "filter.showUncertain": "位置不明も表示",
   "view.cards": "カード",
   "view.tree": "ツリー",
-
   "relation.alive": "当時生存",
   "relation.extinct": "† 当時すでに絶滅",
   "relation.future": "まだ出現していない",
@@ -70,7 +64,6 @@
   "relation.extinctAt": "{time}までに絶滅",
   "relation.futureUnit": "{unit}にはまだ出現していない",
   "relation.futureAt": "{time}にはまだ出現していない",
-
   "hero.representative": "下位分類群の代表画像",
   "hero.extinct": "絶滅 †",
   "hero.incertae": "Incertae sedis（「所属不明」）は分類群ではありません。{parent}の中で正確な位置が未解決のメンバーをまとめたものです。",
@@ -86,14 +79,11 @@
   "card.taxa": "{count} 分類群",
   "tree.toggle": "クリックで展開/折りたたみ",
   "tree.more": "+ほか {count} 件",
-
   "range.unknownExtinct": "絶滅（年代不明）",
   "range.extant": "現生",
   "range.toPresent": "{start} – 現在",
-
   "rank.incertae": "所属不明",
   "rank.incertaeTitle": "Incertae sedis：上位分類群内での位置が不確かなメンバー",
-
   "time.present": "現在",
   "time.today": "今日",
   "time.gyaAgo": "{n}十億年前",
@@ -109,13 +99,11 @@
   "time.ka": "{n} ka",
   "time.yr": "{n} 年",
   "time.now": "現在",
-
   "level.eon": "累代",
   "level.era": "代",
   "level.period": "紀",
   "level.epoch": "世",
   "level.age": "期",
-
   "panel.overview": "概要",
   "panel.milestonesTitle": "進化の画期",
   "panel.milestonesIntro": "地球の誕生から現在まで。項目をクリックするか、上のタイムラインの帯をクリックしてください。",
@@ -140,7 +128,6 @@
   "stat.co2": "大気中の CO₂",
   "stat.temp": "平均地表温度",
   "stat.sea": "海水準",
-
   "globe.hint": "ドラッグで回転 · スクロールで拡大縮小",
   "globe.today": "現在の地球",
   "globe.ago": "{time}前の地球",
@@ -152,7 +139,6 @@
   "globe.gplates": "大陸：Merdith ほか（2021）の {link} プレートモデル。海岸線のみ。起伏と海の深さはイメージです。",
   "globe.noReconstruction": "これほど古い時代については信頼できる全球的な復元がないため、大陸は描画していません。",
   "globe.hadeanNote": "想像図：冷えつつある地殻とマグマに覆われた若い地球。地図化できる岩石は残っていません。",
-
   "status.EX": "絶滅",
   "status.EW": "野生絶滅",
   "status.CR": "深刻な危機",

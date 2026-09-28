@@ -4,12 +4,10 @@
   "app.docTitle": "{name} — 생명의 나무",
   "app.docTitleHome": "생명의 나무 — 45억 년의 진화",
   "lang.label": "언어",
-
   "search.placeholder": "생물 검색 — 예: 기니피그, 티라노사우루스, 참나무…",
   "search.placeholderShort": "생물 검색…",
   "search.none": "검색 결과 없음",
   "search.taxa": "분류군 {count}개",
-
   "timeline.title": "지질 시대",
   "timeline.zoomOut": "축소",
   "timeline.zoomIn": "확대",
@@ -21,7 +19,6 @@
   "timeline.hint": "띠를 클릭하면 그 시대를 탐색합니다 · ▲ 커서를 끌어 시간 여행 · 스크롤로 확대/축소, 끌어서 이동 · 핀은 진화의 주요 사건 · 선캄브리아 시대는 축척이 압축되어 있습니다",
   "timeline.dragCursor": "끌어서 시간 이동",
   "timeline.cursorIdle": "끌어서 시간 여행",
-
   "notice.extinctUnit": "{taxon}은(는) {unit}에 이미 멸종했으므로 대신 {target}을(를) 표시합니다.",
   "notice.extinctAt": "{taxon}은(는) {time}에 이미 멸종했으므로 대신 {target}을(를) 표시합니다.",
   "notice.futureUnit": "{taxon}은(는) {unit}에 아직 진화하지 않았으므로 대신 {target}을(를) 표시합니다.",
@@ -29,19 +26,16 @@
   "notice.allLife": "모든 생명",
   "notice.moved": "{taxon}이(가) 처음 나타난 {unit}({time})(으)로 이동했습니다.",
   "notice.dismiss": "닫기",
-
   "footer.data": "영어 위키백과 덤프(2026-09)의 모든 분류상자(taxobox)와 분류 틀에서 추출한 데이터입니다.",
   "footer.translated": "이 언어의 이름과 요약은 {wiki}(2026-09)에서 영어 문서와의 연결을 통해 가져왔습니다. 해당 문서가 없으면 영어로 표시됩니다.",
   "footer.wikiName": "한국어 위키백과",
   "footer.license": "텍스트 및 이미지 © 위키백과 / 위키미디어 공용 기여자, {license}.",
   "footer.timescale": "시간 척도: ICS 국제 연대층서표.",
   "footer.stats": "분류군 {taxa}개 · 종 {species}개",
-
   "tabs.sections": "섹션",
   "tabs.organism": "생물",
   "tabs.time": "시대",
   "tabs.milestones": "주요 사건",
-
   "life": "생명",
   "explorer.notFound": "분류군을 찾을 수 없습니다.",
   "explorer.subgroups": "하위 분류군",
@@ -58,9 +52,9 @@
   "filter.aliveUnit": "{unit}에 생존",
   "filter.aliveAt": "{time}에 생존",
   "filter.aliveNone": "선택한 시대에 생존",
+  "filter.showUncertain": "불확실한 분류 보기",
   "view.cards": "카드",
   "view.tree": "트리",
-
   "relation.alive": "당시 생존",
   "relation.extinct": "† 당시 이미 멸종",
   "relation.future": "아직 진화하지 않음",
@@ -70,7 +64,6 @@
   "relation.extinctAt": "{time}에 이미 멸종",
   "relation.futureUnit": "{unit}에 아직 진화하지 않음",
   "relation.futureAt": "{time}에 아직 진화하지 않음",
-
   "hero.representative": "하위 분류군의 대표 이미지",
   "hero.extinct": "멸종 †",
   "hero.incertae": "Incertae sedis(‘불확실한 위치’)는 분류군이 아닙니다. {parent} 안에서의 정확한 위치가 밝혀지지 않은 구성원들을 모아 놓은 것입니다.",
@@ -86,14 +79,11 @@
   "card.taxa": "분류군 {count}개",
   "tree.toggle": "클릭하여 펼치기/접기",
   "tree.more": "+{count}개 더",
-
   "range.unknownExtinct": "멸종 (시기 불명)",
   "range.extant": "현존",
   "range.toPresent": "{start} – 현재",
-
   "rank.incertae": "위치 불확실",
   "rank.incertaeTitle": "Incertae sedis: 상위 분류군 내 위치가 불확실한 구성원",
-
   "time.present": "현재",
   "time.today": "오늘날",
   "time.gyaAgo": "{n}십억 년 전",
@@ -109,13 +99,11 @@
   "time.ka": "{n} ka",
   "time.yr": "{n}년",
   "time.now": "현재",
-
   "level.eon": "누대",
   "level.era": "대",
   "level.period": "기",
   "level.epoch": "세",
   "level.age": "절",
-
   "panel.overview": "개요",
   "panel.milestonesTitle": "진화의 주요 사건",
   "panel.milestonesIntro": "지구의 형성부터 오늘날까지. 하나를 클릭하거나 위 타임라인의 띠를 클릭하세요.",
@@ -140,7 +128,6 @@
   "stat.co2": "대기 중 CO₂",
   "stat.temp": "평균 지표 온도",
   "stat.sea": "해수면",
-
   "globe.hint": "끌어서 회전 · 스크롤로 확대/축소",
   "globe.today": "오늘날의 지구",
   "globe.ago": "{time} 전의 지구",
@@ -152,7 +139,6 @@
   "globe.gplates": "대륙: Merdith 외(2021)의 {link} 판 모델. 해안선만 정확하며 지형과 해양 깊이는 예시입니다.",
   "globe.noReconstruction": "이렇게 먼 과거에 대한 신뢰할 만한 전 지구 복원도가 없어 대륙을 그리지 않았습니다.",
   "globe.hadeanNote": "상상도: 식어 가는 지각과 마그마로 이루어진 젊은 지구. 이를 지도로 그릴 수 있는 암석은 남아 있지 않습니다.",
-
   "status.EX": "절멸",
   "status.EW": "야생 절멸",
   "status.CR": "위급",

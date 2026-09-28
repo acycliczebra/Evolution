@@ -1,5 +1,5 @@
 import type { Brief } from "../types";
-import { glyphFor, isIncertae, isItalic, rankColor } from "../taxa";
+import { glyphFor, isIncertae, isItalic, rankColor, rankOf } from "../taxa";
 import { useApp } from "../context";
 import { useI18n } from "../i18n";
 import { Img } from "./Img";
@@ -51,7 +51,7 @@ export function TaxonLink({ id, className, title, children }: { id: number; clas
 
 /** Small image + name tile used in the time panel. */
 export function MiniCard({ b: raw, extra = "" }: { b: Brief; extra?: string }) {
-  const { brief, rank } = useI18n();
+  const { brief, rank, t } = useI18n();
   const b = brief(raw);
   return (
     <TaxonLink id={b.i} className={`mini ${b.x ? "extinct" : ""}`} title={b.c || b.n}>
@@ -59,7 +59,7 @@ export function MiniCard({ b: raw, extra = "" }: { b: Brief; extra?: string }) {
       <span>
         <b>{b.x ? "† " : ""}<SciName n={b} /></b>
         {b.c && <small>{b.c}</small>}
-        <small className="muted">{rank(b.r)}{extra}</small>
+        <small className="muted">{rankOf(b) === "incertae sedis" ? t("rank.incertae") : rank(b.r)}{extra}</small>
       </span>
     </TaxonLink>
   );

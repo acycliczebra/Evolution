@@ -4,14 +4,12 @@
   "app.docTitle": "{name} — Árvore da vida",
   "app.docTitleHome": "Árvore da vida — 4,5 bilhões de anos de evolução",
   "lang.label": "Idioma",
-
   "search.placeholder": "Pesquise qualquer organismo — ex.: porquinho-da-índia, Tyrannosaurus, carvalho…",
   "search.placeholderShort": "Pesquisar organismos…",
   "search.none": "Nenhum resultado",
   "search.taxa": "{count} táxons",
   "search.taxa_one": "{count} táxon",
   "search.taxa_other": "{count} táxons",
-
   "timeline.title": "Tempo geológico",
   "timeline.zoomOut": "Afastar",
   "timeline.zoomIn": "Aproximar",
@@ -23,7 +21,6 @@
   "timeline.hint": "Clique em uma faixa para explorar essa época · arraste o cursor ▲ para viajar no tempo · role para dar zoom, arraste para mover · os marcadores são marcos evolutivos · a escala é comprimida no Pré-Cambriano",
   "timeline.dragCursor": "Arraste para se mover no tempo",
   "timeline.cursorIdle": "arraste para viajar no tempo",
-
   "notice.extinctUnit": "{taxon} já estava extinto no {unit}, por isso mostramos {target}.",
   "notice.extinctAt": "{taxon} já estava extinto há {time}, por isso mostramos {target}.",
   "notice.futureUnit": "{taxon} ainda não tinha surgido no {unit}, por isso mostramos {target}.",
@@ -31,19 +28,16 @@
   "notice.allLife": "toda a vida",
   "notice.moved": "Movido para o {unit} ({time}), quando {taxon} surgiu pela primeira vez.",
   "notice.dismiss": "Fechar",
-
   "footer.data": "Dados extraídos de todas as taxocaixas e predefinições taxonômicas do dump da Wikipédia em inglês (2026-09).",
   "footer.translated": "Os nomes e resumos neste idioma vêm da {wiki} (2026-09) por meio de seus links para os artigos em inglês; o inglês é exibido quando não há artigo.",
   "footer.wikiName": "Wikipédia em português",
   "footer.license": "Textos e imagens © colaboradores da Wikipédia / Wikimedia Commons, {license}.",
   "footer.timescale": "Escala de tempo: Tabela Cronoestratigráfica Internacional da ICS.",
   "footer.stats": "{taxa} táxons · {species} espécies",
-
   "tabs.sections": "Seções",
   "tabs.organism": "Organismo",
   "tabs.time": "Tempo",
   "tabs.milestones": "Marcos",
-
   "life": "Vida",
   "explorer.notFound": "Táxon não encontrado.",
   "explorer.subgroups": "Subgrupos",
@@ -60,9 +54,9 @@
   "filter.aliveUnit": "Vivos no {unit}",
   "filter.aliveAt": "Vivos há {time}",
   "filter.aliveNone": "Vivos no momento selecionado",
+  "filter.showUncertain": "Mostrar incertos",
   "view.cards": "Cartões",
   "view.tree": "Árvore",
-
   "relation.alive": "Vivo na época",
   "relation.extinct": "† Já extinto na época",
   "relation.future": "Ainda não tinha surgido",
@@ -72,7 +66,6 @@
   "relation.extinctAt": "Já extinto há {time}",
   "relation.futureUnit": "Ainda não tinha surgido no {unit}",
   "relation.futureAt": "Ainda não tinha surgido há {time}",
-
   "hero.representative": "Imagem representativa de um grupo membro",
   "hero.extinct": "extinto †",
   "hero.incertae": "Incertae sedis (\"de posição incerta\") não é um táxon: reúne membros de {parent} cuja posição exata dentro dele não está resolvida.",
@@ -96,14 +89,11 @@
   "card.taxa_other": "{count} táxons",
   "tree.toggle": "Clique para expandir/recolher",
   "tree.more": "+{count} outros",
-
   "range.unknownExtinct": "Extinto (idade desconhecida)",
   "range.extant": "Atual",
   "range.toPresent": "{start} – presente",
-
   "rank.incertae": "posição incerta",
   "rank.incertaeTitle": "Incertae sedis: membros cuja posição dentro do grupo superior é incerta",
-
   "time.present": "presente",
   "time.today": "hoje",
   "time.gyaAgo": "há {n} bilhões de anos",
@@ -119,13 +109,11 @@
   "time.ka": "{n} ka",
   "time.yr": "{n} anos",
   "time.now": "agora",
-
   "level.eon": "éon",
   "level.era": "era",
   "level.period": "período",
   "level.epoch": "época",
   "level.age": "idade",
-
   "panel.overview": "visão geral",
   "panel.milestonesTitle": "Marcos da evolução",
   "panel.milestonesIntro": "Da formação da Terra até hoje. Clique em um deles ou em qualquer faixa da linha do tempo acima.",
@@ -154,7 +142,6 @@
   "stat.co2": "CO₂ atmosférico",
   "stat.temp": "Temp. média da superfície",
   "stat.sea": "Nível do mar",
-
   "globe.hint": "Arraste para girar · role para dar zoom",
   "globe.today": "A Terra hoje",
   "globe.ago": "A Terra há {time}",
@@ -166,7 +153,6 @@
   "globe.gplates": "Continentes: modelo de placas {link} de Merdith et al. (2021). Apenas linhas de costa; o relevo e a profundidade oceânica são ilustrativos.",
   "globe.noReconstruction": "Não existe uma reconstrução global confiável para um passado tão remoto; os continentes não são desenhados.",
   "globe.hadeanNote": "Concepção artística: uma Terra jovem de crosta em resfriamento e magma. Não restam rochas para mapeá-la.",
-
   "status.EX": "Extinto",
   "status.EW": "Extinto na natureza",
   "status.CR": "Criticamente em perigo",

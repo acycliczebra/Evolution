@@ -4,12 +4,10 @@
   "app.docTitle": "{name} — Hayat Ağacı",
   "app.docTitleHome": "Hayat Ağacı — 4,5 milyar yıllık evrim",
   "lang.label": "Dil",
-
   "search.placeholder": "Herhangi bir canlıyı arayın — ör. kobay, Tyrannosaurus, meşe…",
   "search.placeholderShort": "Canlı ara…",
   "search.none": "Eşleşme yok",
   "search.taxa": "{count} takson",
-
   "timeline.title": "Jeolojik zaman",
   "timeline.zoomOut": "Uzaklaştır",
   "timeline.zoomIn": "Yakınlaştır",
@@ -21,7 +19,6 @@
   "timeline.hint": "O zamanı keşfetmek için bir banda tıklayın · zamanda yolculuk için ▲ imlecini sürükleyin · yakınlaştırmak için kaydırın, kaydırmak için sürükleyin · işaretler evrimin kilometre taşlarıdır · Prekambriyen için ölçek sıkıştırılmıştır",
   "timeline.dragCursor": "Zamanda ilerlemek için sürükleyin",
   "timeline.cursorIdle": "zamanda yolculuk için sürükleyin",
-
   "notice.extinctUnit": "{taxon}, {unit} döneminde çoktan yok olmuştu; bu yüzden onun yerine {target} gösteriliyor.",
   "notice.extinctAt": "{taxon}, {time} itibarıyla çoktan yok olmuştu; bu yüzden onun yerine {target} gösteriliyor.",
   "notice.futureUnit": "{taxon}, {unit} döneminde henüz evrimleşmemişti; bu yüzden onun yerine {target} gösteriliyor.",
@@ -29,19 +26,16 @@
   "notice.allLife": "tüm yaşam",
   "notice.moved": "{taxon} taksonunun ilk ortaya çıktığı {unit} ({time}) dönemine geçildi.",
   "notice.dismiss": "Kapat",
-
   "footer.data": "Veriler, İngilizce Vikipedi dökümündeki (2026-09) tüm taksokutulardan ve taksonomi şablonlarından çıkarılmıştır.",
   "footer.translated": "Bu dildeki adlar ve özetler, İngilizce maddelere verdiği bağlantılar aracılığıyla {wiki} (2026-09) kaynağından alınmıştır; madde bulunmayan yerlerde İngilizcesi gösterilir.",
   "footer.wikiName": "Türkçe Vikipedi",
   "footer.license": "Metin ve görseller © Vikipedi / Wikimedia Commons katkıcıları, {license}.",
   "footer.timescale": "Zaman ölçeği: ICS Uluslararası Kronostratigrafi Tablosu.",
   "footer.stats": "{taxa} takson · {species} tür",
-
   "tabs.sections": "Bölümler",
   "tabs.organism": "Canlı",
   "tabs.time": "Zaman",
   "tabs.milestones": "Kilometre taşları",
-
   "life": "Yaşam",
   "explorer.notFound": "Takson bulunamadı.",
   "explorer.subgroups": "Alt gruplar",
@@ -58,9 +52,9 @@
   "filter.aliveUnit": "{unit} döneminde yaşayan",
   "filter.aliveAt": "{time} zamanında yaşayan",
   "filter.aliveNone": "Seçilen zamanda yaşayan",
+  "filter.showUncertain": "Belirsizleri göster",
   "view.cards": "Kartlar",
   "view.tree": "Ağaç",
-
   "relation.alive": "O zaman yaşıyordu",
   "relation.extinct": "† O zamana kadar soyu tükenmişti",
   "relation.future": "Henüz evrimleşmemişti",
@@ -70,7 +64,6 @@
   "relation.extinctAt": "{time} itibarıyla soyu tükenmişti",
   "relation.futureUnit": "{unit} döneminde henüz evrimleşmemişti",
   "relation.futureAt": "{time} itibarıyla henüz evrimleşmemişti",
-
   "hero.representative": "Alt gruplardan birinden temsilî görsel",
   "hero.extinct": "soyu tükenmiş †",
   "hero.incertae": "Incertae sedis (\"yeri belirsiz\") bir takson değildir: {parent} içindeki tam konumu çözülmemiş üyeleri bir araya toplar.",
@@ -86,14 +79,11 @@
   "card.taxa": "{count} takson",
   "tree.toggle": "Genişletmek/daraltmak için tıklayın",
   "tree.more": "+{count} tane daha",
-
   "range.unknownExtinct": "Soyu tükenmiş (yaşı bilinmiyor)",
   "range.extant": "Günümüzde yaşıyor",
   "range.toPresent": "{start} – günümüz",
-
   "rank.incertae": "yeri belirsiz",
   "rank.incertaeTitle": "Incertae sedis: üst grup içindeki konumu belirsiz olan üyeler",
-
   "time.present": "günümüz",
   "time.today": "bugün",
   "time.gyaAgo": "{n} milyar yıl önce",
@@ -109,13 +99,11 @@
   "time.ka": "{n} ka",
   "time.yr": "{n} yıl",
   "time.now": "şimdi",
-
   "level.eon": "üst zaman",
   "level.era": "zaman",
   "level.period": "dönem",
   "level.epoch": "devir",
   "level.age": "çağ",
-
   "panel.overview": "genel bakış",
   "panel.milestonesTitle": "Evrimin kilometre taşları",
   "panel.milestonesIntro": "Dünya'nın oluşumundan bugüne. Birine ya da yukarıdaki zaman çizelgesinin herhangi bir bandına tıklayın.",
@@ -140,7 +128,6 @@
   "stat.co2": "Atmosferdeki CO₂",
   "stat.temp": "Ort. yüzey sıcaklığı",
   "stat.sea": "Deniz seviyesi",
-
   "globe.hint": "Döndürmek için sürükleyin · yakınlaştırmak için kaydırın",
   "globe.today": "Bugünkü Dünya",
   "globe.ago": "{time} önceki Dünya",
@@ -152,7 +139,6 @@
   "globe.gplates": "Kıtalar: Merdith ve ark. (2021) {link} levha modeli. Yalnızca kıyı çizgileri; rölyef ve okyanus derinliği temsilîdir.",
   "globe.noReconstruction": "Bu kadar eski bir zaman için güvenilir bir küresel rekonstrüksiyon yoktur; kıtalar çizilmemiştir.",
   "globe.hadeanNote": "Sanatçı yorumu: soğuyan kabuk ve magmadan oluşan genç bir Dünya. Haritasını çıkarmaya yetecek kayaç günümüze ulaşmamıştır.",
-
   "status.EX": "Soyu tükenmiş",
   "status.EW": "Doğada soyu tükenmiş",
   "status.CR": "Kritik tehlikede",

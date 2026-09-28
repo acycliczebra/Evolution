@@ -17,6 +17,14 @@ export const MAJOR_RANKS = new Set(["root", "domain", "kingdom", "phylum", "divi
 export const INCERTAE = "incertae sedis";
 export const isIncertae = (n: Pick<Brief, "r">) => n.r === INCERTAE;
 
+/** Placeholder groups for members of unknown placement ("Unplaced taxa", "Unassigned", …), whatever rank slot they sit in. */
+const UNPLACED_RE = /^(unplaced|unassigned|uncertain)( taxa)?$/i;
+/** Rank to display: placeholders read "uncertain placement" like incertae sedis. */
+export const rankOf = (n: Pick<Brief, "r" | "n">) => (UNPLACED_RE.test(n.n.trim()) ? INCERTAE : n.r);
+export const isUncertainPlacement = (n: Pick<Brief, "r" | "n">) => rankOf(n) === INCERTAE;
+/** Subgroups hidden unless "Show uncertain" is on: uncertain placement and informal groups. */
+export const isUncertainGroup = (n: Pick<Brief, "r" | "n">) => isUncertainPlacement(n) || n.r === "informal group";
+
 /** Colour per major rank (and its sub/super/infra variants), used for rank tags. */
 const RANK_COLOR: Record<string, string> = {
   root: "#6ee7b7", domain: "#f472b6", kingdom: "#fb923c", phylum: "#facc15", division: "#facc15",

@@ -54,6 +54,7 @@
   "filter.aliveUnit": "Vivants : {unit}",
   "filter.aliveAt": "Vivants il y a {time}",
   "filter.aliveNone": "Vivants au moment choisi",
+  "filter.showUncertain": "Afficher les incertains",
   "view.cards": "Cartes",
   "view.tree": "Arbre",
   "relation.alive": "Vivant à cette époque",

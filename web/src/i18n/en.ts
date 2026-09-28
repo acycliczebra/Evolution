@@ -65,6 +65,7 @@ export const en = {
   "filter.aliveUnit": "Alive in {unit}",
   "filter.aliveAt": "Alive at {time}",
   "filter.aliveNone": "Alive at selected time",
+  "filter.showUncertain": "Show uncertain",
   "view.cards": "Cards",
   "view.tree": "Tree",
 

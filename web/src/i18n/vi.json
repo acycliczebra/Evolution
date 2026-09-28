@@ -4,12 +4,10 @@
   "app.docTitle": "{name} — Cây sự sống",
   "app.docTitleHome": "Cây sự sống — 4,5 tỷ năm tiến hóa",
   "lang.label": "Ngôn ngữ",
-
   "search.placeholder": "Tìm bất kỳ sinh vật nào — vd. chuột lang, Tyrannosaurus, sồi…",
   "search.placeholderShort": "Tìm sinh vật…",
   "search.none": "Không có kết quả",
   "search.taxa": "{count} đơn vị phân loại",
-
   "timeline.title": "Thời gian địa chất",
   "timeline.zoomOut": "Thu nhỏ",
   "timeline.zoomIn": "Phóng to",
@@ -21,7 +19,6 @@
   "timeline.hint": "Nhấp vào một dải để khám phá thời kỳ đó · kéo con trỏ ▲ để du hành thời gian · cuộn để phóng to, kéo để di chuyển · các ghim là cột mốc tiến hóa · thang thời gian được nén lại cho thời kỳ Tiền Cambri",
   "timeline.dragCursor": "Kéo để di chuyển theo thời gian",
   "timeline.cursorIdle": "kéo để du hành thời gian",
-
   "notice.extinctUnit": "{taxon} đã tuyệt chủng trước {unit}, nên hiển thị {target} thay thế.",
   "notice.extinctAt": "{taxon} đã tuyệt chủng trước {time}, nên hiển thị {target} thay thế.",
   "notice.futureUnit": "{taxon} chưa tiến hóa vào {unit}, nên hiển thị {target} thay thế.",
@@ -29,19 +26,16 @@
   "notice.allLife": "toàn bộ sự sống",
   "notice.moved": "Đã chuyển đến {unit} ({time}), khi {taxon} xuất hiện lần đầu.",
   "notice.dismiss": "Đóng",
-
   "footer.data": "Dữ liệu được trích xuất từ mọi taxobox và bản mẫu phân loại trong bản sao lưu Wikipedia tiếng Anh (2026-09).",
   "footer.translated": "Tên và tóm tắt bằng ngôn ngữ này lấy từ {wiki} (2026-09) thông qua liên kết tới các bài tiếng Anh; nội dung tiếng Anh được hiển thị khi không có bài viết.",
   "footer.wikiName": "Wikipedia tiếng Việt",
   "footer.license": "Văn bản và hình ảnh © những người đóng góp Wikipedia / Wikimedia Commons, {license}.",
   "footer.timescale": "Thang thời gian: Bảng niên đại địa tầng quốc tế ICS.",
   "footer.stats": "{taxa} đơn vị phân loại · {species} loài",
-
   "tabs.sections": "Mục",
   "tabs.organism": "Sinh vật",
   "tabs.time": "Thời gian",
   "tabs.milestones": "Cột mốc",
-
   "life": "Sự sống",
   "explorer.notFound": "Không tìm thấy đơn vị phân loại.",
   "explorer.subgroups": "Nhóm con",
@@ -58,9 +52,9 @@
   "filter.aliveUnit": "Sống vào {unit}",
   "filter.aliveAt": "Sống vào {time}",
   "filter.aliveNone": "Sống vào thời điểm đã chọn",
+  "filter.showUncertain": "Hiện nhóm chưa rõ vị trí",
   "view.cards": "Thẻ",
   "view.tree": "Cây",
-
   "relation.alive": "Còn sống khi đó",
   "relation.extinct": "† Đã tuyệt chủng khi đó",
   "relation.future": "Chưa tiến hóa",
@@ -70,7 +64,6 @@
   "relation.extinctAt": "Đã tuyệt chủng trước {time}",
   "relation.futureUnit": "Chưa tiến hóa vào {unit}",
   "relation.futureAt": "Chưa tiến hóa vào {time}",
-
   "hero.representative": "Hình ảnh đại diện từ một nhóm thành viên",
   "hero.extinct": "tuyệt chủng †",
   "hero.incertae": "Incertae sedis (\"vị trí không chắc chắn\") không phải là một đơn vị phân loại: nó tập hợp các thành viên của {parent} mà vị trí chính xác bên trong chưa được xác định.",
@@ -86,14 +79,11 @@
   "card.taxa": "{count} đơn vị",
   "tree.toggle": "Nhấp để mở rộng/thu gọn",
   "tree.more": "+{count} nữa",
-
   "range.unknownExtinct": "Tuyệt chủng (không rõ niên đại)",
   "range.extant": "Còn tồn tại",
   "range.toPresent": "{start} – nay",
-
   "rank.incertae": "vị trí không chắc chắn",
   "rank.incertaeTitle": "Incertae sedis: các thành viên có vị trí không chắc chắn trong nhóm cha",
-
   "time.present": "hiện tại",
   "time.today": "ngày nay",
   "time.gyaAgo": "{n} tỷ năm trước",
@@ -109,13 +99,11 @@
   "time.ka": "{n} ka",
   "time.yr": "{n} năm",
   "time.now": "nay",
-
   "level.eon": "liên đại",
   "level.era": "đại",
   "level.period": "kỷ",
   "level.epoch": "thế",
   "level.age": "kỳ",
-
   "panel.overview": "tổng quan",
   "panel.milestonesTitle": "Các cột mốc tiến hóa",
   "panel.milestonesIntro": "Từ khi Trái Đất hình thành đến ngày nay. Nhấp vào một cột mốc, hoặc bất kỳ dải nào trên dòng thời gian phía trên.",
@@ -140,7 +128,6 @@
   "stat.co2": "CO₂ khí quyển",
   "stat.temp": "Nhiệt độ bề mặt TB",
   "stat.sea": "Mực nước biển",
-
   "globe.hint": "Kéo để xoay · cuộn để phóng to",
   "globe.today": "Trái Đất ngày nay",
   "globe.ago": "Trái Đất {time} trước",
@@ -152,7 +139,6 @@
   "globe.gplates": "Lục địa: mô hình mảng {link} của Merdith và cộng sự (2021). Chỉ có đường bờ biển; địa hình và độ sâu đại dương chỉ mang tính minh họa.",
   "globe.noReconstruction": "Không có bản tái dựng toàn cầu đáng tin cậy nào cho thời kỳ xa như vậy; các lục địa không được vẽ.",
   "globe.hadeanNote": "Hình minh họa: một Trái Đất trẻ với lớp vỏ đang nguội dần và magma. Không còn đá nào tồn tại để lập bản đồ.",
-
   "status.EX": "Tuyệt chủng",
   "status.EW": "Tuyệt chủng trong tự nhiên",
   "status.CR": "Cực kỳ nguy cấp",
