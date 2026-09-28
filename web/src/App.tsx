@@ -52,21 +52,25 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
   /** Guards async reconciliation against newer user actions. */
   const syncSeq = useRef(0);
 
-  // keep the URL in sync: taxon navigation creates history entries, time selection replaces
+  // keep the URL in sync: choosing a taxon or a time period creates a history entry; follow-up
+  // adjustments (keeping taxon and time consistent) and dragging the time cursor replace it
   useEffect(() => {
     const p = new URLSearchParams();
     if (id) p.set("n", String(id));
     if (unit) p.set("u", unit);
     const h = "#" + p.toString();
-    if (h === location.hash) return;
-    if (pushNext.current) history.pushState(null, "", h); else history.replaceState(null, "", h);
+    const push = pushNext.current;
     pushNext.current = false;
+    if (h === (location.hash || "#")) return;
+    if (push) history.pushState(null, "", h); else history.replaceState(null, "", h);
   }, [id, unit]);
 
   // back/forward restores exactly what was in the URL (no reconciliation)
   useEffect(() => {
     const onPop = () => {
       syncSeq.current++;
+      // restoring an entry must never push one (that would erase the forward history)
+      pushNext.current = false;
       const h = readHash();
       setId(h.id);
       const u = h.unit ? scale.byName[h.unit] : undefined;
@@ -86,6 +90,13 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     return () => clearTimeout(t);
   }, [notice]);
   const say = (body: React.ReactNode) => setNotice({ key: Date.now(), body });
+
+  /** The next URL change creates a history entry — only if taxon or unit really changes (else the flag would linger). */
+  const pushIfChanged = useCallback((nextId: number, nextUnit: string | null) => {
+    if (nextId !== idRef.current || nextUnit !== unitRef.current) pushNext.current = true;
+  }, []);
+  /** Set when a drag of the time cursor starts: its first change of unit creates one history entry. */
+  const dragPending = useRef(false);
 
   const zoomTo = useCallback((u: Unit) => {
     setDomain(unitDomain(u.level === "age" && u.parent ? scale.byName[u.parent] : u));
@@ -116,7 +127,7 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
   /** Navigate to a taxon; if it didn't exist at the selected time, move the time to its origin. */
   const go = useCallback((next: number) => {
     const seq = ++syncSeq.current;
-    pushNext.current = true;
+    pushIfChanged(next, unitRef.current);
     setId(next);
     setPane("tree");
     const el = document.querySelector<HTMLElement>(".explorer");
@@ -137,26 +148,28 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
       const i = i18nRef.current;
       say(i.tn("notice.moved", { unit: i.unitName(u.name), time: i.fmtShort(n.a), taxon: <SciName n={n} /> }));
     });
-  }, [scale, zoomTo]);
+  }, [scale, zoomTo, pushIfChanged]);
 
   const selectUnit = useCallback((name: string, zoom = false, at?: number) => {
     const u = scale.byName[name];
     if (!u) return;
     const t = at ?? (u.start + u.end) / 2;
+    pushIfChanged(idRef.current, name);
     setUnit(name);
     setMilestone(null);
     setT(t);
     if (zoom) zoomTo(u);
     reconcileTaxon(timeWindow(u, t));
-  }, [scale, zoomTo, reconcileTaxon]);
+  }, [scale, zoomTo, reconcileTaxon, pushIfChanged]);
 
   const selectMilestone = useCallback((m: Milestone) => {
     const u = scale.deepestAt(m.ma);
+    if (u) pushIfChanged(idRef.current, u.name);
     setMilestone(m);
     setT(m.ma);
     if (u) setUnit(u.name);
     reconcileTaxon(timeWindow(u, m.ma));
-  }, [scale, reconcileTaxon]);
+  }, [scale, reconcileTaxon, pushIfChanged]);
 
   const jumpToTime = useCallback((at: number) => {
     const u = scale.at(at, "age") || scale.at(at, "period") || scale.at(at, "era") || scale.at(at, "eon");
@@ -170,16 +183,22 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
   }, [scale, selectUnit]);
 
   // Dragging the time cursor: follow it at the selected unit's level (period by default).
-  const scrubTo = useCallback((at: number) => {
+  const scrubTo = useCallback((at: number, start = false) => {
     const cur = unitRef.current;
     const u = scale.at(at, cur ? scale.byName[cur].level : "period") ?? scale.deepestAt(at);
+    if (start) dragPending.current = true;
+    if (dragPending.current && u && u.name !== cur) {
+      pushIfChanged(idRef.current, u.name);
+      dragPending.current = false;
+    }
     setT(at);
     setMilestone(null);
     if (u) setUnit(u.name);
     if (u?.name !== cur) reconcileTaxon(timeWindow(u, at));
-  }, [scale, reconcileTaxon]);
+  }, [scale, reconcileTaxon, pushIfChanged]);
 
   const home = () => {
+    pushIfChanged(0, null);
     setUnit(null); setT(null); setMilestone(null); setDomain(FULL); go(0);
   };
 

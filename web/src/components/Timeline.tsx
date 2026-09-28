@@ -15,8 +15,8 @@ interface Props {
   unit: string | null;
   T: number | null;
   msTitle: string | null;
-  /** Called while the time cursor is dragged. */
-  onScrub: (T: number) => void;
+  /** Called while the time cursor is dragged; `start` on the first move of each drag. */
+  onScrub: (T: number, start: boolean) => void;
   /** A band was clicked. */
   onPickUnit: (name: string) => void;
 }
@@ -98,9 +98,10 @@ export function Timeline({ milestones, domain, setDomain, unit, T, msTitle, onSc
     const d = drag.current;
     if (!d) return;
     if (d.mode === "scrub") {
+      const start = !d.moved;
       d.moved = true;
       const x = Math.max(0, Math.min(W, e.clientX - e.currentTarget.getBoundingClientRect().left));
-      onScrub(unwarp(wa + (x / W) * (wb - wa)));
+      onScrub(unwarp(wa + (x / W) * (wb - wa)), start);
       return;
     }
     const dx = e.clientX - d.x;
