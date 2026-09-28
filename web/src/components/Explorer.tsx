@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
 import type { Brief, Filter, Taxon, View } from "../types";
 import { getLineage, getTaxon } from "../data";
-import { fmtShort, isAlive, rangeText } from "../time";
+import { rangeText } from "../time";
+import { relation, type Relation, type TimeWindow } from "../sync";
 import { MAJOR_RANKS, STATUS, fmtInt, glyphFor, isIncertae, wikiUrl } from "../taxa";
 import { useApp } from "../context";
 import { Img } from "./Img";
@@ -12,6 +13,8 @@ import { TreeView } from "./TreeView";
 interface Props {
   id: number;
   T: number | null;
+  /** Selected span of geologic time (unit), used for "alive then" labels and filtering. */
+  win: TimeWindow | null;
   filter: Filter;
   setFilter: (f: Filter) => void;
   view: View;
@@ -23,7 +26,7 @@ const CRUMB_RANKS = new Set(["domain", "kingdom", "phylum", "division", "class",
 
 const FILTERS: [Filter, string][] = [["all", "All"], ["living", "Living"], ["extinct", "Extinct †"], ["time", ""]];
 
-export function Explorer({ id, T, filter, setFilter, view, setView }: Props) {
+export function Explorer({ id, T, win, filter, setFilter, view, setView }: Props) {
   const [node, setNode] = useState<Taxon | null>(null);
   const [lineage, setLineage] = useState<Taxon[]>([]);
   const [loading, setLoading] = useState(true);
@@ -48,8 +51,8 @@ export function Explorer({ id, T, filter, setFilter, view, setView }: Props) {
   }, [id]);
 
   const keep = useCallback((k: Brief) =>
-    filter === "living" ? !k.x : filter === "extinct" ? !!k.x : filter === "time" && T != null ? isAlive(k, T) : true,
-  [filter, T]);
+    filter === "living" ? !k.x : filter === "extinct" ? !!k.x : filter === "time" && win ? relation(k, win) === "alive" : true,
+  [filter, win]);
 
   if (missing) return <section className="explorer"><p>Taxon not found.</p></section>;
   if (!node) return <section className="explorer"><article className="hero loading" /></section>;
@@ -60,7 +63,7 @@ export function Explorer({ id, T, filter, setFilter, view, setView }: Props) {
   return (
     <section className="explorer">
       <Crumbs lineage={lineage} />
-      <Hero n={node} T={T} loading={loading} parent={lineage[lineage.length - 2]} />
+      <Hero n={node} T={T} win={win} loading={loading} parent={lineage[lineage.length - 2]} />
       <div className="kids-head">
         <h2>
           {total ? <>Subgroups <span className="muted">{kids.length}{kids.length !== total ? ` of ${fmtInt(total)}` : ""}</span></> : "No subgroups"}
@@ -68,7 +71,7 @@ export function Explorer({ id, T, filter, setFilter, view, setView }: Props) {
         <div className="chips">
           {FILTERS.map(([f, label]) => (
             <button key={f} className={filter === f ? "on" : ""} onClick={() => setFilter(f)}>
-              {f === "time" ? (T != null ? `Alive ${fmtShort(T)}` : "Alive at selected time") : label}
+              {f === "time" ? (win ? `Alive in ${win.label.replace(/^the /, "")}` : "Alive at selected time") : label}
             </button>
           ))}
         </div>
@@ -81,7 +84,7 @@ export function Explorer({ id, T, filter, setFilter, view, setView }: Props) {
         <TreeView root={node} keep={keep} />
       ) : (
         <div className="kids">
-          {kids.map(k => <KidCard key={k.i} k={k} T={T} />)}
+          {kids.map(k => <KidCard key={k.i} k={k} T={T} win={win} />)}
           {!!node.kmore && (
             <div className="more">…and {fmtInt(node.kmore)} more. <a href={wikiUrl(node.w || node.n)} target="_blank" rel="noopener">See Wikipedia</a></div>
           )}
@@ -114,7 +117,14 @@ function Crumbs({ lineage }: { lineage: Taxon[] }) {
   );
 }
 
-function Hero({ n, T, loading, parent }: { n: Taxon; T: number | null; loading: boolean; parent?: Taxon }) {
+/** Label for how a taxon relates to the selected time. */
+const RELATION_LABEL: Record<Exclude<Relation, "unknown">, [string, string]> = {
+  alive: ["ok", "Alive then"],
+  extinct: ["no", "† Extinct by then"],
+  future: ["later", "Not yet evolved"],
+};
+
+function Hero({ n, T, win, loading, parent }: { n: Taxon; T: number | null; win: TimeWindow | null; loading: boolean; parent?: Taxon }) {
   const { go, jumpToTime } = useApp();
   const st = n.st ? STATUS[n.st.replace(/[^A-Z0-9]/g, "")] : undefined;
   return (
@@ -141,9 +151,12 @@ function Hero({ n, T, loading, parent }: { n: Taxon; T: number | null; loading: 
           {st && <span className="pill" style={{ background: st[1] }}>{st[0]}</span>}
           {!!n.s && <span className="pill">{fmtInt(n.s)} species</span>}
           {!!n.t && <span className="pill">{fmtInt(n.t)} taxa below</span>}
-          {T != null && n.a != null && (isAlive(n, T)
-            ? <span className="pill ok">Alive {fmtShort(T)}</span>
-            : <span className="pill no">Not alive {fmtShort(T)}</span>)}
+          {(() => {
+            const rel = relation(n, win);
+            if (rel === "unknown" || !win) return null;
+            const text = rel === "alive" ? `Alive in ${win.label}` : rel === "extinct" ? `Extinct by ${win.label}` : `Not yet evolved in ${win.label}`;
+            return <span className={`pill ${RELATION_LABEL[rel][0]}`}>{text}</span>;
+          })()}
         </div>
         {n.sd && <p className="sd">{n.sd}</p>}
         <div className="range">
@@ -161,10 +174,14 @@ function Hero({ n, T, loading, parent }: { n: Taxon; T: number | null; loading: 
   );
 }
 
-function KidCard({ k, T }: { k: Brief; T: number | null }) {
+function KidCard({ k, T, win }: { k: Brief; T: number | null; win: TimeWindow | null }) {
+  const rel = relation(k, win);
   return (
-    <TaxonLink id={k.i} className={`card${k.x ? " extinct" : ""}`}>
-      <div className="thumb"><Img file={k.m} width={250} glyph={glyphFor(k.r)} /></div>
+    <TaxonLink id={k.i} className={`card${k.x ? " extinct" : ""}${rel === "extinct" || rel === "future" ? " dim" : ""}`}>
+      <div className="thumb">
+        <Img file={k.m} width={250} glyph={glyphFor(k.r)} />
+        {rel !== "unknown" && <span className={`when-tag ${RELATION_LABEL[rel][0]}`}>{RELATION_LABEL[rel][1]}</span>}
+      </div>
       <div className="cbody">
         <div className="cname">{k.x ? "† " : ""}<SciName n={k} /></div>
         {k.c && <div className="ccommon">{k.c}</div>}

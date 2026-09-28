@@ -231,3 +231,22 @@ div.hero-img { display: grid; place-items: center; font-size: 90px; }
 .globe-canvas.loading { opacity: .6; }
 .globe figcaption { font-size: 12.5px; margin-top: 6px; line-height: 1.45; }
 .globe figcaption .muted { font-size: 12px; }
+
+/* relation of a taxon to the selected time */
+.thumb { position: relative; }
+.when-tag { position: absolute; left: 8px; top: 8px; font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 999px;
+  background: #0b1120d9; border: 1px solid #2d3d63; backdrop-filter: blur(4px); }
+.when-tag.ok { color: #6ee7b7; border-color: #065f46; }
+.when-tag.no { color: #fca5a5; border-color: #7f1d1d; }
+.when-tag.later { color: #c4b5fd; border-color: #4c1d95; }
+.card.dim { opacity: .55; }
+.card.dim:hover { opacity: 1; }
+.pill.later { background: #3b2a6b; }
+
+/* notice when the app adjusts the taxon or time to keep them consistent */
+.notice { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); z-index: 60; max-width: min(640px, 92vw);
+  display: flex; align-items: center; gap: 12px; padding: 10px 12px 10px 16px; border-radius: 12px; font-size: 14px;
+  background: #0f1830f2; border: 1px solid #0d9488; box-shadow: var(--shadow); animation: notice-in .25s ease-out; }
+.notice button { background: none; border: 0; color: var(--muted); font-size: 20px; line-height: 1; padding: 0 4px; }
+.notice button:hover { color: var(--ink); }
+@keyframes notice-in { from { opacity: 0; transform: translate(-50%, 10px); } }

@@ -1,13 +1,17 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { Filter, Meta, Milestone, TimeData, View } from "./types";
-import { TimeScale, unitDomain, zoomDomain, EARTH_AGE, type Domain } from "./time";
+import type { Filter, Meta, Milestone, TimeData, Unit, View } from "./types";
+import { TimeScale, unitDomain, zoomDomain, fmtShort, EARTH_AGE, type Domain } from "./time";
 import { AppContext, type AppActions } from "./context";
+import { getLineage, getTaxon } from "./data";
+import { nearestFitting, relation, timeWindow, type TimeWindow } from "./sync";
 import { Header } from "./components/Header";
 import { Timeline } from "./components/Timeline";
 import { Explorer } from "./components/Explorer";
 import { TimePanel } from "./components/TimePanel";
+import { SciName } from "./components/common";
 
 const FULL: Domain = [EARTH_AGE, 0];
+const NOTICE_MS = 6000;
 
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
@@ -29,9 +33,17 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
   const [domain, setDomain] = useState<Domain>(initial.domain);
   const [filter, setFilter] = useState<Filter>("all");
   const [view, setView] = useState<View>("cards");
+  const [notice, setNotice] = useState<{ key: number; body: React.ReactNode } | null>(null);
   const pushNext = useRef(false);
+  const idRef = useRef(id);
+  idRef.current = id;
   const unitRef = useRef(unit);
   unitRef.current = unit;
+  const winRef = useRef<TimeWindow | null>(null);
+  const win = useMemo(() => timeWindow(unit ? scale.byName[unit] : undefined, T), [scale, unit, T]);
+  winRef.current = win;
+  /** Guards async reconciliation against newer user actions. */
+  const syncSeq = useRef(0);
 
   // keep the URL in sync: taxon navigation creates history entries, time selection replaces
   useEffect(() => {
@@ -44,13 +56,14 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     pushNext.current = false;
   }, [id, unit]);
 
+  // back/forward restores exactly what was in the URL (no reconciliation)
   useEffect(() => {
     const onPop = () => {
+      syncSeq.current++;
       const h = readHash();
       setId(h.id);
       const u = h.unit ? scale.byName[h.unit] : undefined;
       if ((u?.name ?? null) === unitRef.current) return;
-      // the time selection follows the unit in the URL
       setUnit(u?.name ?? null);
       setMilestone(null);
       setT(u ? (u.start + u.end) / 2 : null);
@@ -60,28 +73,74 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     return () => removeEventListener("popstate", onPop);
   }, [scale]);
 
+  useEffect(() => {
+    if (!notice) return;
+    const t = setTimeout(() => setNotice(null), NOTICE_MS);
+    return () => clearTimeout(t);
+  }, [notice]);
+  const say = (body: React.ReactNode) => setNotice({ key: Date.now(), body });
+
+  const zoomTo = useCallback((u: Unit) => {
+    setDomain(unitDomain(u.level === "age" && u.parent ? scale.byName[u.parent] : u));
+  }, [scale]);
+
+  /** Time changed: if the open taxon didn't exist then, climb to the nearest ancestor that did. */
+  const reconcileTaxon = useCallback(async (w: TimeWindow | null) => {
+    if (!w) return;
+    const seq = ++syncSeq.current;
+    const n = await getTaxon(idRef.current);
+    if (!n || seq !== syncSeq.current) return;
+    const rel = relation(n, w);
+    if (rel !== "extinct" && rel !== "future") return;
+    const lineage = await getLineage(n.i);
+    if (seq !== syncSeq.current) return;
+    const target = nearestFitting(lineage, w);
+    setId(target.i); // replaces the history entry, keeping taxon and time consistent in the URL
+    say(<><SciName n={n} /> {rel === "extinct" ? "had died out by" : "hadn't evolved yet in"} {w.label}, so showing {target.i === 0 ? "all life" : <SciName n={target} />} instead.</>);
+  }, []);
+
+  /** Navigate to a taxon; if it didn't exist at the selected time, move the time to its origin. */
   const go = useCallback((next: number) => {
+    const seq = ++syncSeq.current;
     pushNext.current = true;
     setId(next);
     const el = document.querySelector<HTMLElement>(".explorer");
     if (el) scrollTo({ top: el.offsetTop - 70, behavior: "smooth" });
-  }, []);
+    const w = winRef.current;
+    if (!w) return;
+    getTaxon(next).then(n => {
+      if (!n || seq !== syncSeq.current || n.a == null) return;
+      const rel = relation(n, w);
+      if (rel !== "extinct" && rel !== "future") return;
+      const level = unitRef.current ? scale.byName[unitRef.current].level : "period";
+      const u = scale.at(n.a, level) ?? scale.deepestAt(n.a);
+      if (!u) return;
+      setUnit(u.name);
+      setT(n.a);
+      setMilestone(null);
+      zoomTo(u);
+      say(<>Moved to the {u.name} ({fmtShort(n.a)}), when <SciName n={n} /> first appeared.</>);
+    });
+  }, [scale, zoomTo]);
 
   const selectUnit = useCallback((name: string, zoom = false, at?: number) => {
     const u = scale.byName[name];
     if (!u) return;
+    const t = at ?? (u.start + u.end) / 2;
     setUnit(name);
     setMilestone(null);
-    setT(at ?? (u.start + u.end) / 2);
-    if (zoom) setDomain(unitDomain(u.level === "age" && u.parent ? scale.byName[u.parent] : u));
-  }, [scale]);
+    setT(t);
+    if (zoom) zoomTo(u);
+    reconcileTaxon(timeWindow(u, t));
+  }, [scale, zoomTo, reconcileTaxon]);
 
   const selectMilestone = useCallback((m: Milestone) => {
+    const u = scale.deepestAt(m.ma);
     setMilestone(m);
     setT(m.ma);
-    const u = scale.deepestAt(m.ma);
     if (u) setUnit(u.name);
-  }, [scale]);
+    reconcileTaxon(timeWindow(u, m.ma));
+  }, [scale, reconcileTaxon]);
 
   const jumpToTime = useCallback((at: number) => {
     const u = scale.at(at, "age") || scale.at(at, "period") || scale.at(at, "era") || scale.at(at, "eon");
@@ -96,13 +155,13 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
 
   // Dragging the time cursor: follow it at the selected unit's level (period by default).
   const scrubTo = useCallback((at: number) => {
+    const cur = unitRef.current;
+    const u = scale.at(at, cur ? scale.byName[cur].level : "period") ?? scale.deepestAt(at);
     setT(at);
     setMilestone(null);
-    setUnit(cur => {
-      const level = cur ? scale.byName[cur].level : "period";
-      return (scale.at(at, level) ?? scale.deepestAt(at))?.name ?? cur;
-    });
-  }, [scale]);
+    if (u) setUnit(u.name);
+    if (u?.name !== cur) reconcileTaxon(timeWindow(u, at));
+  }, [scale, reconcileTaxon]);
 
   const home = () => {
     setUnit(null); setT(null); setMilestone(null); setDomain(FULL); go(0);
@@ -140,7 +199,7 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
         </div>
       </section>
       <main className="layout">
-        <Explorer id={id} T={T} filter={filter} setFilter={setFilter} view={view} setView={setView} />
+        <Explorer id={id} T={T} win={win} filter={filter} setFilter={setFilter} view={view} setView={setView} />
         <TimePanel unit={unit} T={T} milestone={milestone} milestones={time.milestones} />
       </main>
       <footer className="foot">
@@ -148,6 +207,12 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
         Wikimedia Commons contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. Time scale: ICS
         International Chronostratigraphic Chart.
       </footer>
+      {notice && (
+        <div key={notice.key} className="notice" role="status">
+          <span>⏱ {notice.body}</span>
+          <button onClick={() => setNotice(null)} aria-label="Dismiss">×</button>
+        </div>
+      )}
     </AppContext.Provider>
   );
 }

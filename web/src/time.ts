@@ -65,8 +65,6 @@ export function unitDomain(u: Unit): Domain {
   return [unwarp(Math.max(0, warp(u.start) - pad)), unwarp(Math.min(1, warp(u.end) + pad))];
 }
 
-export const isAlive = (n: Brief, T: number) => n.a != null && n.a >= T && (n.b ?? 0) <= T;
-
 export function rangeText(n: Brief): string {
   if (n.a == null) return n.x ? "Extinct (age unknown)" : "Extant";
   const b = n.b ?? 0;
