@@ -30,6 +30,8 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
   const [filter, setFilter] = useState<Filter>("all");
   const [view, setView] = useState<View>("cards");
   const pushNext = useRef(false);
+  const unitRef = useRef(unit);
+  unitRef.current = unit;
 
   // keep the URL in sync: taxon navigation creates history entries, time selection replaces
   useEffect(() => {
@@ -46,7 +48,13 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
     const onPop = () => {
       const h = readHash();
       setId(h.id);
-      if (h.unit && scale.byName[h.unit]) setUnit(h.unit);
+      const u = h.unit ? scale.byName[h.unit] : undefined;
+      if ((u?.name ?? null) === unitRef.current) return;
+      // the time selection follows the unit in the URL
+      setUnit(u?.name ?? null);
+      setMilestone(null);
+      setT(u ? (u.start + u.end) / 2 : null);
+      setDomain(u ? unitDomain(u) : FULL);
     };
     addEventListener("popstate", onPop);
     return () => removeEventListener("popstate", onPop);
@@ -133,7 +141,7 @@ export function App({ meta, time }: { meta: Meta; time: TimeData }) {
       </section>
       <main className="layout">
         <Explorer id={id} T={T} filter={filter} setFilter={setFilter} view={view} setView={setView} />
-        <TimePanel unit={unit} milestone={milestone} milestones={time.milestones} />
+        <TimePanel unit={unit} T={T} milestone={milestone} milestones={time.milestones} />
       </main>
       <footer className="foot">
         Data extracted from every taxobox and taxonomy template in the English Wikipedia dump (2026-09). Text and images © Wikipedia /

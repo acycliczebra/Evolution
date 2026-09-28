@@ -1,15 +1,20 @@
+import { Suspense, lazy } from "react";
 import type { Brief, Milestone, Unit } from "../types";
 import { fmtDuration, fmtMa, fmtShort } from "../time";
 import { wikiUrl, fmtInt } from "../taxa";
 import { useApp } from "../context";
-import { Img } from "./Img";
 import { MiniCard } from "./common";
 
 interface Props {
   unit: string | null;
+  /** Selected time (Ma); the globe shows the reconstruction nearest to it. */
+  T: number | null;
   milestone: Milestone | null;
   milestones: Milestone[];
 }
+
+// three.js is large: load the globe only when a time period is opened
+const Globe = lazy(() => import("./Globe").then(m => ({ default: m.Globe })));
 
 const EARTH_STATS: [keyof Unit, string][] = [["o2", "Atmospheric O₂"], ["co2", "Atmospheric CO₂"], ["temp", "Mean surface temp."], ["sea", "Sea level"]];
 
@@ -33,7 +38,7 @@ function MilestoneList({ items, big = false }: { items: Milestone[]; big?: boole
   );
 }
 
-export function TimePanel({ unit, milestone, milestones }: Props) {
+export function TimePanel({ unit, T, milestone, milestones }: Props) {
   const { scale, selectUnit } = useApp();
 
   if (!unit) {
@@ -52,7 +57,6 @@ export function TimePanel({ unit, milestone, milestones }: Props) {
   const u = scale.byName[unit];
   const path = scale.path(u.name);
   const kids = scale.children(u.name);
-  const mapUnit = scale.mapFor(u);
   const notes = scale.notesFor(u);
   const siblings = scale.units.filter(k => k.level === u.level).sort((p, q) => q.start - p.start);
   const si = siblings.indexOf(u);
@@ -93,15 +97,9 @@ export function TimePanel({ unit, milestone, milestones }: Props) {
           {next && <button onClick={() => selectUnit(next.name, true)}>{next.name} ›</button>}
         </div>
       </div>
-      {mapUnit?.map && (
-        <figure className="umap">
-          <Img file={mapUnit.map} width={960} glyph="🌍" />
-          <figcaption>
-            {mapUnit.mapcap}
-            {mapUnit !== u && <span className="muted"> (map from the {mapUnit.name})</span>}
-          </figcaption>
-        </figure>
-      )}
+      <Suspense fallback={<div className="globe"><div className="globe-canvas loading" /></div>}>
+        <Globe T={T ?? (u.start + u.end) / 2} />
+      </Suspense>
       {(notes || stats.length > 0) && (
         <section>
           <h3>🌍 What Earth looked like</h3>

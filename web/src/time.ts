@@ -99,13 +99,6 @@ export class TimeScale {
   children(name: string): Unit[] {
     return this.units.filter(u => u.parent === name);
   }
-  /** Map for a unit, falling back to the nearest ancestor with one, then to a child. */
-  mapFor(u: Unit): Unit | undefined {
-    for (let cur: Unit | undefined = u; cur; cur = cur.parent ? this.byName[cur.parent] : undefined) {
-      if (cur.map) return cur;
-    }
-    return this.units.find(k => k.parent === u.name && k.map);
-  }
   /** Curated notes may live on an ancestor. */
   notesFor(u: Unit): Unit | undefined {
     for (let cur: Unit | undefined = u; cur; cur = cur.parent ? this.byName[cur.parent] : undefined) {
